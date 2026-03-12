@@ -1,0 +1,28 @@
+{
+  "wesco": {
+    "light": {
+      "primary": "#10b981",
+      "success": "#059669",
+      "warning": "#d97706",
+      "danger": "#dc2626",
+      "info": "#0284c7",
+      "bg": "#f9fafb",
+      "surface": "#ffffff",
+      "border": "#e5e7eb",
+      "text": "#111827",
+      "muted": "#6b7280"
+    },
+    "dark": {
+      "primary": "#34d399",
+      "success": "#6ee7b7",
+      "warning": "#fbbf24",
+      "danger": "#f87171",
+      "info": "#38bdf8",
+      "bg": "#0f172a",
+      "surface": "#1f2937",
+      "border": "#374151",
+      "text": "#f3f4f6",
+      "muted": "#9ca3af"
+    }
+  }
+}
