@@ -9,29 +9,44 @@ function applyTheme(brand, mode){
 
 }
 
-let currentBrand = "blue";
+const brandSwitcher = document.getElementById("brandSwitcher")
+const savedBrand = localStorage.getItem("brand")
 
-function toggleDark(){
-
-  document.documentElement.classList.toggle("dark");
-
-  const mode =
-    document.documentElement.classList.contains("dark")
-    ? "dark"
-    : "light";
-
-  applyTheme(currentBrand, mode);
+if(savedBrand){
+document.documentElement.setAttribute("data-brand", savedBrand)
+themeSwitcher.value = savedBrand
 }
 
-function switchBrand(brand){
+brandSwitcher.addEventListener("change",(e)=>{
 
-  currentBrand = brand;
+const brand = e.target.value
 
-  const mode =
-    document.documentElement.classList.contains("dark")
-    ? "dark"
-    : "light";
+document.documentElement.setAttribute("data-brand", brand)
 
-  applyTheme(brand, mode);
+localStorage.setItem("brand", brand)
 
+})
+
+
+
+/* MODE SWITCH */
+
+const toggle = document.getElementById("modeToggle")
+
+const savedMode = localStorage.getItem("mode")
+
+if(savedMode){
+document.documentElement.setAttribute("data-mode", savedMode)
 }
+
+toggle.addEventListener("click",()=>{
+
+const current = document.documentElement.getAttribute("data-mode")
+
+const next = current === "dark" ? "light" : "dark"
+
+document.documentElement.setAttribute("data-mode", next)
+
+localStorage.setItem("mode", next)
+
+})
