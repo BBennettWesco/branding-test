@@ -1,4 +1,12 @@
 {
+  "name": "Multi-Branding Test",
+  "version": "1.0.0",
+  "description": "Testing out a design system with multi-brands, accents, and modes",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "flowbite": "^4.0.1",
