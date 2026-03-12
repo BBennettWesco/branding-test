@@ -14,44 +14,14 @@
           <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Multi Brand System</span>
       </a>
       <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <select id="themeSwitcher" class="block w-full px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
-            <option value="default">Default</option>
+          <select onchange="switchBrand(this.value)" class="block w-full px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
             <option value="ocean">Ocean</option>
-            <option value="sunset">Sunset</option>
             <option value="forest">Forest</option>
           </select>
-          <button type="button" id="modeToggle" class="text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Toggle Mode</button>
+          <button type="button" onclick="toggleDark()" class="text-fg-brand bg-neutral-primary border border-brand hover:bg-brand hover:text-white focus:ring-4 focus:ring-brand-subtle font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Toggle Mode</button>
       </div>
       </div>
     </nav>
-
-
-    <!--<nav class="bg-surface border-b border-default">
-    <div class="max-w-screen-xl mx-auto flex justify-between items-center p-4">
-
-    <h1 class="text-xl font-bold text-primary">
-    Multi Brand System
-    </h1>
-
-    <div class="flex gap-3">  
-      
-    <select id="themeSwitcher" class="block w-full px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
-    <option value="default">Default</option>
-    <option value="ocean">Ocean</option>
-    <option value="sunset">Sunset</option>
-    <option value="forest">Forest</option>
-      </select>
-
-
-    <button id="modeToggle"
-    class="btn-outline">
-    Toggle Mode
-    </button>
-
-    </div>
-
-    </div>
-    </nav>-->
 
 
     <!-- Page -->
