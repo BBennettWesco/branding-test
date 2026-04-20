@@ -1,9 +1,10 @@
 <!doctype html>
-<html data-brand="blue" data-mode="light">
+<html data-brand="ocean" data-mode="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="tokens/semantic.css" rel="stylesheet" />
+    <link href="src/styles/tokens.css" rel="stylesheet" />
+    <link href="src/styles/components.css" rel="stylesheet" />
     <link href="src/output.css" rel="stylesheet" />
     <link href="node_modules/flowbite/dist/flowbite.min.css" rel="stylesheet" />
   </head>
@@ -15,11 +16,20 @@
           <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Multi Brand System</span>
       </a>
       <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <select id="brandSwitcher" class="block w-full px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
+          <!--<select id="brandSwitcher" class="block w-full px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
             <option value="ocean">Ocean</option>
             <option value="forest">Forest</option>
+            <option value="minimal">Minimal</option>
+            <option value="mono">Mono</option>
+            <option value="playful">Playful</option>
           </select>
-          <button type="button" id="modeToggle" class="text-fg-brand bg-neutral-primary border border-brand hover:bg-brand hover:text-white focus:ring-4 focus:ring-brand-subtle font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Toggle Mode</button>
+          <button type="button" id="modeToggle" class="text-fg-brand bg-neutral-primary border border-brand hover:bg-brand hover:text-white focus:ring-4 focus:ring-brand-subtle font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Toggle Mode</button>-->
+        <select id="brandSwitcher">
+            <option value="ocean">Ocean</option>
+            <option value="forest">Forest</option>
+        </select>
+
+        <button id="modeToggle">Toggle Mode</button>
       </div>
       </div>
     </nav>
@@ -171,6 +181,6 @@
 
     </div>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="js/theme-loader.js"></script>
+    <script src="js/theme-engine.js"></script>
   </body>
 </html>
