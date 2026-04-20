@@ -1,6 +1,6 @@
 async function loadTheme(brand, mode = "light") {
 
-const theme = await fetch("../src/themes/${brand}.json")
+const theme = await fetch(`../src/themes/${brand}.json`)
 .then(r => r.json())
 
 const tokens = theme[mode]
@@ -40,7 +40,7 @@ loadTheme(e.target.value, mode)
 
 document.getElementById("modeToggle").onclick = () => {
 
-const brand = localStorage.getItem("brand") || "default"
+const brand = localStorage.getItem("brand") || "ocean"
 
 const current = localStorage.getItem("mode") || "light"
 const next = current === "dark" ? "light" : "dark"
