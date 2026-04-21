@@ -1,9 +1,9 @@
 async function loadTheme(brand, mode = "light") {
 
-const theme = await fetch(`../src/themes/${brand}.json`)
+const theme = await fetch(`/branding-test/src/themes/${brand}.json`)
 .then(r => r.json())
 
-const tokens = theme[mode]
+const tokens = theme[brand][mode]
 
 Object.keys(tokens).forEach(key => {
 
