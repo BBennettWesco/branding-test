@@ -4,3 +4,22 @@
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+@plugin "fluid-tailwindcss" {
+	minViewport: 380,   // Minimum viewport width in pixels
+	maxViewport: 1528,  // Maximum viewport width in pixels
+	useRem: true,       // Use rem units (vs px)
+	rootFontSize: 20,   // Root font size for rem calculations
+	checkAccessibility: true  // Warn about small font sizes
+	debug:true,
+}
+
+@theme {
+	/*--spacing: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);*/
+
+	--breakpoint-xs: 23.75rem;
+	--breakpoint-sm: 41.75rem;
+	--breakpoint-md: 50rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 80.5rem;
+	--breakpoint-2xl: 95.5rem;
+}
