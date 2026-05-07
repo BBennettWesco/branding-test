@@ -1,27 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
-/*@import "flowbite/src/themes/default";*/
-
 @add-plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @add-plugin "fluid-tailwindcss" {
-	minViewport: 380,   /* Minimum viewport width in pixels */
-	maxViewport: 1528,  /* Maximum viewport width in pixels */
-	useRem: true,       /* Use rem units (vs px) */
-	rootFontSize: 20,   /* Root font size for rem calculations */
-	checkAccessibility: true  /* Warn about small font sizes */
-	debug:true,
+  minViewport: 380,
+  maxViewport: 1528,
+  useRem: true,
+  rootFontSize: 20,
+  checkAccessibility: true,
+  debug: true,
 }
-
 @theme {
-	--font-sans: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-mono: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
-
-	--breakpoint-xs: 380px;
-	--breakpoint-sm: 668px;
-	--breakpoint-md: 800px;
-	--breakpoint-lg: 1024px;
-	--breakpoint-xl: 1288px;
-	--breakpoint-2xl: 1528px;
+  --font-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif;
+  --font-alt: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  --breakpoint-xs: 380px;
+  --breakpoint-sm: 668px;
+  --breakpoint-md: 800px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1288px;
+  --breakpoint-2xl: 1528px;
 }
