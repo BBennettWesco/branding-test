@@ -5,23 +5,23 @@
 @add-plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @add-plugin "fluid-tailwindcss" {
-	minViewport: 380,   // Minimum viewport width in pixels
-	maxViewport: 1528,  // Maximum viewport width in pixels
-	useRem: true,       // Use rem units (vs px)
-	rootFontSize: 20,   // Root font size for rem calculations
-	checkAccessibility: true  // Warn about small font sizes
+	minViewport: 380,   /* Minimum viewport width in pixels */
+	maxViewport: 1528,  /* Maximum viewport width in pixels */
+	useRem: true,       /* Use rem units (vs px) */
+	rootFontSize: 20,   /* Root font size for rem calculations */
+	checkAccessibility: true  /* Warn about small font sizes */
 	debug:true,
 }
 
 @theme {
-	--font-main: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	--font-sans: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-mono: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
 
-	--breakpoint-xs: 23.75rem;
-	--breakpoint-sm: 41.75rem;
-	--breakpoint-md: 50rem;
-	--breakpoint-lg: 64rem;
-	--breakpoint-xl: 80.5rem;
-	--breakpoint-2xl: 95.5rem;
+	--breakpoint-xs: 380px;
+	--breakpoint-sm: 668px;
+	--breakpoint-md: 800px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1288px;
+	--breakpoint-2xl: 1528px;
 }
