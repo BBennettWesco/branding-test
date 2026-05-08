@@ -1861,7 +1861,7 @@
     }
   }
   .fl-text-2xl\/5xl {
-    font-size: clamp(1.5rem, NaNvw - NaNrem, 3rem);
+    font-size: clamp(1.5rem, 1rem + 2.61vw, 3rem);
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);

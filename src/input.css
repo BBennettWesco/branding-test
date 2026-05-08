@@ -4,12 +4,11 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @plugin "fluid-tailwindcss" {
-	minViewport: 380,   /* Minimum viewport width in pixels */
-	maxViewport: 1528,  /* Maximum viewport width in pixels */
-	useRem: true,       /* Use rem units (vs px) */
-	rootFontSize: 1.25,   /* Root font size for rem calculations */
-	checkAccessibility: true,  /* Warn about small font sizes */
-	debug:true,
+  minViewport: 380;
+  maxViewport: 1528;
+  useRem: true;
+  rootFontSize: 20;
+  checkAccessibility: true;
 }
 @theme {
 	--font-sans: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
