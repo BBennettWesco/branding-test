@@ -4,8 +4,8 @@
   "description": "Testing out a design system with multi-brands, accents, and modes",
   "main": "index.html",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
   }
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
