@@ -822,6 +822,9 @@
       max-width: 1528px;
     }
   }
+  .fl-m-4\/8 {
+    margin: clamp(1rem, 0.67rem + 1.74vw, 2rem);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -1109,6 +1112,12 @@
       color: var(--color-heading) !important;
     }
   }
+  .fl-mb-4\/8 {
+    margin-bottom: clamp(1rem, 0.67rem + 1.74vw, 2rem);
+  }
+  .fl-mb-8\/10 {
+    margin-bottom: clamp(2rem, 1.83rem + 0.87vw, 2.5rem);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -1314,6 +1323,9 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -1388,6 +1400,9 @@
   }
   .flex-shrink {
     flex-shrink: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1634,6 +1649,9 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1700,6 +1718,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-default) !important;
     .dark & {
@@ -1716,11 +1746,17 @@
       padding: 0 !important;
     }
   }
+  .fl-p-4\/8 {
+    padding: clamp(1rem, 0.67rem + 1.74vw, 2rem);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -1785,6 +1821,14 @@
     .dark .apexcharts-canvas &:not(.apexcharts-inactive-legend):hover {
       color: heading !important;
     }
+  }
+  .fl-px-3\/5 {
+    padding-left: clamp(0.75rem, 0.58rem + 0.87vw, 1.25rem);
+    padding-right: clamp(0.75rem, 0.58rem + 0.87vw, 1.25rem);
+  }
+  .fl-px-4\/8 {
+    padding-left: clamp(1rem, 0.67rem + 1.74vw, 2rem);
+    padding-right: clamp(1rem, 0.67rem + 1.74vw, 2rem);
   }
   .datatable-empty {
     .datatable-wrapper .datatable-table & {
@@ -1862,6 +1906,15 @@
   }
   .fl-text-2xl\/5xl {
     font-size: clamp(1.5rem, 1rem + 2.61vw, 3rem);
+  }
+  .fl-text-lg\/2xl {
+    font-size: clamp(1.125rem, 1.001rem + 0.653vw, 1.5rem);
+  }
+  .fl-text-sm\/lg {
+    font-size: clamp(0.875rem, 0.792rem + 0.436vw, 1.125rem);
+  }
+  .fl-text-xl\/2xl {
+    font-size: clamp(1.25rem, 1.17rem + 0.44vw, 1.5rem);
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
