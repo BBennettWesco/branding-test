@@ -217,25 +217,25 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1.25rem;
     --text-base--line-height: calc(1.5 / 1);
-    --text-lg: 1.125rem;
+    --text-lg: 1.4rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
+    --text-xl: 1.56rem;
     --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
+    --text-2xl: 1.75rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
+    --text-3xl: 2rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
+    --text-5xl: 2.56rem;
     --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
+    --text-6xl: 2.875rem;
     --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
+    --text-7xl: 3.2rem;
     --text-7xl--line-height: 1;
-    --text-8xl: 6rem;
+    --text-8xl: 3.625rem;
     --text-8xl--line-height: 1;
-    --text-9xl: 8rem;
+    --text-9xl: 4.1rem;
     --text-9xl--line-height: 1;
     --font-weight-thin: 100;
     --font-weight-extralight: 200;
@@ -270,6 +270,9 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --text-2xs: .875rem 
+    --text-xs: 1.063rem;
+    --text-10xl: 4.57rem;
   }
 }
 @layer base {
@@ -822,9 +825,6 @@
       max-width: 1528px;
     }
   }
-  .fl-m-4\/8 {
-    margin: clamp(1rem, 0.67rem + 1.74vw, 2rem);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -1112,12 +1112,6 @@
       color: var(--color-heading) !important;
     }
   }
-  .fl-mb-4\/8 {
-    margin-bottom: clamp(1rem, 0.67rem + 1.74vw, 2rem);
-  }
-  .fl-mb-8\/10 {
-    margin-bottom: clamp(2rem, 1.83rem + 0.87vw, 2.5rem);
-  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -1323,9 +1317,6 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -1400,9 +1391,6 @@
   }
   .flex-shrink {
     flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1649,9 +1637,6 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1683,7 +1668,7 @@
   .apexcharts-datalabels-group {
     & .apexcharts-text.apexcharts-datalabel-value {
       fill: var(--color-heading) !important;
-      font-size: 1.875rem,[object Object] !important;
+      font-size: 2rem,[object Object] !important;
       font-weight: 700 !important;
     }
     .dark .apexcharts-canvas & .apexcharts-text.apexcharts-datalabel-value {
@@ -1711,23 +1696,11 @@
   .apexcharts-datalabel-value {
     .apexcharts-datalabels-group .apexcharts-text& {
       fill: var(--color-heading) !important;
-      font-size: 1.875rem,[object Object] !important;
+      font-size: 2rem,[object Object] !important;
       font-weight: 700 !important;
     }
     .dark .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
       fill: white !important;
-    }
-  }
-  .apexcharts-gridline {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
     }
   }
   .apexcharts-ycrosshairs {
@@ -1749,14 +1722,14 @@
   .fl-p-4\/8 {
     padding: clamp(1rem, 0.67rem + 1.74vw, 2rem);
   }
+  .fl-p-8\/10 {
+    padding: clamp(2rem, 1.83rem + 0.87vw, 2.5rem);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -1766,9 +1739,6 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
-  }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -1838,10 +1808,6 @@
   .text-center {
     text-align: center;
   }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -1904,17 +1870,26 @@
       font-size: 0.875rem;
     }
   }
-  .fl-text-2xl\/5xl {
-    font-size: clamp(1.5rem, 1rem + 2.61vw, 3rem);
+  .fl-text-5xl\/8xl {
+    font-size: clamp(2.56rem, 2.207rem + 1.855vw, 3.625rem);
   }
-  .fl-text-lg\/2xl {
-    font-size: clamp(1.125rem, 1.001rem + 0.653vw, 1.5rem);
+  .fl-text-6xl\/10xl {
+    font-size: clamp(2.875rem, 2.314rem + 2.953vw, 4.57rem);
+  }
+  .fl-text-lg\/xl {
+    font-size: clamp(1.4rem, 1.35rem + 0.28vw, 1.56rem);
   }
   .fl-text-sm\/lg {
-    font-size: clamp(0.875rem, 0.792rem + 0.436vw, 1.125rem);
+    font-size: clamp(0.875rem, 0.701rem + 0.915vw, 1.4rem);
   }
-  .fl-text-xl\/2xl {
-    font-size: clamp(1.25rem, 1.17rem + 0.44vw, 1.5rem);
+  .fl-text-xs\/sm {
+    font-size: clamp(0.75rem, 0.709rem + 0.218vw, 0.875rem);
+  }
+  .text-2xs {
+    font-size: var(--text-2xs);
+  }
+  .text-10xl {
+    font-size: var(--text-10xl);
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
