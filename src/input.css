@@ -7,7 +7,7 @@
 	minViewport: 380,   /* Minimum viewport width in pixels */
 	maxViewport: 1528,  /* Maximum viewport width in pixels */
 	useRem: true,       /* Use rem units (vs px) */
-	rootFontSize: 20,   /* Root font size for rem calculations */
+	rootFontSize: 1.25,   /* Root font size for rem calculations */
 	checkAccessibility: true,  /* Warn about small font sizes */
 	debug:true,
 }
@@ -16,7 +16,7 @@
     --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-mono: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
 
-    --text-base:1.25rem;
+    --text-base: 1.25rem;
 
 	--breakpoint-xs: 380px;
 	--breakpoint-sm: 668px;
