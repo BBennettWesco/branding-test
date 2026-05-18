@@ -14,24 +14,34 @@
 };
 @theme {
 	--font-sans: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-mono: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+  --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
 
-    --text-2xs: .875rem;
-    --text-xs: 1.063rem;
-    --text-sm: 1.125rem; 
-    --text-base: 1.25rem;
-    --text-lg: 1.4rem;
-    --text-xl: 1.56rem;
-    --text-2xl: 1.75rem;
-    --text-3xl: 2rem;
-    --text-4xl: 2.25rem;
-    --text-5xl: 2.56rem;
-    --text-6xl: 2.875rem;
-    --text-7xl: 3.2rem;
-    --text-8xl: 3.625rem;
-    --text-9xl: 4.1rem;
-    --text-10xl: 4.57rem;
+  --text-2xs: .875rem;
+  --text-xs: 1.063rem;
+  --text-sm: 1.125rem; 
+  --text-base: 1.25rem;
+  --text-lg: 1.4rem;
+  --text-xl: 1.56rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 2.56rem;
+  --text-6xl: 2.875rem;
+  --text-7xl: 3.2rem;
+  --text-8xl: 3.625rem;
+  --text-9xl: 4.1rem;
+  --text-10xl: 4.57rem;
+
+  --leading-*: initial;
+  --leading-none: 1;
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+
+  --tracking-*: initial;
+  --tracking-widest: .1em;
+  --tracking-wider: .06em;
+  --tracking-tight: -.02em;
 
 	--breakpoint-xs: 380px;
 	--breakpoint-sm: 668px;
