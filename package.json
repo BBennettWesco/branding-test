@@ -10,7 +10,6 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "flowbite": "^4.0.1",
-    "fluid-tailwindcss": "^1.0.9",
     "tailwindcss": "^4.2.1"
   }
 }

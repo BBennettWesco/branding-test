@@ -41,6 +41,7 @@
   --tracking-*: initial;
   --tracking-widest: .1em;
   --tracking-wider: .06em;
+  --tracking-normal: 0em;
   --tracking-tight: -.02em;
 
 	--breakpoint-xs: 380px;
