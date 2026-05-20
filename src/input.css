@@ -46,3 +46,16 @@
 	--breakpoint-xl: 1288px;
 	--breakpoint-2xl: 1528px;
 }
+
+@utility display-350 {
+  @apply text-6xl font-alt leading-tight tracking-tight font-bold;
+}
+@utility display-300 {
+  @apply text-5xl font-alt leading-tight tracking-tight font-bold;
+}
+@utility display-250 {
+  @apply text-4xl font-alt leading-tight tracking-tight font-bold;
+}
+@utility display-120 {
+  @apply text-4xl font-alt leading-tight tracking-tight font-bold;
+}
