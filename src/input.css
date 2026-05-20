@@ -48,32 +48,101 @@
 }
 
 @utility display-350 {
-  @apply text-6xl font-alt leading-tight tracking-tight font-bold;
+  font-family: var(--font-alt);
+  font-size: var(--text-6xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-6xl font-alt leading-tight tracking-tight font-bold; */
 }
 @utility display-300 {
-  @apply text-5xl font-alt leading-tight tracking-tight font-bold;
+  font-family: var(--font-alt);
+  font-size: var(--text-5xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-5xl font-alt leading-tight tracking-tight font-bold; */
 }
 @utility display-250 {
-  @apply text-4xl font-alt leading-tight tracking-tight font-bold;
+  font-family: var(--font-alt);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-4xl font-alt leading-tight tracking-tight font-bold; */
 }
 @utility display-120 {
-  @apply text-lg font-alt leading-tight tracking-tight font-bold;
+  font-family: var(--font-alt);
+  font-size: var(--text-lg);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-lg font-alt leading-tight tracking-tight font-bold; */
 }
 @utility heading-250 {
-  @apply text-4xl font-sans leading-tight tracking-tight font-bold;
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-4xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-200 {
-  @apply text-3xl font-sans leading-tight tracking-tight font-bold;
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-3xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-160 {
-  @apply text-2xl font-sans leading-tight tracking-tight font-bold;
+  font-size: var(--text-2xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-2xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-140 {
-  @apply text-xl font-sans leading-tight tracking-tight font-bold;
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-120 {
-  @apply text-lg font-sans leading-tight tracking-tight font-bold;
+  font-size: var(--text-lg);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-lg font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-100 {
-  @apply text-base font-sans leading-tight tracking-tight font-bold;
+  font-size: var(--text-base);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  /* @apply text-base font-sans leading-tight tracking-tight font-bold; */
+}
+@utility label-100 {
+  line-height: var(--leading-tight);
+  font-weight: var(--font-medium);
+}
+@utility label-80 {
+  font-size: var(--text-sm);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-medium);
+}
+@utility label-70 {
+  font-size: var(--text-xs);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-medium);
+}
+@utility body-tech-100 {
+  font-family: var(--font-mono)
+}
+@utility body-tech-80 {
+  font-family: var(--font-mono)
+  font-size: var(--text-sm);
+}
+@utility body-tech-80 {
+  font-family: var(--font-mono)
+  font-size: var(--text-xs);
 }
