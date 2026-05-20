@@ -59,7 +59,7 @@
 @utility display-120 {
   @apply text-lg font-alt leading-tight tracking-tight font-bold;
 }
-@utility wesco-heading-250 {
+@utility heading-250 {
   @apply text-4xl font-sans leading-tight tracking-tight font-bold;
 }
 @utility heading-200 {
