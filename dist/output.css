@@ -202,6 +202,7 @@
     --breakpoint-lg: 1024px;
     --breakpoint-xl: 1288px;
     --breakpoint-2xl: 1528px;
+    --container-3xs: 16rem;
     --container-2xs: 18rem;
     --container-xs: 20rem;
     --container-sm: 24rem;
@@ -1295,8 +1296,14 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
+  }
+  .w-3xs {
+    width: var(--container-3xs);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -1309,6 +1316,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .w-md {
+    width: var(--container-md);
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -1369,6 +1379,9 @@
   }
   .flex-shrink {
     flex-shrink: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1621,6 +1634,9 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1687,6 +1703,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-default) !important;
     .dark & {
@@ -1708,6 +1736,9 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
