@@ -57,5 +57,23 @@
   @apply text-4xl font-alt leading-tight tracking-tight font-bold;
 }
 @utility display-120 {
-  @apply text-4xl font-alt leading-tight tracking-tight font-bold;
+  @apply text-lg font-alt leading-tight tracking-tight font-bold;
+}
+@utility heading-250 {
+  @apply text-4xl font-sans leading-tight tracking-tight font-bold;
+}
+@utility heading-200 {
+  @apply text-3xl font-sans leading-tight tracking-tight font-bold;
+}
+@utility heading-160 {
+  @apply text-2xl font-sans leading-tight tracking-tight font-bold;
+}
+@utility heading-140 {
+  @apply text-xl font-sans leading-tight tracking-tight font-bold;
+}
+@utility heading-120 {
+  @apply text-lg font-sans leading-tight tracking-tight font-bold;
+}
+@utility heading-100 {
+  @apply text-base font-sans leading-tight tracking-tight font-bold;
 }
