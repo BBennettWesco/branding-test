@@ -10,7 +10,7 @@
     <nav class="bg-neutral-primary w-full z-20 top-0 start-0 border-b border-default">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto fl-p-4/8">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-lg text-heading font-semibold whitespace-nowrap">Multi Brand System</span>
+          <span class="self-center heading-160 whitespace-nowrap">Multi Brand System</span>
       </a>
       <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <!--<select id="brandSwitcher" class="block w-full px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
@@ -40,7 +40,7 @@
         <h1 class="display-300">This is an example of Display-300</h1>
         <h1 class="display-250">This is an example of Display-250</h1>
         <h1 class="display-120">This is an example of Display-120</h1>
-        <br>
+
         <h2 class="heading-250">This is an example of Heading-250</h2>
         <h2 class="heading-200">This is an example of Heading-200</h2>
         <h2 class="heading-160">This is an example of Heading-160</h2>
@@ -73,67 +73,86 @@
         <p class="body-tech-70 w-3xs">This is an example of body-tech-70</p>
         <p class="body-tech-70 tracking-widest w-3xs">This is an example of body-tech-70 + identifier</p>
 
+    
+    <!-- Borders & Radii -->
+    <section>
+
+        <h2 class="heading-250 mb-4">
+        Borders & Radii
+        </h2>
+
+        <span class="text-xs border px-2 py-1">Border rounded-none</span>
+        <span class="text-xs border-2 px-2 py-1">Border-2 rounded-none</span>
+        <span class="text-xs border-4 px-2 py-1">Border-4 rounded-none</span>
+        <span class="text-xs border rounded-xs px-2 py-1">Border rounded-xs</span>
+        <span class="text-xs border rounded-sm px-2 py-1">Border rounded-sm</span>
+        <span class="text-xs border rounded-md px-2 py-1">Border rounded-md</span>
+        <span class="text-xs border rounded-lg px-2 py-1">Border rounded-lg</span>
+        <span class="text-xs border rounded-xl px-2 py-1">Border rounded-xl</span>
+        <span class="text-xs border rounded-2xl px-2 py-1">Border rounded-2xl</span>
+        <span class="text-xs border rounded-3xl px-2 py-1">Border rounded-3xl</span>
+        <span class="text-xs border rounded-full px-2 py-1">Border rounded-full</span>
+
+    </section>
+
     <!-- Buttons -->
 
     <section>
 
-    <h2 class="text-5xl font-semibold mb-4">
+    <h2 class="heading-250 mb-4">
     Buttons
     </h2>
 
     <div class="mb-4">
-    <button type="button" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Default</button>
-      
-    <button type="button" class="text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Secondary</button>
-      
-    <button type="button" class="text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary-soft shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Tertiary</button>
-      
-    <button type="button" class="text-white bg-success box-border border border-transparent hover:bg-success-strong focus:ring-4 focus:ring-success-medium shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Success</button>
-      
-    <button type="button" class="text-white bg-danger box-border border border-transparent hover:bg-danger-strong focus:ring-4 focus:ring-danger-medium shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Danger</button>
-      
-    <button type="button" class="text-white bg-warning box-border border border-transparent hover:bg-warning-strong focus:ring-4 focus:ring-warning-medium shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Warning</button>
-      
-    <button type="button" class="text-white bg-dark box-border border border-transparent hover:bg-dark-strong focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Dark</button>
-      
-    <button type="button" class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Ghost</button>
-      
-      </div>
+        <button type="button" class="bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Primary</button>
+          
+        <button type="button" class="bg-neutral-secondary-medium box-border border hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Secondary</button>
+
+        <button type="button" class="bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary rounded-base fl-px-4/8 py-2.5 focus:outline-none">Ghost</button>
+          
+        <button type="button" class="bg-success box-border border border-transparent hover:bg-success-strong focus:ring-4 focus:ring-success-medium shadow-xs rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Success</button>
+          
+        <button type="button" class="bg-danger box-border border border-transparent hover:bg-danger-strong focus:ring-4 focus:ring-danger-medium shadow-xs rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Danger</button>
+          
+        <button type="button" class="bg-warning box-border border border-transparent hover:bg-warning-strong focus:ring-4 focus:ring-warning-medium shadow-xs rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Warning</button>
+          
+        <button type="button" class="bg-dark box-border border border-transparent hover:bg-dark-strong focus:ring-4 focus:ring-neutral-tertiary shadow-xs rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Dark</button>
+    </div>
       
     <div>
-    <button type="button" class="text-fg-brand bg-neutral-primary border border-brand hover:bg-brand hover:text-white focus:ring-4 focus:ring-brand-subtle font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Brand</button>
+    <button type="button" class="bg-neutral-primary border border-brand hover:bg-brand hover:text-white focus:ring-4 focus:ring-brand-subtle rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Brand</button>
       
-    <button type="button" class="text-body bg-neutral-primary border border-default hover:bg-neutral-secondary-soft hover:text-heading focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Gray</button>
+    <button type="button" class="bg-neutral-primary border border-default hover:bg-neutral-secondary-soft hover:text-heading focus:ring-4 focus:ring-neutral-tertiary rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Gray</button>
       
-    <button type="button" class="text-success bg-neutral-primary border border-success hover:bg-success hover:text-white focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Success</button>
+    <button type="button" class="text-success bg-neutral-primary border border-success hover:bg-success hover:text-white focus:ring-4 focus:ring-neutral-tertiary rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Success</button>
       
-    <button type="button" class="text-danger bg-neutral-primary border border-danger hover:bg-danger hover:text-white focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Danger</button>
+    <button type="button" class="text-danger bg-neutral-primary border border-danger hover:bg-danger hover:text-white focus:ring-4 focus:ring-neutral-tertiary rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Danger</button>
       
-    <button type="button" class="text-warning bg-neutral-primary border border-warning hover:bg-warning hover:text-white focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Warning</button>
+    <button type="button" class="text-warning bg-neutral-primary border border-warning hover:bg-warning hover:text-white focus:ring-4 focus:ring-neutral-tertiary rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Warning</button>
       </div>
 
     </section>
 
 
-    <h2 class="text-5xl font-semibold mb-4">
+    <h2 class="heading-250 mb-4">
     Alerts
     </h2>
 
     <!-- Alert -->
 
-    <div class="fl-p-4/8 mb-4 text-fg-brand-strong rounded-base bg-brand-softer" role="alert">
+    <div class="fl-p-4/8 mb-4 text-fg-brand-strong rounded-lg bg-brand-softer" role="alert">
       <span class="font-medium">Info alert!</span> <span class="text-xs">Change a few things up and try submitting again.</span>
     </div>
-    <div class="text-sm fl-p-4/8 mb-4 text-fg-danger-strong rounded-base bg-danger-soft" role="alert">
+    <div class="text-sm fl-p-4/8 mb-4 text-fg-danger-strong rounded-lg bg-danger-soft" role="alert">
       <span class="font-medium">Danger alert!</span> <span class="text-xs">Change a few things up and try submitting again.</span>
     </div>
-    <div class="text-sm fl-p-4/8 mb-4 text-fg-success-strong rounded-base bg-success-soft" role="alert">
+    <div class="text-sm fl-p-4/8 mb-4 text-fg-success-strong rounded-lg bg-success-soft" role="alert">
       <span class="font-medium">Success alert!</span> <span class="text-xs">Change a few things up and try submitting again.</span>
     </div>
-    <div class="text-sm fl-p-4/8 mb-4 text-fg-warning rounded-base bg-warning-soft" role="alert">
+    <div class="text-sm fl-p-4/8 mb-4 text-fg-warning rounded-lg bg-warning-soft" role="alert">
       <span class="font-medium">Warning alert!</span> <span class="text-xs">Change a few things up and try submitting again.</span>
     </div>
-    <div class="text-sm fl-p-4/8 mb-4 text-heading rounded-base bg-neutral-secondary-medium" role="alert">
+    <div class="text-sm fl-p-4/8 mb-4 rounded-lg bg-neutral-secondary-medium" role="alert">
       <span class="font-medium">Dark alert!</span> <span class="text-xs">Change a few things up and try submitting again.</span>
     </div>
 
@@ -142,17 +161,17 @@
 
     <aside aria-label="Related articles" class="py-8 lg:py-24 bg-white dark:bg-gray-900 antialiased">
         <div class="fl-px-4/8 mx-auto max-w-screen-xl">
-            <h2 class="mb-8 text-5xl font-bold text-gray-900 dark:text-white">Related articles</h2>
+            <h2 class="mb-8 heading-250">Related articles</h2>
             <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
                 <article class="max-w-xs">
                     <a href="#">
                         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" class="mb-5 rounded-lg" alt="Image 1">
                     </a>
-                    <h2 class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
+                    <h2 class="mb-2 heading-140">
                         <a href="#">Our first office</a>
                     </h2>
-                    <p class="mb-4 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                    <p class="mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
+                    <a href="#" class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                         Read in 2 minutes
                     </a>
                 </article>
@@ -160,11 +179,11 @@
                     <a href="#">
                         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" class="mb-5 rounded-lg" alt="Image 2">
                     </a>
-                    <h2 class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
+                    <h2 class="mb-2 heading-140">
                         <a href="#">Enterprise design tips</a>
                     </h2>
-                    <p class="mb-4 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                    <p class="mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
+                    <a href="#" class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                         Read in 12 minutes
                     </a>
                 </article>
@@ -172,11 +191,11 @@
                     <a href="#">
                         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" class="mb-5 rounded-lg" alt="Image 3">
                     </a>
-                    <h2 class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
+                    <h2 class="mb-2 heading-140">
                         <a href="#">We partnered with Google</a>
                     </h2>
-                    <p class="mb-4 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                    <p class="mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
+                    <a href="#" class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                         Read in 8 minutes
                     </a>
                 </article>
@@ -184,11 +203,11 @@
                     <a href="#">
                         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" class="mb-5 rounded-lg" alt="Image 4">
                     </a>
-                    <h2 class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
+                    <h2 class="mb-2 heading-140">
                         <a href="#">Our first project with React</a>
                     </h2>
-                    <p class="mb-4 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                    <p class="mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
+                    <a href="#" class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                         Read in 4 minutes
                     </a>
                 </article>
@@ -198,25 +217,25 @@
 
 
     <!-- Form -->
-    <h2 class="text-5xl font-semibold mb-4">
+    <h2 class="heading-250 mb-4">
     Form
     </h2>
 
 
     <form class="max-w-sm">
       <div class="mb-5">
-        <label for="email" class="block mb-2.5 font-medium text-heading">Your email</label>
-        <input type="email" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand block w-full fl-px-3/5 py-2.5 shadow-xs placeholder:text-body" placeholder="name@flowbite.com" required />
+        <label for="email" class="block mb-2.5 label-70">Your email</label>
+        <input type="email" id="email" class="bg-neutral-secondary-medium border text-xs leading-tight rounded-lg focus:ring-brand focus:border-brand block w-full fl-px-3/5 py-2.5 shadow-xs" placeholder="name@flowbite.com" required />
       </div>
       <div class="mb-5">
-        <label for="password" class="block mb-2.5 font-medium text-heading">Your password</label>
-        <input type="password" id="password" class="bg-neutral-secondary-medium border border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand block w-full fl-px-3/5 py-2.5 shadow-xs placeholder:text-body" placeholder="••••••••" required />
+        <label for="password" class="block mb-2.5 label-70">Your password</label>
+        <input type="password" id="password" class="bg-neutral-secondary-medium border text-xs leading-tight rounded-lg focus:ring-brand focus:border-brand block w-full fl-px-3/5 py-2.5 shadow-xs" placeholder="••••••••" required />
       </div>
       <label for="remember" class="flex items-center mb-5">
-        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />
-        <p class="ms-2 font-medium text-heading select-none">I agree with the <a href="#" class="text-fg-brand hover:underline">terms and conditions</a>.</p>
+        <input id="remember" type="checkbox" value="" class="w-4 h-4 border rounded-sm bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />
+        <p class="ms-2 label-70 select-none">I agree with the <a href="#" class="text-fg-brand hover:underline">terms and conditions</a>.</p>
       </label>
-      <button type="submit" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base fl-px-4/8 py-2.5 focus:outline-none">Submit</button>
+      <button type="button" class="bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs rounded-lg fl-px-4/8 py-2.5 focus:outline-none">Primary</button>
     </form>
 
 

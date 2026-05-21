@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
-@source inline("text-2xs");
-@source inline("text-10xl");
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
