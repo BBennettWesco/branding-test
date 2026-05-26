@@ -190,10 +190,142 @@
   padding-block: --value(--fl-space-*);
 }
 
+@utility fl-ps-* {
+  padding-inline-start: --value(--fl-space-*);
+}
+
+@utility fl-pe-* {
+  padding-inline-end: --value(--fl-space-*);
+}
+
+@utility fl-pbs-* {
+  padding-block-start: --value(--fl-space-*);
+}
+
+@utility fl-pbe-* {
+  padding-block-end: --value(--fl-space-*);
+}
+@utility fl-pt-* {
+  padding-top: --value(--fl-space-*);
+}
+@utility fl-pr-* {
+  padding-right: --value(--fl-space-*);
+}
+@utility fl-pb-* {
+  padding-bottom: --value(--fl-space-*);
+}
+@utility fl-pl-* {
+  padding-left: --value(--fl-space-*);
+}
 @utility fl-m-* {
   margin: --value(--fl-space-*);
+}
+@utility fl-mx-* {
+  margin-inline: --value(--fl-space-*);
+}
+@utility fl-my-* {
+  margin-block: --value(--fl-space-*);
+}
+
+@utility fl-ms-* {
+  margin-inline-start: --value(--fl-space-*);
+}
+
+@utility fl-me-* {
+  margin-inline-end: --value(--fl-space-*);
+}
+
+@utility fl-mbs-* {
+  margin-block-start: --value(--fl-space-*);
+}
+
+@utility fl-mbe-* {
+  margin-block-end: --value(--fl-space-*);
+}
+@utility fl-mt-* {
+  margin-top: --value(--fl-space-*);
+}
+@utility fl-mr-* {
+  margin-right: --value(--fl-space-*);
+}
+@utility fl-mb-* {
+  margin-bottom: --value(--fl-space-*);
+}
+@utility fl-ml-* {
+  margin-left: --value(--fl-space-*);
+}
+@utility fl-space-x-* { 
+  & > :not(:last-child) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(--value(--fl-space-*) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(--value(--fl-space-*) * calc(1 - var(--tw-space-x-reverse)));
+  };
+}
+@utility fl-space-y-* {
+  & > :not(:last-child) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(--value(--fl-space-*) * var(--tw-space-y-reverse));
+    margin-block-end: calc(--value(--fl-space-*) * calc(1 - var(--tw-space-y-reverse)));
+  };
 }
 
 @utility fl-gap-* {
   gap: --value(--fl-space-*);
+}
+@utility fl-gap-x-* {
+  column-gap: --value(--fl-space-*);
+}
+@utility fl-gap-y-* {
+  row-gap: --value(--fl-space-*);
+}
+
+@utility fl-w-* {
+  width: --value(--fl-space-*);
+}
+@utility fl-size-* {
+  width: --value(--fl-space-*);
+  height: --value(--fl-space-*);
+}
+@utility fl-min-w-* {
+  min-width: --value(--fl-space-*);
+}
+@utility fl-max-w-* {
+  max-width: --value(--fl-space-*);
+}
+@utility fl-h-* {
+  height: --value(--fl-space-*);
+}
+@utility fl-min-h-* {
+  min-height: --value(--fl-space-*);
+}
+@utility fl-max-h-* {
+  max-height: --value(--fl-space-*);
+}
+@utility fl-inline-* {
+  inline-size: --value(--fl-space-*);
+}
+@utility fl-min-inline-* {
+  min-inline-size: --value(--fl-space-*);
+}
+@utility fl-max-inline-* {
+  max-inline-size: --value(--fl-space-*);
+}
+@utility fl-block-* {
+  block-size: --value(--fl-space-*);
+}
+@utility fl-min-block-* {
+  min-block-size: --value(--fl-space-*);
+}
+@utility fl-max-block-* {
+  max-block-size: --value(--fl-space-*);
+}
+
+@utility fl-inset-* {
+  inset: --value(--fl-space-*);
+}
+@utility fl-inset-x-* {
+  inset-inline: --value(--fl-space-*);
+}
+@utility fl-inset-y-* {
+  inset-block: --value(--fl-space-*);
 }

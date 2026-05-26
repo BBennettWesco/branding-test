@@ -242,9 +242,12 @@
     --fl-space-2\.5: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
     --fl-space-3: clamp(0.79rem, 0.822rem + -0.167vw, 0.694rem);
     --fl-space-4: clamp(1rem, 1rem + 0vw, 1rem);
+    --fl-space-4\.5: clamp(1.125rem, 1.1rem + 0.131vw, 1.2rem);
+    --fl-space-6: clamp(1.424rem, 1.323rem + 0.53vw, 1.728rem);
     --fl-space-8: clamp(1.802rem, 1.575rem + 1.196vw, 2.488rem);
     --fl-space-9: clamp(2.027rem, 1.71rem + 1.67vw, 2.986rem);
     --fl-space-10: clamp(2.281rem, 1.85rem + 2.269vw, 3.583rem);
+    --fl-space-13: clamp(3.247rem, 2.273rem + 5.13vw, 6.192rem);
     --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --text-xs: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem);
     --text-sm: clamp(1.0417rem, 1.1341rem + -0.0968vw, 1.1111rem);
@@ -814,6 +817,26 @@
       max-width: 1528px;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .fl-space-x-2\.5 {
+    & > :not(:last-child) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(var(--fl-space-2\.5) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(var(--fl-space-2\.5) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .fl-ms-2 {
+    margin-inline-start: var(--fl-space-2);
+  }
+  .fl-space-y-8 {
+    & > :not(:last-child) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(var(--fl-space-8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(var(--fl-space-8) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -1095,6 +1118,24 @@
       color: var(--color-heading) !important;
     }
   }
+  .fl-mb-2 {
+    margin-bottom: var(--fl-space-2);
+  }
+  .fl-mb-2\.5 {
+    margin-bottom: var(--fl-space-2\.5);
+  }
+  .fl-mb-3 {
+    margin-bottom: var(--fl-space-3);
+  }
+  .fl-mb-4 {
+    margin-bottom: var(--fl-space-4);
+  }
+  .fl-mb-4\.5 {
+    margin-bottom: var(--fl-space-4\.5);
+  }
+  .fl-mb-8 {
+    margin-bottom: var(--fl-space-8);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -1208,6 +1249,14 @@
   .table {
     display: table;
   }
+  .fl-size-4 {
+    width: var(--fl-space-4);
+    height: var(--fl-space-4);
+  }
+  .fl-size-13 {
+    width: var(--fl-space-13);
+    height: var(--fl-space-13);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -1288,9 +1337,6 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -1314,9 +1360,6 @@
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
-  }
-  .max-w-screen-2xl {
-    max-width: var(--breakpoint-2xl);
   }
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
@@ -1377,9 +1420,6 @@
   }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1464,9 +1504,6 @@
   .fl-gap-10 {
     gap: var(--fl-space-10);
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
   .space-y-6 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1480,6 +1517,9 @@
       margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .fl-gap-y-6 {
+    row-gap: var(--fl-space-6);
   }
   .self-center {
     align-self: center;
@@ -1653,9 +1693,6 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1722,18 +1759,6 @@
       fill: white !important;
     }
   }
-  .apexcharts-gridline {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
-    }
-  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-default) !important;
     .dark & {
@@ -1761,9 +1786,6 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -1797,9 +1819,6 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
-  }
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
   }
   .fl-py-1 {
     padding-block: var(--fl-space-1);
@@ -2262,15 +2281,6 @@
   .md\:order-2 {
     @media (width >= 800px) {
       order: 2;
-    }
-  }
-  .md\:space-x-0 {
-    @media (width >= 800px) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(calc(var(--spacing) * 0) * var(--tw-space-x-reverse));
-        margin-inline-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-x-reverse)));
-      }
     }
   }
   .lg\:grid-cols-4 {
