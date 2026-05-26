@@ -21,7 +21,7 @@ localStorage.setItem("mode", mode)
 
 /* init */
 
-const brand = localStorage.getItem("brand") || "ocean"
+const brand = localStorage.getItem("brand") || "synergy"
 const mode = localStorage.getItem("mode") || "light"
 
 loadTheme(brand, mode)
@@ -40,7 +40,7 @@ loadTheme(e.target.value, mode)
 
 document.getElementById("modeToggle").onclick = () => {
 
-const brand = localStorage.getItem("brand") || "ocean"
+const brand = localStorage.getItem("brand") || "synergy"
 
 const current = localStorage.getItem("mode") || "light"
 const next = current === "dark" ? "light" : "dark"
