@@ -237,14 +237,14 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --fl-space-20: clamp(0.274rem, 0.294rem + -0.107vw, 0.212rem);
-    --fl-space-50: clamp(0.624rem, 0.671rem + -0.247vw, 0.482rem);
-    --fl-space-60: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
-    --fl-space-70: clamp(0.79rem, 0.822rem + -0.167vw, 0.694rem);
-    --fl-space-100: clamp(1rem, 1rem + 0vw, 1rem);
-    --fl-space-250: clamp(1.802rem, 1.575rem + 1.196vw, 2.488rem);
-    --fl-space-300: clamp(2.027rem, 1.71rem + 1.67vw, 2.986rem);
-    --fl-space-350: clamp(2.281rem, 1.85rem + 2.269vw, 3.583rem);
+    --fl-space-1: clamp(0.274rem, 0.294rem + -0.107vw, 0.212rem);
+    --fl-space-2: clamp(0.624rem, 0.671rem + -0.247vw, 0.482rem);
+    --fl-space-2\.5: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
+    --fl-space-3: clamp(0.79rem, 0.822rem + -0.167vw, 0.694rem);
+    --fl-space-4: clamp(1rem, 1rem + 0vw, 1rem);
+    --fl-space-8: clamp(1.802rem, 1.575rem + 1.196vw, 2.488rem);
+    --fl-space-9: clamp(2.027rem, 1.71rem + 1.67vw, 2.986rem);
+    --fl-space-10: clamp(2.281rem, 1.85rem + 2.269vw, 3.583rem);
     --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --text-xs: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem);
     --text-sm: clamp(1.0417rem, 1.1341rem + -0.0968vw, 1.1111rem);
@@ -1288,6 +1288,9 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -1375,6 +1378,9 @@
   .shrink-0 {
     flex-shrink: 0;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1452,8 +1458,11 @@
   .justify-start {
     justify-content: flex-start;
   }
-  .fl-gap-350 {
-    gap: var(--fl-space-350);
+  .fl-gap-4 {
+    gap: var(--fl-space-4);
+  }
+  .fl-gap-10 {
+    gap: var(--fl-space-10);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -1644,6 +1653,9 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1710,6 +1722,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-default) !important;
     .dark & {
@@ -1726,17 +1750,20 @@
       padding: 0 !important;
     }
   }
-  .fl-p-70 {
-    padding: var(--fl-space-70);
+  .fl-p-3 {
+    padding: var(--fl-space-3);
   }
-  .fl-p-300 {
-    padding: var(--fl-space-300);
+  .fl-p-9 {
+    padding: var(--fl-space-9);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -1747,14 +1774,17 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .fl-px-50 {
-    padding-inline: var(--fl-space-50);
+  .fl-px-2 {
+    padding-inline: var(--fl-space-2);
   }
-  .fl-px-60 {
-    padding-inline: var(--fl-space-60);
+  .fl-px-2\.5 {
+    padding-inline: var(--fl-space-2\.5);
   }
-  .fl-px-100 {
-    padding-inline: var(--fl-space-100);
+  .fl-px-4 {
+    padding-inline: var(--fl-space-4);
+  }
+  .fl-px-8 {
+    padding-inline: var(--fl-space-8);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -1771,20 +1801,20 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
-  .fl-py-20 {
-    padding-block: var(--fl-space-20);
+  .fl-py-1 {
+    padding-block: var(--fl-space-1);
   }
-  .fl-py-50 {
-    padding-block: var(--fl-space-50);
+  .fl-py-2 {
+    padding-block: var(--fl-space-2);
   }
-  .fl-py-60 {
-    padding-block: var(--fl-space-60);
+  .fl-py-2\.5 {
+    padding-block: var(--fl-space-2\.5);
   }
-  .fl-py-250 {
-    padding-block: var(--fl-space-250);
+  .fl-py-8 {
+    padding-block: var(--fl-space-8);
   }
-  .fl-py-350 {
-    padding-block: var(--fl-space-350);
+  .fl-py-10 {
+    padding-block: var(--fl-space-10);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
