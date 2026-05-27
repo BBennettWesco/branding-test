@@ -8,17 +8,17 @@
   --spacing: .2rem;
 
   /* Primitive fluid spacing scale */
-  --fl-space-.25: clamp(0.084rem, 0.094rem + -0.053vw, 0.054rem);
-  --fl-space-.5: clamp(0.152rem, 0.168rem + -0.086vw, 0.102rem);
+  --fl-space-\\.25: clamp(0.084rem, 0.094rem + -0.053vw, 0.054rem);
+  --fl-space-\\.5: clamp(0.152rem, 0.168rem + -0.086vw, 0.102rem);
   --fl-space-1: clamp(0.274rem, 0.294rem + -0.107vw, 0.212rem);
-  --fl-space-1.5: clamp(0.367rem, 0.384rem + -0.085vw, 0.319rem);
-  --fl-space-1.75: clamp(0.493rem, 0.523rem + -0.159vw, 0.402rem);
+  --fl-space-1\\.5: clamp(0.367rem, 0.384rem + -0.085vw, 0.319rem);
+  --fl-space-1\\.75: clamp(0.493rem, 0.523rem + -0.159vw, 0.402rem);
   --fl-space-2: clamp(0.624rem, 0.671rem + -0.247vw, 0.482rem);
-  --fl-space-2.5: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
+  --fl-space-2\\.5: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
   --fl-space-3: clamp(0.79rem, 0.822rem + -0.167vw, 0.694rem);
-  --fl-space-3.5: clamp(0.889rem, 0.907rem + -0.097vw, 0.833rem);
+  --fl-space-3\\.5: clamp(0.889rem, 0.907rem + -0.097vw, 0.833rem);
   --fl-space-4: clamp(1rem, 1rem + 0vw, 1rem);
-  --fl-space-4.5: clamp(1.125rem, 1.1rem + 0.131vw, 1.2rem);
+  --fl-space-4\\.5: clamp(1.125rem, 1.1rem + 0.131vw, 1.2rem);
   --fl-space-5: clamp(1.266rem, 1.208rem + 0.304vw, 1.44rem);
   --fl-space-6: clamp(1.424rem, 1.323rem + 0.53vw, 1.728rem);
   --fl-space-7: clamp(1.602rem, 1.446rem + 0.822vw, 2.074rem);
