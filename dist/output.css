@@ -239,8 +239,10 @@
     --default-mono-font-family: var(--font-mono);
     --fl-space-1: clamp(0.274rem, 0.294rem + -0.107vw, 0.212rem);
     --fl-space-2: clamp(0.624rem, 0.671rem + -0.247vw, 0.482rem);
+    --fl-space-2\.5: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
     --fl-space-3: clamp(0.79rem, 0.822rem + -0.167vw, 0.694rem);
     --fl-space-4: clamp(1rem, 1rem + 0vw, 1rem);
+    --fl-space-4\.5: clamp(1.125rem, 1.1rem + 0.131vw, 1.2rem);
     --fl-space-6: clamp(1.424rem, 1.323rem + 0.53vw, 1.728rem);
     --fl-space-8: clamp(1.802rem, 1.575rem + 1.196vw, 2.488rem);
     --fl-space-9: clamp(2.027rem, 1.71rem + 1.67vw, 2.986rem);
@@ -818,6 +820,13 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .fl-space-x-2\.5 {
+    & > :not(:last-child) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(var(--fl-space-2\.5) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(var(--fl-space-2\.5) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .fl-ms-2 {
     margin-inline-start: var(--fl-space-2);
   }
@@ -1112,11 +1121,17 @@
   .fl-mb-2 {
     margin-bottom: var(--fl-space-2);
   }
+  .fl-mb-2\.5 {
+    margin-bottom: var(--fl-space-2\.5);
+  }
   .fl-mb-3 {
     margin-bottom: var(--fl-space-3);
   }
   .fl-mb-4 {
     margin-bottom: var(--fl-space-4);
+  }
+  .fl-mb-4\.5 {
+    margin-bottom: var(--fl-space-4\.5);
   }
   .fl-mb-8 {
     margin-bottom: var(--fl-space-8);
@@ -1787,6 +1802,9 @@
   .fl-px-2 {
     padding-inline: var(--fl-space-2);
   }
+  .fl-px-2\.5 {
+    padding-inline: var(--fl-space-2\.5);
+  }
   .fl-px-4 {
     padding-inline: var(--fl-space-4);
   }
@@ -1810,6 +1828,9 @@
   }
   .fl-py-2 {
     padding-block: var(--fl-space-2);
+  }
+  .fl-py-2\.5 {
+    padding-block: var(--fl-space-2\.5);
   }
   .fl-py-8 {
     padding-block: var(--fl-space-8);
