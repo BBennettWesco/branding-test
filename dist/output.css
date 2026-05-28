@@ -196,7 +196,8 @@
     --color-stone-800: oklch(26.8% 0.007 34.298);
     --color-stone-900: oklch(21.6% 0.006 56.043);
     --color-stone-950: oklch(14.7% 0.004 49.25);
-    --color-white: #fff;
+    --color-black: oklch(0 0 0);
+    --color-white: oklch(1 0 0);
     --spacing: .2rem;
     --breakpoint-md: 800px;
     --breakpoint-lg: 1024px;
@@ -249,6 +250,7 @@
     --fl-space-10: clamp(2.281rem, 1.85rem + 2.269vw, 3.583rem);
     --fl-space-13: clamp(3.247rem, 2.273rem + 5.13vw, 6.192rem);
     --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-brand-shadow: var(--color-black);
     --text-xs: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem);
     --text-sm: clamp(1.0417rem, 1.1341rem + -0.0968vw, 1.1111rem);
     --text-base: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
@@ -846,13 +848,19 @@
       color: var(--color-body) !important;
       border: 0 !important;
       border-radius: var(--radius-base) !important;
-      box-shadow: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color) !important;
+      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      @supports (color: color-mix(in lab, red, red)) {
+        box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
+      }
     }
     .dark & .apexcharts-tooltip {
       background-color: var(--color-neutral-secondary-medium) !important;
       color: var(--color-body) !important;
       border-color: var(--color-default) !important;
-      box-shadow: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color) !important;
+      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      @supports (color: color-mix(in lab, red, red)) {
+        box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
+      }
     }
     & .apexcharts-tooltip .apexcharts-tooltip-title {
       padding-top: 0.5rem !important;
@@ -880,7 +888,10 @@
       border-color: transparent !important;
       background-color: white !important;
       border-radius: 0.25rem !important;
-      box-shadow: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color) !important;
+      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      @supports (color: color-mix(in lab, red, red)) {
+        box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
+      }
     }
     .dark & .apexcharts-xaxistooltip {
       color: var(--color-body) !important;
@@ -996,13 +1007,19 @@
       color: var(--color-body) !important;
       border: 0 !important;
       border-radius: var(--radius-base) !important;
-      box-shadow: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color) !important;
+      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      @supports (color: color-mix(in lab, red, red)) {
+        box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
+      }
     }
     .dark .apexcharts-canvas & {
       background-color: var(--color-neutral-secondary-medium) !important;
       color: var(--color-body) !important;
       border-color: var(--color-default) !important;
-      box-shadow: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color) !important;
+      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      @supports (color: color-mix(in lab, red, red)) {
+        box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
+      }
     }
     .apexcharts-canvas & .apexcharts-tooltip-title {
       padding-top: 0.5rem !important;
@@ -1152,7 +1169,10 @@
       border-color: transparent !important;
       background-color: white !important;
       border-radius: 0.25rem !important;
-      box-shadow: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color) !important;
+      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      @supports (color: color-mix(in lab, red, red)) {
+        box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
+      }
     }
     .dark .apexcharts-canvas & {
       color: var(--color-body) !important;
@@ -1610,7 +1630,10 @@
       background-color: var(--color-neutral-secondary-medium) !important;
       color: var(--color-body) !important;
       border-color: var(--color-default) !important;
-      box-shadow: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color) !important;
+      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      @supports (color: color-mix(in lab, red, red)) {
+        box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
+      }
     }
     & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
       background-color: var(--color-neutral-tertiary-medium) !important;
@@ -1690,6 +1713,9 @@
       background-color: var(--color-neutral-secondary-medium);
     }
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
@@ -1709,7 +1735,7 @@
     background-color: var(--color-white);
   }
   .bg-white\/50 {
-    background-color: color-mix(in srgb, #fff 50%, transparent);
+    background-color: color-mix(in srgb, oklch(1 0 0) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
@@ -1823,9 +1849,6 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-12 {
-    padding-inline: calc(var(--spacing) * 12);
-  }
   .fl-py-1 {
     padding-block: var(--fl-space-1);
   }
@@ -1837,6 +1860,9 @@
   }
   .fl-py-8 {
     padding-block: var(--fl-space-8);
+  }
+  .fl-py-9 {
+    padding-block: var(--fl-space-9);
   }
   .fl-py-10 {
     padding-block: var(--fl-space-10);
@@ -2132,23 +2158,38 @@
     opacity: 100%;
   }
   .shadow-lg {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--shadow-base-color)), 0 10px 15px 0 var(--tw-shadow-color, var(--shadow-base-color));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 10px 15px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 10px 15px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
+    }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-md {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--shadow-base-color)), 0 4px 6px 0 var(--tw-shadow-color, var(--shadow-base-color));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 4px 6px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 4px 6px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
+    }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-sm {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--shadow-base-color)), 0 2px 4px 0 var(--tw-shadow-color, var(--shadow-base-color));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 2px 4px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 2px 4px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
+    }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-xl {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--shadow-base-color)), 0 20px 25px 0 var(--tw-shadow-color, var(--shadow-base-color));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 20px 25px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 20px 25px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
+    }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-xs {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--shadow-color));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 5%, transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 5%, transparent));
+    }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
@@ -2292,6 +2333,11 @@
   .lg\:grid-cols-4 {
     @media (width >= 1024px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:px-12 {
+    @media (width >= 1024px) {
+      padding-inline: calc(var(--spacing) * 12);
     }
   }
   .rtl\:rotate-180 {
