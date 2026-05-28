@@ -822,6 +822,13 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .fl-space-x-2 {
+    & > :not(:last-child) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(var(--fl-space-2) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(var(--fl-space-2) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .fl-space-x-2\.5 {
     & > :not(:last-child) {
       --tw-space-x-reverse: 0;
@@ -1357,6 +1364,9 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -1380,6 +1390,12 @@
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .max-w-3xs {
+    max-width: var(--container-3xs);
+  }
+  .max-w-md {
+    max-width: var(--container-md);
   }
   .max-w-screen-2xl {
     max-width: var(--breakpoint-2xl);
@@ -1443,6 +1459,9 @@
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1722,6 +1741,9 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1788,6 +1810,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-default) !important;
+    .dark & {
+      stroke: var(--color-default) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-default) !important;
     .dark & {
@@ -1815,6 +1849,9 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
