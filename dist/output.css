@@ -1823,6 +1823,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
   .fl-py-1 {
     padding-block: var(--fl-space-1);
   }
@@ -1887,28 +1890,28 @@
     font-family: var(--font-alt);
     font-size: var(--text-lg);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .display-250 {
     font-family: var(--font-alt);
     font-size: var(--text-4xl);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .display-300 {
     font-family: var(--font-alt);
     font-size: var(--text-5xl);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .display-350 {
     font-family: var(--font-alt);
     font-size: var(--text-6xl);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .body-tech-80 {
@@ -1926,48 +1929,48 @@
   .heading-100 {
     font-size: var(--text-base);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .heading-120 {
     font-size: var(--text-lg);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .heading-140 {
     font-size: var(--text-xl);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .heading-160 {
     font-size: var(--text-2xl);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .heading-200 {
     font-size: var(--text-3xl);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .heading-250 {
     font-size: var(--text-4xl);
     line-height: var(--leading-tight);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
   }
   .label-70 {
     font-size: var(--text-xs);
     line-height: var(--leading-tight);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-weight-medium);
   }
   .label-80 {
     font-size: var(--text-sm);
     line-height: var(--leading-tight);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-weight-medium);
   }
   .apexcharts-datalabels {
     .apexcharts-canvas & .apexcharts-text.apexcharts-pie-label {
@@ -2032,7 +2035,7 @@
   }
   .label-100 {
     line-height: var(--leading-tight);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-weight-medium);
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);

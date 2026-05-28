@@ -50,6 +50,16 @@
   --text-5xl: clamp(2.5341rem, 2.1374rem + 1.6702vw, 3.7325rem);
   --text-6xl: clamp(2.8509rem, 2.312rem + 2.2691vw, 4.479rem);
 
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
   --leading-*: initial;
   --leading-none: 1;
   --leading-tight: 1.2;
@@ -74,6 +84,9 @@
   --shadow-md: 0 0 2px 0 var(--shadow-base-color), 0 4px 6px 0 var(--shadow-base-color);
   --shadow-lg: 0 0 2px 0 var(--shadow-base-color), 0 10px 15px 0 var(--shadow-base-color);
   --shadow-xl: 0 0 2px 0 var(--shadow-base-color), 0 20px 25px 0 var(--shadow-base-color);
+
+  --color-black: #000;
+  --color-white: #fff;
 }
 
 /* Text Styles */
@@ -81,7 +94,7 @@
   font-family: var(--font-alt);
   font-size: var(--text-6xl);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-6xl font-alt leading-tight tracking-tight font-bold; */
 }
@@ -89,7 +102,7 @@
   font-family: var(--font-alt);
   font-size: var(--text-5xl);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-5xl font-alt leading-tight tracking-tight font-bold; */
 }
@@ -97,7 +110,7 @@
   font-family: var(--font-alt);
   font-size: var(--text-4xl);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-4xl font-alt leading-tight tracking-tight font-bold; */
 }
@@ -105,65 +118,65 @@
   font-family: var(--font-alt);
   font-size: var(--text-lg);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-lg font-alt leading-tight tracking-tight font-bold; */
 }
 @utility heading-250 {
   font-size: var(--text-4xl);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-4xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-200 {
   font-size: var(--text-3xl);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-3xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-160 {
   font-size: var(--text-2xl);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-2xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-140 {
   font-size: var(--text-xl);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-120 {
   font-size: var(--text-lg);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-lg font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-100 {
   font-size: var(--text-base);
   line-height: var(--leading-tight);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
   /* @apply text-base font-sans leading-tight tracking-tight font-bold; */
 }
 @utility label-100 {
   line-height: var(--leading-tight);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-weight-medium);
 }
 @utility label-80 {
   font-size: var(--text-sm);
   line-height: var(--leading-tight);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-weight-medium);
 }
 @utility label-70 {
   font-size: var(--text-xs);
   line-height: var(--leading-tight);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-weight-medium);
 }
 @utility body-tech-100 {
   font-family: var(--font-mono)
