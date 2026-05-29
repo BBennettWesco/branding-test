@@ -92,6 +92,14 @@
   --color-white: oklch(1 0 0);
 }
 
+/* Custom Shadows */
+@utility shadow-top {
+  box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+}
+@utility shadow-bottom {
+  box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+}
+
 /* Text Styles */
 @utility display-350 {
   font-family: var(--font-alt);
