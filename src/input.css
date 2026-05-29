@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
 
+@import "/themes/synergy.css";
+
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
@@ -29,16 +31,13 @@
   --fl-space-12: clamp(2.886rem, 2.134rem + 3.96vw, 5.16rem);
   --fl-space-13: clamp(3.247rem, 2.273rem + 5.13vw, 6.192rem);
 
-/* Move to brand file */
-	--font-sans: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-mono: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
-  --color-brand-shadow: var(--color-black);
-  
+	--font-sans: var(--text-ff-main);
+  --font-alt: var(--text-ff-alternate);
+  --font-mono: var(--text-ff-auxiliary);
 
-  /* Viewport ranges */
+  /* Viewport ranges 
   --fluid-min-width: 380;
-  --fluid-max-width: 1528;
+  --fluid-max-width: 1528; */
 
   /* Primitive font size scale */
   --text-*: initial;
@@ -53,6 +52,7 @@
   --text-5xl: clamp(2.5341rem, 2.1374rem + 1.6702vw, 3.7325rem);
   --text-6xl: clamp(2.8509rem, 2.312rem + 2.2691vw, 4.479rem);
 
+  /* Change these to map to variables instead? */
   --font-weight-thin: 100;
   --font-weight-extralight: 200;
   --font-weight-light: 300;
@@ -87,6 +87,7 @@
   --shadow-md: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
   --shadow-lg: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 10px 15px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
   --shadow-xl: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 20px 25px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+  --color-brand-shadow: var(--color-black);
 
   --color-black: oklch(0 0 0);
   --color-white: oklch(1 0 0);
@@ -107,7 +108,6 @@
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-6xl font-alt leading-tight tracking-tight font-bold; */
 }
 @utility display-300 {
   font-family: var(--font-alt);
@@ -115,7 +115,6 @@
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-5xl font-alt leading-tight tracking-tight font-bold; */
 }
 @utility display-250 {
   font-family: var(--font-alt);
@@ -123,7 +122,6 @@
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-4xl font-alt leading-tight tracking-tight font-bold; */
 }
 @utility display-120 {
   font-family: var(--font-alt);
@@ -131,49 +129,42 @@
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-lg font-alt leading-tight tracking-tight font-bold; */
 }
 @utility heading-250 {
   font-size: var(--text-4xl);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-4xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-200 {
   font-size: var(--text-3xl);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-3xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-160 {
   font-size: var(--text-2xl);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-2xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-140 {
   font-size: var(--text-xl);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-xl font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-120 {
   font-size: var(--text-lg);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-lg font-sans leading-tight tracking-tight font-bold; */
 }
 @utility heading-100 {
   font-size: var(--text-base);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  /* @apply text-base font-sans leading-tight tracking-tight font-bold; */
 }
 @utility label-100 {
   line-height: var(--leading-tight);
@@ -202,6 +193,7 @@
 }
 
 /* Fluid Spacing API */
+/* Fluid spacing for: https://tailwindcss.com/docs/padding */
 @utility fl-p-* {
   padding: --value(--fl-space-*);
 }
@@ -241,48 +233,87 @@
 @utility fl-pl-* {
   padding-left: --value(--fl-space-*);
 }
+
+/* Fluid spacing for: https://tailwindcss.com/docs/margin */
 @utility fl-m-* {
   margin: --value(--fl-space-*);
+}
+@utility -fl-m-* {
+  margin: calc(--value(--fl-space-*) * -1);
 }
 @utility fl-mx-* {
   margin-inline: --value(--fl-space-*);
 }
+@utility -fl-mx-* {
+  margin-inline: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-my-* {
   margin-block: --value(--fl-space-*);
 }
-
+@utility -fl-my-* {
+  margin-block: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-ms-* {
   margin-inline-start: --value(--fl-space-*);
 }
-
+@utility -fl-ms-* {
+  margin-inline-start: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-me-* {
   margin-inline-end: --value(--fl-space-*);
 }
-
+@utility -fl-me-* {
+  margin-inline-end: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-mbs-* {
   margin-block-start: --value(--fl-space-*);
 }
-
+@utility -fl-mbs-* {
+  margin-block-start: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-mbe-* {
   margin-block-end: --value(--fl-space-*);
+}
+@utility -fl-mbe-* {
+  margin-block-end: calc(--value(--fl-space-*) * -1);
 }
 @utility fl-mt-* {
   margin-top: --value(--fl-space-*);
 }
+@utility -fl-mt-* {
+  margin-top: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-mr-* {
   margin-right: --value(--fl-space-*);
+}
+@utility -fl-mr-* {
+  margin-right: calc(--value(--fl-space-*) * -1);
 }
 @utility fl-mb-* {
   margin-bottom: --value(--fl-space-*);
 }
+@utility -fl-mb-* {
+  margin-bottom: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-ml-* {
   margin-left: --value(--fl-space-*);
 }
+@utility -fl-ml-* {
+  margin-left: calc(--value(--fl-space-*) * -1);
+}
+/* Need to find a way to change tw vars to reference the corresponding fluid utility
 @utility fl-space-x-* { 
   & > :not(:last-child) {
     --tw-space-x-reverse: 0;
-    margin-inline-start: calc(--value(--fl-space-*) * var(--tw-space-x-reverse));
+    margin-inline-start: calc(--value(--fl-space-*) * var(--tw-space-x-reverse)); 
     margin-inline-end: calc(--value(--fl-space-*) * calc(1 - var(--tw-space-x-reverse)));
+  };
+}
+@utility -fl-space-x-* { 
+  & > :not(:last-child) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(--value(--fl-space-*) * -1) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(--value(--fl-space-*) * -1) * calc(1 - var(--tw-space-x-reverse)));
   };
 }
 @utility fl-space-y-* {
@@ -292,7 +323,20 @@
     margin-block-end: calc(--value(--fl-space-*) * calc(1 - var(--tw-space-y-reverse)));
   };
 }
+@utility -fl-space-y-* {  
+  & > :not(:last-child) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(--value(--fl-space-*) * -1) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(--value(--fl-space-*) * -1) * calc(1 - var(--tw-space-y-reverse)));
+  };
+}*/
 
+/* Fluid spacing for: https://tailwindcss.com/docs/flex-basis */
+@utility fl-basis-* {
+  flex-basis: --value(--fl-space-*);
+}
+
+/* Fluid spacing for: https://tailwindcss.com/docs/gap */
 @utility fl-gap-* {
   gap: --value(--fl-space-*);
 }
@@ -303,6 +347,7 @@
   row-gap: --value(--fl-space-*);
 }
 
+/* Fluid spacing for: https://tailwindcss.com/docs/width */
 @utility fl-w-* {
   width: --value(--fl-space-*);
 }
@@ -344,12 +389,232 @@
   max-block-size: --value(--fl-space-*);
 }
 
+/* Fluid spacing for: https://tailwindcss.com/docs/top-right-bottom-left */
 @utility fl-inset-* {
   inset: --value(--fl-space-*);
+}
+@utility -fl-inset-* {
+  inset: calc(--value(--fl-space-*) * -1);
 }
 @utility fl-inset-x-* {
   inset-inline: --value(--fl-space-*);
 }
+@utility -fl-inset-x-* {
+  inset-inline: calc(--value(--fl-space-*) * -1);
+}
 @utility fl-inset-y-* {
   inset-block: --value(--fl-space-*);
+}
+@utility -fl-inset-y-* {
+  inset-block: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-inset-s-* {
+  inset-inline-start: --value(--fl-space-*);
+}
+@utility -fl-inset-s-* {
+  inset-inline-start: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-inset-e-* {
+  inset-inline-end: --value(--fl-space-*);
+}
+@utility -fl-inset-e-* {
+  inset-inline-end: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-inset-bs-* {
+  inset-block-start: --value(--fl-space-*);
+}
+@utility -fl-inset-bs-* {
+  inset-block-start: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-inset-be-* {
+  inset-block-end: --value(--fl-space-*);
+}
+@utility -fl-inset-be-* {
+  inset-block-end: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-top-* {
+  top: --value(--fl-space-*);
+}
+@utility -fl-top-* {
+  top: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-right-* {
+  right: --value(--fl-space-*);
+}
+@utility -fl-right-* {
+  right: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-bottom-* {
+  bottom: --value(--fl-space-*);
+}
+@utility -fl-bottom-* {
+  bottom: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-left-* {
+  left: --value(--fl-space-*);
+}
+@utility -fl-left-* {
+  left: calc(--value(--fl-space-*) * -1);
+}
+
+/* Fluid spacing for: https://tailwindcss.com/docs/border-spacing 
+(may need to add fluid versions of some of the other Tailwind classes later that reference the non-fluid versions of these classes if needed) */
+@utility fl-border-spacing-* {
+  border-spacing: --value(--fl-space-*);
+}
+/* Need to find a way to change tw vars to reference the corresponding fluid utility
+@utility fl-border-spacing-x-* {
+  border-spacing: --value(--fl-space-*) var(--tw-border-spacing-y);
+}
+@utility fl-border-spacing-y-* {
+  border-spacing: var(--tw-border-spacing-x) --value(--fl-space-*);
+}*/
+
+/* Fluid spacing for: https://tailwindcss.com/docs/translate 
+(may need to add fluid versions of some of the other Tailwind classes later that reference the non-fluid versions of these classes if needed)*/
+@utility fl-translate-* {
+  translate: --value(--fl-space-*) --value(--fl-space-*);
+}
+@utility -fl-translate-* {
+  translate: calc(--value(--fl-space-*) * -1) calc(--value(--fl-space-*) * -1);
+}
+/* Need to find a way to change tw vars to reference the corresponding fluid utility
+@utility fl-translate-x-* {
+  translate: --value(--fl-space-*) var(--tw-translate-y);
+} */
+
+/* Fluid spacing for: https://tailwindcss.com/docs/scroll-margin */
+@utility fl-scroll-m-* {
+  scroll-margin: --value(--fl-space-*);
+}
+@utility -fl-scroll-m-* {
+  scroll-margin: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-mx-* {
+  scroll-margin-inline: --value(--fl-space-*);
+}
+@utility -fl-scroll-mx-* {
+  scroll-margin-inline: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-my-* {
+  scroll-margin-block: --value(--fl-space-*);
+}
+@utility -fl-scroll-my-* {
+  scroll-margin-block: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-ms-* {
+  scroll-margin-inline-start: --value(--fl-space-*);
+}
+@utility -fl-scroll-ms-* {
+  scroll-margin-inline-start: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-me-* {
+  scroll-margin-inline-end: --value(--fl-space-*);
+}
+@utility -fl-scroll-me-* {
+  scroll-margin-inline-end: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-mbs-* {
+  scroll-margin-block-start: --value(--fl-space-*);
+}
+@utility -fl-scroll-mbs-* {
+  scroll-margin-block-start: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-mbe-* {
+  scroll-margin-block-end: --value(--fl-space-*);
+}
+@utility -fl-scroll-mbe-* {
+  scroll-margin-block-end: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-mt-* {
+  scroll-margin-top: --value(--fl-space-*);
+}
+@utility -fl-scroll-mt-* {
+  scroll-margin-top: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-mr-* {
+  scroll-margin-right: --value(--fl-space-*);
+}
+@utility -fl-scroll-mr-* {
+  scroll-margin-right: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-mb-* {
+  scroll-margin-bottom: --value(--fl-space-*);
+}
+@utility -fl-scroll-mb-* {
+  scroll-margin-bottom: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-ml-* {
+  scroll-margin-left: --value(--fl-space-*);
+}
+@utility -fl-scroll-ml-* {
+  scroll-margin-left: calc(--value(--fl-space-*) * -1);
+}
+
+/* Fluid spacing for: https://tailwindcss.com/docs/scroll-padding */
+@utility fl-scroll-p-* {
+  scroll-padding: --value(--fl-space-*);
+}
+@utility -fl-scroll-p-* {
+  scroll-padding: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-px-* {
+  scroll-padding-inline: --value(--fl-space-*);
+}
+@utility -fl-scroll-px-* {
+  scroll-padding-inline: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-py-* {
+  scroll-padding-block: --value(--fl-space-*);
+}
+@utility -fl-scroll-py-* {
+  scroll-padding-block: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-ps-* {
+  scroll-padding-inline-start: --value(--fl-space-*);
+}
+@utility -fl-scroll-ps-* {
+  scroll-padding-inline-start: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-pe-* {
+  scroll-padding-inline-end: --value(--fl-space-*);
+}
+@utility -fl-scroll-pe-* {
+  scroll-padding-inline-end: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-pbs-* {
+  scroll-padding-block-start: --value(--fl-space-*);
+}
+@utility -fl-scroll-pbs-* {
+  scroll-padding-block-start: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-pbe-* {
+  scroll-padding-block-end: --value(--fl-space-*);
+}
+@utility -fl-scroll-pbe-* {
+  scroll-padding-block-end: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-pt-* {
+  scroll-padding-top: --value(--fl-space-*);
+}
+@utility -fl-scroll-pt-* {
+  scroll-padding-top: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-pr-* {
+  scroll-padding-right: --value(--fl-space-*);
+}
+@utility -fl-scroll-pr-* {
+  scroll-padding-right: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-pb-* {
+  scroll-padding-bottom: --value(--fl-space-*);
+}
+@utility -fl-scroll-pb-* {
+  scroll-padding-bottom: calc(--value(--fl-space-*) * -1);
+}
+@utility fl-scroll-pl-* {
+  scroll-padding-left: --value(--fl-space-*);
+}
+@utility -fl-scroll-pl-* {
+  scroll-padding-left: calc(--value(--fl-space-*) * -1);
 }

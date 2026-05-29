@@ -4,8 +4,8 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-mono: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+    --font-sans: var(--text-ff-main);
+    --font-mono: var(--text-ff-auxiliary);
     --color-red-50: oklch(97.1% 0.013 17.38);
     --color-red-100: oklch(93.6% 0.032 17.717);
     --color-red-200: oklch(88.5% 0.062 18.334);
@@ -119,6 +119,7 @@
     --color-purple-700: oklch(49.6% 0.265 301.924);
     --color-purple-800: oklch(43.8% 0.218 303.724);
     --color-purple-900: oklch(38.1% 0.176 304.987);
+    --color-purple-950: oklch(29.1% 0.149 302.717);
     --color-fuchsia-500: oklch(66.7% 0.295 322.15);
     --color-fuchsia-600: oklch(59.1% 0.293 322.896);
     --color-pink-50: oklch(97.1% 0.014 343.198);
@@ -249,7 +250,7 @@
     --fl-space-9: clamp(2.027rem, 1.71rem + 1.67vw, 2.986rem);
     --fl-space-10: clamp(2.281rem, 1.85rem + 2.269vw, 3.583rem);
     --fl-space-13: clamp(3.247rem, 2.273rem + 5.13vw, 6.192rem);
-    --font-alt: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-alt: var(--text-ff-alternate);
     --color-brand-shadow: var(--color-black);
     --text-xs: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem);
     --text-sm: clamp(1.0417rem, 1.1341rem + -0.0968vw, 1.1111rem);
@@ -267,6 +268,10 @@
     --tracking-wider: .06em;
     --tracking-normal: 0em;
     --tracking-tight: -.02em;
+    --shadow-xs: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --shadow-xs: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 5%, transparent);
+    }
   }
 }
 @layer base {
@@ -1578,6 +1583,9 @@
   }
   .overflow-y-auto {
     overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
