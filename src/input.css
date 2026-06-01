@@ -94,10 +94,10 @@
 }
 
 /* Custom Shadows */
-@utility shadow-top {
+@utility shadow-bottom {
   box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
 }
-@utility shadow-bottom {
+@utility shadow-top {
   box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
 }
 
