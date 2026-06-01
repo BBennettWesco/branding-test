@@ -5,11 +5,15 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build": "style-dictionary build"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "flowbite": "^4.0.1",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.4.2"
   }
 }
