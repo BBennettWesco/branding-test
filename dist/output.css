@@ -119,7 +119,6 @@
     --color-purple-700: oklch(49.6% 0.265 301.924);
     --color-purple-800: oklch(43.8% 0.218 303.724);
     --color-purple-900: oklch(38.1% 0.176 304.987);
-    --color-purple-950: oklch(29.1% 0.149 302.717);
     --color-fuchsia-500: oklch(66.7% 0.295 322.15);
     --color-fuchsia-600: oklch(59.1% 0.293 322.896);
     --color-pink-50: oklch(97.1% 0.014 343.198);
@@ -197,8 +196,8 @@
     --color-stone-800: oklch(26.8% 0.007 34.298);
     --color-stone-900: oklch(21.6% 0.006 56.043);
     --color-stone-950: oklch(14.7% 0.004 49.25);
-    --color-black: oklch(0 0 0);
-    --color-white: oklch(1 0 0);
+    --color-black: var(--black-root);
+    --color-white: var(--white-root);
     --spacing: .2rem;
     --breakpoint-md: 800px;
     --breakpoint-lg: 1024px;
@@ -239,39 +238,24 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --fl-space-1: clamp(0.274rem, 0.294rem + -0.107vw, 0.212rem);
-    --fl-space-2: clamp(0.624rem, 0.671rem + -0.247vw, 0.482rem);
-    --fl-space-2\.5: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
-    --fl-space-3: clamp(0.79rem, 0.822rem + -0.167vw, 0.694rem);
-    --fl-space-4: clamp(1rem, 1rem + 0vw, 1rem);
-    --fl-space-4\.5: clamp(1.125rem, 1.1rem + 0.131vw, 1.2rem);
-    --fl-space-6: clamp(1.424rem, 1.323rem + 0.53vw, 1.728rem);
-    --fl-space-8: clamp(1.802rem, 1.575rem + 1.196vw, 2.488rem);
-    --fl-space-9: clamp(2.027rem, 1.71rem + 1.67vw, 2.986rem);
-    --fl-space-10: clamp(2.281rem, 1.85rem + 2.269vw, 3.583rem);
-    --fl-space-13: clamp(3.247rem, 2.273rem + 5.13vw, 6.192rem);
+    --text-xs: var(--text-xs);
+    --text-sm: var(--text-sm);
+    --text-base: var(--text-base);
+    --text-lg: var(--text-lg);
+    --text-xl: var(--text-xl);
+    --text-2xl: var(--text-2xl);
+    --text-3xl: var(--text-3xl);
+    --text-4xl: var(--text-4xl);
+    --text-5xl: var(--text-5xl);
+    --text-6xl: var(--text-6xl);
     --font-alt: var(--text-ff-alternate);
-    --color-brand-shadow: var(--color-black);
-    --text-xs: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem);
-    --text-sm: clamp(1.0417rem, 1.1341rem + -0.0968vw, 1.1111rem);
-    --text-base: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
-    --text-lg: clamp(1.4063rem, 1.3752rem + 0.1307vw, 1.5rem);
-    --text-xl: clamp(1.582rem, 1.5099rem + 0.3038vw, 1.8rem);
-    --text-2xl: clamp(1.7798rem, 1.6539rem + 0.5299vw, 2.16rem);
-    --text-3xl: clamp(2.0023rem, 1.807rem + 0.8219vw, 2.592rem);
-    --text-4xl: clamp(2.2525rem, 1.9686rem + 1.1956vw, 3.1104rem);
-    --text-5xl: clamp(2.5341rem, 2.1374rem + 1.6702vw, 3.7325rem);
-    --text-6xl: clamp(2.8509rem, 2.312rem + 2.2691vw, 4.479rem);
     --leading-tight: 1.2;
     --leading-normal: 1.6;
     --tracking-widest: .1em;
     --tracking-wider: .06em;
     --tracking-normal: 0em;
     --tracking-tight: -.02em;
-    --shadow-xs: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 5%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      --shadow-xs: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 5%, transparent);
-    }
+    --color-brand-shadow: var(--color-black);
   }
 }
 @layer base {
@@ -459,7 +443,7 @@
     }
     & .datatable-search .datatable-input {
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       background-color: var(--color-neutral-secondary-soft);
@@ -467,7 +451,7 @@
     }
     & .datatable-input {
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       background-color: var(--color-neutral-secondary-soft);
@@ -483,12 +467,12 @@
     }
     & .datatable-top .datatable-dropdown {
       color: var(--color-body);
-      font-size: c;
+      font-size: v;
     }
     & .datatable-top .datatable-dropdown .datatable-selector {
       background-color: var(--color-neutral-secondary-soft);
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       margin-right: 0.25rem;
@@ -507,12 +491,12 @@
     }
     & .datatable-table {
       width: 100%;
-      font-size: c;
+      font-size: v;
       color: var(--color-body);
       text-align: left;
     }
     & .datatable-table thead {
-      font-size: c;
+      font-size: v;
       color: var(--color-body);
       background-color: var(--color-neutral-secondary-medium);
       border-bottom: 1px solid var(--color-default);
@@ -582,13 +566,13 @@
     }
     & .datatable-bottom .datatable-info {
       color: var(--color-body);
-      font-size: c;
+      font-size: v;
     }
     & .datatable-bottom .datatable-pagination .datatable-pagination-list {
       display: flex;
       align-items: center;
       height: 2rem;
-      font-size: c;
+      font-size: v;
     }
     & .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link {
       display: flex;
@@ -599,7 +583,7 @@
       padding-left: 0.75rem;
       padding-right: 0.75rem;
       height: 2rem;
-      font-size: c;
+      font-size: v;
       border-top: 1px solid var(--color-default);
       border-bottom: 1px solid var(--color-default);
       border-right: 1px solid var(--color-default);
@@ -648,13 +632,13 @@
     }
     .datatable-wrapper & .datatable-info {
       color: var(--color-body);
-      font-size: c;
+      font-size: v;
     }
     .datatable-wrapper & .datatable-pagination .datatable-pagination-list {
       display: flex;
       align-items: center;
       height: 2rem;
-      font-size: c;
+      font-size: v;
     }
     .datatable-wrapper & .datatable-pagination .datatable-pagination-list-item-link {
       display: flex;
@@ -665,7 +649,7 @@
       padding-left: 0.75rem;
       padding-right: 0.75rem;
       height: 2rem;
-      font-size: c;
+      font-size: v;
       border-top: 1px solid var(--color-default);
       border-bottom: 1px solid var(--color-default);
       border-right: 1px solid var(--color-default);
@@ -704,7 +688,7 @@
       display: flex;
       align-items: center;
       height: 2rem;
-      font-size: c;
+      font-size: v;
     }
     .datatable-wrapper .datatable-bottom & .datatable-pagination-list-item-link {
       display: flex;
@@ -715,7 +699,7 @@
       padding-left: 0.75rem;
       padding-right: 0.75rem;
       height: 2rem;
-      font-size: c;
+      font-size: v;
       border-top: 1px solid var(--color-default);
       border-bottom: 1px solid var(--color-default);
       border-right: 1px solid var(--color-default);
@@ -824,32 +808,11 @@
       max-width: 1528px;
     }
   }
+  .mx-4 {
+    margin-inline: calc(var(--spacing) * 4);
+  }
   .mx-auto {
     margin-inline: auto;
-  }
-  .fl-space-x-2 {
-    & > :not(:last-child) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(var(--fl-space-2) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(var(--fl-space-2) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
-  .fl-space-x-2\.5 {
-    & > :not(:last-child) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(var(--fl-space-2\.5) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(var(--fl-space-2\.5) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
-  .fl-ms-2 {
-    margin-inline-start: var(--fl-space-2);
-  }
-  .fl-space-y-8 {
-    & > :not(:last-child) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(var(--fl-space-8) * var(--tw-space-y-reverse));
-      margin-block-end: calc(var(--fl-space-8) * calc(1 - var(--tw-space-y-reverse)));
-    }
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -860,7 +823,7 @@
       color: var(--color-body) !important;
       border: 0 !important;
       border-radius: var(--radius-base) !important;
-      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      box-shadow: 0 0 2px 0 var(--color-brand-shadow), 0 4px 6px 0 var(--color-brand-shadow) !important;
       @supports (color: color-mix(in lab, red, red)) {
         box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
       }
@@ -869,7 +832,7 @@
       background-color: var(--color-neutral-secondary-medium) !important;
       color: var(--color-body) !important;
       border-color: var(--color-default) !important;
-      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      box-shadow: 0 0 2px 0 var(--color-brand-shadow), 0 4px 6px 0 var(--color-brand-shadow) !important;
       @supports (color: color-mix(in lab, red, red)) {
         box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
       }
@@ -882,7 +845,7 @@
       margin-bottom: 0.75rem !important;
       background-color: var(--color-neutral-tertiary-medium) !important;
       border-color: var(--color-light) !important;
-      font-size: c !important;
+      font-size: v !important;
       font-weight: 600 !important;
       color: var(--color-heading) !important;
     }
@@ -900,7 +863,7 @@
       border-color: transparent !important;
       background-color: white !important;
       border-radius: 0.25rem !important;
-      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      box-shadow: 0 0 2px 0 var(--color-brand-shadow), 0 4px 6px 0 var(--color-brand-shadow) !important;
       @supports (color: color-mix(in lab, red, red)) {
         box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
       }
@@ -911,21 +874,21 @@
     }
     & .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
       color: var(--color-body) !important;
-      font-size: c !important;
+      font-size: v !important;
     }
     .dark & .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
       color: var(--color-body) !important;
     }
     & .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
       color: var(--color-heading);
-      font-size: c !important;
+      font-size: v !important;
     }
     .dark & .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
       color: white !important;
     }
     & .apexcharts-xaxistooltip-text {
       font-weight: 400 !important;
-      font-size: c !important;
+      font-size: v !important;
     }
     & .apexcharts-xaxistooltip:after {
       border-bottom-color: var(--color-neutral-primary-medium) !important;
@@ -962,7 +925,7 @@
       padding: 0 !important;
     }
     & .apexcharts-legend-text {
-      font-size: c !important;
+      font-size: v !important;
       font-weight: 500 !important;
       padding-left: 1.25rem !important;
       color: var(--color-body) !important;
@@ -991,14 +954,14 @@
     }
     & .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
       fill: var(--color-body) !important;
-      font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+      font-size: var(--text-base) !important;
       font-weight: 400 !important;
     }
     .dark & .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
       fill: var(--color-body) !important;
     }
     & .apexcharts-datalabels .apexcharts-text.apexcharts-pie-label {
-      font-size: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem) !important;
+      font-size: var(--text-xs) !important;
       font-weight: 600 !important;
       text-shadow: none !important;
       filter: none !important;
@@ -1019,7 +982,7 @@
       color: var(--color-body) !important;
       border: 0 !important;
       border-radius: var(--radius-base) !important;
-      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      box-shadow: 0 0 2px 0 var(--color-brand-shadow), 0 4px 6px 0 var(--color-brand-shadow) !important;
       @supports (color: color-mix(in lab, red, red)) {
         box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
       }
@@ -1028,7 +991,7 @@
       background-color: var(--color-neutral-secondary-medium) !important;
       color: var(--color-body) !important;
       border-color: var(--color-default) !important;
-      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      box-shadow: 0 0 2px 0 var(--color-brand-shadow), 0 4px 6px 0 var(--color-brand-shadow) !important;
       @supports (color: color-mix(in lab, red, red)) {
         box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
       }
@@ -1041,7 +1004,7 @@
       margin-bottom: 0.75rem !important;
       background-color: var(--color-neutral-tertiary-medium) !important;
       border-color: var(--color-light) !important;
-      font-size: c !important;
+      font-size: v !important;
       font-weight: 600 !important;
       color: var(--color-heading) !important;
     }
@@ -1052,14 +1015,14 @@
     }
     .apexcharts-canvas & .apexcharts-tooltip-text-y-label {
       color: var(--color-body) !important;
-      font-size: c !important;
+      font-size: v !important;
     }
     .dark .apexcharts-canvas & .apexcharts-tooltip-text-y-label {
       color: var(--color-body) !important;
     }
     .apexcharts-canvas & .apexcharts-tooltip-text-y-value {
       color: var(--color-heading);
-      font-size: c !important;
+      font-size: v !important;
     }
     :is([dir=rtl]) & .apexcharts-tooltip-marker {
       margin-right: 0px !important;
@@ -1084,12 +1047,12 @@
     }
     .datatable-wrapper & .datatable-dropdown {
       color: var(--color-body);
-      font-size: c;
+      font-size: v;
     }
     .datatable-wrapper & .datatable-dropdown .datatable-selector {
       background-color: var(--color-neutral-secondary-soft);
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       margin-right: 0.25rem;
@@ -1105,12 +1068,12 @@
   .datatable-dropdown {
     .datatable-wrapper .datatable-top & {
       color: var(--color-body);
-      font-size: c;
+      font-size: v;
     }
     .datatable-wrapper .datatable-top & .datatable-selector {
       background-color: var(--color-neutral-secondary-soft);
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       margin-right: 0.25rem;
@@ -1121,7 +1084,7 @@
     .datatable-wrapper .datatable-top .datatable-dropdown & {
       background-color: var(--color-neutral-secondary-soft);
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       margin-right: 0.25rem;
@@ -1137,7 +1100,7 @@
       margin-bottom: 0.75rem !important;
       background-color: var(--color-neutral-tertiary-medium) !important;
       border-color: var(--color-light) !important;
-      font-size: c !important;
+      font-size: v !important;
       font-weight: 600 !important;
       color: var(--color-heading) !important;
     }
@@ -1146,24 +1109,6 @@
       border-color: var(--color-light) !important;
       color: var(--color-heading) !important;
     }
-  }
-  .fl-mb-2 {
-    margin-bottom: var(--fl-space-2);
-  }
-  .fl-mb-2\.5 {
-    margin-bottom: var(--fl-space-2\.5);
-  }
-  .fl-mb-3 {
-    margin-bottom: var(--fl-space-3);
-  }
-  .fl-mb-4 {
-    margin-bottom: var(--fl-space-4);
-  }
-  .fl-mb-4\.5 {
-    margin-bottom: var(--fl-space-4\.5);
-  }
-  .fl-mb-8 {
-    margin-bottom: var(--fl-space-8);
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -1181,7 +1126,7 @@
       border-color: transparent !important;
       background-color: white !important;
       border-radius: 0.25rem !important;
-      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      box-shadow: 0 0 2px 0 var(--color-brand-shadow), 0 4px 6px 0 var(--color-brand-shadow) !important;
       @supports (color: color-mix(in lab, red, red)) {
         box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
       }
@@ -1221,7 +1166,7 @@
       padding-left: 0.75rem;
       padding-right: 0.75rem;
       height: 2rem;
-      font-size: c;
+      font-size: v;
       border-top: 1px solid var(--color-default);
       border-bottom: 1px solid var(--color-default);
       border-right: 1px solid var(--color-default);
@@ -1254,7 +1199,7 @@
       display: flex;
       align-items: center;
       height: 2rem;
-      font-size: c;
+      font-size: v;
     }
   }
   .block {
@@ -1281,14 +1226,6 @@
   .table {
     display: table;
   }
-  .fl-size-4 {
-    width: var(--fl-space-4);
-    height: var(--fl-space-4);
-  }
-  .fl-size-13 {
-    width: var(--fl-space-13);
-    height: var(--fl-space-13);
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -1307,12 +1244,12 @@
   .datatable-table {
     .datatable-wrapper & {
       width: 100%;
-      font-size: c;
+      font-size: v;
       color: var(--color-body);
       text-align: left;
     }
     .datatable-wrapper & thead {
-      font-size: c;
+      font-size: v;
       color: var(--color-body);
       background-color: var(--color-neutral-secondary-medium);
       border-bottom: 1px solid var(--color-default);
@@ -1369,9 +1306,6 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -1411,7 +1345,7 @@
   .datatable-input {
     .datatable-wrapper .datatable-search & {
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       background-color: var(--color-neutral-secondary-soft);
@@ -1419,7 +1353,7 @@
     }
     .datatable-wrapper & {
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       background-color: var(--color-neutral-secondary-soft);
@@ -1440,7 +1374,7 @@
   .datatable-search {
     .datatable-wrapper & .datatable-input {
       color: var(--color-heading);
-      font-size: c;
+      font-size: v;
       border: 1px solid var(--color-default);
       border-radius: var(--radius-base);
       background-color: var(--color-neutral-secondary-soft);
@@ -1458,9 +1392,6 @@
   }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1539,12 +1470,6 @@
   .justify-start {
     justify-content: flex-start;
   }
-  .fl-gap-4 {
-    gap: var(--fl-space-4);
-  }
-  .fl-gap-10 {
-    gap: var(--fl-space-10);
-  }
   .space-y-6 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1558,9 +1483,6 @@
       margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
     }
-  }
-  .fl-gap-y-6 {
-    row-gap: var(--fl-space-6);
   }
   .self-center {
     align-self: center;
@@ -1651,7 +1573,7 @@
       background-color: var(--color-neutral-secondary-medium) !important;
       color: var(--color-body) !important;
       border-color: var(--color-default) !important;
-      box-shadow: 0 0 2px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent), 0 4px 6px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent) !important;
+      box-shadow: 0 0 2px 0 var(--color-brand-shadow), 0 4px 6px 0 var(--color-brand-shadow) !important;
       @supports (color: color-mix(in lab, red, red)) {
         box-shadow: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent) !important;
       }
@@ -1743,9 +1665,6 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1759,7 +1678,7 @@
     background-color: var(--color-white);
   }
   .bg-white\/50 {
-    background-color: color-mix(in srgb, oklch(1 0 0) 50%, transparent);
+    background-color: var(--color-white);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
@@ -1777,7 +1696,7 @@
   .apexcharts-datalabels-group {
     & .apexcharts-text.apexcharts-datalabel-value {
       fill: var(--color-heading) !important;
-      font-size: clamp(2.0023rem, 1.807rem + 0.8219vw, 2.592rem) !important;
+      font-size: var(--text-3xl) !important;
       font-weight: 700 !important;
     }
     .dark .apexcharts-canvas & .apexcharts-text.apexcharts-datalabel-value {
@@ -1785,7 +1704,7 @@
     }
     .apexcharts-canvas & .apexcharts-text.apexcharts-datalabel-label {
       fill: var(--color-body) !important;
-      font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+      font-size: var(--text-base) !important;
       font-weight: 400 !important;
     }
     .dark .apexcharts-canvas & .apexcharts-text.apexcharts-datalabel-label {
@@ -1795,7 +1714,7 @@
   .apexcharts-datalabel-label {
     .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
       fill: var(--color-body) !important;
-      font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+      font-size: var(--text-base) !important;
       font-weight: 400 !important;
     }
     .dark .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
@@ -1805,23 +1724,11 @@
   .apexcharts-datalabel-value {
     .apexcharts-datalabels-group .apexcharts-text& {
       fill: var(--color-heading) !important;
-      font-size: clamp(2.0023rem, 1.807rem + 0.8219vw, 2.592rem) !important;
+      font-size: var(--text-3xl) !important;
       font-weight: 700 !important;
     }
     .dark .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
       fill: white !important;
-    }
-  }
-  .apexcharts-gridline {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
     }
   }
   .apexcharts-ycrosshairs {
@@ -1840,20 +1747,11 @@
       padding: 0 !important;
     }
   }
-  .fl-p-3 {
-    padding: var(--fl-space-3);
-  }
-  .fl-p-9 {
-    padding: var(--fl-space-9);
-  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -1863,18 +1761,6 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
-  }
-  .fl-px-2 {
-    padding-inline: var(--fl-space-2);
-  }
-  .fl-px-2\.5 {
-    padding-inline: var(--fl-space-2\.5);
-  }
-  .fl-px-4 {
-    padding-inline: var(--fl-space-4);
-  }
-  .fl-px-8 {
-    padding-inline: var(--fl-space-8);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -1887,24 +1773,6 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
-  }
-  .fl-py-1 {
-    padding-block: var(--fl-space-1);
-  }
-  .fl-py-2 {
-    padding-block: var(--fl-space-2);
-  }
-  .fl-py-2\.5 {
-    padding-block: var(--fl-space-2\.5);
-  }
-  .fl-py-8 {
-    padding-block: var(--fl-space-8);
-  }
-  .fl-py-9 {
-    padding-block: var(--fl-space-9);
-  }
-  .fl-py-10 {
-    padding-block: var(--fl-space-10);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -1925,7 +1793,7 @@
   }
   .apexcharts-legend-text {
     .apexcharts-canvas & {
-      font-size: c !important;
+      font-size: v !important;
       font-weight: 500 !important;
       padding-left: 1.25rem !important;
       color: var(--color-body) !important;
@@ -2039,7 +1907,7 @@
   }
   .apexcharts-datalabels {
     .apexcharts-canvas & .apexcharts-text.apexcharts-pie-label {
-      font-size: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem) !important;
+      font-size: var(--text-xs) !important;
       font-weight: 600 !important;
       text-shadow: none !important;
       filter: none !important;
@@ -2047,7 +1915,7 @@
   }
   .apexcharts-pie-label {
     .apexcharts-canvas .apexcharts-datalabels .apexcharts-text& {
-      font-size: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem) !important;
+      font-size: var(--text-xs) !important;
       font-weight: 600 !important;
       text-shadow: none !important;
       filter: none !important;
@@ -2056,13 +1924,13 @@
   .apexcharts-xaxistooltip-text {
     .apexcharts-canvas & {
       font-weight: 400 !important;
-      font-size: c !important;
+      font-size: v !important;
     }
   }
   .apexcharts-tooltip-text-y-label {
     .apexcharts-canvas .apexcharts-tooltip & {
       color: var(--color-body) !important;
-      font-size: c !important;
+      font-size: v !important;
     }
     .dark .apexcharts-canvas .apexcharts-tooltip & {
       color: var(--color-body) !important;
@@ -2071,7 +1939,7 @@
   .apexcharts-tooltip-text-y-value {
     .apexcharts-canvas .apexcharts-tooltip & {
       color: var(--color-heading);
-      font-size: c !important;
+      font-size: v !important;
     }
     .dark .apexcharts-canvas .apexcharts-tooltip & {
       color: white !important;
@@ -2080,7 +1948,7 @@
   .datatable-info {
     .datatable-wrapper .datatable-bottom & {
       color: var(--color-body);
-      font-size: c;
+      font-size: v;
     }
   }
   .text-base {
@@ -2201,50 +2069,50 @@
     opacity: 100%;
   }
   .shadow-lg {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 10px 15px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--color-brand-shadow)), 0 10px 15px 0 var(--tw-shadow-color, var(--color-brand-shadow));
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 10px 15px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
     }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-md {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 4px 6px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--color-brand-shadow)), 0 4px 6px 0 var(--tw-shadow-color, var(--color-brand-shadow));
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 4px 6px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
     }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-sm {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 2px 4px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--color-brand-shadow)), 0 2px 4px 0 var(--tw-shadow-color, var(--color-brand-shadow));
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 2px 4px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
     }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-xl {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent)), 0 20px 25px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 10%, transparent));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--color-brand-shadow)), 0 20px 25px 0 var(--tw-shadow-color, var(--color-brand-shadow));
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent)), 0 20px 25px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 10%, transparent));
     }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-xs {
-    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, oklch(0 0 0) 5%, transparent));
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, var(--color-brand-shadow));
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-brand-shadow) 5%, transparent));
     }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-bottom {
-    box-shadow: 0 -1px 14px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent);
+    box-shadow: 0 1px 14px 0 var(--color-brand-shadow);
     @supports (color: color-mix(in lab, red, red)) {
-      box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+      box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
     }
   }
   .shadow-top {
-    box-shadow: 0 1px 14px 0 color-mix(in srgb, oklch(0 0 0) 10%, transparent);
+    box-shadow: 0 -1px 14px 0 var(--color-brand-shadow);
     @supports (color: color-mix(in lab, red, red)) {
-      box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+      box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
     }
   }
   .outline {
@@ -2385,6 +2253,11 @@
       order: 2;
     }
   }
+  .lg\:mx-12 {
+    @media (width >= 1024px) {
+      margin-inline: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:grid-cols-4 {
     @media (width >= 1024px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2523,6 +2396,177 @@
       }
     }
   }
+}
+:root {
+  --fl-space-\.25: clamp(0.084rem, 0.094rem + -0.053vw, 0.054rem);
+  --fl-space-\.5: clamp(0.152rem, 0.168rem + -0.086vw, 0.102rem);
+  --fl-space-1: clamp(0.274rem, 0.294rem + -0.107vw, 0.212rem);
+  --fl-space-1\.5: clamp(0.367rem, 0.384rem + -0.085vw, 0.319rem);
+  --fl-space-1\.75: clamp(0.493rem, 0.523rem + -0.159vw, 0.402rem);
+  --fl-space-2: clamp(0.624rem, 0.671rem + -0.247vw, 0.482rem);
+  --fl-space-2\.5: clamp(0.702rem, 0.743rem + -0.215vw, 0.579rem);
+  --fl-space-3: clamp(0.79rem, 0.822rem + -0.167vw, 0.694rem);
+  --fl-space-3\.5: clamp(0.889rem, 0.907rem + -0.097vw, 0.833rem);
+  --fl-space-4: clamp(1rem, 1rem + 0vw, 1rem);
+  --fl-space-4\.5: clamp(1.125rem, 1.1rem + 0.131vw, 1.2rem);
+  --fl-space-5: clamp(1.266rem, 1.208rem + 0.304vw, 1.44rem);
+  --fl-space-6: clamp(1.424rem, 1.323rem + 0.53vw, 1.728rem);
+  --fl-space-7: clamp(1.602rem, 1.446rem + 0.822vw, 2.074rem);
+  --fl-space-8: clamp(1.802rem, 1.575rem + 1.196vw, 2.488rem);
+  --fl-space-9: clamp(2.027rem, 1.71rem + 1.67vw, 2.986rem);
+  --fl-space-10: clamp(2.281rem, 1.85rem + 2.269vw, 3.583rem);
+  --fl-space-11: clamp(2.566rem, 1.992rem + 3.021vw, 4.3rem);
+  --fl-space-12: clamp(2.886rem, 2.134rem + 3.96vw, 5.16rem);
+  --fl-space-13: clamp(3.247rem, 2.273rem + 5.13vw, 6.192rem);
+  --text-xs: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem);
+  --text-sm: clamp(1.0417rem, 1.1341rem + -0.0968vw, 1.1111rem);
+  --text-base: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+  --text-lg: clamp(1.4063rem, 1.3752rem + 0.1307vw, 1.5rem);
+  --text-xl: clamp(1.582rem, 1.5099rem + 0.3038vw, 1.8rem);
+  --text-2xl: clamp(1.7798rem, 1.6539rem + 0.5299vw, 2.16rem);
+  --text-3xl: clamp(2.0023rem, 1.807rem + 0.8219vw, 2.592rem);
+  --text-4xl: clamp(2.2525rem, 1.9686rem + 1.1956vw, 3.1104rem);
+  --text-5xl: clamp(2.5341rem, 2.1374rem + 1.6702vw, 3.7325rem);
+  --text-6xl: clamp(2.8509rem, 2.312rem + 2.2691vw, 4.479rem);
+}
+[data-brand="synergy"] {
+  --brand-color-primary-0: #f2f5ff;
+  --brand-color-primary-25: #e6eafa;
+  --brand-color-primary-50: #d7def6;
+  --brand-color-primary-100: #b7c2f3;
+  --brand-color-primary-200: #a4b2f3;
+  --brand-color-primary-300: #8fa0fe;
+  --brand-color-primary-400: #7788f5;
+  --brand-color-primary-500: #6574eb;
+  --brand-color-primary-600: #5057e8;
+  --brand-color-primary-700: #4341df;
+  --brand-color-primary-800: #3635b7;
+  --brand-color-primary-900: #1c1575;
+  --brand-color-primary-950: #150f5f;
+  --brand-color-neutral-0: #f5f5f5;
+  --brand-color-neutral-25: #ebebeb;
+  --brand-color-neutral-50: #dedede;
+  --brand-color-neutral-100: #c5c5c5;
+  --brand-color-neutral-200: #b6b6b6;
+  --brand-color-neutral-300: #a8a8a8;
+  --brand-color-neutral-400: #919191;
+  --brand-color-neutral-500: #808080;
+  --brand-color-neutral-600: #6f6f6f;
+  --brand-color-neutral-700: #5b5b5b;
+  --brand-color-neutral-800: #494949;
+  --brand-color-neutral-900: #2b2b2b;
+  --brand-color-neutral-950: #222222;
+  --brand-color-green-0: #e2fff2;
+  --brand-color-green-25: #bcfce0;
+  --brand-color-green-50: #90f0ca;
+  --brand-color-green-100: #51ddad;
+  --brand-color-green-200: #1dd39f;
+  --brand-color-green-300: #14bb8d;
+  --brand-color-green-400: #00a57a;
+  --brand-color-green-500: #039770;
+  --brand-color-green-600: #058260;
+  --brand-color-green-700: #006c4f;
+  --brand-color-green-800: #00573f;
+  --brand-color-green-900: #003525;
+  --brand-color-green-950: #00291c;
+  --brand-color-red-0: #fef1f3;
+  --brand-color-red-25: #f9e5e8;
+  --brand-color-red-50: #f4d6d9;
+  --brand-color-red-100: #eeb3bb;
+  --brand-color-red-200: #eb9ea9;
+  --brand-color-red-300: #f08195;
+  --brand-color-red-400: #e76680;
+  --brand-color-red-500: #d6486a;
+  --brand-color-red-600: #cb0652;
+  --brand-color-red-700: #b30247;
+  --brand-color-red-800: #93003a;
+  --brand-color-red-900: #56001e;
+  --brand-color-red-950: #450016;
+  --brand-color-yellow-0: #fff6e2;
+  --brand-color-yellow-25: #fce9c0;
+  --brand-color-yellow-50: #ffdd98;
+  --brand-color-yellow-100: #fbbc25;
+  --brand-color-yellow-200: #eaaa00;
+  --brand-color-yellow-300: #d9a00e;
+  --brand-color-yellow-400: #c08b01;
+  --brand-color-yellow-500: #a57703;
+  --brand-color-yellow-600: #8f6701;
+  --brand-color-yellow-700: #765400;
+  --brand-color-yellow-800: #5a4001;
+  --brand-color-yellow-900: #3a2800;
+  --brand-color-yellow-950: #2e1f00;
+  --brand-color-blue-0: #f1f6fc;
+  --brand-color-blue-25: #e1ecfb;
+  --brand-color-blue-50: #cde1fb;
+  --brand-color-blue-100: #a0c8fd;
+  --brand-color-blue-200: #85bafe;
+  --brand-color-blue-300: #6babfd;
+  --brand-color-blue-400: #3d94fc;
+  --brand-color-blue-500: #197eed;
+  --brand-color-blue-600: #0064c5;
+  --brand-color-blue-700: #0159b0;
+  --brand-color-blue-800: #00478f;
+  --brand-color-blue-900: #002a59;
+  --brand-color-blue-950: #002148;
+  --brand-color-orange-0: #fef3eb;
+  --brand-color-orange-25: #fae7db;
+  --brand-color-orange-50: #f7dbcb;
+  --brand-color-orange-100: #f5b897;
+  --brand-color-orange-200: #f5a074;
+  --brand-color-orange-300: #ef8a5d;
+  --brand-color-orange-400: #db6b30;
+  --brand-color-orange-500: #c45f2a;
+  --brand-color-orange-600: #ab5124;
+  --brand-color-orange-700: #8e421b;
+  --brand-color-orange-800: #6e3113;
+  --brand-color-orange-900: #481d08;
+  --brand-color-orange-950: #391606;
+  --brand-color-teal-0: #d9fefc;
+  --brand-color-teal-25: #b2f9f6;
+  --brand-color-teal-50: #91f0ec;
+  --brand-color-teal-100: #64d6d3;
+  --brand-color-teal-200: #64ccc9;
+  --brand-color-teal-300: #33b8b9;
+  --brand-color-teal-400: #1fa09d;
+  --brand-color-teal-500: #23918f;
+  --brand-color-teal-600: #237d7b;
+  --brand-color-teal-700: #1d6766;
+  --brand-color-teal-800: #1f5453;
+  --brand-color-teal-900: #0c3231;
+  --brand-color-teal-950: #0e2626;
+  --brand-text-display-ff: Space Grotesk;
+  --brand-text-display-fw: 700;
+  --brand-text-heading-ff: Geist;
+  --brand-text-heading-fw: 700;
+  --brand-text-heading-fw-alt: 700;
+  --brand-text-body-ff: Geist;
+  --brand-text-body-fw-optical-sm: 400;
+  --brand-text-body-fw-optical-md: 400;
+  --brand-text-body-fw-optical-lg: 400;
+  --brand-text-label-ff: Geist;
+  --brand-text-label-fw: 500;
+  --brand-text-label-upper-ff: Space Grotesk;
+  --brand-text-label-upper-fw: 700;
+  --brand-text-technical-ff: Geist Mono;
+  --brand-text-action-ff: Geist;
+  --brand-text-action-fw: 500;
+  --brand-text-action-critical-ff: Geist;
+  --brand-text-action-critical-fw: 600;
+  --text-ff-main: 'Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --text-ff-alternate: 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --text-ff-auxiliary: 'Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+  --shadow-base: rgba(0, 0, 0, 0.1);
+  --shadow-xs: rgba(0, 0, 0, 0.05);
+  --backdrop-opacity-neutral-light-low: rgba(255, 255, 255, 0.3);
+  --backdrop-opacity-neutral-light-mid: rgba(255, 255, 255, 0.7);
+  --backdrop-opacity-neutral-light-high: rgba(255, 255, 255, 0.8);
+  --backdrop-opacity-neutral-dark-low: rgba(0, 0, 0, 0.3);
+  --backdrop-opacity-neutral-dark-mid: rgba(0, 0, 0, 0.7);
+  --backdrop-opacity-neutral-dark-high: rgba(0, 0, 0, 0.8);
+  --backdrop-opacity-tinted-mid: rgba(80, 87, 232, 0.7);
+  --backdrop-opacity-tinted-high: rgba(80, 87, 232, 0.8);
+  --overlay-fade-start: rgba(0, 0, 0, 0);
+  --overlay-fade-end: rgba(0, 0, 0, 0.8);
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
@@ -2844,7 +2888,7 @@
     background: var(--color-neutral-quaternary);
     border: 0;
     font-weight: 500;
-    font-size: c;
+    font-size: v;
     cursor: pointer;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
