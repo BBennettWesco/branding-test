@@ -11,6 +11,28 @@
 @theme {
   --spacing: .2rem;
 
+  /* Fluid space variables mapped to Tailwind */
+  --fl-space-\.25: var(--fl-space-\.25);
+  --fl-space-\.5: var(--fl-space-\.5);
+  --fl-space-1: var(--fl-space-1);
+  --fl-space-1\.5: var(--fl-space-1\.5);
+  --fl-space-1\.75: var(--fl-space-1\.75);
+  --fl-space-2: var(--fl-space-2);
+  --fl-space-2\.5: var(--fl-space-2\.5);
+  --fl-space-3: var(--fl-space-3);
+  --fl-space-3\.5: var(--fl-space-3\.5);
+  --fl-space-4: var(--fl-space-4);
+  --fl-space-4\.5: var(--fl-space-4\.5);
+  --fl-space-5: var(--fl-space-5);
+  --fl-space-6: var(--fl-space-6);
+  --fl-space-7: var(--fl-space-7);
+  --fl-space-8: var(--fl-space-8);
+  --fl-space-9: var(--fl-space-9);
+  --fl-space-10: var(--fl-space-10);
+  --fl-space-11: var(--fl-space-11);
+  --fl-space-12: var(--fl-space-12);
+  --fl-space-13: var(--fl-space-13);
+
   /* Fluid text variables mapped to Tailwind */
   --text-*: initial;
   --text-xs: var(--text-xs);
