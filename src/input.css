@@ -4,6 +4,7 @@
 @import "../build/css/core.css";
 @import "./fluid.css";
 @import "../build/css/synergy.css";
+@import "../build/css/wesco.css";
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
