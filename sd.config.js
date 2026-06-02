@@ -65,6 +65,8 @@ function getStyleDictionaryConfig(brand, platform) {
             format: 'css/variables',
             options: {
               selector: `[data-brand="${brand}"]`,
+              // This prevents Style Dictionary from flattening semantic aliases
+              outputReferences: true
             },
           },
         ],
