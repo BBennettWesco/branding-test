@@ -14,7 +14,7 @@ const savedBrand = localStorage.getItem("brand")
 
 if(savedBrand){
 document.documentElement.setAttribute("data-brand", savedBrand)
-themeSwitcher.value = savedBrand
+brandSwitcher.value = savedBrand
 }
 
 brandSwitcher.addEventListener("change",(e)=>{
