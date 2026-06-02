@@ -29,7 +29,7 @@ localStorage.setItem("brand", brand)
 
 
 
-/* MODE SWITCH */
+/* MODE SWITCH 
 
 const toggle = document.getElementById("modeToggle")
 
@@ -49,4 +49,4 @@ document.documentElement.setAttribute("data-mode", next)
 
 localStorage.setItem("mode", next)
 
-})
+})*/
