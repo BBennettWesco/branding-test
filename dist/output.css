@@ -2794,9 +2794,9 @@
   --brand-color-teal-800: #1f5453;
   --brand-color-teal-900: #0c3231;
   --brand-color-teal-950: #0e2626;
-  --text-ff-main: Source Sans 3;
-  --text-ff-alternate: Titillium Web;
-  --text-ff-auxiliary: Source Code Pro;
+  --text-ff-main: 'Source Sans 3', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --text-ff-alternate: 'Titillium Web', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --text-ff-auxiliary: 'Source Code Pro', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
   --shadow-base: rgba(29, 37, 45, 0.1);
   --shadow-xs: rgba(29, 37, 45, 0.05);
   --overlay-fade-start: rgba(29, 37, 45, 0);
