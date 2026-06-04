@@ -46,6 +46,32 @@ StyleDictionary.registerTransform({
 
 const { css } = transformGroups;
 
+/*function getCoreStyleDictionaryConfig(platform) {
+  return {
+    source: [
+      'tokens/core/*.json',
+      `tokens/platforms/${platform}/*.json`,
+    ],
+    platforms: {
+      css: {
+        transforms: ['name/kebab', 'color/culori-oklch', 'fontFamily/figma-css'],
+        transformGroup: css,
+        buildPath: 'build/css/',
+        files: [
+          {
+            destination: 'core.css',
+            format: 'css/variables',
+            options: {
+              selector: ':root',
+              outputReferences: true
+            },
+          },
+        ],
+      },
+    },
+  };
+}*/
+
 function getStyleDictionaryConfig(brand, platform) {
   return {
     source: [
@@ -66,7 +92,6 @@ function getStyleDictionaryConfig(brand, platform) {
             format: 'css/variables',
             options: {
               selector: `[data-brand="${brand}"]`,
-              // This prevents Style Dictionary from flattening semantic aliases
               outputReferences: true
             },
           },
@@ -78,6 +103,16 @@ function getStyleDictionaryConfig(brand, platform) {
 
 console.log('Build started...');
 
+// Build core tokens once
+/*for (const platform of ['css']) {
+  console.log('\n==============================================');
+  console.log(`\nProcessing: [${platform}] [core]`);
+
+  const sd = new StyleDictionary(getCoreStyleDictionaryConfig(platform));
+  await sd.buildPlatform(platform);
+}*/
+
+// Build brand-specific tokens
 for (const brand of ['synergy', 'wesco']) {
   for (const platform of ['css']) {
     console.log('\n==============================================');
