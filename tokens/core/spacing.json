@@ -316,30 +316,6 @@
           ]
         }
       }
-    },
-    "layout-container": {
-      "centered": {
-        "$type": "number",
-        "$value": "{width.viewport.min}",
-        "$description": "max-width for responsive containers",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:21918:166",
-          "com.figma.scopes": [
-            "WIDTH_HEIGHT"
-          ]
-        }
-      },
-      "fluid": {
-        "$type": "number",
-        "$value": "{width.viewport.max}",
-        "$description": "max-width for responsive containers",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:21918:167",
-          "com.figma.scopes": [
-            "WIDTH_HEIGHT"
-          ]
-        }
-      }
     }
   }
 }

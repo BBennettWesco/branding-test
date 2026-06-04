@@ -49,9 +49,10 @@ const { css } = transformGroups;
 function getStyleDictionaryConfig(brand, platform) {
   return {
     source: [
+      'tokens/core/*.json',
+      'tokens/*.json',
       `tokens/brands/${brand}/*.json`,
       `tokens/brands/${brand}.json`,
-      'tokens/*.json',
       `tokens/platforms/${platform}/*.json`,
     ],
     platforms: {
