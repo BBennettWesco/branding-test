@@ -46,39 +46,14 @@ StyleDictionary.registerTransform({
 
 const { css } = transformGroups;
 
-/*function getCoreStyleDictionaryConfig(platform) {
+function getStyleDictionaryConfig(brand, theme, platform) {
   return {
     source: [
-      'tokens/core/*.json',
-      `tokens/platforms/${platform}/*.json`,
-    ],
-    platforms: {
-      css: {
-        transforms: ['name/kebab', 'color/culori-oklch', 'fontFamily/figma-css'],
-        transformGroup: css,
-        buildPath: 'build/css/',
-        files: [
-          {
-            destination: 'core.css',
-            format: 'css/variables',
-            options: {
-              selector: ':root',
-              outputReferences: true
-            },
-          },
-        ],
-      },
-    },
-  };
-}*/
-
-function getStyleDictionaryConfig(brand, platform) {
-  return {
-    source: [
-      'tokens/core/*.json',
       'tokens/*.json',
       `tokens/brands/${brand}/*.json`,
       `tokens/brands/${brand}.json`,
+      `tokens/themes/${theme}/*.json`,
+      `tokens/themes/${theme}.json`,
       `tokens/platforms/${platform}/*.json`,
     ],
     platforms: {
@@ -102,15 +77,6 @@ function getStyleDictionaryConfig(brand, platform) {
 }
 
 console.log('Build started...');
-
-// Build core tokens once
-/*for (const platform of ['css']) {
-  console.log('\n==============================================');
-  console.log(`\nProcessing: [${platform}] [core]`);
-
-  const sd = new StyleDictionary(getCoreStyleDictionaryConfig(platform));
-  await sd.buildPlatform(platform);
-}*/
 
 // Build brand-specific tokens
 for (const brand of ['synergy', 'wesco']) {

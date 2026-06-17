@@ -1,0 +1,25 @@
+{
+    "stroke": {
+        "100": {
+            "$type": "number",
+            "$value": 1,
+            "$extensions": {
+            "com.figma.variableId": "VariableID:21918:581"
+            }
+        },
+        "200": {
+            "$type": "number",
+            "$value": 2,
+            "$extensions": {
+            "com.figma.variableId": "VariableID:21918:582"
+            }
+        },
+        "400": {
+            "$type": "number",
+            "$value": 4,
+            "$extensions": {
+            "com.figma.variableId": "VariableID:21918:583"
+            }
+        }
+    }
+}

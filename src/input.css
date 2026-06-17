@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import "tailwindcss";
 
-@import "../build/css/core.css";
 @import "./fluid.css";
 @import "../build/css/synergy.css";
 @import "../build/css/wesco.css";
@@ -93,6 +92,60 @@
 
   --color-black: var(--black-root);
   --color-white: var(--white-root);
+
+  --color-surface: var(--color-white);
+  --color-focus: var(--color-focus-root);
+  --color-fg-static: var(--color-white);
+  --color-fg-main: var(--color-fg-main-root);
+  --color-fg-secondary: var(--color-fg-secondary-root);
+  --color-fg-auxiliary: var(--color-fg-auxiliary-root);
+  --color-fg-disabled: var(--color-fg-disabled-root);
+  --color-fg-accent: var(--color-fg-accent-root);
+  --color-max: var(--color-max-root);
+  --color-max-inset-fg-main: var(--color-max-inset-fg-main-root);
+  --color-max-inset-fg-secondary: var(--color-max-inset-fg-secondary-root);
+  --color-max-inset-fg-auxiliary: var(--color-max-inset-fg-auxiliary-root);
+  --color-max-inset-fg-accent: var(--color-max-inset-fg-accent-root);
+  --color-max-inset-stroke-main: var(--color-max-inset-stroke-main-root);
+  --color-max-inset-stroke-secondary: var(--color-max-inset-stroke-secondary-root);
+  --color-max-inset-stroke-auxiliary: var(--color-max-inset-stroke-auxiliary-root);
+  --color-max-inset-stroke-accent: var(--color-max-inset-stroke-accent-root);
+  --color-loud: var(--color-loud-root);
+  --color-loud-inset-fg-main: var(--color-loud-inset-fg-main-root);
+  --color-loud-inset-fg-secondary: var(--color-loud-inset-fg-secondary-root);
+  --color-loud-inset-fg-auxiliary: var(--color-loud-inset-fg-auxiliary-root);
+  --color-loud-inset-fg-accent: var(--color-loud-inset-fg-accent-root);
+  --color-loud-inset-stroke-main: var(--color-loud-inset-stroke-main-root);
+  --color-loud-inset-stroke-secondary: var(--color-loud-inset-stroke-secondary-root);
+  --color-loud-inset-stroke-auxiliary: var(--color-loud-inset-stroke-auxiliary-root);
+  --color-loud-inset-stroke-accent: var(--color-loud-inset-stroke-accent-root);
+  --color-medium: var(--color-medium-root);
+  --color-medium-inset-fg-main: var(--color-medium-inset-fg-main-root);
+  --color-medium-inset-fg-secondary: var(--color-medium-inset-fg-secondary-root);
+  --color-medium-inset-fg-auxiliary: var(--color-medium-inset-fg-auxiliary-root);
+  --color-medium-inset-fg-accent: var(--color-medium-inset-fg-accent-root);
+  --color-medium-inset-stroke-main: var(--color-medium-inset-stroke-main-root);
+  --color-medium-inset-stroke-secondary: var(--color-medium-inset-stroke-secondary-root);
+  --color-medium-inset-stroke-auxiliary: var(--color-medium-inset-stroke-auxiliary-root);
+  --color-medium-inset-stroke-accent: var(--color-medium-inset-stroke-accent-root);
+  --color-quiet: var(--color-quiet-root);
+  --color-quiet-inset-fg-main: var(--color-quiet-inset-fg-main-root);
+  --color-quiet-inset-fg-secondary: var(--color-quiet-inset-fg-secondary-root);
+  --color-quiet-inset-fg-auxiliary: var(--color-quiet-inset-fg-auxiliary-root);
+  --color-quiet-inset-fg-accent: var(--color-quiet-inset-fg-accent-root);
+  --color-quiet-inset-stroke-main: var(--color-quiet-inset-stroke-main-root);
+  --color-quiet-inset-stroke-secondary: var(--color-quiet-inset-stroke-secondary-root);
+  --color-quiet-inset-stroke-auxiliary: var(--color-quiet-inset-stroke-auxiliary-root);
+  --color-quiet-inset-stroke-accent: var(--color-quiet-inset-stroke-accent-root);
+  --color-muted: var(--color-muted-root);
+  --color-muted-inset-fg-main: var(--color-muted-inset-fg-main-root);
+  --color-muted-inset-fg-secondary: var(--color-muted-inset-fg-secondary-root);
+  --color-muted-inset-fg-auxiliary: var(--color-muted-inset-fg-auxiliary-root);
+  --color-muted-inset-fg-accent: var(--color-muted-inset-fg-accent-root);
+  --color-muted-inset-stroke-main: var(--color-muted-inset-stroke-main-root);
+  --color-muted-inset-stroke-secondary: var(--color-muted-inset-stroke-secondary-root);
+  --color-muted-inset-stroke-auxiliary: var(--color-muted-inset-stroke-auxiliary-root);
+  --color-muted-inset-stroke-accent: var(--color-muted-inset-stroke-accent-root);
 }
 
 /* Custom Shadows */
