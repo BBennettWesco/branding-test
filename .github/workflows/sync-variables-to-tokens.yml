@@ -35,7 +35,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
 
       - name: Create Pull Request
-        uses: branding-test/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: Update tokens from Figma
           title: Update tokens from Figma
