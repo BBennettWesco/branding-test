@@ -15,7 +15,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '23.9.0'
 
@@ -23,7 +23,7 @@ jobs:
         run: npm install -g npm@10.9.2
 
       - name: Clone repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Install dependencies
         run: npm install
@@ -35,7 +35,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
 
       - name: Create Pull Request
-        uses: BBennettWesco/create-pull-request@v5
+        uses: BBennettWesco/create-pull-request@v7
         with:
           commit-message: Update tokens from Figma
           title: Update tokens from Figma
