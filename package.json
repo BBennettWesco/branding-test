@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "node sd.config.js"
+    "sync-figma-to-tokens": "tsx node_modules/variables-github-action-example-main/src/sync_figma_to_tokens.ts",
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
