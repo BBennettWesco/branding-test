@@ -16,5 +16,8 @@
     "flowbite": "^4.0.1",
     "style-dictionary": "^5.4.2",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4"
   }
 }
