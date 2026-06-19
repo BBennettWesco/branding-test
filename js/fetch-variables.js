@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from "node:fs";
 
 const FIGMA_ACCESS_TOKEN = process.env.FIGMA_ACCESS_TOKEN;
 const FILE_KEY = process.env.FIGMA_TEST_FILE_KEY;
@@ -14,9 +14,7 @@ async function fetchVariables() {
   );
 
   if (!response.ok) {
-    throw new Error(
-      `Figma API Error: ${response.status}`
-    );
+    throw new Error(`Figma API Error: ${response.status}`);
   }
 
   const data = await response.json();
