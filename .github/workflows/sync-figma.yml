@@ -22,8 +22,8 @@ jobs:
       - name: Pull Variables
         run: node ./js/fetch-variables.js
         env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+          FIGMA_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_TEST_FILE_KEY }}
 
       - name: Commit Changes
         run: |
