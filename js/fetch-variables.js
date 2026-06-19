@@ -3,10 +3,17 @@ import fs from "node:fs";
 const FIGMA_ACCESS_TOKEN = process.env.FIGMA_ACCESS_TOKEN;
 const FILE_KEY = process.env.FIGMA_TEST_FILE_KEY;
 
+if (!FIGMA_TOKEN) {
+  throw new Error("FIGMA_TOKEN is missing");
+}
+if (!FILE_KEY) {
+  throw new Error("FIGMA_FILE_KEY is missing");
+}
+
 console.log("FILE_KEY:", FILE_KEY);
 console.log(
   "TOKEN EXISTS:",
-  FIGMA_TOKEN ? "YES" : "NO"
+  FIGMA_ACCESS_TOKEN ? "YES" : "NO"
 );
 
 async function fetchVariables() {
