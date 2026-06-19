@@ -6,7 +6,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "node sd.config.js"
+    "build": "node sd.config.js",
+    "tokens:build": "node js/transform-figma.js"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
