@@ -3,8 +3,8 @@ import fs from "node:fs";
 const FIGMA_ACCESS_TOKEN = process.env.FIGMA_ACCESS_TOKEN;
 const FILE_KEY = process.env.FIGMA_TEST_FILE_KEY;
 
-if (!FIGMA_TOKEN) {
-  throw new Error("FIGMA_TOKEN is missing");
+if (!FIGMA_ACCESS_TOKEN) {
+  throw new Error("FIGMA_ACCESS_TOKEN is missing");
 }
 if (!FILE_KEY) {
   throw new Error("FIGMA_FILE_KEY is missing");
