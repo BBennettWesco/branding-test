@@ -24,15 +24,15 @@ const COLLECTION_TYPES = {
   //xpressconnect: "brand",
   //tvc: "brand",
 
-  // Themes
-  neutral: "theme",
-  brand: "theme",
-  red: "theme",
-  orange: "theme",
-  yellow: "theme",
-  green: "theme",
-  teal: "theme",
-  blue: "theme",
+  // Styles
+  neutral: "style",
+  brand: "style",
+  red: "style",
+  orange: "style",
+  yellow: "style",
+  green: "style",
+  teal: "style",
+  blue: "style",
 };
 
 /* ----------------------------------
@@ -217,7 +217,8 @@ function getCategory(variable) {
     return "radius";
 
   if (
-    name.includes("border")
+    name.includes("border") ||
+    name.includes("stroke")
   )
     return "border";
 
@@ -368,8 +369,8 @@ if (!collectionType) {
 }
 
 const baseDir =
-  collectionType === "theme"
-    ? `themes/${collectionName}`
+  collectionType === "style"
+    ? `style/${collectionName}`
     : `brands/${collectionName}`;
 
     Object.entries(categories).forEach(

@@ -38,13 +38,88 @@ async function fetchVariables() {
 
   const data = await response.json();
 
+  console.log(
+    Object.values(
+      data.meta.variableCollections
+    ).map((c) => ({
+      name: c.name,
+      remote: c.remote,
+      isExtension: c.isExtension,
+      baseCollectionId: c.baseCollectionId
+    }))
+  );
+
+  // ----------------------------------
+  // Filter collections
+  // ----------------------------------
+
+  const localCollections = Object.fromEntries(
+    Object.entries(
+      data.meta.variableCollections || {}
+    ).filter(
+      ([, collection]) => !collection.remote
+    )
+  );
+
+  const localCollectionIds = new Set(
+    Object.keys(localCollections)
+  );
+
+  // ----------------------------------
+  // Filter variables
+  // ----------------------------------
+
+  const localVariables = Object.fromEntries(
+    Object.entries(
+      data.meta.variables || {}
+    ).filter(
+      ([, variable]) =>
+        !variable.remote &&
+        localCollectionIds.has(
+          variable.variableCollectionId
+        )
+    )
+  );
+
+  const filteredData = {
+    ...data,
+    meta: {
+      ...data.meta,
+      variableCollections:
+        localCollections,
+      variables: localVariables,
+    },
+  };
+
   fs.mkdirSync("tokens/raw", {
     recursive: true,
   });
 
   fs.writeFileSync(
     "tokens/raw/figma.json",
-    JSON.stringify(data, null, 2)
+    JSON.stringify(filteredData, null, 2)
+  );
+
+  console.log(
+    `Collections: ${
+      Object.keys(
+        data.meta.variableCollections
+      ).length
+    } → ${
+      Object.keys(localCollections)
+        .length
+    }`
+  );
+
+  console.log(
+    `Variables: ${
+      Object.keys(
+        data.meta.variables
+      ).length
+    } → ${
+      Object.keys(localVariables)
+        .length
+    }`
   );
 }
 
