@@ -16,6 +16,42 @@ console.log(
   FIGMA_ACCESS_TOKEN ? "YES" : "NO"
 );
 
+const EXCLUDED_COLLECTION_PATTERNS = [
+  "graphicsize",
+  "iconsize",
+];
+
+function shouldKeepVariable(variable) {
+  const name = variable.name.toLowerCase();
+
+  // Remove Text/fs, Text/lh, Text/ls
+  if (
+    name.includes("/text/fs/") ||
+    name.includes("/text/lh/") ||
+    name.includes("/text/ls/")
+  ) {
+    return false;
+  }
+
+  // Remove icon variables
+  if (
+    name === "icon" ||
+    name.startsWith("icon/")
+  ) {
+    return false;
+  }
+
+  // Keep only spacing/static/*
+  if (
+    name.startsWith("spacing/") &&
+    !name.startsWith("spacing/static")
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
 async function fetchVariables() {
   const response = await fetch(
     `https://api.figma.com/v1/files/${FILE_KEY}/variables/local`,
@@ -56,9 +92,19 @@ async function fetchVariables() {
   const localCollections = Object.fromEntries(
     Object.entries(
       data.meta.variableCollections || {}
-    ).filter(
-      ([, collection]) => !collection.remote
-    )
+    ).filter(([, collection]) => {
+      if (collection.remote) {
+        return false;
+      }
+
+      const collectionName =
+        collection.name.toLowerCase();
+
+      return !EXCLUDED_COLLECTION_PATTERNS.some(
+        pattern =>
+          collectionName.includes(pattern)
+      );
+    })
   );
 
   const localCollectionIds = new Set(
@@ -72,13 +118,29 @@ async function fetchVariables() {
   const localVariables = Object.fromEntries(
     Object.entries(
       data.meta.variables || {}
-    ).filter(
-      ([, variable]) =>
-        !variable.remote &&
-        localCollectionIds.has(
+    ).filter(([, variable]) => {
+
+      if (variable.remote) {
+        return false;
+      }
+
+      if (
+        !localCollectionIds.has(
           variable.variableCollectionId
         )
-    )
+      ) {
+        return false;
+      }
+
+      return shouldKeepVariable(variable);
+    })
+  );
+
+  console.log(
+    "Filtered variables:",
+    Object.values(localVariables)
+      .slice(0, 20)
+      .map(v => v.name)
   );
 
   const filteredData = {
