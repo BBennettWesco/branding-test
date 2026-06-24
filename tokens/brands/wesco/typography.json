@@ -1,0 +1,104 @@
+{
+  "brand": {
+    "text": {
+      "heading": {
+        "fw": {
+          "$value": "400px",
+          "$type": "dimension"
+        },
+        "fw-alt": {
+          "$value": "600px",
+          "$type": "dimension"
+        },
+        "ff": {
+          "$value": "{text.ff.alternate}",
+          "$type": "fontFamily"
+        }
+      },
+      "body": {
+        "fw": {
+          "optical-md": {
+            "$value": "350px",
+            "$type": "dimension"
+          },
+          "optical-sm": {
+            "$value": "450px",
+            "$type": "dimension"
+          },
+          "optical-lg": {
+            "$value": "300px",
+            "$type": "dimension"
+          }
+        }
+      },
+      "action": {
+        "critical": {
+          "fw": {
+            "$value": "700px",
+            "$type": "dimension"
+          }
+        }
+      }
+    }
+  },
+  "text": {
+    "ff": {
+      "auxiliary": {
+        "$value": "Source Code Pro",
+        "$type": "fontFamily"
+      },
+      "alternate": {
+        "$value": "Titillium Web",
+        "$type": "fontFamily"
+      },
+      "main": {
+        "$value": "Source Sans 3",
+        "$type": "fontFamily"
+      }
+    }
+  },
+  "backdrop-opacity": {
+    "neutral": {
+      "dark": {
+        "high": {
+          "$value": "#1D252DCC",
+          "$type": "color"
+        },
+        "mid": {
+          "$value": "#1D252DB2",
+          "$type": "color"
+        }
+      }
+    },
+    "tinted": {
+      "high": {
+        "$value": "#4F758BCC",
+        "$type": "color"
+      },
+      "mid": {
+        "$value": "#4F758BB2",
+        "$type": "color"
+      }
+    }
+  },
+  "overlay-fade": {
+    "start": {
+      "$value": "#1D252D00",
+      "$type": "color"
+    },
+    "end": {
+      "$value": "#1D252DCC",
+      "$type": "color"
+    }
+  },
+  "shadow": {
+    "base": {
+      "$value": "#1D252D1A",
+      "$type": "color"
+    },
+    "xs": {
+      "$value": "#1D252D0D",
+      "$type": "color"
+    }
+  }
+}

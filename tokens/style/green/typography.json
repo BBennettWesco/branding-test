@@ -1,0 +1,138 @@
+{
+  "focus": {
+    "$value": "{brand.color.green.500}",
+    "$type": "color"
+  },
+  "quiet": {
+    "inset": {
+      "fg": {
+        "auxiliary": {
+          "$value": "{brand.color.green.300}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.700}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.green.900}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.500}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.green.25}",
+      "$type": "color"
+    }
+  },
+  "medium": {
+    "inset": {
+      "fg": {
+        "auxiliary": {
+          "$value": "{white.700}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.900}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.25}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.green.400}",
+      "$type": "color"
+    }
+  },
+  "max": {
+    "fill": {
+      "$value": "{brand.color.green.900}",
+      "$type": "color"
+    },
+    "inset": {
+      "fg": {
+        "main": {
+          "$value": "{white}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.25}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.100}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.500}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "loud": {
+    "inset": {
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.green.50}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.green.700}",
+      "$type": "color"
+    }
+  },
+  "muted": {
+    "inset": {
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.green.400}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.green.950}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.300}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.700}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.green.0}",
+      "$type": "color"
+    }
+  },
+  "surface": {
+    "gradient-accent": {
+      "start": {
+        "$value": "{brand.color.green.400}",
+        "$type": "color"
+      },
+      "end": {
+        "$value": "{brand.color.green.600}",
+        "$type": "color"
+      }
+    }
+  },
+  "foreground": {
+    "accent": {
+      "$value": "{brand.color.green.500}",
+      "$type": "color"
+    }
+  }
+}

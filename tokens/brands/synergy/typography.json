@@ -1,0 +1,436 @@
+{
+  "variant": {
+    "$value": "Desktop",
+    "$type": "fontFamily"
+  },
+  "grid": {
+    "gutter": {
+      "$value": "{spacing.static.xl}",
+      "$type": "dimension"
+    },
+    "columns": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "margin": {
+      "$value": "{spacing.static.2xl}",
+      "$type": "dimension"
+    }
+  },
+  "container": {
+    "2up": {
+      "min": {
+        "$value": "448px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "700px",
+        "$type": "dimension"
+      }
+    },
+    "3up": {
+      "min": {
+        "$value": "288px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "456px",
+        "$type": "dimension"
+      }
+    },
+    "4up": {
+      "min": {
+        "$value": "272px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "380px",
+        "$type": "dimension"
+      }
+    },
+    "col": {
+      "2": {
+        "$value": "700px",
+        "$type": "dimension"
+      },
+      "3": {
+        "$value": "456px",
+        "$type": "dimension"
+      },
+      "4": {
+        "$value": "334px",
+        "$type": "dimension"
+      },
+      "6": {
+        "$value": "212px",
+        "$type": "dimension"
+      }
+    },
+    "1-12": {
+      "min": {
+        "$value": "70px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "90px",
+        "$type": "dimension"
+      }
+    },
+    "11-12": {
+      "min": {
+        "$value": "1090px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "1310px",
+        "$type": "dimension"
+      }
+    },
+    "1-6": {
+      "min": {
+        "$value": "172px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "212px",
+        "$type": "dimension"
+      }
+    },
+    "5-6": {
+      "min": {
+        "$value": "988px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "1188px",
+        "$type": "dimension"
+      }
+    },
+    "1-4": {
+      "min": {
+        "$value": "274px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "334px",
+        "$type": "dimension"
+      }
+    },
+    "3-4": {
+      "min": {
+        "$value": "886px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "1066px",
+        "$type": "dimension"
+      }
+    },
+    "1-3": {
+      "min": {
+        "$value": "376px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "456px",
+        "$type": "dimension"
+      }
+    },
+    "2-3": {
+      "min": {
+        "$value": "784px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "944px",
+        "$type": "dimension"
+      }
+    }
+  },
+  "width": {
+    "viewport": {
+      "min": {
+        "$value": "1528px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "1920px",
+        "$type": "dimension"
+      }
+    },
+    "layout-container": {
+      "centered": {
+        "$value": "{width.viewport.min}",
+        "$type": "dimension"
+      },
+      "fluid": {
+        "$value": "{width.viewport.max}",
+        "$type": "dimension"
+      }
+    }
+  },
+  "brand": {
+    "text": {
+      "display": {
+        "ff": {
+          "$value": "{text.ff.alternate}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": "700px",
+          "$type": "dimension"
+        }
+      },
+      "heading": {
+        "ff": {
+          "$value": "{text.ff.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": "700px",
+          "$type": "dimension"
+        },
+        "fw-alt": {
+          "$value": "700px",
+          "$type": "dimension"
+        }
+      },
+      "body": {
+        "ff": {
+          "$value": "{text.ff.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "optical-sm": {
+            "$value": "400px",
+            "$type": "dimension"
+          },
+          "optical-md": {
+            "$value": "400px",
+            "$type": "dimension"
+          },
+          "optical-lg": {
+            "$value": "400px",
+            "$type": "dimension"
+          }
+        }
+      },
+      "label": {
+        "ff": {
+          "$value": "{text.ff.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": "500px",
+          "$type": "dimension"
+        },
+        "upper": {
+          "ff": {
+            "$value": "{text.ff.alternate}",
+            "$type": "fontFamily"
+          },
+          "fw": {
+            "$value": "700px",
+            "$type": "dimension"
+          }
+        }
+      },
+      "technical": {
+        "ff": {
+          "$value": "{text.ff.auxiliary}",
+          "$type": "fontFamily"
+        }
+      },
+      "action": {
+        "ff": {
+          "$value": "{text.ff.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": "500px",
+          "$type": "dimension"
+        },
+        "critical": {
+          "ff": {
+            "$value": "{text.ff.main}",
+            "$type": "fontFamily"
+          },
+          "fw": {
+            "$value": "600px",
+            "$type": "dimension"
+          }
+        }
+      }
+    }
+  },
+  "text": {
+    "ff": {
+      "main": {
+        "$value": "Geist",
+        "$type": "fontFamily"
+      },
+      "alternate": {
+        "$value": "Space Grotesk",
+        "$type": "fontFamily"
+      },
+      "auxiliary": {
+        "$value": "Geist Mono",
+        "$type": "fontFamily"
+      }
+    },
+    "ps": {
+      "70": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "80": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "100": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "120": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "140": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "160": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "200": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "250": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "300": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "350": {
+        "$value": null,
+        "$type": "dimension"
+      },
+      "none": {
+        "$value": "0px",
+        "$type": "dimension"
+      }
+    }
+  },
+  "white": {
+    "$value": "#FFFFFF",
+    "$type": "color"
+  },
+  "black": {
+    "$value": "#000000",
+    "$type": "color"
+  },
+  "rounded": {
+    "none": {
+      "$value": "0px",
+      "$type": "dimension"
+    },
+    "2xs": {
+      "$value": "2px",
+      "$type": "dimension"
+    },
+    "xs": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "sm": {
+      "$value": "6px",
+      "$type": "dimension"
+    },
+    "md": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "lg": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "xl": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "2xl": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension"
+    }
+  },
+  "shadow": {
+    "base": {
+      "$value": "#0000001A",
+      "$type": "color"
+    },
+    "xs": {
+      "$value": "#0000000D",
+      "$type": "color"
+    }
+  },
+  "backdrop-opacity": {
+    "neutral": {
+      "light": {
+        "low": {
+          "$value": "{white.300}",
+          "$type": "color"
+        },
+        "mid": {
+          "$value": "{white.700}",
+          "$type": "color"
+        },
+        "high": {
+          "$value": "{white.800}",
+          "$type": "color"
+        }
+      },
+      "dark": {
+        "low": {
+          "$value": "{black.300}",
+          "$type": "color"
+        },
+        "mid": {
+          "$value": "{black.700}",
+          "$type": "color"
+        },
+        "high": {
+          "$value": "{black.800}",
+          "$type": "color"
+        }
+      }
+    },
+    "tinted": {
+      "mid": {
+        "$value": "#5057E8B2",
+        "$type": "color"
+      },
+      "high": {
+        "$value": "#5057E8CC",
+        "$type": "color"
+      }
+    }
+  },
+  "overlay-fade": {
+    "start": {
+      "$value": "#00000000",
+      "$type": "color"
+    },
+    "end": {
+      "$value": "{black.800}",
+      "$type": "color"
+    }
+  }
+}

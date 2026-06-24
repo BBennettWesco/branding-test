@@ -1,0 +1,110 @@
+{
+  "foreground": {
+    "accent": {
+      "$value": "{brand.color.teal.500}",
+      "$type": "color"
+    }
+  },
+  "max": {
+    "fill": {
+      "$value": "{brand.color.teal.900}",
+      "$type": "color"
+    },
+    "inset": {
+      "fg": {
+        "secondary": {
+          "$value": "{brand.color.teal.25}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.teal.200}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{white}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "loud": {
+    "inset": {
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.teal.100}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.teal.700}",
+      "$type": "color"
+    }
+  },
+  "quiet": {
+    "inset": {
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.teal.500}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.teal.700}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.teal.950}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.teal.300}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.teal.25}",
+      "$type": "color"
+    }
+  },
+  "muted": {
+    "fill": {
+      "$value": "{brand.color.teal.0}",
+      "$type": "color"
+    },
+    "inset": {
+      "fg": {
+        "secondary": {
+          "$value": "{brand.color.teal.600}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.teal.300}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.teal.800}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.teal.400}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "medium": {
+    "inset": {
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.teal.25}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.teal.400}",
+      "$type": "color"
+    }
+  }
+}

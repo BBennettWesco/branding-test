@@ -1,25 +1,16 @@
 {
-    "stroke": {
-        "100": {
-            "$type": "number",
-            "$value": 1,
-            "$extensions": {
-            "com.figma.variableId": "VariableID:21918:581"
-            }
-        },
-        "200": {
-            "$type": "number",
-            "$value": 2,
-            "$extensions": {
-            "com.figma.variableId": "VariableID:21918:582"
-            }
-        },
-        "400": {
-            "$type": "number",
-            "$value": 4,
-            "$extensions": {
-            "com.figma.variableId": "VariableID:21918:583"
-            }
-        }
+  "stroke": {
+    "100": {
+      "$value": "1px",
+      "$type": "dimension"
+    },
+    "200": {
+      "$value": "2px",
+      "$type": "dimension"
+    },
+    "400": {
+      "$value": "4px",
+      "$type": "dimension"
     }
+  }
 }

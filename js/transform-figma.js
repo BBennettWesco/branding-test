@@ -14,27 +14,6 @@ const collections =
 const variables =
   figma.meta.variables || {};
 
-const COLLECTION_TYPES = {
-  // Brands
-  synergy: "brand",
-  wesco: "brand",
-  //anixter: "brand",
-  //eecol: "brand",
-  //accutech: "brand",
-  //xpressconnect: "brand",
-  //tvc: "brand",
-
-  // Styles
-  neutral: "style",
-  brand: "style",
-  red: "style",
-  orange: "style",
-  yellow: "style",
-  green: "style",
-  teal: "style",
-  blue: "style",
-};
-
 /* ----------------------------------
  * Helpers
  * ---------------------------------- */
@@ -52,17 +31,7 @@ function writeJson(file, data) {
   );
 }
 
-function slug(str) {
-  return str
-    .replace(/^(\d+\.\s*)/, "")
-    .replace(/["']/g, "")
-    .replace(/=/g, "-")
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "-");
-}
-
-/*function rgbaToHex(color) {
+function rgbaToHex(color) {
   const r = Math.round(color.r * 255);
   const g = Math.round(color.g * 255);
   const b = Math.round(color.b * 255);
@@ -90,7 +59,7 @@ function slug(str) {
       .join("")
       .toUpperCase()
   );
-}*/
+}
 
 function tokenPath(name) {
   return name
@@ -117,6 +86,64 @@ function setDeep(obj, pathArray, value) {
     current[segment] ??= {};
     current = current[segment];
   });
+}
+
+function getRootCollection(collection) {
+  let current = collection;
+
+  while (
+    current?.isExtension &&
+    current?.baseCollectionId
+  ) {
+    current =
+      collectionLookup[
+        current.baseCollectionId
+      ];
+  }
+
+  return current;
+}
+
+function getCollectionGroup(collection) {
+  const root =
+    getRootCollection(collection);
+
+  if (!root) {
+    return null;
+  }
+
+  const rootName =
+    root.name.toLowerCase();
+
+  // Brand root
+  if (rootName.includes("global")) {
+    return "brand";
+  }
+
+  // Style root
+  if (rootName.includes("style")) {
+    return "style";
+  }
+
+  return null;
+}
+
+function getOutputFolder(collection) {
+  const match =
+    collection.name.match(
+      /=["']?([^"']+)["']?/
+    );
+
+  if (match) {
+    return match[1]
+      .trim()
+      .toLowerCase();
+  }
+
+  return collection.name
+    .toLowerCase()
+    .replace(/"/g, "")
+    .trim();
 }
 
 /* ----------------------------------
@@ -152,27 +179,55 @@ Object.values(variables).forEach(
 const outputs = {};
 
 function ensureOutput(
-  collectionName,
+  collectionId,
   category
 ) {
-  outputs[collectionName] ??= {};
+  outputs[collectionId] ??= {};
 
-  outputs[collectionName][category] ??=
-    {};
+  outputs[collectionId][category] ??= {};
 
-  return outputs[collectionName][category];
+  return outputs[collectionId][category];
 }
 
 /* ----------------------------------
  * Convert Variable
  * ---------------------------------- */
 
-function convertValue(value) {
+function getTokenType(variable) {
+  switch (variable.resolvedType) {
+    case "COLOR":
+      return "color";
+
+    case "FLOAT":
+      return "dimension";
+
+    case "STRING":
+      return "fontFamily";
+
+    case "BOOLEAN":
+      return "boolean";
+
+    default:
+      return "string";
+  }
+}
+
+function convertValue(
+  value,
+  variable
+) {
+  if (
+    variable.resolvedType === "FLOAT" &&
+    typeof value === "number"
+  ) {
+    return `${value}px`;
+  }
   if (
     value &&
     typeof value === "object" &&
     value.type === "VARIABLE_ALIAS"
   ) {
+
     const target =
       variableLookup[value.id];
 
@@ -185,13 +240,13 @@ function convertValue(value) {
     ).join(".")}}`;
   }
 
-  /*if (
+  if (
     value &&
     typeof value === "object" &&
     "r" in value
   ) {
     return rgbaToHex(value);
-  }*/
+  }
 
   return value;
 }
@@ -246,7 +301,7 @@ Object.values(variables).forEach(
 
     const root =
       ensureOutput(
-        slug(collection.name),
+        collection.id,
         category
       );
 
@@ -264,9 +319,15 @@ Object.values(variables).forEach(
       root,
       tokenPath(variable.name),
       {
-        value:
-          convertValue(value)
-      }
+        $value:
+          convertValue(
+            value,
+            variable
+          ),
+
+        $type:
+          getTokenType(variable)
+        }
     );
   }
 );
@@ -298,7 +359,7 @@ Object.values(collections).forEach(
 
         const root =
           ensureOutput(
-            slug(collection.name),
+            collection.id,
             category
           );
 
@@ -315,10 +376,14 @@ Object.values(collections).forEach(
           root,
           tokenPath(variable.name),
           {
-            value:
+            $value:
               convertValue(
-                value
-              )
+                value,
+                variable
+              ),
+
+            $type:
+              getTokenType(variable)
           }
         );
       }
@@ -334,20 +399,11 @@ const metadata = {};
 
 Object.values(collections).forEach(
   (collection) => {
-    metadata[
-      slug(collection.name)
-    ] = {
+    metadata[collection.id] = {
+      name: collection.name,
+
       extends:
-        collection
-          .baseCollectionId
-          ? slug(
-              collectionLookup[
-                collection
-                  .baseCollectionId
-              ]?.name ||
-                ""
-            )
-          : null,
+        collection.baseCollectionId || null,
     };
   }
 );
@@ -357,24 +413,41 @@ Object.values(collections).forEach(
  * ---------------------------------- */
 
 Object.entries(outputs).forEach(
-  ([collectionName, categories]) => {
-    const collectionType =
-  COLLECTION_TYPES[collectionName];
+  ([collectionId, categories]) => {
 
-if (!collectionType) {
-  console.warn(
-    `Unknown collection type for "${collectionName}"`
-  );
-  return;
-}
+    const collection =
+      collectionLookup[
+        collectionId
+      ];
 
-const baseDir =
-  collectionType === "style"
-    ? `style/${collectionName}`
-    : `brands/${collectionName}`;
+    if (!collection) {
+      console.warn(
+        `Collection not found for "${collectionId}"`
+      );
+      return;
+    }
+
+    const group =
+      getCollectionGroup(collection);
+
+    if (!group) {
+      console.warn(
+        `Skipping collection "${collection.name}"`
+      );
+      return;
+    }
+
+    const folder =
+      getOutputFolder(collection);
+
+    const baseDir =
+      group === "brand"
+        ? `brands/${folder}`
+        : `style/${folder}`;
 
     Object.entries(categories).forEach(
       ([category, tokens]) => {
+
         writeJson(
           `${OUTPUT}/${baseDir}/${category}.json`,
           tokens
