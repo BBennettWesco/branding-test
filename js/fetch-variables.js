@@ -26,9 +26,9 @@ function shouldKeepVariable(variable) {
 
   // Remove Text/fs, Text/lh, Text/ls
   if (
-    name.includes("/text/fs/") ||
-    name.includes("/text/lh/") ||
-    name.includes("/text/ls/")
+    name.startsWith("text/fs/") ||
+    name.startsWith("text/lh/") ||
+    name.startsWith("text/ls/")
   ) {
     return false;
   }
