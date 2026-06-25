@@ -216,24 +216,16 @@ function convertValue(
   value,
   variable
 ) {
-  if (
-    variable.resolvedType === "FLOAT" &&
-    typeof value === "number"
-  ) {
-    return `${value}px`;
-  }
+
   if (
     value &&
     typeof value === "object" &&
     value.type === "VARIABLE_ALIAS"
   ) {
-
     const target =
       variableLookup[value.id];
 
-    if (!target) {
-      return null;
-    }
+    if (!target) return null;
 
     return `{${tokenPath(
       target.name
@@ -248,6 +240,23 @@ function convertValue(
     return rgbaToHex(value);
   }
 
+  if (
+    variable.resolvedType === "FLOAT"
+  ) {
+
+    const name =
+      variable.name.toLowerCase();
+
+    // Font weight
+    if (
+      name.includes("/fw")
+    ) {
+      return value;
+    }
+
+    return `${value}px`;
+  }
+
   return value;
 }
 
@@ -259,25 +268,46 @@ function getCategory(variable) {
   const name =
     variable.name.toLowerCase();
 
-  if (name.includes("color"))
+  if (
+    variable.resolvedType === "COLOR"
+  ) {
     return "color";
+  }
+
+  if (name.includes("text") && variable.resolvedType !== "COLOR") 
+    return "typography";
 
   if (name.includes("spacing"))
     return "spacing";
 
   if (
     name.includes("radius") ||
-    name.includes("corner")
+    name.includes("corner") ||
+    name.includes("rounded")
   )
     return "radius";
 
   if (
-    name.includes("border") ||
-    name.includes("stroke")
+    name.includes("border-width") ||
+    name.includes("stroke") && variable.resolvedType !== "COLOR"
   )
     return "border";
 
-  return "typography";
+  if (
+    name.includes("shadow")
+  ) {
+    return "shadow";
+  }
+
+if (
+    name.includes("grid") ||
+    name.includes("container") ||
+    name === "width"
+  ) {
+    return "layout";
+  }
+
+  return null;
 }
 
 /* ----------------------------------
@@ -298,6 +328,9 @@ Object.values(variables).forEach(
 
     const category =
       getCategory(variable);
+      
+    if (!category)
+      return;
 
     const root =
       ensureOutput(

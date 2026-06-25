@@ -272,5 +272,49 @@
         }
       }
     }
+  },
+  "backdrop-opacity": {
+    "neutral": {
+      "dark": {
+        "high": {
+          "$value": "#1D252DCC",
+          "$type": "color"
+        },
+        "mid": {
+          "$value": "#1D252DB2",
+          "$type": "color"
+        }
+      }
+    },
+    "tinted": {
+      "high": {
+        "$value": "#4F758BCC",
+        "$type": "color"
+      },
+      "mid": {
+        "$value": "#4F758BB2",
+        "$type": "color"
+      }
+    }
+  },
+  "overlay-fade": {
+    "start": {
+      "$value": "#1D252D00",
+      "$type": "color"
+    },
+    "end": {
+      "$value": "#1D252DCC",
+      "$type": "color"
+    }
+  },
+  "shadow": {
+    "base": {
+      "$value": "#1D252D1A",
+      "$type": "color"
+    },
+    "xs": {
+      "$value": "#1D252D0D",
+      "$type": "color"
+    }
   }
 }

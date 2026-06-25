@@ -776,5 +776,75 @@
         "$type": "color"
       }
     }
+  },
+  "white": {
+    "$value": "#FFFFFF",
+    "$type": "color"
+  },
+  "black": {
+    "$value": "#000000",
+    "$type": "color"
+  },
+  "shadow": {
+    "base": {
+      "$value": "#0000001A",
+      "$type": "color"
+    },
+    "xs": {
+      "$value": "#0000000D",
+      "$type": "color"
+    }
+  },
+  "backdrop-opacity": {
+    "neutral": {
+      "light": {
+        "low": {
+          "$value": "{white.300}",
+          "$type": "color"
+        },
+        "mid": {
+          "$value": "{white.700}",
+          "$type": "color"
+        },
+        "high": {
+          "$value": "{white.800}",
+          "$type": "color"
+        }
+      },
+      "dark": {
+        "low": {
+          "$value": "{black.300}",
+          "$type": "color"
+        },
+        "mid": {
+          "$value": "{black.700}",
+          "$type": "color"
+        },
+        "high": {
+          "$value": "{black.800}",
+          "$type": "color"
+        }
+      }
+    },
+    "tinted": {
+      "mid": {
+        "$value": "#5057E8B2",
+        "$type": "color"
+      },
+      "high": {
+        "$value": "#5057E8CC",
+        "$type": "color"
+      }
+    }
+  },
+  "overlay-fade": {
+    "start": {
+      "$value": "#00000000",
+      "$type": "color"
+    },
+    "end": {
+      "$value": "{black.800}",
+      "$type": "color"
+    }
   }
 }

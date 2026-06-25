@@ -3,11 +3,11 @@
     "text": {
       "heading": {
         "fw": {
-          "$value": "400px",
+          "$value": 400,
           "$type": "dimension"
         },
         "fw-alt": {
-          "$value": "600px",
+          "$value": 600,
           "$type": "dimension"
         },
         "ff": {
@@ -18,15 +18,15 @@
       "body": {
         "fw": {
           "optical-md": {
-            "$value": "350px",
+            "$value": 350,
             "$type": "dimension"
           },
           "optical-sm": {
-            "$value": "450px",
+            "$value": 450,
             "$type": "dimension"
           },
           "optical-lg": {
-            "$value": "300px",
+            "$value": 300,
             "$type": "dimension"
           }
         }
@@ -34,7 +34,7 @@
       "action": {
         "critical": {
           "fw": {
-            "$value": "700px",
+            "$value": 700,
             "$type": "dimension"
           }
         }
@@ -55,50 +55,6 @@
         "$value": "Source Sans 3",
         "$type": "fontFamily"
       }
-    }
-  },
-  "backdrop-opacity": {
-    "neutral": {
-      "dark": {
-        "high": {
-          "$value": "#1D252DCC",
-          "$type": "color"
-        },
-        "mid": {
-          "$value": "#1D252DB2",
-          "$type": "color"
-        }
-      }
-    },
-    "tinted": {
-      "high": {
-        "$value": "#4F758BCC",
-        "$type": "color"
-      },
-      "mid": {
-        "$value": "#4F758BB2",
-        "$type": "color"
-      }
-    }
-  },
-  "overlay-fade": {
-    "start": {
-      "$value": "#1D252D00",
-      "$type": "color"
-    },
-    "end": {
-      "$value": "#1D252DCC",
-      "$type": "color"
-    }
-  },
-  "shadow": {
-    "base": {
-      "$value": "#1D252D1A",
-      "$type": "color"
-    },
-    "xs": {
-      "$value": "#1D252D0D",
-      "$type": "color"
     }
   }
 }
