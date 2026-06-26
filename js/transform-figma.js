@@ -202,7 +202,7 @@ function convertValue(
     // unitless tokens
     if (
       name.includes("/fw") ||
-      name.includes("weight") ||
+      name.includes("font-weight") ||
       name.includes("opacity") ||
       name.includes("line-height")
     ) {
