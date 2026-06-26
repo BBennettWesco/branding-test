@@ -1,26 +1,30 @@
 {
-  "spacing-static-xs": {
-    "$value": "12px",
-    "$type": "dimension"
-  },
-  "spacing-static-sm": {
-    "$value": "16px",
-    "$type": "dimension"
-  },
-  "spacing-static-md": {
-    "$value": "20px",
-    "$type": "dimension"
-  },
-  "spacing-static-lg": {
-    "$value": "24px",
-    "$type": "dimension"
-  },
-  "spacing-static-xl": {
-    "$value": "32px",
-    "$type": "dimension"
-  },
-  "spacing-static-2xl": {
-    "$value": "48px",
-    "$type": "dimension"
+  "spacing": {
+    "static": {
+      "xs": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "sm": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "md": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
+      "lg": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "xl": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "2xl": {
+        "$value": "48px",
+        "$type": "dimension"
+      }
+    }
   }
 }

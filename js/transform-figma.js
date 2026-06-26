@@ -31,24 +31,6 @@ function writeJson(file, data) {
   );
 }
 
-/**
- * Converts Figma name → flat token key
- * "brand/color/primary/0" → "brand-color-primary-0"
- */
-function tokenKey(name) {
-  return name
-    .replace(/"/g, "")
-    .replace(/\./g, "/")
-    .split("/")
-    .map((part) =>
-      part
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, "-")
-    )
-    .join("-");
-}
-
 function rgbaToHex(color) {
   const r = Math.round(color.r * 255);
   const g = Math.round(color.g * 255);
@@ -92,7 +74,7 @@ function tokenPath(name) {
     );
 }
 
-/*function setDeep(obj, pathArray, value) {
+function setDeep(obj, pathArray, value) {
   let current = obj;
 
   pathArray.forEach((segment, index) => {
@@ -104,7 +86,7 @@ function tokenPath(name) {
     current[segment] ??= {};
     current = current[segment];
   });
-}*/
+}
 
 function getRootCollection(collection) {
   let current = collection;
@@ -247,7 +229,7 @@ function convertValue(
 
     return `{${tokenPath(
       target.name
-    ).join("-")}}`;
+    ).join(".")}}`;
   }
 
   if (
@@ -366,13 +348,20 @@ Object.values(variables).forEach(
 
     if (value === undefined) return;
 
-    const key = tokenPath(variable.name)
-  .join("-");
+    setDeep(
+      root,
+      tokenPath(variable.name),
+      {
+        $value:
+          convertValue(
+            value,
+            variable
+          ),
 
-    root[key] = {
-      $value: convertValue(value, variable),
-      $type: getTokenType(variable),
-    };
+        $type:
+          getTokenType(variable)
+        }
+    );
   }
 );
 
@@ -416,13 +405,20 @@ Object.values(collections).forEach(
         if (value === undefined)
           return;
 
-        const key = tokenPath(variable.name)
-  .join("-");
+        setDeep(
+          root,
+          tokenPath(variable.name),
+          {
+            $value:
+              convertValue(
+                value,
+                variable
+              ),
 
-        root[key] = {
-          $value: convertValue(value, variable),
-          $type: getTokenType(variable),
-        };
+            $type:
+              getTokenType(variable)
+          }
+        );
       }
     );
   }

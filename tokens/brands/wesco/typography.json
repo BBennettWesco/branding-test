@@ -1,42 +1,60 @@
 {
-  "brand-text-heading-fw": {
-    "$value": 400,
-    "$type": "dimension"
+  "brand": {
+    "text": {
+      "heading": {
+        "fw": {
+          "$value": 400,
+          "$type": "dimension"
+        },
+        "fw-alt": {
+          "$value": 600,
+          "$type": "dimension"
+        },
+        "ff": {
+          "$value": "{text.ff.alternate}",
+          "$type": "fontFamily"
+        }
+      },
+      "body": {
+        "fw": {
+          "optical-md": {
+            "$value": 350,
+            "$type": "dimension"
+          },
+          "optical-sm": {
+            "$value": 450,
+            "$type": "dimension"
+          },
+          "optical-lg": {
+            "$value": 300,
+            "$type": "dimension"
+          }
+        }
+      },
+      "action": {
+        "critical": {
+          "fw": {
+            "$value": 700,
+            "$type": "dimension"
+          }
+        }
+      }
+    }
   },
-  "brand-text-body-fw-optical-md": {
-    "$value": 350,
-    "$type": "dimension"
-  },
-  "text-ff-auxiliary": {
-    "$value": "Source Code Pro",
-    "$type": "fontFamily"
-  },
-  "brand-text-action-critical-fw": {
-    "$value": 700,
-    "$type": "dimension"
-  },
-  "text-ff-alternate": {
-    "$value": "Titillium Web",
-    "$type": "fontFamily"
-  },
-  "brand-text-body-fw-optical-sm": {
-    "$value": 450,
-    "$type": "dimension"
-  },
-  "brand-text-body-fw-optical-lg": {
-    "$value": 300,
-    "$type": "dimension"
-  },
-  "brand-text-heading-fw-alt": {
-    "$value": 600,
-    "$type": "dimension"
-  },
-  "text-ff-main": {
-    "$value": "Source Sans 3",
-    "$type": "fontFamily"
-  },
-  "brand-text-heading-ff": {
-    "$value": "{text-ff-alternate}",
-    "$type": "fontFamily"
+  "text": {
+    "ff": {
+      "auxiliary": {
+        "$value": "Source Code Pro",
+        "$type": "fontFamily"
+      },
+      "alternate": {
+        "$value": "Titillium Web",
+        "$type": "fontFamily"
+      },
+      "main": {
+        "$value": "Source Sans 3",
+        "$type": "fontFamily"
+      }
+    }
   }
 }

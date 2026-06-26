@@ -1,194 +1,240 @@
 {
   "focus": {
-    "$value": "{brand-color-green-500}",
+    "$value": "{brand.color.green.500}",
     "$type": "color"
   },
-  "quiet-inset-fg-auxiliary": {
-    "$value": "{brand-color-green-300}",
-    "$type": "color"
+  "quiet": {
+    "inset": {
+      "fg": {
+        "auxiliary": {
+          "$value": "{brand.color.green.300}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.700}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.green.900}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.500}",
+          "$type": "color"
+        }
+      },
+      "stroke": {
+        "accent": {
+          "$value": "{quiet.inset.fg.accent}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.green.600}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.100}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.300}",
+          "$type": "color"
+        }
+      }
+    },
+    "stroke": {
+      "$value": "{brand.color.green.100}",
+      "$type": "color"
+    },
+    "fill": {
+      "$value": "{brand.color.green.25}",
+      "$type": "color"
+    }
   },
-  "quiet-inset-stroke-accent": {
-    "$value": "{quiet-inset-fg-accent}",
-    "$type": "color"
+  "medium": {
+    "inset": {
+      "fg": {
+        "auxiliary": {
+          "$value": "{white.700}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.900}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.25}",
+          "$type": "color"
+        }
+      },
+      "stroke": {
+        "accent": {
+          "$value": "{medium.inset.fg.accent}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.green.0}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.100}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.300}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.green.400}",
+      "$type": "color"
+    }
   },
-  "quiet-inset-fg-secondary": {
-    "$value": "{brand-color-green-700}",
-    "$type": "color"
+  "max": {
+    "fill": {
+      "$value": "{brand.color.green.900}",
+      "$type": "color"
+    },
+    "inset": {
+      "stroke": {
+        "main": {
+          "$value": "{brand.color.green.100}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{max.inset.fg.accent}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.400}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.700}",
+          "$type": "color"
+        }
+      },
+      "fg": {
+        "main": {
+          "$value": "{white}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.25}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.100}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.500}",
+          "$type": "color"
+        }
+      }
+    }
   },
-  "medium-inset-fg-auxiliary": {
-    "$value": "{white-700}",
-    "$type": "color"
+  "muted": {
+    "inset": {
+      "stroke": {
+        "main": {
+          "$value": "{brand.color.green.800}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.600}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.100}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.300}",
+          "$type": "color"
+        }
+      },
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.green.400}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.green.950}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.300}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.700}",
+          "$type": "color"
+        }
+      }
+    },
+    "stroke": {
+      "$value": "{brand.color.green.25}",
+      "$type": "color"
+    },
+    "fill": {
+      "$value": "{brand.color.green.0}",
+      "$type": "color"
+    }
   },
-  "max-fill": {
-    "$value": "{brand-color-green-900}",
-    "$type": "color"
+  "loud": {
+    "inset": {
+      "stroke": {
+        "secondary": {
+          "$value": "{brand.color.green.200}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.500}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.green.25}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{loud.inset.fg.accent}",
+          "$type": "color"
+        }
+      },
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.green.50}",
+          "$type": "color"
+        }
+      }
+    },
+    "stroke": {
+      "$value": "{brand.color.green.600}",
+      "$type": "color"
+    },
+    "fill": {
+      "$value": "{brand.color.green.700}",
+      "$type": "color"
+    }
   },
-  "muted-inset-stroke-main": {
-    "$value": "{brand-color-green-800}",
-    "$type": "color"
+  "surface": {
+    "gradient-accent": {
+      "start": {
+        "$value": "{brand.color.green.400}",
+        "$type": "color"
+      },
+      "end": {
+        "$value": "{brand.color.green.600}",
+        "$type": "color"
+      }
+    }
   },
-  "loud-inset-stroke-secondary": {
-    "$value": "{brand-color-green-200}",
-    "$type": "color"
-  },
-  "loud-inset-stroke-auxiliary": {
-    "$value": "{brand-color-green-500}",
-    "$type": "color"
-  },
-  "quiet-inset-stroke-main": {
-    "$value": "{brand-color-green-600}",
-    "$type": "color"
-  },
-  "loud-inset-fg-accent": {
-    "$value": "{brand-color-green-50}",
-    "$type": "color"
-  },
-  "quiet-inset-fg-main": {
-    "$value": "{brand-color-green-900}",
-    "$type": "color"
-  },
-  "medium-fill": {
-    "$value": "{brand-color-green-400}",
-    "$type": "color"
-  },
-  "max-inset-stroke-main": {
-    "$value": "{brand-color-green-100}",
-    "$type": "color"
-  },
-  "quiet-stroke": {
-    "$value": "{brand-color-green-100}",
-    "$type": "color"
-  },
-  "medium-inset-stroke-accent": {
-    "$value": "{medium-inset-fg-accent}",
-    "$type": "color"
-  },
-  "loud-stroke": {
-    "$value": "{brand-color-green-600}",
-    "$type": "color"
-  },
-  "muted-inset-fg-accent": {
-    "$value": "{brand-color-green-400}",
-    "$type": "color"
-  },
-  "muted-inset-fg-main": {
-    "$value": "{brand-color-green-950}",
-    "$type": "color"
-  },
-  "max-inset-stroke-accent": {
-    "$value": "{max-inset-fg-accent}",
-    "$type": "color"
-  },
-  "loud-inset-stroke-main": {
-    "$value": "{brand-color-green-25}",
-    "$type": "color"
-  },
-  "quiet-inset-fg-accent": {
-    "$value": "{brand-color-green-500}",
-    "$type": "color"
-  },
-  "loud-fill": {
-    "$value": "{brand-color-green-700}",
-    "$type": "color"
-  },
-  "max-inset-fg-main": {
-    "$value": "{white}",
-    "$type": "color"
-  },
-  "max-inset-stroke-secondary": {
-    "$value": "{brand-color-green-400}",
-    "$type": "color"
-  },
-  "surface-gradient-accent-start": {
-    "$value": "{brand-color-green-400}",
-    "$type": "color"
-  },
-  "muted-stroke": {
-    "$value": "{brand-color-green-25}",
-    "$type": "color"
-  },
-  "muted-inset-stroke-secondary": {
-    "$value": "{brand-color-green-600}",
-    "$type": "color"
-  },
-  "muted-fill": {
-    "$value": "{brand-color-green-0}",
-    "$type": "color"
-  },
-  "muted-inset-fg-auxiliary": {
-    "$value": "{brand-color-green-300}",
-    "$type": "color"
-  },
-  "medium-inset-fg-accent": {
-    "$value": "{brand-color-green-900}",
-    "$type": "color"
-  },
-  "medium-inset-stroke-main": {
-    "$value": "{brand-color-green-0}",
-    "$type": "color"
-  },
-  "muted-inset-fg-secondary": {
-    "$value": "{brand-color-green-700}",
-    "$type": "color"
-  },
-  "surface-gradient-accent-end": {
-    "$value": "{brand-color-green-600}",
-    "$type": "color"
-  },
-  "medium-inset-fg-secondary": {
-    "$value": "{brand-color-green-25}",
-    "$type": "color"
-  },
-  "quiet-inset-stroke-auxiliary": {
-    "$value": "{brand-color-green-100}",
-    "$type": "color"
-  },
-  "foreground-accent": {
-    "$value": "{brand-color-green-500}",
-    "$type": "color"
-  },
-  "medium-inset-stroke-secondary": {
-    "$value": "{brand-color-green-100}",
-    "$type": "color"
-  },
-  "max-inset-fg-accent": {
-    "$value": "{brand-color-green-25}",
-    "$type": "color"
-  },
-  "muted-inset-stroke-auxiliary": {
-    "$value": "{brand-color-green-100}",
-    "$type": "color"
-  },
-  "muted-inset-stroke-accent": {
-    "$value": "{brand-color-green-300}",
-    "$type": "color"
-  },
-  "loud-inset-stroke-accent": {
-    "$value": "{loud-inset-fg-accent}",
-    "$type": "color"
-  },
-  "max-inset-stroke-auxiliary": {
-    "$value": "{brand-color-green-700}",
-    "$type": "color"
-  },
-  "max-inset-fg-secondary": {
-    "$value": "{brand-color-green-100}",
-    "$type": "color"
-  },
-  "quiet-inset-stroke-secondary": {
-    "$value": "{brand-color-green-300}",
-    "$type": "color"
-  },
-  "quiet-fill": {
-    "$value": "{brand-color-green-25}",
-    "$type": "color"
-  },
-  "medium-inset-stroke-auxiliary": {
-    "$value": "{brand-color-green-300}",
-    "$type": "color"
-  },
-  "max-inset-fg-auxiliary": {
-    "$value": "{brand-color-green-500}",
-    "$type": "color"
+  "foreground": {
+    "accent": {
+      "$value": "{brand.color.green.500}",
+      "$type": "color"
+    }
   }
 }
