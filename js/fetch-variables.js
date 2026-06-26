@@ -28,7 +28,8 @@ function shouldKeepVariable(variable) {
   if (
     name.startsWith("text/fs/") ||
     name.startsWith("text/lh/") ||
-    name.startsWith("text/ls/")
+    name.startsWith("text/ls/") ||
+    name.startsWith("text/ps/")
   ) {
     return false;
   }

@@ -1,54 +1,48 @@
 import fs from "node:fs";
-import StyleDictionary from 'style-dictionary';
-import { parse, oklch, formatCss } from 'culori';
+import StyleDictionary from "style-dictionary";
+import { parse, oklch, formatCss } from "culori";
+
+const ROOT = process.cwd();
 
 //////////////////////////////////////////////////////
 // Helpers
 //////////////////////////////////////////////////////
 
 function getFolders(root) {
-  return fs
-    .readdirSync(root, { withFileTypes: true })
-    .filter((d) => d.isDirectory())
-    .map((d) => d.name);
+  return fs.readdirSync(`${ROOT}/${root}`, { withFileTypes: true })
+    .filter(d => d.isDirectory())
+    .map(d => d.name);
 }
 
 //////////////////////////////////////////////////////
-// Transform colors to oklch
+// Transform: color → OKLCH
 //////////////////////////////////////////////////////
+
 StyleDictionary.registerTransform({
-  name: 'color/culori-oklch',
-  type: 'value',
+  name: "color/culori-oklch",
+  type: "value",
   transitive: true,
-  filter: (token) => {
-    return (
-      token.$type === "color" ||
-      token.type === "color" ||
-      token.attributes?.category === "color"
-    );
-  },
+  filter: (token) =>
+    token.$type === "color" || token.type === "color",
   transform: (token) => {
     const raw = token.$value ?? token.value;
-    const parsedColor = parse(raw);
-    if (!parsedColor) {return raw;}
-
-    return formatCss(oklch(parsedColor));
+    const parsed = parse(raw);
+    if (!parsed) return raw;
+    return formatCss(oklch(parsed));
   },
 });
 
 //////////////////////////////////////////////////////
-// Transform Group
+// Transform group
 //////////////////////////////////////////////////////
 
 StyleDictionary.registerTransformGroup({
-
   name: "custom/css",
-
   transforms: [
     "attribute/cti",
+    "name/kebab",
     "color/culori-oklch",
   ],
-
 });
 
 //////////////////////////////////////////////////////
@@ -57,33 +51,17 @@ StyleDictionary.registerTransformGroup({
 
 StyleDictionary.registerFormat({
   name: "css/theme",
-
   format({ dictionary, options }) {
     const lines = [];
-
     lines.push(`${options.selector} {`);
 
     for (const token of dictionary.allTokens) {
+      const value = token.$value ?? token.value;
 
-      const value =
-        token.value ??
-        token.$value;
-
-      const cssValue =
-        typeof value === "string" &&
-        value.startsWith("{")
-          ? `var(--${value
-              .slice(1, -1)
-              .replace(/\./g, "-")})`
-          : value;
-
-      lines.push(
-        `  --${token.name}: ${cssValue};`
-      );
+      lines.push(`  --${token.name}: ${value};`);
     }
 
     lines.push("}");
-
     return lines.join("\n");
   },
 });
@@ -95,152 +73,77 @@ StyleDictionary.registerFormat({
 const platforms = {};
 
 //////////////////////////////////////////////////////
-// Brands
+// BRANDS
 //////////////////////////////////////////////////////
 
 for (const brand of getFolders("tokens/brands")) {
 
-  platforms[`css-brand-${brand}`] = {
+  console.log("Building brand:", brand);
 
-    transformGroup: "custom/css",
-
-    source: [
-      `../tokens/brands/${brand}/**/*.json`,
-    ],
-
-    buildPath: "build/css/",
-
-    files: [
-      {
-        destination: `brands/${brand}.css`,
-        format: "css/theme",
-        options: {
-          selector: `[data-brand="${brand}"]`,
-          outputReferences: true,
-        },
-      },
-    ],
-  };
-}
-
-//////////////////////////////////////////////////////
-// Styles
-//////////////////////////////////////////////////////
-
-for (const style of getFolders("tokens/style")) {
-
-  platforms[`css-style-${style}`] = {
-
-    transformGroup: "custom/css",
-
-    source: [
-      `../tokens/style/${style}/**/*.json`,
-    ],
-
-    buildPath: "build/css/",
-
-    files: [
-      {
-        destination: `style/${style}.css`,
-        format: "css/theme",
-        options: {
-          selector: `[data-style="${style}"]`,
-          outputReferences: true,
-        },
-      },
-    ],
-  };
-}
-
-//////////////////////////////////////////////////////
-// Build
-//////////////////////////////////////////////////////
-
-const sd = new StyleDictionary({
-
-  platforms,
-
-});
-
-await sd.buildAllPlatforms();
-
-console.log("✓ CSS tokens built");
-
-/*import { transformGroups } from 'style-dictionary/enums';
-
-function quoteCssFontFamily(value) {
-  if (typeof value !== 'string') return value;
-  const name = value.trim();
-  const isQuoted =
-    (name.startsWith("'") && name.endsWith("'")) ||
-    (name.startsWith('"') && name.endsWith('"'));
-  if (isQuoted) return name;
-  if (/\s/.test(name)) return `'${name.replace(/'/g, "\\'")}'`;
-  return name;
-}
-
-function isFontFamilyToken(token) {
-  const type = token.$type ?? token.type;
-  if (type === 'fontFamily') return true;
-  const scopes = token.$extensions?.['com.figma.scopes'];
-  if (Array.isArray(scopes) && scopes.includes('FONT_FAMILY')) return true;
-  const path = token.path?.join('.') ?? '';
-  return path.endsWith('.ff') || path.endsWith('-ff');
-}
-
-// Figma exports font families as $type "string"; built-in fontFamily/css only matches "fontFamily"
-StyleDictionary.registerTransform({
-  name: 'fontFamily/figma-css',
-  type: 'value',
-  transitive: true,
-  filter: isFontFamilyToken,
-  transform: (token) => quoteCssFontFamily(token.$value ?? token.value),
-});
-
-const { css } = transformGroups;
-
-function getStyleDictionaryConfig(brand, theme, platform) {
-  return {
-    source: [
-      'tokens/*.json',
-      `tokens/brands/${brand}/*.json`,
-      `tokens/brands/${brand}.json`,
-      `tokens/themes/${theme}/*.json`,
-      `tokens/themes/${theme}.json`,
-      `tokens/platforms/${platform}/*.json`,
-    ],
+  const sd = new StyleDictionary({
+    log: {verbosity: "verbose"},
+    source: [`tokens/brands/${brand}/**/*.json`],
     platforms: {
       css: {
-        transforms: ['name/kebab', 'color/culori-oklch', 'fontFamily/figma-css'],
-        transformGroup: css,
-        buildPath: 'build/css/',
+        transformGroup: "css",
+        buildPath: "build/css/",
         files: [
           {
-            destination: `${brand}.css`,
-            format: 'css/variables',
+            destination: `brands/${brand}.css`,
+            format: "css/variables",
             options: {
               selector: `[data-brand="${brand}"]`,
-              outputReferences: true
+              outputReferences: true,
             },
           },
         ],
       },
     },
-  };
+  });
+
+  await sd.buildAllPlatforms();
 }
 
-console.log('Build started...');
+//////////////////////////////////////////////////////
+// STYLES
+//////////////////////////////////////////////////////
 
-// Build brand-specific tokens
-for (const brand of ['synergy', 'wesco']) {
-  for (const platform of ['css']) {
-    console.log('\n==============================================');
-    console.log(`\nProcessing: [${platform}] [${brand}]`);
+for (const style of getFolders("tokens/style")) {
 
-    const sd = new StyleDictionary(getStyleDictionaryConfig(brand, platform));
-    await sd.buildPlatform(platform);
-  }
+  console.log("Building style:", style);
+
+  const sd = new StyleDictionary({
+    log: {verbosity: "verbose"},
+    source: [`tokens/style/${style}/**/*.json`],
+    platforms: {
+      css: {
+        transformGroup: "css",
+        buildPath: "build/css/",
+        files: [
+          {
+            destination: `style/${style}.css`,
+            format: "css/variables",
+            options: {
+              selector: `[data-style="${style}"]`,
+              outputReferences: true,
+            },
+          },
+        ],
+      },
+    },
+  });
+
+  await sd.buildAllPlatforms();
 }
 
-console.log('\n==============================================');
-console.log('\nBuild completed!');*/
+//////////////////////////////////////////////////////
+// BUILD
+//////////////////////////////////////////////////////
+
+const sd = new StyleDictionary({
+  platforms,
+});
+
+await sd.buildAllPlatforms();
+
+console.log("✓ CSS tokens built");
