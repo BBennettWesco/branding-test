@@ -185,6 +185,24 @@
   },
   "loud": {
     "inset": {
+      "fg": {
+        "main": {
+          "$value": "{brand.color.green.950}",
+          "$type": "color"
+        },
+        "accent": {
+          "$value": "{brand.color.green.50}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.green.700}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.green.400}",
+          "$type": "color"
+        }
+      },
       "stroke": {
         "secondary": {
           "$value": "{brand.color.green.200}",
@@ -202,12 +220,6 @@
           "$value": "{loud.inset.fg.accent}",
           "$type": "color"
         }
-      },
-      "fg": {
-        "accent": {
-          "$value": "{brand.color.green.50}",
-          "$type": "color"
-        }
       }
     },
     "stroke": {
@@ -220,11 +232,19 @@
     }
   },
   "surface": {
-    "gradient-accent": {
-      "start": {
-        "$value": "{brand.color.green.400}",
+    "$value": "{brand.color.green.950}",
+    "$type": "color",
+    "overlay": {
+      "strong": {
+        "$value": "{backdrop-opacity.tinted.high}",
         "$type": "color"
       },
+      "moderate": {
+        "$value": "{backdrop-opacity.tinted.mid}",
+        "$type": "color"
+      }
+    },
+    "gradient-accent": {
       "end": {
         "$value": "{brand.color.green.600}",
         "$type": "color"
@@ -232,8 +252,16 @@
     }
   },
   "foreground": {
+    "secondary": {
+      "$value": "{brand.color.green.25}",
+      "$type": "color"
+    },
     "accent": {
       "$value": "{brand.color.green.500}",
+      "$type": "color"
+    },
+    "auxiliary": {
+      "$value": "{brand.color.green.300}",
       "$type": "color"
     }
   }

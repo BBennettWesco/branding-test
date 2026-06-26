@@ -4,15 +4,10 @@ import path from "path";
 const INPUT = "./tokens/raw/figma.json";
 const OUTPUT = "./tokens";
 
-const figma = JSON.parse(
-  fs.readFileSync(INPUT, "utf8")
-);
+const figma = JSON.parse(fs.readFileSync(INPUT, "utf8"));
 
-const collections =
-  figma.meta.variableCollections || {};
-
-const variables =
-  figma.meta.variables || {};
+const collections = figma.meta.variableCollections || {};
+const variables = figma.meta.variables || {};
 
 /* ----------------------------------
  * Helpers
@@ -24,41 +19,7 @@ function mkdir(dir) {
 
 function writeJson(file, data) {
   mkdir(path.dirname(file));
-
-  fs.writeFileSync(
-    file,
-    JSON.stringify(data, null, 2)
-  );
-}
-
-function rgbaToHex(color) {
-  const r = Math.round(color.r * 255);
-  const g = Math.round(color.g * 255);
-  const b = Math.round(color.b * 255);
-
-  if (color.a !== undefined && color.a < 1) {
-    const a = Math.round(color.a * 255);
-
-    return (
-      "#" +
-      [r, g, b, a]
-        .map((v) =>
-          v.toString(16).padStart(2, "0")
-        )
-        .join("")
-        .toUpperCase()
-    );
-  }
-
-  return (
-    "#" +
-    [r, g, b]
-      .map((v) =>
-        v.toString(16).padStart(2, "0")
-      )
-      .join("")
-      .toUpperCase()
-  );
+  fs.writeFileSync(file,JSON.stringify(data, null, 2));
 }
 
 function tokenPath(name) {
@@ -225,31 +186,25 @@ function convertValue(
     const target =
       variableLookup[value.id];
 
-    if (!target) return null;
+    if (!target) {
+      console.warn("Broken alias reference:", value.id);
+      return `{missing-token}`;
+    }
 
     return `{${tokenPath(
       target.name
     ).join(".")}}`;
   }
 
-  if (
-    value &&
-    typeof value === "object" &&
-    "r" in value
-  ) {
-    return rgbaToHex(value);
-  }
+  if (variable.resolvedType === "FLOAT") {
+    const name = variable.name.toLowerCase();
 
-  if (
-    variable.resolvedType === "FLOAT"
-  ) {
-
-    const name =
-      variable.name.toLowerCase();
-
-    // Font weight
+    // unitless tokens
     if (
-      name.includes("/fw")
+      name.includes("/fw") ||
+      name.includes("weight") ||
+      name.includes("opacity") ||
+      name.includes("line-height")
     ) {
       return value;
     }
@@ -338,15 +293,31 @@ Object.values(variables).forEach(
         category
       );
 
-    const modeId =
-      collection.defaultModeId;
-
-    const value =
-      variable.valuesByMode[
-        modeId
-      ];
-
-    if (value === undefined) return;
+    const modes = variable.valuesByMode || {};
+    let value;
+    // 1. try default mode
+    const defaultMode = collection.defaultModeId;
+    if (defaultMode && modes[defaultMode] !== undefined) {
+      value = modes[defaultMode];
+    }
+    // 2. fallback: ANY available mode
+    if (value === undefined) {
+      const modeKeys = Object.keys(modes);
+      if (!modeKeys.length) {
+        console.warn("NO MODES:", variable.name);
+        return;
+      }
+      const defaultMode = collection.defaultModeId;
+      value =
+        (defaultMode && modes[defaultMode] !== undefined)
+          ? modes[defaultMode]
+          : modes[modeKeys[0]];
+    }
+    // 3. hard safety log
+    if (value === undefined) {
+      console.warn("DROPPED (no modes found):", variable.name);
+      return;
+    }
 
     setDeep(
       root,
@@ -396,14 +367,37 @@ Object.values(collections).forEach(
             category
           );
 
-        const modeId =
-          collection.defaultModeId;
+        let value;
 
-        const value =
-          values[modeId];
+        // try default mode
+        const defaultMode = collection.defaultModeId;
 
-        if (value === undefined)
+        if (defaultMode && values?.[defaultMode] !== undefined) {
+          value = values[defaultMode];
+        }
+
+        // fallback: first available value
+        if (value === undefined) {
+          const modeKeys = Object.keys(values || {});
+          if (!modeKeys.length) {
+            console.warn("NO EXTENSION MODES:", variable.name);
+            return;
+          }
+          value =
+            (collection.defaultModeId && values?.[collection.defaultModeId] !== undefined)
+              ? values[collection.defaultModeId]
+              : values[modeKeys[0]];
+        }
+
+        // safety
+        if (value === undefined) {
+          console.warn(
+            "DROPPED EXTENSION TOKEN:",
+            variable.name,
+            values
+          );
           return;
+        }
 
         setDeep(
           root,

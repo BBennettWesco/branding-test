@@ -91,6 +91,10 @@
       "$type": "color"
     }
   },
+  "surface": {
+    "$value": "{brand.color.orange.950}",
+    "$type": "color"
+  },
   "quiet": {
     "inset": {
       "stroke": {
@@ -168,6 +172,10 @@
           "$value": "{brand.color.orange.50}",
           "$type": "color"
         },
+        "main": {
+          "$value": "{brand.color.orange.900}",
+          "$type": "color"
+        },
         "auxiliary": {
           "$value": "{brand.color.orange.300}",
           "$type": "color"
@@ -216,6 +224,10 @@
     }
   },
   "foreground": {
+    "auxiliary": {
+      "$value": "{white.600}",
+      "$type": "color"
+    },
     "accent": {
       "$value": "{brand.color.orange.500}",
       "$type": "color"

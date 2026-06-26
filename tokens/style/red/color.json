@@ -116,6 +116,10 @@
         }
       },
       "fg": {
+        "main": {
+          "$value": "{brand.color.red.950}",
+          "$type": "color"
+        },
         "secondary": {
           "$value": "{brand.color.red.100}",
           "$type": "color"
@@ -215,9 +219,17 @@
       "$type": "color"
     }
   },
+  "surface": {
+    "$value": "{brand.color.red.950}",
+    "$type": "color"
+  },
   "foreground": {
     "accent": {
       "$value": "{brand.color.red.500}",
+      "$type": "color"
+    },
+    "auxiliary": {
+      "$value": "{white.600}",
       "$type": "color"
     }
   }

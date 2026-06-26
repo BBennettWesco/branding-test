@@ -43,6 +43,10 @@
       "$type": "color"
     }
   },
+  "focus": {
+    "$value": "{brand.color.primary.0}",
+    "$type": "color"
+  },
   "quiet": {
     "fill": {
       "$value": "{brand.color.primary.25}",
@@ -91,6 +95,64 @@
       "$type": "color"
     }
   },
+  "foreground": {
+    "auxiliary": {
+      "$value": "{white.600}",
+      "$type": "color"
+    },
+    "main": {
+      "$value": "{brand.color.neutral.800}",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "{brand.color.primary.50}",
+      "$type": "color"
+    }
+  },
+  "muted": {
+    "inset": {
+      "fg": {
+        "accent": {
+          "$value": "{brand.color.primary.200}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{brand.color.primary.950}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.primary.300}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.primary.700}",
+          "$type": "color"
+        }
+      },
+      "stroke": {
+        "main": {
+          "$value": "{brand.color.primary.800}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.primary.600}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.primary.100}",
+          "$type": "color"
+        }
+      }
+    },
+    "fill": {
+      "$value": "{brand.color.primary.0}",
+      "$type": "color"
+    },
+    "stroke": {
+      "$value": "{brand.color.primary.25}",
+      "$type": "color"
+    }
+  },
   "loud": {
     "stroke": {
       "$value": "{brand.color.primary.600}",
@@ -100,6 +162,18 @@
       "fg": {
         "accent": {
           "$value": "{brand.color.neutral.0}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{brand.color.primary.700}",
+          "$type": "color"
+        },
+        "auxiliary": {
+          "$value": "{brand.color.primary.500}",
+          "$type": "color"
+        },
+        "main": {
+          "$value": "{black}",
           "$type": "color"
         }
       },
@@ -167,62 +241,14 @@
       "$type": "color"
     }
   },
-  "muted": {
-    "fill": {
-      "$value": "{brand.color.primary.0}",
-      "$type": "color"
-    },
-    "inset": {
-      "stroke": {
-        "main": {
-          "$value": "{brand.color.primary.800}",
-          "$type": "color"
-        },
-        "secondary": {
-          "$value": "{brand.color.primary.600}",
-          "$type": "color"
-        },
-        "auxiliary": {
-          "$value": "{brand.color.primary.100}",
-          "$type": "color"
-        }
-      },
-      "fg": {
-        "main": {
-          "$value": "{brand.color.primary.950}",
-          "$type": "color"
-        },
-        "auxiliary": {
-          "$value": "{brand.color.primary.300}",
-          "$type": "color"
-        },
-        "secondary": {
-          "$value": "{brand.color.primary.700}",
-          "$type": "color"
-        }
-      }
-    },
-    "stroke": {
-      "$value": "{brand.color.primary.25}",
-      "$type": "color"
-    }
-  },
   "surface": {
-    "gradient-accent": {
-      "start": {
-        "$value": "{brand.color.primary.400}",
-        "$type": "color"
-      },
-      "end": {
-        "$value": "{brand.color.primary.600}",
+    "$value": "{brand.color.primary.950}",
+    "$type": "color",
+    "overlay": {
+      "strong": {
+        "$value": "{backdrop-opacity.tinted.high}",
         "$type": "color"
       }
-    }
-  },
-  "foreground": {
-    "main": {
-      "$value": "{brand.color.neutral.800}",
-      "$type": "color"
     }
   }
 }

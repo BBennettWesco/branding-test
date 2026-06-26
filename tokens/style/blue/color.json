@@ -28,6 +28,10 @@
           "$value": "{brand.color.blue.50}",
           "$type": "color"
         },
+        "main": {
+          "$value": "{brand.color.blue.950}",
+          "$type": "color"
+        },
         "accent": {
           "$value": "{brand.color.blue.100}",
           "$type": "color"
@@ -86,6 +90,10 @@
       "$value": "{brand.color.blue.900}",
       "$type": "color"
     }
+  },
+  "surface": {
+    "$value": "{brand.color.blue.950}",
+    "$type": "color"
   },
   "medium": {
     "inset": {

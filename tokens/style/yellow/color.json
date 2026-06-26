@@ -98,6 +98,10 @@
           "$value": "{brand.color.yellow.25}",
           "$type": "color"
         },
+        "main": {
+          "$value": "{brand.color.yellow.900}",
+          "$type": "color"
+        },
         "auxiliary": {
           "$value": "{white.500}",
           "$type": "color"
@@ -179,6 +183,20 @@
       "$type": "color"
     }
   },
+  "surface": {
+    "$value": "{brand.color.yellow.950}",
+    "$type": "color"
+  },
+  "foreground": {
+    "auxiliary": {
+      "$value": "{white.500}",
+      "$type": "color"
+    },
+    "accent": {
+      "$value": "{brand.color.yellow.200}",
+      "$type": "color"
+    }
+  },
   "quiet": {
     "stroke": {
       "$value": "{brand.color.yellow.50}",
@@ -224,12 +242,6 @@
     },
     "fill": {
       "$value": "{brand.color.yellow.25}",
-      "$type": "color"
-    }
-  },
-  "foreground": {
-    "accent": {
-      "$value": "{brand.color.yellow.200}",
       "$type": "color"
     }
   }
