@@ -1,0 +1,62 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-style="green"] {
+  --focus: var(--brand-color-green-500);
+  --quiet-inset-fg-auxiliary: var(--brand-color-green-300);
+  --quiet-inset-fg-secondary: var(--brand-color-green-700);
+  --quiet-inset-fg-main: var(--brand-color-green-900);
+  --quiet-inset-fg-accent: var(--brand-color-green-500);
+  --quiet-inset-stroke-main: var(--brand-color-green-600);
+  --quiet-inset-stroke-auxiliary: var(--brand-color-green-100);
+  --quiet-inset-stroke-secondary: var(--brand-color-green-300);
+  --quiet-stroke: var(--brand-color-green-100);
+  --quiet-fill: var(--brand-color-green-25);
+  --medium-inset-fg-auxiliary: var(--white-700);
+  --medium-inset-fg-accent: var(--brand-color-green-900);
+  --medium-inset-fg-secondary: var(--brand-color-green-25);
+  --medium-inset-stroke-main: var(--brand-color-green-0);
+  --medium-inset-stroke-secondary: var(--brand-color-green-100);
+  --medium-inset-stroke-auxiliary: var(--brand-color-green-300);
+  --medium-fill: var(--brand-color-green-400);
+  --max-fill: var(--brand-color-green-900);
+  --max-inset-stroke-main: var(--brand-color-green-100);
+  --max-inset-stroke-secondary: var(--brand-color-green-400);
+  --max-inset-stroke-auxiliary: var(--brand-color-green-700);
+  --max-inset-fg-main: var(--white-base);
+  --max-inset-fg-accent: var(--brand-color-green-25);
+  --max-inset-fg-secondary: var(--brand-color-green-100);
+  --max-inset-fg-auxiliary: var(--brand-color-green-500);
+  --muted-inset-stroke-main: var(--brand-color-green-800);
+  --muted-inset-stroke-secondary: var(--brand-color-green-600);
+  --muted-inset-stroke-auxiliary: var(--brand-color-green-100);
+  --muted-inset-stroke-accent: var(--brand-color-green-300);
+  --muted-inset-fg-accent: var(--brand-color-green-400);
+  --muted-inset-fg-main: var(--brand-color-green-950);
+  --muted-inset-fg-auxiliary: var(--brand-color-green-300);
+  --muted-inset-fg-secondary: var(--brand-color-green-700);
+  --muted-stroke: var(--brand-color-green-25);
+  --muted-fill: var(--brand-color-green-0);
+  --loud-inset-fg-main: var(--brand-color-green-950);
+  --loud-inset-fg-accent: var(--brand-color-green-50);
+  --loud-inset-fg-secondary: var(--brand-color-green-700);
+  --loud-inset-fg-auxiliary: var(--brand-color-green-400);
+  --loud-inset-stroke-secondary: var(--brand-color-green-200);
+  --loud-inset-stroke-auxiliary: var(--brand-color-green-500);
+  --loud-inset-stroke-main: var(--brand-color-green-25);
+  --loud-stroke: var(--brand-color-green-600);
+  --loud-fill: var(--brand-color-green-700);
+  --surface-gradient-accent-start: var(--brand-color-green-400);
+  --surface-gradient-accent-end: var(--brand-color-green-600);
+  --surface-base: var(--brand-color-green-950);
+  --surface-overlay-strong: var(--backdrop-opacity-tinted-high);
+  --surface-overlay-moderate: var(--backdrop-opacity-tinted-mid);
+  --foreground-secondary: var(--brand-color-green-25);
+  --foreground-accent: var(--brand-color-green-500);
+  --foreground-auxiliary: var(--brand-color-green-300);
+  --quiet-inset-stroke-accent: var(--quiet-inset-fg-accent);
+  --medium-inset-stroke-accent: var(--medium-inset-fg-accent);
+  --max-inset-stroke-accent: var(--max-inset-fg-accent);
+  --loud-inset-stroke-accent: var(--loud-inset-fg-accent);
+}

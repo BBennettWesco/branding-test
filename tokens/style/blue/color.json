@@ -51,7 +51,7 @@
     "inset": {
       "fg": {
         "main": {
-          "$value": "{white}",
+          "$value": "{white.base}",
           "$type": "color"
         },
         "accent": {

@@ -1,6 +1,6 @@
 {
   "surface": {
-    "$value": "{white}",
+    "$value": "{white.base}",
     "$type": "color",
     "overlay": {
       "weak": {
@@ -16,7 +16,7 @@
         "$type": "color"
       },
       "fades": {
-        "$value": "{white}",
+        "$value": "{white.base}",
         "$type": "color"
       }
     },
@@ -33,7 +33,7 @@
   },
   "foreground": {
     "static": {
-      "$value": "{white}",
+      "$value": "{white.base}",
       "$type": "color"
     },
     "main": {
@@ -121,7 +121,7 @@
     "inset": {
       "fg": {
         "main": {
-          "$value": "{white}",
+          "$value": "{white.base}",
           "$type": "color"
         },
         "secondary": {
@@ -169,7 +169,7 @@
     "inset": {
       "fg": {
         "main": {
-          "$value": "{white}",
+          "$value": "{white.base}",
           "$type": "color"
         },
         "secondary": {
