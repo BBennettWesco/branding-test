@@ -97,7 +97,9 @@
   --shadow-lg: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 10px 15px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
   --shadow-xl: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 20px 25px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
   --color-brand-shadow: var(--color-black);
+}
 
+@theme-inline {
   --color-black: var(--black);
   --color-white: var(--white);
 
