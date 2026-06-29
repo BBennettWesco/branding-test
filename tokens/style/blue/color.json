@@ -63,7 +63,7 @@
           "$type": "color"
         },
         "auxiliary": {
-          "$value": "{white.500}",
+          "$value": "{opacities.white.500}",
           "$type": "color"
         }
       },

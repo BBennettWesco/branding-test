@@ -5,7 +5,7 @@
       "$type": "color"
     },
     "auxiliary": {
-      "$value": "{white.600}",
+      "$value": "{opacities.white.600}",
       "$type": "color"
     }
   },
@@ -17,7 +17,7 @@
     "inset": {
       "fg": {
         "auxiliary": {
-          "$value": "{black.400}",
+          "$value": "{opacities.black.400}",
           "$type": "color"
         },
         "secondary": {
@@ -105,7 +105,7 @@
           "$type": "color"
         },
         "auxiliary": {
-          "$value": "{black.400}",
+          "$value": "{opacities.black.400}",
           "$type": "color"
         }
       },

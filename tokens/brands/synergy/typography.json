@@ -107,52 +107,6 @@
         "$value": "Geist Mono",
         "$type": "fontFamily"
       }
-    },
-    "ps": {
-      "70": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "80": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "100": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "120": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "140": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "160": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "200": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "250": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "300": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "350": {
-        "$value": "{missing-token}",
-        "$type": "dimension"
-      },
-      "none": {
-        "$value": "0px",
-        "$type": "dimension"
-      }
     }
   }
 }

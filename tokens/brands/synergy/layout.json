@@ -144,6 +144,16 @@
     }
   },
   "width": {
+    "viewport": {
+      "min": {
+        "$value": "1528px",
+        "$type": "dimension"
+      },
+      "max": {
+        "$value": "1920px",
+        "$type": "dimension"
+      }
+    },
     "layout-container": {
       "centered": {
         "$value": "{width.viewport.min}",

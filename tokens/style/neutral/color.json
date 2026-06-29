@@ -73,15 +73,15 @@
     "inset": {
       "fg": {
         "main": {
-          "$value": "{white.950}",
+          "$value": "{opacities.white.950}",
           "$type": "color"
         },
         "secondary": {
-          "$value": "{white.800}",
+          "$value": "{opacities.white.800}",
           "$type": "color"
         },
         "auxiliary": {
-          "$value": "{white.600}",
+          "$value": "{opacities.white.600}",
           "$type": "color"
         },
         "accent": {
@@ -125,11 +125,11 @@
           "$type": "color"
         },
         "secondary": {
-          "$value": "{white.800}",
+          "$value": "{opacities.white.800}",
           "$type": "color"
         },
         "auxiliary": {
-          "$value": "{white.600}",
+          "$value": "{opacities.white.600}",
           "$type": "color"
         },
         "accent": {
@@ -173,11 +173,11 @@
           "$type": "color"
         },
         "secondary": {
-          "$value": "{white.800}",
+          "$value": "{opacities.white.800}",
           "$type": "color"
         },
         "auxiliary": {
-          "$value": "{white.600}",
+          "$value": "{opacities.white.600}",
           "$type": "color"
         },
         "accent": {
@@ -306,15 +306,15 @@
     }
   },
   ":hover": {
-    "$value": "{black.50}",
+    "$value": "{opacities.black.50}",
     "$type": "color"
   },
   ":disabled": {
-    "$value": "{black.100}",
+    "$value": "{opacities.black.100}",
     "$type": "color"
   },
   ":active": {
-    "$value": "{black.300}",
+    "$value": "{opacities.black.300}",
     "$type": "color"
   }
 }

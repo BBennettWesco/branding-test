@@ -225,7 +225,7 @@
   },
   "foreground": {
     "auxiliary": {
-      "$value": "{white.600}",
+      "$value": "{opacities.white.600}",
       "$type": "color"
     },
     "accent": {

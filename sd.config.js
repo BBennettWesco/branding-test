@@ -26,10 +26,25 @@ StyleDictionary.registerTransform({
     token.$type === "color" || token.type === "color",
   transform: (token) => {
     const raw = token.$value ?? token.value;
+    if (
+      raw &&
+      typeof raw === "object" &&
+      "r" in raw
+    ) {
+      return formatCss(
+        oklch({
+          mode: "rgb",
+          r: raw.r,
+          g: raw.g,
+          b: raw.b,
+          alpha: raw.a
+        })
+      );
+    }
     const parsed = parse(raw);
     if (!parsed) return raw;
     return formatCss(oklch(parsed));
-  },
+  }
 });
 
 //////////////////////////////////////////////////////
@@ -85,7 +100,7 @@ for (const brand of getFolders("tokens/brands")) {
     source: [`tokens/brands/${brand}/**/*.json`],
     platforms: {
       css: {
-        transformGroup: "css",
+        transformGroup: "custom/css",
         buildPath: "build/css/",
         files: [
           {
@@ -93,8 +108,12 @@ for (const brand of getFolders("tokens/brands")) {
             format: "css/variables",
             options: {
               selector: `[data-brand="${brand}"]`,
-              outputReferences: true,
             },
+
+            filter: (token) => {
+              const file = token.filePath.replaceAll("\\", "/");
+              return file.includes(`tokens/brands/${brand}/`);
+            }
           },
         ],
       },
@@ -114,10 +133,17 @@ for (const style of getFolders("tokens/style")) {
 
   const sd = new StyleDictionary({
     log: {verbosity: "verbose"},
-    source: [`tokens/style/${style}/**/*.json`],
+    include: [
+      "tokens/brands/**/*.json"
+    ],
+
+    source: [
+      `tokens/style/${style}/**/*.json`
+    ],
+
     platforms: {
       css: {
-        transformGroup: "css",
+        transformGroup: "custom/css",
         buildPath: "build/css/",
         files: [
           {
@@ -127,10 +153,15 @@ for (const style of getFolders("tokens/style")) {
               selector: `[data-style="${style}"]`,
               outputReferences: true,
             },
-          },
-        ],
-      },
-    },
+
+            filter: (token) => {
+              const file = token.filePath.replaceAll("\\", "/");
+              return file.includes(`tokens/style/${style}/`);
+            }
+          }
+        ]
+      }
+    }
   });
 
   await sd.buildAllPlatforms();

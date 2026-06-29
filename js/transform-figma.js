@@ -39,8 +39,19 @@ function setDeep(obj, pathArray, value) {
   let current = obj;
 
   pathArray.forEach((segment, index) => {
-    if (index === pathArray.length - 1) {
-      current[segment] = value;
+    const isLeaf = index === pathArray.length - 1;
+
+    if (isLeaf) {
+      // If this path already has child tokens, don't overwrite them.
+      if (
+        current[segment] &&
+        typeof current[segment] === "object" &&
+        !("$value" in current[segment])
+      ) {
+        current[segment].base = value;
+      } else {
+        current[segment] = value;
+      }
       return;
     }
 
@@ -257,7 +268,8 @@ function getCategory(variable) {
 if (
     name.includes("grid") ||
     name.includes("container") ||
-    name === "width"
+    name.startsWith("width/") ||
+    name.includes("viewport")
   ) {
     return "layout";
   }

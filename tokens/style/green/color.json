@@ -55,7 +55,7 @@
     "inset": {
       "fg": {
         "auxiliary": {
-          "$value": "{white.700}",
+          "$value": "{opacities.white.700}",
           "$type": "color"
         },
         "accent": {
@@ -232,8 +232,20 @@
     }
   },
   "surface": {
-    "$value": "{brand.color.green.950}",
-    "$type": "color",
+    "gradient-accent": {
+      "start": {
+        "$value": "{brand.color.green.400}",
+        "$type": "color"
+      },
+      "end": {
+        "$value": "{brand.color.green.600}",
+        "$type": "color"
+      }
+    },
+    "base": {
+      "$value": "{brand.color.green.950}",
+      "$type": "color"
+    },
     "overlay": {
       "strong": {
         "$value": "{backdrop-opacity.tinted.high}",
@@ -241,12 +253,6 @@
       },
       "moderate": {
         "$value": "{backdrop-opacity.tinted.mid}",
-        "$type": "color"
-      }
-    },
-    "gradient-accent": {
-      "end": {
-        "$value": "{brand.color.green.600}",
         "$type": "color"
       }
     }
