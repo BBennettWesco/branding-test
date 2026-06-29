@@ -277,9 +277,9 @@
     --tracking-normal: 0em;
     --tracking-tight: -.02em;
     --color-brand-shadow: var(--color-black);
-    --color-fg-main: var(--fg-main);
-    --color-fg-secondary: var(--fg-secondary);
-    --color-fg-disabled: var(--fg-disabled);
+    --color-fg-main: var(--foreground-main);
+    --color-fg-secondary: var(--foreground-secondary);
+    --color-fg-disabled: var(--foreground-disabled);
     --color-loud: var(--loud-fill);
     --color-loud-inset-fg-main: var(--loud-inset-fg-main);
     --color-muted: var(--muted-fill);

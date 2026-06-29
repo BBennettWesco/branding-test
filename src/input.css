@@ -104,11 +104,11 @@
   --color-surface: var(--white);
   --color-focus: var(--focus);
   --color-fg-static: var(--white);
-  --color-fg-main: var(--fg-main);
-  --color-fg-secondary: var(--fg-secondary);
-  --color-fg-auxiliary: var(--fg-auxiliary);
-  --color-fg-disabled: var(--fg-disabled);
-  --color-fg-accent: var(--fg-accent);
+  --color-fg-main: var(--foreground-main);
+  --color-fg-secondary: var(--foreground-secondary);
+  --color-fg-auxiliary: var(--foreground-auxiliary);
+  --color-fg-disabled: var(--foreground-disabled);
+  --color-fg-accent: var(--foreground-accent);
   --color-max: var(--max-fill);
   --color-max-inset-fg-main: var(--max-inset-fg-main);
   --color-max-inset-fg-secondary: var(--max-inset-fg-secondary);
