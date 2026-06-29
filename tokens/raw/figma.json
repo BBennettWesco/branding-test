@@ -3,6 +3,99 @@
   "error": false,
   "meta": {
     "variableCollections": {
+      "VariableCollectionId:21918:1139": {
+        "defaultModeId": "21918:24",
+        "id": "VariableCollectionId:21918:1139",
+        "name": "2. style=\"neutral\"",
+        "remote": false,
+        "modes": [
+          {
+            "modeId": "21918:24",
+            "name": "mode=\"default\""
+          },
+          {
+            "modeId": "21918:25",
+            "name": "mode=\"invert\""
+          }
+        ],
+        "key": "2c40368e06fe22fe4f18cad38b9a3e2c7f671e59",
+        "hiddenFromPublishing": false,
+        "isExtension": false,
+        "variableIds": [
+          "VariableID:21918:1140",
+          "VariableID:22279:23118",
+          "VariableID:21918:1141",
+          "VariableID:21918:1142",
+          "VariableID:21918:1143",
+          "VariableID:21918:1144",
+          "VariableID:21918:1145",
+          "VariableID:21918:1146",
+          "VariableID:21988:19063",
+          "VariableID:21918:1147",
+          "VariableID:21918:1148",
+          "VariableID:21918:1149",
+          "VariableID:21918:1150",
+          "VariableID:21918:1151",
+          "VariableID:21918:1152",
+          "VariableID:21918:1153",
+          "VariableID:21918:1154",
+          "VariableID:21918:1155",
+          "VariableID:21918:1156",
+          "VariableID:21918:1157",
+          "VariableID:21918:1158",
+          "VariableID:21918:1159",
+          "VariableID:21918:1160",
+          "VariableID:21918:1161",
+          "VariableID:21918:1162",
+          "VariableID:21918:1163",
+          "VariableID:21918:1164",
+          "VariableID:21918:1165",
+          "VariableID:21918:1166",
+          "VariableID:21918:1167",
+          "VariableID:21918:1168",
+          "VariableID:21918:1169",
+          "VariableID:21918:1170",
+          "VariableID:21918:1171",
+          "VariableID:21918:1172",
+          "VariableID:21918:1173",
+          "VariableID:21918:1174",
+          "VariableID:21918:1175",
+          "VariableID:21918:1176",
+          "VariableID:21918:1177",
+          "VariableID:21918:1178",
+          "VariableID:21918:1179",
+          "VariableID:21918:1180",
+          "VariableID:21918:1181",
+          "VariableID:21918:1182",
+          "VariableID:21918:1183",
+          "VariableID:21918:1184",
+          "VariableID:21988:19138",
+          "VariableID:21918:1185",
+          "VariableID:21918:1186",
+          "VariableID:21918:1187",
+          "VariableID:21918:1188",
+          "VariableID:21918:1189",
+          "VariableID:21918:1190",
+          "VariableID:21918:1191",
+          "VariableID:21918:1192",
+          "VariableID:21918:1193",
+          "VariableID:21918:1194",
+          "VariableID:21918:1195",
+          "VariableID:21918:1196",
+          "VariableID:21918:1197",
+          "VariableID:21918:1198",
+          "VariableID:22775:13433",
+          "VariableID:21918:1199",
+          "VariableID:21918:1200",
+          "VariableID:21918:1201",
+          "VariableID:21918:1202",
+          "VariableID:21918:1203",
+          "VariableID:21918:1204",
+          "VariableID:21978:16372",
+          "VariableID:23351:4966",
+          "VariableID:21979:16550"
+        ]
+      },
       "VariableCollectionId:21922:1407": {
         "defaultModeId": "VariableCollectionId:21922:1407/21922:34",
         "id": "VariableCollectionId:21922:1407",
@@ -1057,31 +1150,31 @@
           "VariableID:21918:553",
           "VariableID:21918:554",
           "VariableID:21918:555",
-          "VariableID:22356:8832",
           "VariableID:22356:9264",
+          "VariableID:22356:8832",
           "VariableID:21918:556",
-          "VariableID:21918:557",
           "VariableID:21918:569",
-          "VariableID:21918:558",
+          "VariableID:21918:557",
           "VariableID:21918:570",
+          "VariableID:21918:558",
           "VariableID:21918:559",
           "VariableID:21918:571",
           "VariableID:21918:560",
           "VariableID:21918:572",
-          "VariableID:21918:561",
           "VariableID:21918:573",
-          "VariableID:21918:574",
+          "VariableID:21918:561",
           "VariableID:21918:562",
+          "VariableID:21918:574",
           "VariableID:21918:575",
           "VariableID:21918:563",
-          "VariableID:21918:564",
           "VariableID:21918:576",
-          "VariableID:21918:577",
+          "VariableID:21918:564",
           "VariableID:21918:565",
+          "VariableID:21918:577",
           "VariableID:21918:578",
           "VariableID:21918:566",
-          "VariableID:21918:567",
           "VariableID:21918:579",
+          "VariableID:21918:567",
           "VariableID:21918:568",
           "VariableID:21918:580",
           "VariableID:21918:581",
@@ -1097,8 +1190,8 @@
           "VariableID:21918:591",
           "VariableID:21918:592",
           "VariableID:21918:593",
-          "VariableID:21918:594",
           "VariableID:22775:4270",
+          "VariableID:21918:594",
           "VariableID:21918:595",
           "VariableID:22775:4271",
           "VariableID:21918:596",
@@ -1119,99 +1212,6 @@
           "VariableID:22080:13333",
           "VariableID:22080:13334",
           "VariableID:22080:13335"
-        ]
-      },
-      "VariableCollectionId:21918:1139": {
-        "defaultModeId": "21918:24",
-        "id": "VariableCollectionId:21918:1139",
-        "name": "2. style=\"neutral\"",
-        "remote": false,
-        "modes": [
-          {
-            "modeId": "21918:24",
-            "name": "mode=\"default\""
-          },
-          {
-            "modeId": "21918:25",
-            "name": "mode=\"invert\""
-          }
-        ],
-        "key": "2c40368e06fe22fe4f18cad38b9a3e2c7f671e59",
-        "hiddenFromPublishing": false,
-        "isExtension": false,
-        "variableIds": [
-          "VariableID:21918:1140",
-          "VariableID:22279:23118",
-          "VariableID:21918:1141",
-          "VariableID:21918:1142",
-          "VariableID:21918:1143",
-          "VariableID:21918:1144",
-          "VariableID:21918:1145",
-          "VariableID:21918:1146",
-          "VariableID:21988:19063",
-          "VariableID:21918:1147",
-          "VariableID:21918:1148",
-          "VariableID:21918:1149",
-          "VariableID:21918:1150",
-          "VariableID:21918:1151",
-          "VariableID:21918:1152",
-          "VariableID:21918:1153",
-          "VariableID:21918:1154",
-          "VariableID:21918:1155",
-          "VariableID:21918:1156",
-          "VariableID:21918:1157",
-          "VariableID:21918:1158",
-          "VariableID:21918:1159",
-          "VariableID:21918:1160",
-          "VariableID:21918:1161",
-          "VariableID:21918:1162",
-          "VariableID:21918:1163",
-          "VariableID:21918:1164",
-          "VariableID:21918:1165",
-          "VariableID:21918:1166",
-          "VariableID:21918:1167",
-          "VariableID:21918:1168",
-          "VariableID:21918:1169",
-          "VariableID:21918:1170",
-          "VariableID:21918:1171",
-          "VariableID:21918:1172",
-          "VariableID:21918:1173",
-          "VariableID:21918:1174",
-          "VariableID:21918:1175",
-          "VariableID:21918:1176",
-          "VariableID:21918:1177",
-          "VariableID:21918:1178",
-          "VariableID:21918:1179",
-          "VariableID:21918:1180",
-          "VariableID:21918:1181",
-          "VariableID:21918:1182",
-          "VariableID:21918:1183",
-          "VariableID:21918:1184",
-          "VariableID:21988:19138",
-          "VariableID:21918:1185",
-          "VariableID:21918:1186",
-          "VariableID:21918:1187",
-          "VariableID:21918:1188",
-          "VariableID:21918:1189",
-          "VariableID:21918:1190",
-          "VariableID:21918:1191",
-          "VariableID:21918:1192",
-          "VariableID:21918:1193",
-          "VariableID:21918:1194",
-          "VariableID:21918:1195",
-          "VariableID:21918:1196",
-          "VariableID:21918:1197",
-          "VariableID:21918:1198",
-          "VariableID:21918:1199",
-          "VariableID:22775:13433",
-          "VariableID:21918:1200",
-          "VariableID:21918:1201",
-          "VariableID:21918:1202",
-          "VariableID:21918:1203",
-          "VariableID:21918:1204",
-          "VariableID:21978:16372",
-          "VariableID:23351:4966",
-          "VariableID:21979:16550"
         ]
       },
       "VariableCollectionId:21918:1055": {
@@ -4580,20 +4580,20 @@
           "VariableID:21918:558",
           "VariableID:21918:559",
           "VariableID:21918:571",
-          "VariableID:21918:572",
           "VariableID:21918:560",
-          "VariableID:21918:573",
+          "VariableID:21918:572",
           "VariableID:21918:561",
+          "VariableID:21918:573",
           "VariableID:21918:574",
           "VariableID:21918:562",
-          "VariableID:21918:563",
           "VariableID:21918:575",
+          "VariableID:21918:563",
           "VariableID:21918:564",
           "VariableID:21918:576",
-          "VariableID:21918:565",
           "VariableID:21918:577",
-          "VariableID:21918:578",
+          "VariableID:21918:565",
           "VariableID:21918:566",
+          "VariableID:21918:578",
           "VariableID:21918:567",
           "VariableID:21918:579",
           "VariableID:21918:568",
@@ -20790,56 +20790,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:22356:8832": {
-        "name": "opacities/white/0",
-        "id": "VariableID:22356:8832",
-        "remote": false,
-        "key": "8611b5ff7eae4bb451360be0fdbd63ba47a176ac",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0
-          },
-          "21918:1": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:2": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:3": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:4": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:5": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          }
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:22356:9264": {
         "name": "opacities/black/0",
         "id": "VariableID:22356:9264",
@@ -20884,6 +20834,56 @@
             "r": 0,
             "g": 0,
             "b": 0,
+            "a": 0.05000000074505806
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "VariableID:22356:8832": {
+        "name": "opacities/white/0",
+        "id": "VariableID:22356:8832",
+        "remote": false,
+        "key": "8611b5ff7eae4bb451360be0fdbd63ba47a176ac",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0
+          },
+          "21918:1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05000000074505806
+          },
+          "21918:2": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05000000074505806
+          },
+          "21918:3": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05000000074505806
+          },
+          "21918:4": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05000000074505806
+          },
+          "21918:5": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
             "a": 0.05000000074505806
           }
         },
@@ -20940,56 +20940,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:557": {
-        "name": "opacities/white/50",
-        "id": "VariableID:21918:557",
-        "remote": false,
-        "key": "034f58a740e52c9219255d7107ccf7ba60f85059",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:1": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:2": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:3": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:4": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          },
-          "21918:5": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.05000000074505806
-          }
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:21918:569": {
         "name": "opacities/black/50",
         "id": "VariableID:21918:569",
@@ -21040,11 +20990,11 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:558": {
-        "name": "opacities/white/100",
-        "id": "VariableID:21918:558",
+      "VariableID:21918:557": {
+        "name": "opacities/white/50",
+        "id": "VariableID:21918:557",
         "remote": false,
-        "key": "e3c2493d9f06cf8bd9abe1e342d9649fe46229e0",
+        "key": "034f58a740e52c9219255d7107ccf7ba60f85059",
         "variableCollectionId": "VariableCollectionId:21918:113",
         "resolvedType": "COLOR",
         "description": "",
@@ -21054,37 +21004,37 @@
             "r": 1,
             "g": 1,
             "b": 1,
-            "a": 0.10000000149011612
+            "a": 0.05000000074505806
           },
           "21918:1": {
             "r": 1,
             "g": 1,
             "b": 1,
-            "a": 0.10000000149011612
+            "a": 0.05000000074505806
           },
           "21918:2": {
             "r": 1,
             "g": 1,
             "b": 1,
-            "a": 0.10000000149011612
+            "a": 0.05000000074505806
           },
           "21918:3": {
             "r": 1,
             "g": 1,
             "b": 1,
-            "a": 0.10000000149011612
+            "a": 0.05000000074505806
           },
           "21918:4": {
             "r": 1,
             "g": 1,
             "b": 1,
-            "a": 0.10000000149011612
+            "a": 0.05000000074505806
           },
           "21918:5": {
             "r": 1,
             "g": 1,
             "b": 1,
-            "a": 0.10000000149011612
+            "a": 0.05000000074505806
           }
         },
         "scopes": [],
@@ -21134,6 +21084,56 @@
             "r": 0,
             "g": 0,
             "b": 0,
+            "a": 0.10000000149011612
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "VariableID:21918:558": {
+        "name": "opacities/white/100",
+        "id": "VariableID:21918:558",
+        "remote": false,
+        "key": "e3c2493d9f06cf8bd9abe1e342d9649fe46229e0",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.10000000149011612
+          },
+          "21918:1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.10000000149011612
+          },
+          "21918:2": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.10000000149011612
+          },
+          "21918:3": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.10000000149011612
+          },
+          "21918:4": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.10000000149011612
+          },
+          "21918:5": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
             "a": 0.10000000149011612
           }
         },
@@ -21340,56 +21340,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:561": {
-        "name": "opacities/white/400",
-        "id": "VariableID:21918:561",
-        "remote": false,
-        "key": "686df610f750b7b76979a5903c4b59608fd965f7",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.4000000059604645
-          },
-          "21918:1": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.4000000059604645
-          },
-          "21918:2": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.4000000059604645
-          },
-          "21918:3": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.4000000059604645
-          },
-          "21918:4": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.4000000059604645
-          },
-          "21918:5": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.4000000059604645
-          }
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:21918:573": {
         "name": "opacities/black/400",
         "id": "VariableID:21918:573",
@@ -21440,51 +21390,51 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:574": {
-        "name": "opacities/black/500",
-        "id": "VariableID:21918:574",
+      "VariableID:21918:561": {
+        "name": "opacities/white/400",
+        "id": "VariableID:21918:561",
         "remote": false,
-        "key": "9f263a8ac626ac7ba247d7fb11be16d8df0d6d43",
+        "key": "686df610f750b7b76979a5903c4b59608fd965f7",
         "variableCollectionId": "VariableCollectionId:21918:113",
         "resolvedType": "COLOR",
         "description": "",
         "hiddenFromPublishing": false,
         "valuesByMode": {
           "21918:0": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.5
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.4000000059604645
           },
           "21918:1": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.5
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.4000000059604645
           },
           "21918:2": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.5
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.4000000059604645
           },
           "21918:3": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.5
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.4000000059604645
           },
           "21918:4": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.5
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.4000000059604645
           },
           "21918:5": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.5
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.4000000059604645
           }
         },
         "scopes": [],
@@ -21534,6 +21484,56 @@
             "r": 1,
             "g": 1,
             "b": 1,
+            "a": 0.5
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "VariableID:21918:574": {
+        "name": "opacities/black/500",
+        "id": "VariableID:21918:574",
+        "remote": false,
+        "key": "9f263a8ac626ac7ba247d7fb11be16d8df0d6d43",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.5
+          },
+          "21918:1": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.5
+          },
+          "21918:2": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.5
+          },
+          "21918:3": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.5
+          },
+          "21918:4": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.5
+          },
+          "21918:5": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
             "a": 0.5
           }
         },
@@ -21640,56 +21640,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:564": {
-        "name": "opacities/white/700",
-        "id": "VariableID:21918:564",
-        "remote": false,
-        "key": "f42b58b25486f1a121f2cd2b16f7121f69407fbf",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.699999988079071
-          },
-          "21918:1": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.699999988079071
-          },
-          "21918:2": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.699999988079071
-          },
-          "21918:3": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.699999988079071
-          },
-          "21918:4": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.699999988079071
-          },
-          "21918:5": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.699999988079071
-          }
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:21918:576": {
         "name": "opacities/black/700",
         "id": "VariableID:21918:576",
@@ -21740,51 +21690,51 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:577": {
-        "name": "opacities/black/800",
-        "id": "VariableID:21918:577",
+      "VariableID:21918:564": {
+        "name": "opacities/white/700",
+        "id": "VariableID:21918:564",
         "remote": false,
-        "key": "96bc892d7749c0f348e38c2b820bbe1f96d6541a",
+        "key": "f42b58b25486f1a121f2cd2b16f7121f69407fbf",
         "variableCollectionId": "VariableCollectionId:21918:113",
         "resolvedType": "COLOR",
         "description": "",
         "hiddenFromPublishing": false,
         "valuesByMode": {
           "21918:0": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.800000011920929
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.699999988079071
           },
           "21918:1": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.800000011920929
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.699999988079071
           },
           "21918:2": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.800000011920929
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.699999988079071
           },
           "21918:3": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.800000011920929
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.699999988079071
           },
           "21918:4": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.800000011920929
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.699999988079071
           },
           "21918:5": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.800000011920929
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.699999988079071
           }
         },
         "scopes": [],
@@ -21834,6 +21784,56 @@
             "r": 1,
             "g": 1,
             "b": 1,
+            "a": 0.800000011920929
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "VariableID:21918:577": {
+        "name": "opacities/black/800",
+        "id": "VariableID:21918:577",
+        "remote": false,
+        "key": "96bc892d7749c0f348e38c2b820bbe1f96d6541a",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.800000011920929
+          },
+          "21918:1": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.800000011920929
+          },
+          "21918:2": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.800000011920929
+          },
+          "21918:3": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.800000011920929
+          },
+          "21918:4": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.800000011920929
+          },
+          "21918:5": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
             "a": 0.800000011920929
           }
         },
@@ -21940,56 +21940,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:567": {
-        "name": "opacities/white/950",
-        "id": "VariableID:21918:567",
-        "remote": false,
-        "key": "b11ab7153d48c759de3ffce93cba5881950a9eb1",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.949999988079071
-          },
-          "21918:1": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.949999988079071
-          },
-          "21918:2": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.949999988079071
-          },
-          "21918:3": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.949999988079071
-          },
-          "21918:4": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.949999988079071
-          },
-          "21918:5": {
-            "r": 1,
-            "g": 1,
-            "b": 1,
-            "a": 0.949999988079071
-          }
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:21918:579": {
         "name": "opacities/black/950",
         "id": "VariableID:21918:579",
@@ -22034,6 +21984,56 @@
             "r": 0,
             "g": 0,
             "b": 0,
+            "a": 0.949999988079071
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "VariableID:21918:567": {
+        "name": "opacities/white/950",
+        "id": "VariableID:21918:567",
+        "remote": false,
+        "key": "b11ab7153d48c759de3ffce93cba5881950a9eb1",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.949999988079071
+          },
+          "21918:1": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.949999988079071
+          },
+          "21918:2": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.949999988079071
+          },
+          "21918:3": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.949999988079071
+          },
+          "21918:4": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.949999988079071
+          },
+          "21918:5": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
             "a": 0.949999988079071
           }
         },
@@ -22450,6 +22450,44 @@
         ],
         "codeSyntax": {}
       },
+      "VariableID:22775:4270": {
+        "name": "backdrop-opacity/neutral/light/low",
+        "id": "VariableID:22775:4270",
+        "remote": false,
+        "key": "76386357ebb63cfa3b15177934f96ead0eb6fade",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21918:560"
+          },
+          "21918:1": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21918:560"
+          },
+          "21918:2": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21918:560"
+          },
+          "21918:3": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21918:560"
+          },
+          "21918:4": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21918:560"
+          },
+          "21918:5": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21918:560"
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
       "VariableID:21918:594": {
         "name": "shadow/xs",
         "id": "VariableID:21918:594",
@@ -22500,44 +22538,6 @@
         "scopes": [
           "EFFECT_COLOR"
         ],
-        "codeSyntax": {}
-      },
-      "VariableID:22775:4270": {
-        "name": "backdrop-opacity/neutral/light/low",
-        "id": "VariableID:22775:4270",
-        "remote": false,
-        "key": "76386357ebb63cfa3b15177934f96ead0eb6fade",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:21918:560"
-          },
-          "21918:1": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:21918:560"
-          },
-          "21918:2": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:21918:560"
-          },
-          "21918:3": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:21918:560"
-          },
-          "21918:4": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:21918:560"
-          },
-          "21918:5": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:21918:560"
-          }
-        },
-        "scopes": [],
         "codeSyntax": {}
       },
       "VariableID:21918:595": {
