@@ -1902,91 +1902,18 @@
   .text-center {
     text-align: center;
   }
-  .display-120 {
+  .display {
     font-family: var(--font-alt);
-    font-size: var(--text-lg);
     line-height: var(--leading-tight);
     font-weight: var(--font-weight-bold);
     letter-spacing: var(--tracking-tight);
+    color: var(--color-fg-main);
   }
-  .display-250 {
-    font-family: var(--font-alt);
-    font-size: var(--text-4xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .display-300 {
-    font-family: var(--font-alt);
-    font-size: var(--text-5xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .display-350 {
-    font-family: var(--font-alt);
-    font-size: var(--text-6xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .body-tech-80 {
-    font-family: var(--font-mono) font-size: var(--text-sm);
-  }
-  .body-tech-80 {
-    font-family: var(--font-mono) font-size: var(--text-xs);
-  }
-  .body-tech-100 {
+  .body-tech {
     font-family: var(--font-mono);
   }
   .font-sans {
     font-family: var(--font-sans);
-  }
-  .heading-100 {
-    font-size: var(--text-base);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .heading-120 {
-    font-size: var(--text-lg);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .heading-140 {
-    font-size: var(--text-xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .heading-160 {
-    font-size: var(--text-2xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .heading-200 {
-    font-size: var(--text-3xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .heading-250 {
-    font-size: var(--text-4xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .label-70 {
-    font-size: var(--text-xs);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-medium);
-  }
-  .label-80 {
-    font-size: var(--text-sm);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-medium);
   }
   .apexcharts-datalabels {
     .apexcharts-canvas & .apexcharts-text.apexcharts-pie-label {
@@ -2034,6 +1961,21 @@
       font-size: v;
     }
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+  }
   .text-base {
     font-size: var(--text-base);
   }
@@ -2049,7 +1991,12 @@
   .text-xs {
     font-size: var(--text-xs);
   }
-  .label-100 {
+  .heading {
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--tracking-tight);
+  }
+  .label {
     line-height: var(--leading-tight);
     font-weight: var(--font-weight-medium);
   }
