@@ -1923,17 +1923,6 @@
     letter-spacing: var(--tracking-tight);
     color: var(--color-fg-main);
   }
-  .heading {
-    font-family: var(--font-sans);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--tracking-tight);
-  }
-  .label {
-    font-family: var(--font-sans);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-medium);
-  }
   .body-tech {
     font-family: var(--font-mono);
   }
@@ -2015,6 +2004,15 @@
   }
   .text-xs {
     font-size: var(--text-xs);
+  }
+  .heading {
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--tracking-tight);
+  }
+  .label {
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-medium);
   }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
@@ -2766,9 +2764,9 @@
   --spacing-static-lg: 24px;
   --spacing-static-xl: 32px;
   --spacing-static-2xl: 48px;
-  --text-ff-main: Geist;
-  --text-ff-alternate: Space Grotesk;
-  --text-ff-auxiliary: Geist Mono;
+  --text-ff-main: "Geist", "Segoe UI", "Arial", sans-serif;
+  --text-ff-alternate: "Space Grotesk", "Segoe UI", "Arial", sans-serif;
+  --text-ff-auxiliary: "Geist Mono", "Cascadia Code", "SFMono-Regular", "Consolas", monospace;
   --brand-text-display-ff: var(--text-ff-alternate);
   --brand-text-heading-ff: var(--text-ff-main);
   --brand-text-body-ff: var(--text-ff-main);
@@ -3066,9 +3064,9 @@
   --spacing-static-lg: 24px;
   --spacing-static-xl: 32px;
   --spacing-static-2xl: 48px;
-  --text-ff-main: Source Sans 3;
-  --text-ff-alternate: Titillium Web;
-  --text-ff-auxiliary: Source Code Pro;
+  --text-ff-main: "Source Sans 3", "Segoe UI", "Arial", sans-serif;
+  --text-ff-alternate: "Titillium Web", "Segoe UI", "Arial", sans-serif;
+  --text-ff-auxiliary: "Source Code Pro", "Cascadia Code", "SFMono-Regular", "Consolas", monospace;
   --brand-text-display-ff: var(--text-ff-alternate);
   --brand-text-heading-ff: var(--text-ff-alternate);
   --brand-text-body-ff: var(--text-ff-main);

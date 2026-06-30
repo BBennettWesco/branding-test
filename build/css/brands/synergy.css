@@ -276,9 +276,9 @@
   --spacing-static-lg: 24px;
   --spacing-static-xl: 32px;
   --spacing-static-2xl: 48px;
-  --text-ff-main: Geist;
-  --text-ff-alternate: Space Grotesk;
-  --text-ff-auxiliary: Geist Mono;
+  --text-ff-main: "Geist", "Segoe UI", "Arial", sans-serif;
+  --text-ff-alternate: "Space Grotesk", "Segoe UI", "Arial", sans-serif;
+  --text-ff-auxiliary: "Geist Mono", "Cascadia Code", "SFMono-Regular", "Consolas", monospace;
   --brand-text-display-ff: var(--text-ff-alternate);
   --brand-text-heading-ff: var(--text-ff-main);
   --brand-text-body-ff: var(--text-ff-main);

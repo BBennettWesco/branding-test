@@ -279,9 +279,9 @@
   --spacing-static-lg: 24px;
   --spacing-static-xl: 32px;
   --spacing-static-2xl: 48px;
-  --text-ff-main: Source Sans 3;
-  --text-ff-alternate: Titillium Web;
-  --text-ff-auxiliary: Source Code Pro;
+  --text-ff-main: "Source Sans 3", "Segoe UI", "Arial", sans-serif;
+  --text-ff-alternate: "Titillium Web", "Segoe UI", "Arial", sans-serif;
+  --text-ff-auxiliary: "Source Code Pro", "Cascadia Code", "SFMono-Regular", "Consolas", monospace;
   --brand-text-display-ff: var(--text-ff-alternate);
   --brand-text-heading-ff: var(--text-ff-alternate);
   --brand-text-body-ff: var(--text-ff-main);

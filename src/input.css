@@ -176,13 +176,11 @@
   color: var(--color-fg-main);
 }
 @utility heading {
-  font-family: var(--font-sans);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);  
 }
 @utility label {
-  font-family: var(--font-sans);
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-medium);
 }

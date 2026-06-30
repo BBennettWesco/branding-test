@@ -6,6 +6,47 @@ const ROOT = process.cwd();
 const BASE_BRAND = "synergy";
 const BASE_STYLE = "neutral";
 
+const GENERIC_FONT_FAMILIES = new Set([
+  "serif",
+  "sans-serif",
+  "monospace",
+  "cursive",
+  "fantasy",
+  "system-ui",
+  "ui-serif",
+  "ui-sans-serif",
+  "ui-monospace",
+  "ui-rounded",
+  "emoji",
+  "math",
+  "fangsong"
+]);
+
+const FONT_FAMILY_FALLBACK_OVERRIDES = new Map([
+  ["source sans 3", ["Segoe UI", "Arial", "sans-serif"]],
+  ["titillium web", ["Segoe UI", "Arial", "sans-serif"]],
+  ["source code pro", ["Cascadia Code", "SFMono-Regular", "Consolas", "monospace"]]
+]);
+
+const SERIF_HINTS = [
+  "serif",
+  "times",
+  "georgia",
+  "garamond",
+  "merriweather",
+  "playfair"
+];
+
+const MONO_HINTS = [
+  "mono",
+  "code",
+  "console",
+  "courier",
+  "menlo",
+  "inconsolata",
+  "jetbrains"
+];
+
 //////////////////////////////////////////////////////
 // Helpers
 //////////////////////////////////////////////////////
@@ -15,6 +56,67 @@ function getFolders(root) {
     .readdirSync(`${ROOT}/${root}`, { withFileTypes: true })
     .filter(d => d.isDirectory())
     .map(d => d.name);
+}
+
+function normalizeFontPart(part) {
+  return part.trim().replace(/^['"]|['"]$/g, "");
+}
+
+function formatFontPart(part) {
+  const normalized = normalizeFontPart(part);
+  const lower = normalized.toLowerCase();
+
+  if (
+    GENERIC_FONT_FAMILIES.has(lower) ||
+    normalized.startsWith("var(") ||
+    normalized.startsWith("env(")
+  ) {
+    return normalized;
+  }
+
+  return `"${normalized.replaceAll('"', '\\"')}"`;
+}
+
+function formatFontFamilyValue(raw) {
+  const parts = raw
+    .split(",")
+    .map((part) => normalizeFontPart(part))
+    .filter(Boolean);
+
+  if (!parts.length) return raw;
+
+  const normalizedSet = new Set(parts.map((part) => part.toLowerCase()));
+  const hasGenericFallback = parts.some((part) =>
+    GENERIC_FONT_FAMILIES.has(part.toLowerCase())
+  );
+
+  if (!hasGenericFallback) {
+    const primary = parts[0].toLowerCase();
+    const fallbackParts =
+      FONT_FAMILY_FALLBACK_OVERRIDES.get(primary) ?? getDefaultFallbackStack(primary);
+
+    for (const fallbackPart of fallbackParts) {
+      const lowerFallback = fallbackPart.toLowerCase();
+      if (!normalizedSet.has(lowerFallback)) {
+        parts.push(fallbackPart);
+        normalizedSet.add(lowerFallback);
+      }
+    }
+  }
+
+  return parts.map(formatFontPart).join(", ");
+}
+
+function getDefaultFallbackStack(primary) {
+  if (MONO_HINTS.some((hint) => primary.includes(hint))) {
+    return ["Cascadia Code", "SFMono-Regular", "Consolas", "monospace"];
+  }
+
+  if (SERIF_HINTS.some((hint) => primary.includes(hint))) {
+    return ["Georgia", "Times New Roman", "serif"];
+  }
+
+  return ["Segoe UI", "Arial", "sans-serif"];
 }
 
 //////////////////////////////////////////////////////
@@ -50,6 +152,27 @@ StyleDictionary.registerTransform({
 });
 
 //////////////////////////////////////////////////////
+// Transform: font family → quoted + fallback stack
+//////////////////////////////////////////////////////
+
+StyleDictionary.registerTransform({
+  name: "fontFamily/quoted-fallback",
+  type: "value",
+  transitive: false,
+  filter: (token) =>
+    token.$type === "fontFamily" || token.type === "fontFamily",
+  transform: (token) => {
+    const raw = token.$value ?? token.value;
+    if (typeof raw !== "string") return raw;
+
+    // Keep references intact so outputReferences can still render CSS vars.
+    if (raw.includes("{")) return raw;
+
+    return formatFontFamilyValue(raw);
+  }
+});
+
+//////////////////////////////////////////////////////
 // Transform group
 //////////////////////////////////////////////////////
 
@@ -59,6 +182,7 @@ StyleDictionary.registerTransformGroup({
     "attribute/cti",
     "name/kebab",
     "color/culori-oklch",
+    "fontFamily/quoted-fallback",
   ],
 });
 
