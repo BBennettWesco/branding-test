@@ -9,6 +9,9 @@ const figma = JSON.parse(fs.readFileSync(INPUT, "utf8"));
 const collections = figma.meta.variableCollections || {};
 const variables = figma.meta.variables || {};
 
+const BASE_BRAND = "synergy";
+const BASE_STYLE = "neutral";
+
 /* ----------------------------------
  * Helpers
  * ---------------------------------- */
@@ -42,16 +45,7 @@ function setDeep(obj, pathArray, value) {
     const isLeaf = index === pathArray.length - 1;
 
     if (isLeaf) {
-      // If this path already has child tokens, don't overwrite them.
-      if (
-        current[segment] &&
-        typeof current[segment] === "object" &&
-        !("$value" in current[segment])
-      ) {
-        current[segment].base = value;
-      } else {
-        current[segment] = value;
-      }
+      current[segment] = value;
       return;
     }
 
@@ -59,6 +53,28 @@ function setDeep(obj, pathArray, value) {
     current = current[segment];
   });
 }
+
+function deepClone(data) {
+  return JSON.parse(JSON.stringify(data));
+}
+
+//////////////////////////////////////////////////////
+// LOOKUPS
+//////////////////////////////////////////////////////
+
+const collectionLookup = {};
+Object.values(collections).forEach(c => {
+  collectionLookup[c.id] = c;
+});
+
+const variableLookup = {};
+Object.values(variables).forEach(v => {
+  variableLookup[v.id] = v;
+});
+
+
+
+
 
 function getRootCollection(collection) {
   let current = collection;
@@ -122,8 +138,6 @@ function getOutputFolder(collection) {
  * Collection Lookup
  * ---------------------------------- */
 
-const collectionLookup = {};
-
 Object.values(collections).forEach(
   (collection) => {
     collectionLookup[collection.id] =
@@ -134,8 +148,6 @@ Object.values(collections).forEach(
 /* ----------------------------------
  * Variable Lookup
  * ---------------------------------- */
-
-const variableLookup = {};
 
 Object.values(variables).forEach(
   (variable) => {
@@ -344,6 +356,44 @@ Object.values(variables).forEach(
         $type:
           getTokenType(variable)
         }
+    );
+  }
+);
+
+/* ----------------------------------
+ * Seed Extensions
+ * ---------------------------------- */
+
+Object.values(collections).forEach(
+  (collection) => {
+    if (!collection.isExtension)
+      return;
+
+    const group =
+      getCollectionGroup(collection);
+
+    if (
+      group !== "brand" &&
+      group !== "style"
+    ) {
+      return;
+    }
+
+    const baseCategories =
+      outputs[collection.baseCollectionId];
+
+    if (!baseCategories)
+      return;
+
+    outputs[collection.id] ??= {};
+
+    Object.entries(baseCategories).forEach(
+      ([category, tokens]) => {
+        if (!outputs[collection.id][category]) {
+          outputs[collection.id][category] =
+            deepClone(tokens);
+        }
+      }
     );
   }
 );
