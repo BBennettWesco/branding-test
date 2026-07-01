@@ -10,7 +10,7 @@
     <nav data-style="neutral" class="bg-loud w-full px-4 lg:px-12 z-20 top-0 start-0 border border-b border-loud-stroke shadow-top">
       <div class="flex flex-wrap items-center justify-between fl-py-2">
           <a href="#" class="flex items-center fl-space-x-2.5 rtl:fl-space-x-reverse">
-              <span class="self-center heading text-xl text-fg-main whitespace-nowrap">Multi Brand System</span>
+              <span class="self-center heading text-xl text-loud-inset-fg-main whitespace-nowrap">Multi Brand System</span>
           </a>
           <div class="inline-flex md:order-2 fl-space-x-2.5 rtl:fl-space-x-reverse">
             <select id="brandSwitcher">
@@ -138,21 +138,21 @@
         </h2>
 
         <div class="fl-mb-4">
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Primary</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Primary</button>
               
-            <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-stroke box-border border hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Secondary</button>
+            <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-stroke box-border border btn-md fl-mr-2.5 fl-mb-2.5">Secondary</button>
 
-            <button type="button" class="bg-transparent text-quiet-inset-fg-secondary box-border border border-transparent hover:bg-hover focus:ring-4 rounded-base fl-px-3.5 fl-py-3 focus:outline-none">Ghost</button>
+            <button type="button" class="bg-transparent text-quiet-inset-fg-secondary box-border border border-transparent btn-md fl-mr-2.5 fl-mb-2.5">Ghost</button>
               
-            <button data-style="green" type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Success</button>
+            <button data-style="green" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Success</button>
               
-            <button data-style="red" type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Danger</button>
+            <button data-style="red" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Danger</button>
               
-            <button data-style="orange" type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Warning</button>              
+            <button data-style="orange" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Warning</button>              
 
-            <button data-style="brand" type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Brand</button>              
+            <button data-style="brand" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Brand</button>              
               
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none disabled:bg-quiet disabled:border-quiet disabled:text-quiet-inset-fg">Primary</button>
+            <button disabled type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5 disabled:bg-quiet disabled:border-quiet disabled:text-quiet-inset-fg">Disabled</button>
         </div>
 
     </section>
@@ -165,30 +165,35 @@
 
         <!-- Alert -->
 
+        <div data-style="neutral" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-stroke-auxiliary" role="alert">
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Neutral alert!</h3> 
+            <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+        </div>
         <div data-style="blue" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-stroke-auxiliary" role="alert">
-            <h3 class="heading">Info alert!</h3> 
-            <p class="text-sm">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Learn more</button>
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Info alert!</h3> 
+            <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
         </div>
         <div data-style="red" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg border border-muted-inset-stroke-auxiliary" role="alert">
-            <h3 class="heading">Danger alert!</h3> 
-            <p class="text-sm">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Learn more</button>
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Danger alert!</h3> 
+            <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
         </div>
         <div data-style="green" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg border border-muted-inset-stroke-auxiliary" role="alert">
-            <h3 class="heading">Success alert!</h3> 
-            <p class="text-sm">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Learn more</button>
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Success alert!</h3> 
+            <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
         </div>
         <div data-style="orange" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg border border-muted-inset-stroke-auxiliary" role="alert">
-            <h3 class="heading">Warning alert!</h3> 
-            <p class="text-sm">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Learn more</button>
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Warning alert!</h3> 
+            <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
         </div>
-        <div data-mode="invert" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg border border-muted-inset-stroke-auxiliary" role="alert">
-            <h3 class="heading">Dark alert!</h3> 
-            <p class="text-sm">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Learn more</button>
+        <div data-style="neutral" data-mode="invert" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg border border-muted-inset-stroke-auxiliary" role="alert">
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Dark alert!</h3> 
+            <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
         </div>
 
     </section>
@@ -309,31 +314,31 @@
 
         <form class="max-w-sm">
             <div class="fl-mb-4.5">
-                <label for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Your email</label>
+                <label required for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Your email</label>
                 <input type="email" id="email" class="bg-muted border border-quiet-stroke text-xs leading-tight rounded-lg focus:ring-brand focus:border-brand block w-full fl-px-2 fl-py-3 shadow-xs" placeholder="name@flowbite.com" required />
             </div>
             <div class="fl-mb-4.5">
-                <label for="password" class="block fl-mb-2.5 label text-xs text-fg-main">Your password</label>
+                <label required for="password" class="block fl-mb-2.5 label text-xs text-fg-main">Your password</label>
                 <input type="password" id="password" class="bg-muted border border-quiet-stroke text-muted-inset-fg-secondary text-xs leading-tight rounded-lg focus:ring-brand focus:border-brand block w-full fl-px-2 fl-py-3 shadow-xs" placeholder="••••••••" required />
             </div>
             <label for="remember" class="flex items-center fl-mb-4.5">
                 <input id="remember" type="checkbox" value="" class="fl-size-3 border rounded-sm bg-muted checked:bg-fg-accent checked:text-loud-inset-fg-main checked:border-fg-accent" required />
                 <p class="fl-ms-2 label text-xs select-none text-fg-main">I agree with the <a href="#" class="text-accent hover:underline">terms and conditions</a>.</p>
             </label>
-            <button type="button" class="bg-loud text-loud-inset-fg-main hover:bg-hover shadow-xs rounded-lg fl-px-3.5 fl-py-3 focus:outline-none">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
         </form>
 
     </section>
 
 
-    <div class="container mx-auto px-4 lg:px-12 fl-py-9 bg-max text-max-inset-fg-main">
-        <h2 class="heading text-4xl text-fg-main">This is an example of a centered container with the padding on the side</h2>
+    <div class="container mx-auto px-4 lg:px-12 fl-py-9 bg-max">
+        <h2 class="heading text-4xl text-max-inset-fg-main">This is an example of a centered container with the padding on the side</h2>
     </div>
     <div class="container mx-auto fl-py-9">
         <h2 class="heading text-4xl text-fg-main">This is an example of a centered container without the padding on the side</h2>
     </div>
-    <div class="w-full px-4 lg:px-12 fl-py-9 bg-max text-max-inset-fg-main">
-        <h2 class="heading text-4xl text-fg-main">This is an example of a fluid container</h2>
+    <div class="w-full px-4 lg:px-12 fl-py-9 bg-max">
+        <h2 class="heading text-4xl text-max-inset-fg-main">This is an example of a fluid container</h2>
     </div>
 
     <script src="js/theme-loader.js"></script>

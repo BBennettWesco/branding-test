@@ -227,14 +227,6 @@
   --color-active: var(--active);
 }
 
-/* Custom Shadows 
-@utility shadow-bottom {
-  box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
-}
-@utility shadow-top {
-  box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
-}*/
-
 /* Text Styles */
 @utility display {
   font-family: var(--font-alt);
