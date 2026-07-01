@@ -1831,6 +1831,9 @@
       padding: 0 !important;
     }
   }
+  .fl-p-3\.5 {
+    padding: var(--fl-space-3\.5);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -2180,15 +2183,15 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-bottom {
-    box-shadow: 0 1px 14px 0 var(--color-brand-shadow);
+    box-shadow: 0 1px 14px 0 var(--color-shadow-base);
     @supports (color: color-mix(in lab, red, red)) {
-      box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+      box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
     }
   }
   .shadow-top {
-    box-shadow: 0 -1px 14px 0 var(--color-brand-shadow);
+    box-shadow: 0 -1px 14px 0 var(--color-shadow-base);
     @supports (color: color-mix(in lab, red, red)) {
-      box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+      box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
     }
   }
   .outline {
@@ -3118,71 +3121,6 @@
   --width-layout-container-centered: var(--width-viewport-min);
   --width-layout-container-fluid: var(--width-viewport-max);
 }
-[data-style="neutral"] {
-  --surface: var(--white);
-  --foreground-static: var(--white);
-  --foreground-main: var(--brand-color-neutral-950);
-  --foreground-secondary: var(--brand-color-neutral-600);
-  --foreground-auxiliary: var(--brand-color-neutral-400);
-  --foreground-disabled: var(--brand-color-neutral-200);
-  --foreground-accent: var(--brand-color-primary-500);
-  --focus: var(--brand-color-primary-500);
-  --max-fill: var(--brand-color-neutral-900);
-  --max-stroke: var(--max-fill);
-  --max-inset-fg-main: var(--opacities-white-950);
-  --max-inset-fg-secondary: var(--opacities-white-800);
-  --max-inset-fg-auxiliary: var(--opacities-white-600);
-  --max-inset-fg-accent: var(--brand-color-primary-100);
-  --max-inset-stroke-main: var(--brand-color-neutral-50);
-  --max-inset-stroke-secondary: var(--brand-color-neutral-400);
-  --max-inset-stroke-auxiliary: var(--brand-color-neutral-800);
-  --max-inset-stroke-accent: var(--brand-color-primary-400);
-  --loud-fill: var(--brand-color-neutral-700);
-  --loud-stroke: var(--brand-color-neutral-600);
-  --loud-inset-fg-main: var(--white);
-  --loud-inset-fg-secondary: var(--opacities-white-800);
-  --loud-inset-fg-auxiliary: var(--opacities-white-600);
-  --loud-inset-fg-accent: var(--brand-color-primary-50);
-  --loud-inset-stroke-main: var(--brand-color-neutral-0);
-  --loud-inset-stroke-secondary: var(--brand-color-neutral-400);
-  --loud-inset-stroke-auxiliary: var(--brand-color-neutral-600);
-  --loud-inset-stroke-accent: var(--brand-color-primary-300);
-  --medium-fill: var(--brand-color-neutral-400);
-  --medium-stroke: var(--medium-fill);
-  --medium-inset-fg-main: var(--white);
-  --medium-inset-fg-secondary: var(--opacities-white-800);
-  --medium-inset-fg-auxiliary: var(--opacities-white-600);
-  --medium-inset-fg-accent: var(--brand-color-primary-25);
-  --medium-inset-stroke-main: var(--brand-color-neutral-0);
-  --medium-inset-stroke-secondary: var(--brand-color-neutral-100);
-  --medium-inset-stroke-auxiliary: var(--brand-color-neutral-300);
-  --medium-inset-stroke-accent: var(--brand-color-primary-100);
-  --quiet-fill: var(--brand-color-neutral-25);
-  --quiet-stroke: var(--brand-color-neutral-50);
-  --quiet-inset-fg-main: var(--brand-color-neutral-800);
-  --quiet-inset-fg-secondary: var(--brand-color-neutral-600);
-  --quiet-inset-fg-auxiliary: var(--brand-color-neutral-400);
-  --quiet-inset-fg-disabled: var(--brand-color-neutral-300);
-  --quiet-inset-fg-accent: var(--brand-color-primary-500);
-  --quiet-inset-stroke-main: var(--brand-color-neutral-700);
-  --quiet-inset-stroke-secondary: var(--brand-color-neutral-500);
-  --quiet-inset-stroke-auxiliary: var(--brand-color-neutral-200);
-  --quiet-inset-stroke-accent: var(--brand-color-primary-400);
-  --muted-fill: var(--brand-color-neutral-0);
-  --muted-stroke: var(--brand-color-neutral-25);
-  --muted-inset-fg-main: var(--brand-color-neutral-800);
-  --muted-inset-fg-secondary: var(--brand-color-neutral-600);
-  --muted-inset-fg-auxiliary: var(--brand-color-neutral-400);
-  --muted-inset-fg-accent: var(--brand-color-primary-400);
-  --muted-inset-stroke-main: var(--brand-color-neutral-700);
-  --muted-inset-stroke-secondary: var(--brand-color-neutral-500);
-  --muted-inset-stroke-auxiliary: var(--brand-color-neutral-200);
-  --muted-inset-stroke-accent: var(--brand-color-primary-400);
-  --hover: var(--opacities-black-50);
-  --disabled: var(--opacities-black-100);
-  --active: var(--opacities-black-300);
-  --radius: var(--rounded-md);
-}
 [data-style="brand"] {
   --surface: var(--brand-color-primary-950);
   --foreground-static: var(--white);
@@ -3633,6 +3571,71 @@
   --muted-inset-stroke-secondary: var(--brand-color-red-600);
   --muted-inset-stroke-auxiliary: var(--brand-color-red-100);
   --muted-inset-stroke-accent: var(--brand-color-red-400);
+  --hover: var(--opacities-black-50);
+  --disabled: var(--opacities-black-100);
+  --active: var(--opacities-black-300);
+  --radius: var(--rounded-md);
+}
+[data-style="neutral"] {
+  --surface: var(--white);
+  --foreground-static: var(--white);
+  --foreground-main: var(--brand-color-neutral-950);
+  --foreground-secondary: var(--brand-color-neutral-600);
+  --foreground-auxiliary: var(--brand-color-neutral-400);
+  --foreground-disabled: var(--brand-color-neutral-200);
+  --foreground-accent: var(--brand-color-primary-500);
+  --focus: var(--brand-color-primary-500);
+  --max-fill: var(--brand-color-neutral-900);
+  --max-stroke: var(--max-fill);
+  --max-inset-fg-main: var(--opacities-white-950);
+  --max-inset-fg-secondary: var(--opacities-white-800);
+  --max-inset-fg-auxiliary: var(--opacities-white-600);
+  --max-inset-fg-accent: var(--brand-color-primary-100);
+  --max-inset-stroke-main: var(--brand-color-neutral-50);
+  --max-inset-stroke-secondary: var(--brand-color-neutral-400);
+  --max-inset-stroke-auxiliary: var(--brand-color-neutral-800);
+  --max-inset-stroke-accent: var(--brand-color-primary-400);
+  --loud-fill: var(--brand-color-neutral-700);
+  --loud-stroke: var(--brand-color-neutral-600);
+  --loud-inset-fg-main: var(--white);
+  --loud-inset-fg-secondary: var(--opacities-white-800);
+  --loud-inset-fg-auxiliary: var(--opacities-white-600);
+  --loud-inset-fg-accent: var(--brand-color-primary-50);
+  --loud-inset-stroke-main: var(--brand-color-neutral-0);
+  --loud-inset-stroke-secondary: var(--brand-color-neutral-400);
+  --loud-inset-stroke-auxiliary: var(--brand-color-neutral-600);
+  --loud-inset-stroke-accent: var(--brand-color-primary-300);
+  --medium-fill: var(--brand-color-neutral-400);
+  --medium-stroke: var(--medium-fill);
+  --medium-inset-fg-main: var(--white);
+  --medium-inset-fg-secondary: var(--opacities-white-800);
+  --medium-inset-fg-auxiliary: var(--opacities-white-600);
+  --medium-inset-fg-accent: var(--brand-color-primary-25);
+  --medium-inset-stroke-main: var(--brand-color-neutral-0);
+  --medium-inset-stroke-secondary: var(--brand-color-neutral-100);
+  --medium-inset-stroke-auxiliary: var(--brand-color-neutral-300);
+  --medium-inset-stroke-accent: var(--brand-color-primary-100);
+  --quiet-fill: var(--brand-color-neutral-25);
+  --quiet-stroke: var(--brand-color-neutral-50);
+  --quiet-inset-fg-main: var(--brand-color-neutral-800);
+  --quiet-inset-fg-secondary: var(--brand-color-neutral-600);
+  --quiet-inset-fg-auxiliary: var(--brand-color-neutral-400);
+  --quiet-inset-fg-disabled: var(--brand-color-neutral-300);
+  --quiet-inset-fg-accent: var(--brand-color-primary-500);
+  --quiet-inset-stroke-main: var(--brand-color-neutral-700);
+  --quiet-inset-stroke-secondary: var(--brand-color-neutral-500);
+  --quiet-inset-stroke-auxiliary: var(--brand-color-neutral-200);
+  --quiet-inset-stroke-accent: var(--brand-color-primary-400);
+  --muted-fill: var(--brand-color-neutral-0);
+  --muted-stroke: var(--brand-color-neutral-25);
+  --muted-inset-fg-main: var(--brand-color-neutral-800);
+  --muted-inset-fg-secondary: var(--brand-color-neutral-600);
+  --muted-inset-fg-auxiliary: var(--brand-color-neutral-400);
+  --muted-inset-fg-accent: var(--brand-color-primary-400);
+  --muted-inset-stroke-main: var(--brand-color-neutral-700);
+  --muted-inset-stroke-secondary: var(--brand-color-neutral-500);
+  --muted-inset-stroke-auxiliary: var(--brand-color-neutral-200);
+  --muted-inset-stroke-accent: var(--brand-color-primary-400);
   --hover: var(--opacities-black-50);
   --disabled: var(--opacities-black-100);
   --active: var(--opacities-black-300);

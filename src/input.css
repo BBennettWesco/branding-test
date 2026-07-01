@@ -7,7 +7,6 @@
 @import "./fluid.css";
 @import "../build/css/brands/synergy.css";
 @import "../build/css/brands/wesco.css";
-@import "../build/css/style/neutral.css";
 @import "../build/css/style/brand.css";
 @import "../build/css/style/blue.css";
 @import "../build/css/style/green.css";
@@ -15,6 +14,7 @@
 @import "../build/css/style/orange.css";
 @import "../build/css/style/yellow.css";
 @import "../build/css/style/red.css";
+@import "../build/css/style/neutral.css";
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
@@ -163,10 +163,10 @@
 
 /* Custom Shadows */
 @utility shadow-bottom {
-  box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+  box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
 }
 @utility shadow-top {
-  box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
+  box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
 }
 
 /* Text Styles */
