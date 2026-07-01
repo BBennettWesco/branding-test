@@ -99,7 +99,7 @@
   --shadow-bottom: 0 1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
   --shadow-top: 0 -1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
 
-  /*--color-black: var(--black);
+  --color-black: var(--black);
   --color-white: var(--white);
 
   --color-shadow-xs: var(--shadow-xs);
@@ -160,7 +160,7 @@
   --color-muted-inset-stroke-accent: var(--muted-inset-stroke-accent);
   --color-hover: var(--hover);
   --color-disabled: var(--disabled);
-  --color-active: var(--active);*/
+  --color-active: var(--active);
 }
 
 /* Remap semantic color tokens at each style scope so nested data-style overrides work */
