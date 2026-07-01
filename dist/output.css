@@ -120,7 +120,6 @@
     --color-purple-700: oklch(49.6% 0.265 301.924);
     --color-purple-800: oklch(43.8% 0.218 303.724);
     --color-purple-900: oklch(38.1% 0.176 304.987);
-    --color-purple-950: oklch(29.1% 0.149 302.717);
     --color-fuchsia-500: oklch(66.7% 0.295 322.15);
     --color-fuchsia-600: oklch(59.1% 0.293 322.896);
     --color-pink-50: oklch(97.1% 0.014 343.198);
@@ -198,7 +197,6 @@
     --color-stone-800: oklch(26.8% 0.007 34.298);
     --color-stone-900: oklch(21.6% 0.006 56.043);
     --color-stone-950: oklch(14.7% 0.004 49.25);
-    --color-black: var(--black);
     --color-white: var(--white);
     --spacing: .2rem;
     --breakpoint-md: 800px;
@@ -283,62 +281,21 @@
     }
     --color-shadow-xs: var(--shadow-xs);
     --color-shadow-base: var(--shadow-base);
-    --color-surface: var(--white);
-    --color-focus: var(--focus);
-    --color-fg-static: var(--white);
     --color-fg-main: var(--foreground-main);
     --color-fg-secondary: var(--foreground-secondary);
-    --color-fg-auxiliary: var(--foreground-auxiliary);
     --color-fg-disabled: var(--foreground-disabled);
     --color-fg-accent: var(--foreground-accent);
     --color-max: var(--max-fill);
     --color-max-inset-fg-main: var(--max-inset-fg-main);
-    --color-max-inset-fg-secondary: var(--max-inset-fg-secondary);
-    --color-max-inset-fg-auxiliary: var(--max-inset-fg-auxiliary);
-    --color-max-inset-fg-accent: var(--max-inset-fg-accent);
-    --color-max-inset-stroke-main: var(--max-inset-stroke-main);
-    --color-max-inset-stroke-secondary: var(--max-inset-stroke-secondary);
-    --color-max-inset-stroke-auxiliary: var(--max-inset-stroke-auxiliary);
-    --color-max-inset-stroke-accent: var(--max-inset-stroke-accent);
     --color-loud: var(--loud-fill);
     --color-loud-inset-fg-main: var(--loud-inset-fg-main);
-    --color-loud-inset-fg-secondary: var(--loud-inset-fg-secondary);
-    --color-loud-inset-fg-auxiliary: var(--loud-inset-fg-auxiliary);
-    --color-loud-inset-fg-accent: var(--loud-inset-fg-accent);
-    --color-loud-inset-stroke-main: var(--loud-inset-stroke-main);
-    --color-loud-inset-stroke-secondary: var(--loud-inset-stroke-secondary);
-    --color-loud-inset-stroke-auxiliary: var(--loud-inset-stroke-auxiliary);
-    --color-loud-inset-stroke-accent: var(--loud-inset-stroke-accent);
-    --color-medium: var(--medium-fill);
-    --color-medium-inset-fg-main: var(--medium-inset-fg-main);
-    --color-medium-inset-fg-secondary: var(--medium-inset-fg-secondary);
-    --color-medium-inset-fg-auxiliary: var(--medium-inset-fg-auxiliary);
-    --color-medium-inset-fg-accent: var(--medium-inset-fg-accent);
-    --color-medium-inset-stroke-main: var(--medium-inset-stroke-main);
-    --color-medium-inset-stroke-secondary: var(--medium-inset-stroke-secondary);
-    --color-medium-inset-stroke-auxiliary: var(--medium-inset-stroke-auxiliary);
-    --color-medium-inset-stroke-accent: var(--medium-inset-stroke-accent);
     --color-quiet: var(--quiet-fill);
-    --color-quiet-inset-fg-main: var(--quiet-inset-fg-main);
     --color-quiet-inset-fg-secondary: var(--quiet-inset-fg-secondary);
-    --color-quiet-inset-fg-auxiliary: var(--quiet-inset-fg-auxiliary);
-    --color-quiet-inset-fg-accent: var(--quiet-inset-fg-accent);
     --color-quiet-inset-stroke-main: var(--quiet-inset-stroke-main);
-    --color-quiet-inset-stroke-secondary: var(--quiet-inset-stroke-secondary);
-    --color-quiet-inset-stroke-auxiliary: var(--quiet-inset-stroke-auxiliary);
-    --color-quiet-inset-stroke-accent: var(--quiet-inset-stroke-accent);
     --color-muted: var(--muted-fill);
     --color-muted-inset-fg-main: var(--muted-inset-fg-main);
     --color-muted-inset-fg-secondary: var(--muted-inset-fg-secondary);
-    --color-muted-inset-fg-auxiliary: var(--muted-inset-fg-auxiliary);
-    --color-muted-inset-fg-accent: var(--muted-inset-fg-accent);
-    --color-muted-inset-stroke-main: var(--muted-inset-stroke-main);
-    --color-muted-inset-stroke-secondary: var(--muted-inset-stroke-secondary);
     --color-muted-inset-stroke-auxiliary: var(--muted-inset-stroke-auxiliary);
-    --color-muted-inset-stroke-accent: var(--muted-inset-stroke-accent);
-    --color-hover: var(--hover);
-    --color-disabled: var(--disabled);
-    --color-active: var(--active);
   }
 }
 @layer base {
@@ -1174,9 +1131,6 @@
       min-width: 4rem;
     }
   }
-  .fl-mr-2 {
-    margin-right: var(--fl-space-2);
-  }
   .fl-mr-2\.5 {
     margin-right: var(--fl-space-2\.5);
   }
@@ -1198,9 +1152,6 @@
       border-color: var(--color-light) !important;
       color: var(--color-heading) !important;
     }
-  }
-  .fl-mb-1 {
-    margin-bottom: var(--fl-space-1);
   }
   .fl-mb-1\.75 {
     margin-bottom: var(--fl-space-1\.75);
@@ -1433,9 +1384,6 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -1516,9 +1464,6 @@
   }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1641,6 +1586,17 @@
   }
   .overflow-y-auto {
     overflow-y: auto;
+  }
+  .btn-md {
+    border-radius: var(--radius-lg);
+    padding-inline: var(--fl-space-3\.5);
+    padding-block: var(--fl-space-3);
+    font-size: var(--text-xs);
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, 0 0 2px 0 color-mix(in oklch, var(--color-shadow-xs), transparent), transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-shadow-xs), transparent));
+    }
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .rounded {
     border-radius: 0.25rem;
@@ -1804,9 +1760,6 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1882,18 +1835,6 @@
       fill: white !important;
     }
   }
-  .apexcharts-gridline {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-default) !important;
-    .dark & {
-      stroke: var(--color-default) !important;
-    }
-  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-default) !important;
     .dark & {
@@ -1910,9 +1851,6 @@
       padding: 0 !important;
     }
   }
-  .fl-p-3 {
-    padding: var(--fl-space-3);
-  }
   .fl-p-3\.5 {
     padding: var(--fl-space-3\.5);
   }
@@ -1921,9 +1859,6 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -1939,12 +1874,6 @@
   }
   .fl-px-2\.5 {
     padding-inline: var(--fl-space-2\.5);
-  }
-  .fl-px-3 {
-    padding-inline: var(--fl-space-3);
-  }
-  .fl-px-3\.5 {
-    padding-inline: var(--fl-space-3\.5);
   }
   .fl-px-8 {
     padding-inline: var(--fl-space-8);
@@ -2356,13 +2285,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-200);
-      }
-    }
-  }
-  .hover\:bg-hover {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-hover);
       }
     }
   }
@@ -4691,23 +4613,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -4772,6 +4677,23 @@
   syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -4858,10 +4780,6 @@
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
-      --tw-border-style: solid;
-      --tw-leading: initial;
-      --tw-font-weight: initial;
-      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -4876,6 +4794,10 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;

@@ -227,6 +227,17 @@
   --color-active: var(--active);
 }
 
+/* Buttons */
+@utility btn-sm {
+  @apply fl-px-2.5 fl-py-2 text-xs rounded-lg shadow-xs;
+}
+@utility btn-md {
+  @apply fl-px-3.5 fl-py-3 text-xs rounded-lg shadow-xs;
+}
+@utility btn-lg {
+  @apply fl-px-4 fl-py-3.5 text-sm rounded-xl shadow-xs;
+}
+
 /* Text Styles */
 @utility display {
   font-family: var(--font-alt);
