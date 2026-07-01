@@ -91,15 +91,17 @@
 	--breakpoint-2xl: 1528px;
 
   --shadow-*: initial;
-  --shadow-xs: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 5%, transparent);
-  --shadow-sm: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 2px 4px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
-  --shadow-md: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
-  --shadow-lg: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 10px 15px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
-  --shadow-xl: 0 0 2px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent), 0 20px 25px 0 color-mix(in oklch, var(--color-brand-shadow) 10%, transparent);
-  --color-brand-shadow: var(--color-black);
+  --shadow-xs: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-xs), transparent);
+  --shadow-sm: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 2px 4px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
+  --shadow-md: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
+  --shadow-lg: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 10px 15px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
+  --shadow-xl: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 20px 25px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
 
   --color-black: var(--black);
   --color-white: var(--white);
+
+  --color-shadow-xs: var(--shadow-xs);
+  --color-shadow-base: var(--shadow-base);
 
   --color-surface: var(--white);
   --color-focus: var(--focus);
@@ -179,6 +181,7 @@
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);  
+  color: var(--color-fg-main);
 }
 @utility label {
   line-height: var(--leading-tight);
