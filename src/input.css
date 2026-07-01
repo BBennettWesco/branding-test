@@ -229,13 +229,13 @@
 
 /* Buttons */
 @utility btn-sm {
-  @apply fl-px-2.5 fl-py-2 text-xs rounded-lg shadow-xs;
+  @apply fl-px-2.5 fl-py-2 action text-xs rounded-lg shadow-xs;
 }
 @utility btn-md {
-  @apply fl-px-3.5 fl-py-3 text-xs rounded-lg shadow-xs;
+  @apply fl-px-3.5 fl-py-3 actiontext-xs rounded-lg shadow-xs;
 }
 @utility btn-lg {
-  @apply fl-px-4 fl-py-3.5 text-sm rounded-xl shadow-xs;
+  @apply fl-px-4 fl-py-3.5 action text-sm rounded-xl shadow-xs;
 }
 
 /* Text Styles */
@@ -256,6 +256,16 @@
 }
 @utility body-tech {
   font-family: var(--font-mono)
+}
+@utility action {
+  line-height: var(--leading-none);
+  font-weight: var(--font-weight-medium);
+}
+@utility action-critical {
+  line-height: var(--leading-none);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
 }
 
 /* Fluid Spacing API */
