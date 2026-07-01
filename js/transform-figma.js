@@ -134,6 +134,197 @@ function getOutputFolder(collection) {
     .trim();
 }
 
+function getCollectionModeInfo(collection) {
+  const modes = collection?.modes || [];
+
+  const defaultMode =
+    modes.find(
+      (mode) =>
+        mode?.modeId ===
+        collection?.defaultModeId
+    ) || modes[0] || null;
+
+  const defaultModeId =
+    defaultMode?.modeId || null;
+
+  const invertMode =
+    modes.find(
+      (mode) =>
+        mode?.name
+          ?.toLowerCase()
+          .trim() === "invert"
+    ) ||
+    modes.find((mode) =>
+      mode?.name
+        ?.toLowerCase()
+        .includes("invert")
+    ) ||
+    modes.find(
+      (mode) =>
+        mode?.modeId &&
+        mode.modeId !== defaultModeId
+    );
+
+  return {
+    defaultModeId,
+    invertModeId:
+      invertMode?.modeId || null,
+    defaultParentModeId:
+      defaultMode?.parentModeId ||
+      defaultModeId,
+    invertParentModeId:
+      invertMode?.parentModeId ||
+      invertMode?.modeId ||
+      defaultMode?.parentModeId ||
+      defaultModeId,
+  };
+}
+
+function pickModeValue(values, modeIds) {
+  for (const modeId of modeIds) {
+    if (
+      modeId &&
+      values?.[modeId] !== undefined
+    ) {
+      return values[modeId];
+    }
+  }
+
+  return undefined;
+}
+
+function getPrimaryModeValue(
+  modeValues,
+  collection,
+  variableName,
+  missingModesLog,
+  droppedLog
+) {
+  const values = modeValues || {};
+  let value;
+
+  const defaultMode =
+    collection.defaultModeId;
+
+  if (
+    defaultMode &&
+    values[defaultMode] !== undefined
+  ) {
+    value = values[defaultMode];
+  }
+
+  if (value === undefined) {
+    const modeKeys =
+      Object.keys(values);
+
+    if (!modeKeys.length) {
+      console.warn(
+        missingModesLog,
+        variableName
+      );
+      return undefined;
+    }
+
+    value =
+      (defaultMode &&
+      values[defaultMode] !== undefined)
+        ? values[defaultMode]
+        : values[modeKeys[0]];
+  }
+
+  if (value === undefined) {
+    console.warn(
+      droppedLog,
+      variableName
+    );
+    return undefined;
+  }
+
+  return value;
+}
+
+function getStyleModeValues(
+  modeValues,
+  collection,
+  variableName,
+  missingModesLog,
+  droppedLog
+) {
+  const values = modeValues || {};
+  const modeKeys =
+    Object.keys(values);
+
+  if (!modeKeys.length) {
+    console.warn(
+      missingModesLog,
+      variableName
+    );
+    return null;
+  }
+
+  const modeInfo =
+    getCollectionModeInfo(collection);
+
+  const defaultValue =
+    getPrimaryModeValue(
+      values,
+      collection,
+      variableName,
+      missingModesLog,
+      droppedLog
+    );
+
+  if (defaultValue === undefined) {
+    return null;
+  }
+
+  let invertValue = defaultValue;
+
+  if (
+    modeInfo.invertModeId &&
+    values[modeInfo.invertModeId] !==
+      undefined
+  ) {
+    invertValue =
+      values[modeInfo.invertModeId];
+  }
+
+  return {
+    defaultValue,
+    invertValue,
+  };
+}
+
+function buildTokenPayload(
+  variable,
+  value,
+  invertValue
+) {
+  const payload = {
+    $value:
+      convertValue(
+        value,
+        variable
+      ),
+    $type:
+      getTokenType(variable)
+  };
+
+  if (invertValue !== undefined) {
+    payload.$extensions = {
+      modes: {
+        invert:
+          convertValue(
+            invertValue,
+            variable
+          )
+      }
+    };
+  }
+
+  return payload;
+}
+
 /* ----------------------------------
  * Collection Lookup
  * ---------------------------------- */
@@ -305,6 +496,16 @@ Object.values(variables).forEach(
     if (collection.isExtension)
       return;
 
+    const group =
+      getCollectionGroup(collection);
+
+    if (
+      group !== "brand" &&
+      group !== "style"
+    ) {
+      return;
+    }
+
     const category =
       getCategory(variable);
       
@@ -317,45 +518,51 @@ Object.values(variables).forEach(
         category
       );
 
-    const modes = variable.valuesByMode || {};
-    let value;
-    // 1. try default mode
-    const defaultMode = collection.defaultModeId;
-    if (defaultMode && modes[defaultMode] !== undefined) {
-      value = modes[defaultMode];
-    }
-    // 2. fallback: ANY available mode
-    if (value === undefined) {
-      const modeKeys = Object.keys(modes);
-      if (!modeKeys.length) {
-        console.warn("NO MODES:", variable.name);
+    if (group === "style") {
+      const styleValues =
+        getStyleModeValues(
+          variable.valuesByMode,
+          collection,
+          variable.name,
+          "NO STYLE MODES:",
+          "DROPPED STYLE TOKEN:"
+        );
+
+      if (!styleValues)
         return;
-      }
-      const defaultMode = collection.defaultModeId;
-      value =
-        (defaultMode && modes[defaultMode] !== undefined)
-          ? modes[defaultMode]
-          : modes[modeKeys[0]];
-    }
-    // 3. hard safety log
-    if (value === undefined) {
-      console.warn("DROPPED (no modes found):", variable.name);
+
+      setDeep(
+        root,
+        tokenPath(variable.name),
+        buildTokenPayload(
+          variable,
+          styleValues.defaultValue,
+          styleValues.invertValue
+        )
+      );
+
       return;
     }
+
+    const value =
+      getPrimaryModeValue(
+        variable.valuesByMode,
+        collection,
+        variable.name,
+        "NO MODES:",
+        "DROPPED (no modes found):"
+      );
+
+    if (value === undefined)
+      return;
 
     setDeep(
       root,
       tokenPath(variable.name),
-      {
-        $value:
-          convertValue(
-            value,
-            variable
-          ),
-
-        $type:
-          getTokenType(variable)
-        }
+      buildTokenPayload(
+        variable,
+        value
+      )
     );
   }
 );
@@ -407,6 +614,16 @@ Object.values(collections).forEach(
     if (!collection.isExtension)
       return;
 
+    const group =
+      getCollectionGroup(collection);
+
+    if (
+      group !== "brand" &&
+      group !== "style"
+    ) {
+      return;
+    }
+
     const overrides =
       collection.variableOverrides ||
       {};
@@ -423,35 +640,95 @@ Object.values(collections).forEach(
         const category =
           getCategory(variable);
 
+        if (!category)
+          return;
+
         const root =
           ensureOutput(
             collection.id,
             category
           );
 
-        let value;
+        if (group === "style") {
+          const modeInfo =
+            getCollectionModeInfo(collection);
 
-        // try default mode
-        const defaultMode = collection.defaultModeId;
+          const baseCollection =
+            collectionLookup[
+              variable.variableCollectionId
+            ];
 
-        if (defaultMode && values?.[defaultMode] !== undefined) {
-          value = values[defaultMode];
-        }
+          const baseModeInfo =
+            getCollectionModeInfo(
+              baseCollection || {}
+            );
 
-        // fallback: first available value
-        if (value === undefined) {
-          const modeKeys = Object.keys(values || {});
-          if (!modeKeys.length) {
-            console.warn("NO EXTENSION MODES:", variable.name);
+          const baseModes =
+            variable.valuesByMode || {};
+
+          const defaultValue =
+            pickModeValue(values, [
+              modeInfo.defaultModeId,
+            ]) ??
+            pickModeValue(baseModes, [
+              modeInfo.defaultParentModeId,
+              baseModeInfo.defaultModeId,
+            ]) ??
+            pickModeValue(values, [
+              modeInfo.invertModeId,
+            ]);
+
+          const invertValue =
+            pickModeValue(values, [
+              modeInfo.invertModeId,
+            ]) ??
+            pickModeValue(baseModes, [
+              modeInfo.invertParentModeId,
+              baseModeInfo.invertModeId,
+              modeInfo.defaultParentModeId,
+              baseModeInfo.defaultModeId,
+            ]) ??
+            defaultValue;
+
+          const styleValues =
+            defaultValue === undefined
+              ? null
+              : {
+                  defaultValue,
+                  invertValue,
+                };
+
+          if (!styleValues) {
+            console.warn(
+              "DROPPED EXTENSION TOKEN:",
+              variable.name,
+              values
+            );
             return;
           }
-          value =
-            (collection.defaultModeId && values?.[collection.defaultModeId] !== undefined)
-              ? values[collection.defaultModeId]
-              : values[modeKeys[0]];
+
+          setDeep(
+            root,
+            tokenPath(variable.name),
+            buildTokenPayload(
+              variable,
+              styleValues.defaultValue,
+              styleValues.invertValue
+            )
+          );
+
+          return;
         }
 
-        // safety
+        const value =
+          getPrimaryModeValue(
+            values,
+            collection,
+            variable.name,
+            "NO EXTENSION MODES:",
+            "DROPPED EXTENSION TOKEN:"
+          );
+
         if (value === undefined) {
           console.warn(
             "DROPPED EXTENSION TOKEN:",
@@ -464,16 +741,10 @@ Object.values(collections).forEach(
         setDeep(
           root,
           tokenPath(variable.name),
-          {
-            $value:
-              convertValue(
-                value,
-                variable
-              ),
-
-            $type:
-              getTokenType(variable)
-          }
+          buildTokenPayload(
+            variable,
+            value
+          )
         );
       }
     );

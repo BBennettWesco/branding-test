@@ -119,6 +119,55 @@ function getDefaultFallbackStack(primary) {
   return ["Segoe UI", "Arial", "sans-serif"];
 }
 
+function transformManualStyleValue(raw, tokenType) {
+  if (
+    tokenType === "color" &&
+    raw &&
+    typeof raw === "object" &&
+    "r" in raw
+  ) {
+    return formatCss(
+      oklch({
+        mode: "rgb",
+        r: raw.r,
+        g: raw.g,
+        b: raw.b,
+        alpha: raw.a
+      })
+    );
+  }
+
+  if (
+    tokenType === "color" &&
+    typeof raw === "string"
+  ) {
+    const parsed = parse(raw);
+    if (!parsed) return raw;
+    return formatCss(oklch(parsed));
+  }
+
+  if (
+    tokenType === "fontFamily" &&
+    typeof raw === "string" &&
+    !raw.includes("{")
+  ) {
+    return formatFontFamilyValue(raw);
+  }
+
+  return raw;
+}
+
+function stringifyStyleValue(value) {
+  if (
+    value &&
+    typeof value === "object"
+  ) {
+    return JSON.stringify(value);
+  }
+
+  return String(value);
+}
+
 //////////////////////////////////////////////////////
 // Transform: color → OKLCH
 //////////////////////////////////////////////////////
@@ -194,9 +243,13 @@ StyleDictionary.registerFormat({
   name: "css/style-theme",
   format({ dictionary, options }) {
     const lines = [];
+    const defaultLines = [];
+    const invertLines = [];
+
     const pathToName = new Map(
       dictionary.allTokens.map((t) => [t.path.join("."), t.name])
     );
+
     const toCssVar = (refPath) => {
       const refName =
         pathToName.get(refPath) ??
@@ -206,7 +259,19 @@ StyleDictionary.registerFormat({
       return `var(--${refName})`;
     };
 
-    lines.push(`${options.selector} {`);
+    const resolveReference = (value) => {
+      if (
+        !options.outputReferences ||
+        typeof value !== "string" ||
+        !value.includes("{")
+      ) {
+        return null;
+      }
+
+      return value.replace(/\{([^}]+)\}/g, (_match, refPath) => {
+        return toCssVar(refPath);
+      });
+    };
 
     for (const token of dictionary.allTokens) {
 
@@ -225,16 +290,51 @@ StyleDictionary.registerFormat({
 
       // Preserve semantic aliases as CSS variables when outputReferences is enabled.
       const value =
-        options.outputReferences && typeof referenceValue === "string"
-          ? referenceValue.replace(/\{([^}]+)\}/g, (_match, refPath) => {
-              return toCssVar(refPath);
-            })
-          : resolvedValue;
+        resolveReference(referenceValue) ??
+        resolvedValue;
 
-      lines.push(`  --${token.name}: ${value};`);
+      defaultLines.push(
+        `  --${token.name}: ${value};`
+      );
+
+      const invertRaw =
+        token.original?.$extensions?.modes?.invert;
+
+      if (invertRaw === undefined) {
+        continue;
+      }
+
+      const invertValue =
+        resolveReference(invertRaw) ??
+        transformManualStyleValue(
+          invertRaw,
+          token.$type ?? token.type
+        );
+
+      if (
+        stringifyStyleValue(invertValue) ===
+        stringifyStyleValue(value)
+      ) {
+        continue;
+      }
+
+      invertLines.push(
+        `  --${token.name}: ${invertValue};`
+      );
     }
 
+    lines.push(`${options.selector} {`);
+    lines.push(...defaultLines);
     lines.push("}");
+
+    if (invertLines.length) {
+      lines.push("");
+      lines.push(
+        `${options.selector}[data-mode="invert"] {`
+      );
+      lines.push(...invertLines);
+      lines.push("}");
+    }
 
     return lines.join("\n");
   }

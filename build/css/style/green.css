@@ -1,9 +1,9 @@
 [data-style="green"] {
-  --surface: var(--brand-color-green-950);
+  --surface: var(--white);
   --foreground-static: var(--white);
   --foreground-main: var(--brand-color-neutral-950);
-  --foreground-secondary: var(--brand-color-green-25);
-  --foreground-auxiliary: var(--brand-color-green-300);
+  --foreground-secondary: var(--brand-color-neutral-600);
+  --foreground-auxiliary: var(--brand-color-neutral-400);
   --foreground-disabled: var(--brand-color-neutral-200);
   --foreground-accent: var(--brand-color-green-500);
   --focus: var(--brand-color-green-500);
@@ -19,9 +19,9 @@
   --max-inset-stroke-accent: var(--max-inset-fg-accent);
   --loud-fill: var(--brand-color-green-700);
   --loud-stroke: var(--brand-color-green-600);
-  --loud-inset-fg-main: var(--brand-color-green-950);
-  --loud-inset-fg-secondary: var(--brand-color-green-700);
-  --loud-inset-fg-auxiliary: var(--brand-color-green-400);
+  --loud-inset-fg-main: var(--white);
+  --loud-inset-fg-secondary: var(--opacities-white-800);
+  --loud-inset-fg-auxiliary: var(--opacities-white-600);
   --loud-inset-fg-accent: var(--brand-color-green-50);
   --loud-inset-stroke-main: var(--brand-color-green-25);
   --loud-inset-stroke-secondary: var(--brand-color-green-200);
@@ -62,4 +62,57 @@
   --disabled: var(--opacities-black-100);
   --active: var(--opacities-black-300);
   --radius: var(--rounded-md);
+}
+
+[data-style="green"][data-mode="invert"] {
+  --surface: var(--brand-color-green-950);
+  --foreground-main: var(--white);
+  --foreground-secondary: var(--brand-color-green-25);
+  --foreground-auxiliary: var(--brand-color-green-300);
+  --foreground-disabled: var(--brand-color-neutral-500);
+  --foreground-accent: var(--brand-color-green-100);
+  --focus: var(--brand-color-green-25);
+  --max-fill: var(--brand-color-green-0);
+  --max-inset-fg-main: var(--brand-color-green-900);
+  --max-inset-fg-secondary: var(--brand-color-green-700);
+  --max-inset-fg-auxiliary: var(--brand-color-green-300);
+  --max-inset-fg-accent: var(--brand-color-green-500);
+  --max-inset-stroke-main: var(--brand-color-green-800);
+  --max-inset-stroke-auxiliary: var(--brand-color-green-100);
+  --loud-fill: var(--brand-color-green-50);
+  --loud-stroke: var(--loud-fill);
+  --loud-inset-fg-main: var(--brand-color-green-950);
+  --loud-inset-fg-secondary: var(--brand-color-green-700);
+  --loud-inset-fg-auxiliary: var(--brand-color-green-400);
+  --loud-inset-fg-accent: var(--brand-color-green-600);
+  --loud-inset-stroke-main: var(--brand-color-green-800);
+  --loud-inset-stroke-secondary: var(--brand-color-green-400);
+  --loud-inset-stroke-auxiliary: var(--brand-color-green-200);
+  --medium-fill: var(--brand-color-green-500);
+  --medium-inset-fg-secondary: var(--opacities-white-800);
+  --medium-inset-fg-auxiliary: var(--opacities-white-600);
+  --medium-inset-fg-accent: var(--brand-color-green-950);
+  --medium-inset-stroke-main: var(--brand-color-green-25);
+  --medium-inset-stroke-accent: var(--brand-color-green-800);
+  --quiet-fill: var(--brand-color-green-800);
+  --quiet-stroke: var(--brand-color-green-700);
+  --quiet-inset-fg-main: var(--white);
+  --quiet-inset-fg-secondary: var(--brand-color-green-25);
+  --quiet-inset-fg-disabled: var(--opacities-white-400);
+  --quiet-inset-fg-accent: var(--brand-color-green-50);
+  --quiet-inset-stroke-main: var(--brand-color-green-25);
+  --quiet-inset-stroke-secondary: var(--brand-color-green-200);
+  --quiet-inset-stroke-auxiliary: var(--brand-color-green-500);
+  --quiet-inset-stroke-accent: var(--brand-color-green-25);
+  --muted-fill: var(--brand-color-green-900);
+  --muted-stroke: var(--brand-color-green-800);
+  --muted-inset-fg-main: var(--brand-color-green-0);
+  --muted-inset-fg-secondary: var(--brand-color-green-50);
+  --muted-inset-fg-auxiliary: var(--brand-color-green-400);
+  --muted-inset-fg-accent: var(--brand-color-green-100);
+  --muted-inset-stroke-main: var(--brand-color-green-25);
+  --muted-inset-stroke-secondary: var(--brand-color-green-200);
+  --muted-inset-stroke-auxiliary: var(--brand-color-green-700);
+  --muted-inset-stroke-accent: var(--brand-color-green-400);
+  --hover: var(--opacities-white-50);
 }

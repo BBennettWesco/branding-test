@@ -1,82 +1,172 @@
 {
   "surface": {
-    "$value": "{brand.color.teal.950}",
-    "$type": "color"
+    "$value": "{white}",
+    "$type": "color",
+    "$extensions": {
+      "modes": {
+        "invert": "{brand.color.teal.950}"
+      }
+    }
   },
   "foreground": {
     "static": {
       "$value": "{white}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{white}"
+        }
+      }
     },
     "main": {
       "$value": "{brand.color.neutral.950}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{white}"
+        }
+      }
     },
     "secondary": {
       "$value": "{brand.color.neutral.600}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{opacities.white.800}"
+        }
+      }
     },
     "auxiliary": {
-      "$value": "{opacities.white.600}",
-      "$type": "color"
+      "$value": "{brand.color.neutral.400}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{opacities.white.600}"
+        }
+      }
     },
     "disabled": {
       "$value": "{brand.color.neutral.200}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.neutral.500}"
+        }
+      }
     },
     "accent": {
       "$value": "{brand.color.teal.500}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.100}"
+        }
+      }
     }
   },
   "focus": {
     "$value": "{brand.color.primary.500}",
-    "$type": "color"
+    "$type": "color",
+    "$extensions": {
+      "modes": {
+        "invert": "{brand.color.primary.25}"
+      }
+    }
   },
   "max": {
     "fill": {
       "$value": "{brand.color.teal.900}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.0}"
+        }
+      }
     },
     "stroke": {
       "$value": "{max.fill}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{max.fill}"
+        }
+      }
     },
     "inset": {
       "fg": {
         "main": {
           "$value": "{white}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.900}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.25}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.800}"
+            }
+          }
         },
         "auxiliary": {
-          "$value": "{opacities.black.400}",
-          "$type": "color"
+          "$value": "{opacities.white.600}",
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{opacities.black.400}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.200}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.500}"
+            }
+          }
         }
       },
       "stroke": {
         "main": {
           "$value": "{brand.color.teal.0}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.800}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.100}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.600}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{brand.color.teal.600}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.200}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.300}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{max.inset.fg.accent}"
+            }
+          }
         }
       }
     }
@@ -84,47 +174,97 @@
   "loud": {
     "fill": {
       "$value": "{brand.color.teal.700}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.50}"
+        }
+      }
     },
     "stroke": {
       "$value": "{brand.color.teal.600}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{loud.fill}"
+        }
+      }
     },
     "inset": {
       "fg": {
         "main": {
-          "$value": "{brand.color.teal.950}",
-          "$type": "color"
+          "$value": "{white}",
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.950}"
+            }
+          }
         },
         "secondary": {
-          "$value": "{brand.color.teal.700}",
-          "$type": "color"
+          "$value": "{opacities.white.800}",
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.700}"
+            }
+          }
         },
         "auxiliary": {
-          "$value": "{opacities.black.400}",
-          "$type": "color"
+          "$value": "{opacities.white.600}",
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{opacities.black.400}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.100}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.600}"
+            }
+          }
         }
       },
       "stroke": {
         "main": {
           "$value": "{brand.color.teal.0}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.800}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.100}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.500}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{brand.color.teal.400}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.300}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.200}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{loud.inset.fg.accent}"
+            }
+          }
         }
       }
     }
@@ -132,47 +272,97 @@
   "medium": {
     "fill": {
       "$value": "{brand.color.teal.400}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.500}"
+        }
+      }
     },
     "stroke": {
-      "$value": "{brand.color.teal.400}",
-      "$type": "color"
+      "$value": "{medium.fill}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.400}"
+        }
+      }
     },
     "inset": {
       "fg": {
         "main": {
           "$value": "{white}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{white}"
+            }
+          }
         },
         "secondary": {
           "$value": "{opacities.white.800}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{opacities.white.800}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{opacities.white.600}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{opacities.white.600}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.25}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.50}"
+            }
+          }
         }
       },
       "stroke": {
         "main": {
           "$value": "{brand.color.teal.0}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.0}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.100}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.100}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{brand.color.teal.300}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.300}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.50}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{medium.inset.fg.accent}"
+            }
+          }
         }
       }
     }
@@ -180,51 +370,106 @@
   "quiet": {
     "fill": {
       "$value": "{brand.color.teal.25}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.700}"
+        }
+      }
     },
     "stroke": {
       "$value": "{brand.color.teal.100}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.600}"
+        }
+      }
     },
     "inset": {
       "fg": {
         "main": {
           "$value": "{brand.color.teal.950}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{white}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.700}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{opacities.white.800}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{brand.color.teal.300}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{opacities.white.600}"
+            }
+          }
         },
         ":disabled": {
           "$value": "{brand.color.neutral.300}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{opacities.white.400}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.500}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.100}"
+            }
+          }
         }
       },
       "stroke": {
         "main": {
           "$value": "{brand.color.teal.700}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.0}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.500}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.200}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{brand.color.teal.200}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.500}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.400}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.200}"
+            }
+          }
         }
       }
     }
@@ -232,61 +477,126 @@
   "muted": {
     "fill": {
       "$value": "{brand.color.teal.0}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.900}"
+        }
+      }
     },
     "stroke": {
       "$value": "{brand.color.teal.50}",
-      "$type": "color"
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.teal.800}"
+        }
+      }
     },
     "inset": {
       "fg": {
         "main": {
           "$value": "{brand.color.teal.800}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.0}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.600}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.100}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{brand.color.teal.300}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.400}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.400}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.200}"
+            }
+          }
         }
       },
       "stroke": {
         "main": {
           "$value": "{brand.color.teal.700}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.25}"
+            }
+          }
         },
         "secondary": {
           "$value": "{brand.color.teal.500}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.300}"
+            }
+          }
         },
         "auxiliary": {
           "$value": "{brand.color.teal.200}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.600}"
+            }
+          }
         },
         "accent": {
           "$value": "{brand.color.teal.300}",
-          "$type": "color"
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": "{brand.color.teal.300}"
+            }
+          }
         }
       }
     }
   },
   ":hover": {
     "$value": "{opacities.black.50}",
-    "$type": "color"
+    "$type": "color",
+    "$extensions": {
+      "modes": {
+        "invert": "{opacities.white.50}"
+      }
+    }
   },
   ":disabled": {
     "$value": "{opacities.black.100}",
-    "$type": "color"
+    "$type": "color",
+    "$extensions": {
+      "modes": {
+        "invert": "{opacities.black.100}"
+      }
+    }
   },
   ":active": {
     "$value": "{opacities.black.300}",
-    "$type": "color"
+    "$type": "color",
+    "$extensions": {
+      "modes": {
+        "invert": "{opacities.black.300}"
+      }
+    }
   }
 }

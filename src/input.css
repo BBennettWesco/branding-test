@@ -96,8 +96,10 @@
   --shadow-md: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 4px 6px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
   --shadow-lg: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 10px 15px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
   --shadow-xl: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 20px 25px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
+  --shadow-bottom: 0 1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
+  --shadow-top: 0 -1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
 
-  --color-black: var(--black);
+  /*--color-black: var(--black);
   --color-white: var(--white);
 
   --color-shadow-xs: var(--shadow-xs);
@@ -158,11 +160,15 @@
   --color-muted-inset-stroke-accent: var(--muted-inset-stroke-accent);
   --color-hover: var(--hover);
   --color-disabled: var(--disabled);
-  --color-active: var(--active);
+  --color-active: var(--active);*/
 }
 
 /* Remap semantic color tokens at each style scope so nested data-style overrides work */
 [data-style] {
+  --color-black: var(--black);
+  --color-white: var(--white);
+  --color-shadow-xs: var(--shadow-xs);
+  --color-shadow-base: var(--shadow-base);
   --color-surface: var(--surface);
   --color-focus: var(--focus);
   --color-fg-static: var(--foreground-static);
@@ -221,13 +227,13 @@
   --color-active: var(--active);
 }
 
-/* Custom Shadows */
+/* Custom Shadows 
 @utility shadow-bottom {
   box-shadow: 0 1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
 }
 @utility shadow-top {
   box-shadow: 0 -1px 14px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
-}
+}*/
 
 /* Text Styles */
 @utility display {
@@ -235,13 +241,11 @@
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);
-  color: var(--color-fg-main);
 }
 @utility heading {
   line-height: var(--leading-tight);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-tight);  
-  color: var(--color-fg-main);
 }
 @utility label {
   line-height: var(--leading-tight);
