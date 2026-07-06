@@ -114,6 +114,7 @@
   --color-fg-disabled: var(--foreground-disabled);
   --color-fg-accent: var(--foreground-accent);
   --color-max: var(--max-fill);
+  --color-max-border: var(--max-fill);
   --color-max-inset-fg-main: var(--max-inset-fg-main);
   --color-max-inset-fg-secondary: var(--max-inset-fg-secondary);
   --color-max-inset-fg-auxiliary: var(--max-inset-fg-auxiliary);
@@ -123,6 +124,7 @@
   --color-max-inset-stroke-auxiliary: var(--max-inset-stroke-auxiliary);
   --color-max-inset-stroke-accent: var(--max-inset-stroke-accent);
   --color-loud: var(--loud-fill);
+  --color-loud-border: var(--loud-fill);
   --color-loud-inset-fg-main: var(--loud-inset-fg-main);
   --color-loud-inset-fg-secondary: var(--loud-inset-fg-secondary);
   --color-loud-inset-fg-auxiliary: var(--loud-inset-fg-auxiliary);
@@ -132,6 +134,7 @@
   --color-loud-inset-stroke-auxiliary: var(--loud-inset-stroke-auxiliary);
   --color-loud-inset-stroke-accent: var(--loud-inset-stroke-accent);
   --color-medium: var(--medium-fill);
+  --color-medium-border: var(--medium-fill);
   --color-medium-inset-fg-main: var(--medium-inset-fg-main);
   --color-medium-inset-fg-secondary: var(--medium-inset-fg-secondary);
   --color-medium-inset-fg-auxiliary: var(--medium-inset-fg-auxiliary);
@@ -141,6 +144,7 @@
   --color-medium-inset-stroke-auxiliary: var(--medium-inset-stroke-auxiliary);
   --color-medium-inset-stroke-accent: var(--medium-inset-stroke-accent);
   --color-quiet: var(--quiet-fill);
+  --color-quiet-border: var(--quiet-fill);
   --color-quiet-inset-fg-main: var(--quiet-inset-fg-main);
   --color-quiet-inset-fg-secondary: var(--quiet-inset-fg-secondary);
   --color-quiet-inset-fg-auxiliary: var(--quiet-inset-fg-auxiliary);
@@ -150,6 +154,7 @@
   --color-quiet-inset-stroke-auxiliary: var(--quiet-inset-stroke-auxiliary);
   --color-quiet-inset-stroke-accent: var(--quiet-inset-stroke-accent);
   --color-muted: var(--muted-fill);
+  --color-muted-border: var(--muted-fill);
   --color-muted-inset-fg-main: var(--muted-inset-fg-main);
   --color-muted-inset-fg-secondary: var(--muted-inset-fg-secondary);
   --color-muted-inset-fg-auxiliary: var(--muted-inset-fg-auxiliary);
@@ -232,7 +237,7 @@
   @apply fl-px-2.5 fl-py-2 action text-xs rounded-lg shadow-xs;
 }
 @utility btn-md {
-  @apply fl-px-3.5 fl-py-3 actiontext-xs rounded-lg shadow-xs;
+  @apply fl-px-3.5 fl-py-3 action text-xs rounded-lg shadow-xs;
 }
 @utility btn-lg {
   @apply fl-px-4 fl-py-3.5 action text-sm rounded-xl shadow-xs;
