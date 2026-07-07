@@ -1857,6 +1857,9 @@
   .bg-muted {
     background-color: var(--color-muted);
   }
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
   .bg-transparent {
     background-color: transparent;
   }
@@ -1886,12 +1889,20 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .from-surface-gradient-accent-end {
+    --tw-gradient-from: var(--color-surface-gradient-accent-end);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .from-surface-gradient-accent-start {
     --tw-gradient-from: var(--color-surface-gradient-accent-start);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-surface-gradient-accent-end {
     --tw-gradient-to: var(--color-surface-gradient-accent-end);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-surface-gradient-accent-start {
+    --tw-gradient-to: var(--color-surface-gradient-accent-start);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .apexcharts-datalabels-group {
