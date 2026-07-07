@@ -907,6 +907,12 @@
   .ms-auto {
     margin-inline-start: auto;
   }
+  .fl-mt-2 {
+    margin-top: var(--fl-space-2);
+  }
+  .fl-mt-2\.5 {
+    margin-top: var(--fl-space-2\.5);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -1677,6 +1683,34 @@
     }
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .input-md {
+    border-radius: var(--radius-lg);
+    padding-block: var(--fl-space-3);
+    padding-right: var(--fl-space-2\.5);
+    padding-left: var(--fl-space-2);
+    font-size: var(--text-xs);
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, 0 0 2px 0 color-mix(in oklch, var(--color-shadow-xs), transparent), transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-shadow-xs), transparent));
+    }
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .input-sm {
+    border-radius: var(--radius-lg);
+    padding-block: var(--fl-space-2);
+    padding-right: var(--fl-space-2);
+    padding-left: var(--fl-space-1\.75);
+    font-size: var(--text-xs);
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, 0 0 2px 0 color-mix(in oklch, var(--color-shadow-xs), transparent), transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-shadow-xs), transparent));
+    }
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -1891,14 +1925,6 @@
   }
   .from-surface-gradient-accent-end {
     --tw-gradient-from: var(--color-surface-gradient-accent-end);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-surface-gradient-accent-start {
-    --tw-gradient-from: var(--color-surface-gradient-accent-start);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-surface-gradient-accent-end {
-    --tw-gradient-to: var(--color-surface-gradient-accent-end);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-surface-gradient-accent-start {
@@ -4933,6 +4959,10 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -4979,10 +5009,6 @@
   syntax: "<length-percentage>";
   inherits: false;
   initial-value: 100%;
-}
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -5091,6 +5117,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-leading: initial;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
@@ -5101,7 +5128,6 @@
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
-      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-outline-style: solid;

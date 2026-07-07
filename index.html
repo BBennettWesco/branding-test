@@ -13,12 +13,10 @@
               <span class="self-center heading text-xl text-loud-inset-fg-main whitespace-nowrap">Multi Brand System</span>
           </a>
           <div class="inline-flex md:order-2 fl-space-x-2.5 rtl:fl-space-x-reverse">
-            <select id="brandSwitcher">
+            <select id="brandSwitcher" class="input-sm bg-muted border-quiet-stroke focus:ring-brand focus:border-brand block w-full">
                 <option value="synergy">Synergy</option>
                 <option value="wesco">Wesco</option>
             </select>
-
-            <!--<button id="modeToggle">Toggle Mode</button>-->
           </div>
       </div>
     </nav>
@@ -163,7 +161,7 @@
 
             <button data-style="brand" type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Brand Gradient</button>
 
-            <button data-mode="invert" type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Invert Neutral Gradient</button>  
+            <button data-style="neutral" data-mode="invert" type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Invert Neutral Gradient</button>  
 
             <button disabled type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5 disabled:bg-quiet disabled:border-quiet disabled:text-disabled">Disabled</button>
         
@@ -362,12 +360,26 @@
 
         <form class="max-w-sm">
             <div class="fl-mb-4.5">
-                <label required for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Your email</label>
-                <input type="email" id="email" class="bg-muted border border-quiet-stroke text-xs leading-tight rounded-lg focus:ring-brand focus:border-brand block w-full fl-px-2 fl-py-3 shadow-xs" placeholder="name@flowbite.com" required />
+                <label for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Your email</label>
+                <input type="email" id="email" class="input-md bg-muted border-quiet-stroke focus:ring-brand focus:border-brand block w-full" placeholder="name@flowbite.com" required />
             </div>
             <div class="fl-mb-4.5">
-                <label required for="password" class="block fl-mb-2.5 label text-xs text-fg-main">Your password</label>
-                <input type="password" id="password" class="bg-muted border border-quiet-stroke text-muted-inset-fg-secondary text-xs leading-tight rounded-lg focus:ring-brand focus:border-brand block w-full fl-px-2 fl-py-3 shadow-xs" placeholder="••••••••" required />
+                <label for="disabled-input" class="block fl-mb-2.5 label text-xs text-fg-disabled">Disabled input</label>
+                <input type="text" id="disabled-input" aria-label="disabled input" class="input-md bg-muted border-quiet-stroke text-fg-disabled focus:ring-brand focus:border-brand block w-full" placeholder="Disabled input" disabled>
+            </div>
+            <div class="fl-mb-4.5">
+                <label for="password" class="block fl-mb-2.5 label text-xs text-fg-main">Your password</label>
+                <input type="password" id="password" class="input-md bg-muted border-quiet-stroke text-muted-inset-fg-secondary focus:ring-brand focus:border-brand block w-full" placeholder="••••••••" required />
+            </div>
+            <div data-style="green" class="fl-mb-4.5">
+                <label for="success" class="block fl-mb-2.5 label text-xs text-fg-main">Your name</label>
+                <input type="text" id="success" class="input-md bg-muted border-quiet-stroke focus:ring-brand focus:border-brand block w-full" placeholder="Success input" required />
+                <p class="fl-mt-2.5 text-xs text-fg-main"><span class="font-medium">Well done!</span> Some success message.</p>
+            </div>
+            <div data-style="red" class="fl-mb-4.5">
+                <label for="danger" class="block fl-mb-2.5 label text-xs text-fg-main">Your phone number</label>
+                <input type="text" id="danger" class="input-md bg-muted border-quiet-stroke focus:ring-brand focus:border-brand block w-full" placeholder="Error input" required />
+                <p class="fl-mt-2.5 text-xs text-fg-main"><span class="font-medium">Oh, snap!</span> Some error message.</p>
             </div>
             <label for="remember" class="flex items-center fl-mb-4.5">
                 <input id="remember" type="checkbox" value="" class="fl-size-3 border rounded-sm bg-muted checked:bg-fg-accent checked:text-loud-inset-fg-main checked:border-fg-accent" required />
