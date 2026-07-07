@@ -163,6 +163,12 @@
   --color-muted-inset-stroke-secondary: var(--muted-inset-stroke-secondary);
   --color-muted-inset-stroke-auxiliary: var(--muted-inset-stroke-auxiliary);
   --color-muted-inset-stroke-accent: var(--muted-inset-stroke-accent);
+  --color-surface-overlay-weak: var(--surface-overlay-weak);
+  --color-surface-overlay-moderate: var(--surface-overlay-moderate);
+  --color-surface-overlay-strong: var(--surface-overlay-strong);
+  --color-surface-overlay-fades: var(--surface-overlay-fades);
+  --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
+  --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
   --color-hover: var(--hover);
   --color-disabled: var(--disabled);
   --color-active: var(--active);
@@ -227,6 +233,12 @@
   --color-muted-inset-stroke-secondary: var(--muted-inset-stroke-secondary);
   --color-muted-inset-stroke-auxiliary: var(--muted-inset-stroke-auxiliary);
   --color-muted-inset-stroke-accent: var(--muted-inset-stroke-accent);
+  --color-surface-overlay-weak: var(--surface-overlay-weak);
+  --color-surface-overlay-moderate: var(--surface-overlay-moderate);
+  --color-surface-overlay-strong: var(--surface-overlay-strong);
+  --color-surface-overlay-fades: var(--surface-overlay-fades);
+  --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
+  --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
   --color-hover: var(--hover);
   --color-disabled: var(--disabled);
   --color-active: var(--active);

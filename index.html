@@ -157,9 +157,50 @@
               
             <button data-style="orange" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Warning</button>              
 
-            <button data-style="brand" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Brand</button>              
-              
+            <button data-style="brand" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Brand</button> 
+            
+            <button type="button" class="bg-linear-to-t from-surface-gradient-accent-start to-surface-gradient-accent-end text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Neutral Gradient</button>
+
+            <button data-style="brand" type="button" class="bg-linear-to-t from-surface-gradient-accent-start to-surface-gradient-accent-end text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Brand Gradient</button>
+
+            <button data-mode="invert" type="button" class="bg-linear-to-t from-surface-gradient-accent-start to-surface-gradient-accent-end text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Invert Neutral Gradient</button>  
+
             <button disabled type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5 disabled:bg-quiet disabled:border-quiet disabled:text-disabled">Disabled</button>
+        
+            <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Toggle Modal</button>
+            <!-- Main modal -->
+            <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full max-h-full">
+                <div class="relative fl-p-4 w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-bg border border-default rounded-base shadow-sm fl-p-4">
+                        <!-- Modal header -->
+                        <div class="flex items-center justify-between border-b border-default fl-pb-4">
+                            <h3 class="text-lg heading">
+                                Terms of Service
+                            </h3>
+                            <button type="button" class="bg-transparent rounded-base text-sm fl-w-9 fl-h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                                <svg class="fl-w-5 fl-h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="fl-space-y-4 fl-py-4">
+                            <p class="leading-relaxed text-body">
+                                With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                            </p>
+                            <p>
+                                The European Union's General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                            </p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex items-center border-t border-default fl-space-x-4 fl-pt-4">
+                            <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-stroke box-border border btn-md fl-mr-2.5 fl-mb-2.5">Decline</button>
+                            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">I accept</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
         </div>
 
     </section>
