@@ -296,10 +296,9 @@
   @apply fl-pl-3 fl-pr-3.5 fl-py-3.5 text-sm leading-tight rounded-xl shadow-xs border;
 }
 @utility div:has(input:required) label::after {
-  content: "*";
+  content: "<span data-style=\"red\">*</span>";
   color: var(--color-fg-accent);
   margin-left: var(--fl-space-0\.25);
-  @apply [data-style="red"]
 }
 
 /* Fluid Spacing API */
