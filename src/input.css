@@ -18,6 +18,7 @@
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+@source inline("bg-dark-backdrop/70");
 
 @theme {
   --spacing: .2rem;
@@ -167,6 +168,7 @@
   --color-surface-overlay-moderate: var(--surface-overlay-moderate);
   --color-surface-overlay-strong: var(--surface-overlay-strong);
   --color-surface-overlay-fades: var(--surface-overlay-fades);
+  --color-dark-backdrop: var(--surface-overlay-strong);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
   --color-hover: var(--hover);
@@ -237,6 +239,7 @@
   --color-surface-overlay-moderate: var(--surface-overlay-moderate);
   --color-surface-overlay-strong: var(--surface-overlay-strong);
   --color-surface-overlay-fades: var(--surface-overlay-fades);
+  --color-dark-backdrop: var(--surface-overlay-strong);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
   --color-hover: var(--hover);
@@ -297,7 +300,7 @@
 }
 label:has(+ input:required):after {
   content: " *";
-  color: red;
+  color: var(--brand-color-red-500);
 }
 
 /* Fluid Spacing API */
