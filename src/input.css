@@ -18,7 +18,7 @@
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
-@source inline("bg-dark-backdrop/70");
+@source inline("bg-dark-backdrop");
 
 @theme {
   --spacing: .2rem;
@@ -168,7 +168,7 @@
   --color-surface-overlay-moderate: var(--surface-overlay-moderate);
   --color-surface-overlay-strong: var(--surface-overlay-strong);
   --color-surface-overlay-fades: var(--surface-overlay-fades);
-  --color-dark-backdrop: var(--surface-overlay-strong);
+  --color-dark-backdrop: var(--surface-overlay-moderate);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
   --color-hover: var(--hover);
@@ -239,7 +239,6 @@
   --color-surface-overlay-moderate: var(--surface-overlay-moderate);
   --color-surface-overlay-strong: var(--surface-overlay-strong);
   --color-surface-overlay-fades: var(--surface-overlay-fades);
-  --color-dark-backdrop: var(--surface-overlay-strong);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
   --color-hover: var(--hover);
@@ -301,6 +300,10 @@
 label:has(+ input:required):after {
   content: " *";
   color: var(--brand-color-red-500);
+}
+
+div[modal-backdrop] {
+    @apply bg-surface-overlay-moderate mode-invert fixed inset-0 z-40 !important;
 }
 
 /* Fluid Spacing API */

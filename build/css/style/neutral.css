@@ -1,4 +1,4 @@
-[data-style="neutral"] {
+[data-style="neutral"], .style-neutral {
   --surface: var(--white);
   --foreground-static: var(--white);
   --foreground-main: var(--brand-color-neutral-950);
@@ -70,7 +70,7 @@
   --radius: var(--rounded-md);
 }
 
-[data-style="neutral"][data-mode="invert"] {
+[data-style="neutral"][data-mode="invert"], [data-style="neutral"].mode-invert, .style-neutral[data-mode="invert"], .style-neutral.mode-invert {
   --surface: var(--brand-color-neutral-950);
   --foreground-main: var(--white);
   --foreground-secondary: var(--opacities-white-800);

@@ -1,4 +1,4 @@
-[data-style="green"] {
+[data-style="green"], .style-green {
   --surface: var(--white);
   --foreground-static: var(--white);
   --foreground-main: var(--brand-color-neutral-950);
@@ -70,7 +70,7 @@
   --radius: var(--rounded-md);
 }
 
-[data-style="green"][data-mode="invert"] {
+[data-style="green"][data-mode="invert"], [data-style="green"].mode-invert, .style-green[data-mode="invert"], .style-green.mode-invert {
   --surface: var(--brand-color-green-950);
   --foreground-main: var(--white);
   --foreground-secondary: var(--brand-color-green-25);

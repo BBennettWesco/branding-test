@@ -1,4 +1,4 @@
-[data-style="teal"] {
+[data-style="teal"], .style-teal {
   --surface: var(--white);
   --foreground-static: var(--white);
   --foreground-main: var(--brand-color-neutral-950);
@@ -70,7 +70,7 @@
   --radius: var(--rounded-md);
 }
 
-[data-style="teal"][data-mode="invert"] {
+[data-style="teal"][data-mode="invert"], [data-style="teal"].mode-invert, .style-teal[data-mode="invert"], .style-teal.mode-invert {
   --surface: var(--brand-color-teal-950);
   --foreground-main: var(--white);
   --foreground-secondary: var(--opacities-white-800);

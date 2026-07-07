@@ -245,6 +245,14 @@ StyleDictionary.registerFormat({
     const lines = [];
     const defaultLines = [];
     const invertLines = [];
+    const baseSelectors = [
+      options.selector,
+      options.classSelector,
+    ].filter(Boolean);
+
+    if (!baseSelectors.length) {
+      throw new Error("css/style-theme requires at least one selector");
+    }
 
     const pathToName = new Map(
       dictionary.allTokens.map((t) => [t.path.join("."), t.name])
@@ -323,15 +331,24 @@ StyleDictionary.registerFormat({
       );
     }
 
-    lines.push(`${options.selector} {`);
+    lines.push(`${baseSelectors.join(", ")} {`);
     lines.push(...defaultLines);
     lines.push("}");
 
     if (invertLines.length) {
+      const modeClassSelector = options.modeClassSelector;
+      const invertSelectors = baseSelectors.flatMap((selector) => {
+        const selectors = [`${selector}[data-mode="invert"]`];
+
+        if (modeClassSelector) {
+          selectors.push(`${selector}${modeClassSelector}`);
+        }
+
+        return selectors;
+      });
+
       lines.push("");
-      lines.push(
-        `${options.selector}[data-mode="invert"] {`
-      );
+      lines.push(`${invertSelectors.join(", ")} {`);
       lines.push(...invertLines);
       lines.push("}");
     }
@@ -401,6 +418,8 @@ for (const style of getFolders("tokens/style")) {
             format: "css/style-theme",
             options: {
               selector: `[data-style="${style}"]`,
+              classSelector: `.style-${style}`,
+              modeClassSelector: `.mode-invert`,
               outputReferences: true
             }
           }
