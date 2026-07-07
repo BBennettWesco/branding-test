@@ -40,18 +40,66 @@ function tokenPath(name) {
 
 function setDeep(obj, pathArray, value) {
   let current = obj;
+  let index = 0;
 
-  pathArray.forEach((segment, index) => {
+  const isLeafToken = (node) =>
+    !!(
+      node &&
+      typeof node === "object" &&
+      !Array.isArray(node) &&
+      ("$value" in node || "value" in node)
+    );
+
+  while (index < pathArray.length) {
+    const segment = pathArray[index];
     const isLeaf = index === pathArray.length - 1;
 
     if (isLeaf) {
+      const existing = current[segment];
+
+      // If a group already exists at this key, preserve it by hoisting one level
+      // into hyphenated siblings before writing the leaf token.
+      if (
+        existing &&
+        typeof existing === "object" &&
+        !Array.isArray(existing) &&
+        !isLeafToken(existing)
+      ) {
+        Object.entries(existing).forEach(([childKey, childValue]) => {
+          const mergedKey = `${segment}-${childKey}`;
+          if (current[mergedKey] === undefined) {
+            current[mergedKey] = childValue;
+          }
+        });
+      }
+
       current[segment] = value;
       return;
     }
 
+    const existing = current[segment];
+
+    // Parent is already a token leaf, so flatten this branch one level.
+    if (isLeafToken(existing)) {
+      const nextSegment = pathArray[index + 1];
+      const mergedKey = `${segment}-${nextSegment}`;
+      const mergedIsLeaf = index + 1 === pathArray.length - 1;
+
+      if (mergedIsLeaf) {
+        current[mergedKey] = value;
+        return;
+      }
+
+      current[mergedKey] ??= {};
+      current = current[mergedKey];
+      index += 2;
+      continue;
+    }
+
     current[segment] ??= {};
     current = current[segment];
-  });
+    index += 1;
+  }
 }
 
 function deepClone(data) {

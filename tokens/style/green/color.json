@@ -6,46 +6,6 @@
       "modes": {
         "invert": "{brand.color.green.950}"
       }
-    },
-    "overlay": {
-      "strong": {
-        "$value": "{backdrop-opacity.neutral.light.high}",
-        "$type": "color",
-        "$extensions": {
-          "modes": {
-            "invert": "{backdrop-opacity.tinted.high}"
-          }
-        }
-      },
-      "moderate": {
-        "$value": "{backdrop-opacity.neutral.light.mid}",
-        "$type": "color",
-        "$extensions": {
-          "modes": {
-            "invert": "{backdrop-opacity.tinted.mid}"
-          }
-        }
-      }
-    },
-    "gradient-accent": {
-      "end": {
-        "$value": "{brand.color.green.600}",
-        "$type": "color",
-        "$extensions": {
-          "modes": {
-            "invert": "{brand.color.green.25}"
-          }
-        }
-      },
-      "start": {
-        "$value": "{brand.color.green.400}",
-        "$type": "color",
-        "$extensions": {
-          "modes": {
-            "invert": "{brand.color.green.25}"
-          }
-        }
-      }
     }
   },
   "foreground": {
@@ -608,6 +568,64 @@
               "invert": "{brand.color.green.400}"
             }
           }
+        }
+      }
+    }
+  },
+  "surface-overlay": {
+    "weak": {
+      "$value": "{backdrop-opacity.neutral.light.low}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.neutral.dark.low}"
+        }
+      }
+    },
+    "moderate": {
+      "$value": "{backdrop-opacity.neutral.light.mid}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.tinted.mid}"
+        }
+      }
+    },
+    "strong": {
+      "$value": "{backdrop-opacity.neutral.light.high}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.tinted.high}"
+        }
+      }
+    },
+    "fades": {
+      "$value": "{white}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{black}"
+        }
+      }
+    }
+  },
+  "surface-gradient-accent": {
+    "start": {
+      "$value": "{brand.color.green.400}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.green.25}"
+        }
+      }
+    },
+    "end": {
+      "$value": "{brand.color.green.600}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.green.25}"
         }
       }
     }

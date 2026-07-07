@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "node sd.config.js",
-    "tokens:build": "node js/transform-figma.js"
+    "tokens:build": "node js/transform-figma.js && node js/validate-tokens.js",
+    "tokens:validate": "node js/validate-tokens.js"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",

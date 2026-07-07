@@ -58,6 +58,12 @@
   --muted-inset-stroke-secondary: var(--brand-color-orange-500);
   --muted-inset-stroke-auxiliary: var(--brand-color-orange-200);
   --muted-inset-stroke-accent: var(--brand-color-orange-400);
+  --surface-overlay-weak: var(--backdrop-opacity-neutral-light-low);
+  --surface-overlay-moderate: var(--backdrop-opacity-neutral-light-mid);
+  --surface-overlay-strong: var(--backdrop-opacity-neutral-light-high);
+  --surface-overlay-fades: var(--white);
+  --surface-gradient-accent-start: var(--brand-color-neutral-600);
+  --surface-gradient-accent-end: var(--brand-color-neutral-700);
   --hover: var(--opacities-black-50);
   --disabled: var(--opacities-black-100);
   --active: var(--opacities-black-300);
@@ -112,5 +118,11 @@
   --muted-inset-stroke-secondary: var(--muted-inset-fg-secondary);
   --muted-inset-stroke-auxiliary: var(--brand-color-orange-500);
   --muted-inset-stroke-accent: var(--brand-color-orange-300);
+  --surface-overlay-weak: var(--backdrop-opacity-neutral-dark-low);
+  --surface-overlay-moderate: var(--backdrop-opacity-neutral-dark-mid);
+  --surface-overlay-strong: var(--backdrop-opacity-neutral-dark-high);
+  --surface-overlay-fades: var(--black);
+  --surface-gradient-accent-start: var(--brand-color-neutral-0);
+  --surface-gradient-accent-end: var(--brand-color-neutral-25);
   --hover: var(--opacities-white-50);
 }

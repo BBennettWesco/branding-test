@@ -6,37 +6,6 @@
       "modes": {
         "invert": "{brand.color.primary.950}"
       }
-    },
-    "overlay": {
-      "moderate": {
-        "$value": "{backdrop-opacity.neutral.light.mid}",
-        "$type": "color",
-        "$extensions": {
-          "modes": {
-            "invert": "{backdrop-opacity.tinted.mid}"
-          }
-        }
-      },
-      "strong": {
-        "$value": "{backdrop-opacity.neutral.light.high}",
-        "$type": "color",
-        "$extensions": {
-          "modes": {
-            "invert": "{backdrop-opacity.tinted.high}"
-          }
-        }
-      }
-    },
-    "gradient-accent": {
-      "end": {
-        "$value": "{brand.color.primary.600}",
-        "$type": "color",
-        "$extensions": {
-          "modes": {
-            "invert": "{brand.color.primary.25}"
-          }
-        }
-      }
     }
   },
   "foreground": {
@@ -599,6 +568,64 @@
               "invert": "{brand.color.primary.400}"
             }
           }
+        }
+      }
+    }
+  },
+  "surface-overlay": {
+    "weak": {
+      "$value": "{backdrop-opacity.neutral.light.low}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.neutral.dark.low}"
+        }
+      }
+    },
+    "moderate": {
+      "$value": "{backdrop-opacity.neutral.light.mid}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.tinted.mid}"
+        }
+      }
+    },
+    "strong": {
+      "$value": "{backdrop-opacity.neutral.light.high}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.tinted.high}"
+        }
+      }
+    },
+    "fades": {
+      "$value": "{white}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{black}"
+        }
+      }
+    }
+  },
+  "surface-gradient-accent": {
+    "start": {
+      "$value": "{brand.color.primary.400}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.primary.25}"
+        }
+      }
+    },
+    "end": {
+      "$value": "{brand.color.primary.600}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.primary.25}"
         }
       }
     }

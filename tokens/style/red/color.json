@@ -572,6 +572,64 @@
       }
     }
   },
+  "surface-overlay": {
+    "weak": {
+      "$value": "{backdrop-opacity.neutral.light.low}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.neutral.dark.low}"
+        }
+      }
+    },
+    "moderate": {
+      "$value": "{backdrop-opacity.neutral.light.mid}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.neutral.dark.mid}"
+        }
+      }
+    },
+    "strong": {
+      "$value": "{backdrop-opacity.neutral.light.high}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{backdrop-opacity.neutral.dark.high}"
+        }
+      }
+    },
+    "fades": {
+      "$value": "{white}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{black}"
+        }
+      }
+    }
+  },
+  "surface-gradient-accent": {
+    "start": {
+      "$value": "{brand.color.neutral.600}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.neutral.0}"
+        }
+      }
+    },
+    "end": {
+      "$value": "{brand.color.neutral.700}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{brand.color.neutral.25}"
+        }
+      }
+    }
+  },
   ":hover": {
     "$value": "{opacities.black.50}",
     "$type": "color",
