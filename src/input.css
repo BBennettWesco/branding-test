@@ -287,15 +287,15 @@
 
 /* Forms */
 @utility input-sm {
-  @apply fl-pl-1.75 fl-pr-2 fl-py-2 text-xs leading-tight rounded-lg shadow-xs border;
+  @apply fl-py-2 text-xs leading-tight rounded-lg shadow-xs border;
 }
 @utility input-md {
-  @apply fl-pl-2 fl-pr-2.5 fl-py-3 text-xs leading-tight rounded-lg shadow-xs border;
+  @apply fl-py-3 text-xs leading-tight rounded-lg shadow-xs border;
 }
 @utility input-lg {
-  @apply fl-pl-3 fl-pr-3.5 fl-py-3.5 text-sm leading-tight rounded-xl shadow-xs border;
+  @apply fl-py-3.5 text-sm leading-tight rounded-xl shadow-xs border;
 }
-@utility div:has(input:required) label::after {
+@utility label:has(+ input:required):after {
   content: "<span data-style=\"red\">*</span>";
   color: var(--color-fg-accent);
   margin-left: var(--fl-space-0\.25);

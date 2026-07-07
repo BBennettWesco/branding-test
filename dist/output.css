@@ -2533,6 +2533,11 @@
       color: var(--color-disabled);
     }
   }
+  .disabled\:text-fg-disabled {
+    &:disabled {
+      color: var(--color-fg-disabled);
+    }
+  }
   .max-sm\:flex-col {
     @media (width < 668px) {
       flex-direction: column;
