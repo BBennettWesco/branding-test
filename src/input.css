@@ -295,10 +295,9 @@
 @utility input-lg {
   @apply fl-py-3.5 text-sm leading-tight rounded-xl shadow-xs border;
 }
-@utility label:has(+ input:required):after {
-  content: "<span data-style=\"red\">*</span>";
+label:has(+ input:required):after {
+  content: "<span data-style=\"red\"> *</span>";
   color: var(--color-fg-accent);
-  margin-left: var(--fl-space-0\.25);
 }
 
 /* Fluid Spacing API */
