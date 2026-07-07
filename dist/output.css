@@ -2464,11 +2464,6 @@
       inset: calc(var(--spacing) * 0);
     }
   }
-  .md\:order-2 {
-    @media (width >= 800px) {
-      order: 2;
-    }
-  }
   .lg\:grid-cols-4 {
     @media (width >= 1024px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -4336,8 +4331,8 @@
   --color-active: var(--active);
 }
 label:has(+ input:required):after {
-  content: "<span data-style=\"red\"> *</span>";
-  color: var(--color-fg-accent);
+  content: " *";
+  color: red;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
