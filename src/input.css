@@ -254,6 +254,12 @@
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
 }
 
+@layer base {
+  [type='checkbox']:checked, [type='radio']:checked {
+    @apply bg-fg-accent text-loud-inset-fg-main border-fg-inset-accent;
+  } 
+}
+
 /* Buttons */
 @utility btn-sm {
   @apply fl-px-2.5 fl-py-2 action text-xs rounded-lg shadow-xs;
