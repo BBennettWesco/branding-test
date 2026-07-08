@@ -1,13 +1,17 @@
 import fs from "node:fs";
 
 const FIGMA_ACCESS_TOKEN = process.env.FIGMA_ACCESS_TOKEN;
-const FILE_KEY = process.env.FIGMA_TEST_FILE_KEY;
+const FILE_KEY =
+  process.env.FIGMA_FILE_KEY ||
+  process.env.FIGMA_TEST_FILE_KEY;
 
 if (!FIGMA_ACCESS_TOKEN) {
   throw new Error("FIGMA_ACCESS_TOKEN is missing");
 }
 if (!FILE_KEY) {
-  throw new Error("FIGMA_FILE_KEY is missing");
+  throw new Error(
+    "FIGMA_FILE_KEY (or FIGMA_TEST_FILE_KEY) is missing"
+  );
 }
 
 console.log("FILE_KEY:", FILE_KEY);
@@ -23,6 +27,12 @@ const EXCLUDED_COLLECTION_PATTERNS = [
 
 function shouldKeepVariable(variable) {
   const name = variable.name.toLowerCase();
+
+  // Figma can keep tombstoned vars in API responses until references are cleaned up.
+  // Exclude these so raw export matches the live set.
+  if (variable.deletedButReferenced) {
+    return false;
+  }
 
   // Remove Text/fs, Text/lh, Text/ls
   if (
@@ -51,6 +61,35 @@ function shouldKeepVariable(variable) {
   }
 
   return true;
+}
+
+function pruneCollectionData(collection, keptVariableIdSet) {
+  const variableIds = Array.isArray(collection.variableIds)
+    ? collection.variableIds.filter((id) => keptVariableIdSet.has(id))
+    : collection.variableIds;
+
+  const relatedVariableIds = collection.relatedVariableIds
+    ? Object.fromEntries(
+        Object.entries(collection.relatedVariableIds).filter(([variableId]) =>
+          keptVariableIdSet.has(variableId)
+        )
+      )
+    : collection.relatedVariableIds;
+
+  const variableOverrides = collection.variableOverrides
+    ? Object.fromEntries(
+        Object.entries(collection.variableOverrides).filter(([variableId]) =>
+          keptVariableIdSet.has(variableId)
+        )
+      )
+    : collection.variableOverrides;
+
+  return {
+    ...collection,
+    variableIds,
+    relatedVariableIds,
+    variableOverrides,
+  };
 }
 
 async function fetchVariables() {
@@ -90,7 +129,7 @@ async function fetchVariables() {
   // Filter collections
   // ----------------------------------
 
-  const localCollections = Object.fromEntries(
+  const filteredCollections = Object.fromEntries(
     Object.entries(
       data.meta.variableCollections || {}
     ).filter(([, collection]) => {
@@ -109,7 +148,7 @@ async function fetchVariables() {
   );
 
   const localCollectionIds = new Set(
-    Object.keys(localCollections)
+    Object.keys(filteredCollections)
   );
 
   // ----------------------------------
@@ -135,6 +174,17 @@ async function fetchVariables() {
 
       return shouldKeepVariable(variable);
     })
+  );
+
+  const keptVariableIdSet = new Set(
+    Object.keys(localVariables)
+  );
+
+  const localCollections = Object.fromEntries(
+    Object.entries(filteredCollections).map(([collectionId, collection]) => [
+      collectionId,
+      pruneCollectionData(collection, keptVariableIdSet),
+    ])
   );
 
   console.log(
