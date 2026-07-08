@@ -164,7 +164,7 @@
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{color.🌐-grayscale.900}"
+              "invert": "{max.inset.fg.accent}"
             }
           }
         }
@@ -262,7 +262,7 @@
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{color.🌐-grayscale.800}"
+              "invert": "{brand.color.neutral.50}"
             }
           }
         }

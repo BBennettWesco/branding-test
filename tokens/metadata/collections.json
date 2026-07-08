@@ -1,14 +1,14 @@
 {
-  "VariableCollectionId:21922:1407": {
-    "name": "∟ 2.6 style=\"green\"",
+  "VariableCollectionId:21922:1512": {
+    "name": "∟ 2.8 style=\"blue\"",
     "extends": "VariableCollectionId:21918:1139"
   },
   "VariableCollectionId:21918:1139": {
     "name": "2. style=\"neutral\"",
     "extends": null
   },
-  "VariableCollectionId:21922:1260": {
-    "name": "∟ 2.2 style=\"red\"",
+  "VariableCollectionId:21922:1463": {
+    "name": "∟ 2.7 style=\"teal\"",
     "extends": "VariableCollectionId:21918:1139"
   },
   "VariableCollectionId:21918:113": {
@@ -19,24 +19,24 @@
     "name": "∟ 1.1 global=\"wesco\"",
     "extends": "VariableCollectionId:21918:113"
   },
-  "VariableCollectionId:21922:1205": {
-    "name": "∟ 2.1 style=\"brand\"",
+  "VariableCollectionId:21922:1407": {
+    "name": "∟ 2.6 style=\"green\"",
     "extends": "VariableCollectionId:21918:1139"
   },
   "VariableCollectionId:21922:1356": {
     "name": "∟ 2.5 style=\"yellow\"",
     "extends": "VariableCollectionId:21918:1139"
   },
-  "VariableCollectionId:21922:1512": {
-    "name": "∟ 2.8 style=\"blue\"",
+  "VariableCollectionId:21922:1205": {
+    "name": "∟ 2.1 style=\"brand\"",
     "extends": "VariableCollectionId:21918:1139"
   },
   "VariableCollectionId:21922:1308": {
     "name": "∟ 2.4 style=\"orange\"",
     "extends": "VariableCollectionId:21918:1139"
   },
-  "VariableCollectionId:21922:1463": {
-    "name": "∟ 2.7 style=\"teal\"",
+  "VariableCollectionId:21922:1260": {
+    "name": "∟ 2.2 style=\"red\"",
     "extends": "VariableCollectionId:21918:1139"
   }
 }

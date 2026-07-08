@@ -146,7 +146,7 @@
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{color.🌐-shared-red.400}"
+              "invert": "{brand.color.red.300}"
             }
           }
         },

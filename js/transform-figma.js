@@ -506,7 +506,8 @@ function getCategory(variable) {
 
   if (
     name.includes("border-width") ||
-    name.includes("stroke") && variable.resolvedType !== "COLOR"
+    name.includes("stroke") && variable.resolvedType !== "COLOR" ||
+    name.includes("border") && variable.resolvedType !== "COLOR"
   )
     return "border";
 

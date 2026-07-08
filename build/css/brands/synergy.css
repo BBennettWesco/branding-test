@@ -3,9 +3,9 @@
  */
 
 [data-brand="synergy"] {
-  --stroke-100: 1px;
-  --stroke-200: 2px;
-  --stroke-400: 4px;
+  --border-width-100: 1px;
+  --border-width-200: 2px;
+  --border-width-400: 4px;
   --brand-color-primary-0: oklch(0.9707573123945084 0.013725771564516239 272.69353573559874);
   --brand-color-primary-25: oklch(0.938728738879784 0.02200310491812113 274.73696420257363);
   --brand-color-primary-50: oklch(0.9026077230515842 0.03368637277770274 272.7703498453834);
@@ -120,9 +120,6 @@
   --brand-text-label-upper-fw: 700;
   --brand-text-action-fw: 500;
   --brand-text-action-critical-fw: 600;
-  --color-grayscale-800: oklch(0.4053975563029186 0 none);
-  --color-grayscale-900: oklch(0.2890800563085947 0 none);
-  --color-shared-red-400: oklch(0.6699859147825883 0.18111709413701804 24.820845263514656);
   --color-purple-0: oklch(0.9688472120022061 0.014739921447047059 294.47183710678655);
   --color-purple-25: oklch(0.9410365627018548 0.02163164989705992 294.5854336477981);
   --color-purple-50: oklch(0.902159858512489 0.0341326435974446 293.0473516580066);
@@ -279,6 +276,9 @@
   --text-ff-main: "Geist", "Segoe UI", "Arial", sans-serif;
   --text-ff-alternate: "Space Grotesk", "Segoe UI", "Arial", sans-serif;
   --text-ff-auxiliary: "Geist Mono", "Cascadia Code", "SFMono-Regular", "Consolas", monospace;
+  --border-default: var(--border-width-100);
+  --border-emphasis: var(--border-width-200);
+  --border-accent: var(--border-width-400);
   --brand-text-display-ff: var(--text-ff-alternate);
   --brand-text-heading-ff: var(--text-ff-main);
   --brand-text-body-ff: var(--text-ff-main);

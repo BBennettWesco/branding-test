@@ -1,0 +1,11 @@
+{
+  "radius": {
+    "$value": "{rounded.md}",
+    "$type": "dimension",
+    "$extensions": {
+      "modes": {
+        "invert": "{rounded.md}"
+      }
+    }
+  }
+}
