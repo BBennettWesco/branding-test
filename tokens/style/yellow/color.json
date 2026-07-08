@@ -8,7 +8,7 @@
       }
     }
   },
-  "foreground": {
+  "fg": {
     "static": {
       "$value": "{white}",
       "$type": "color",

@@ -106,16 +106,19 @@
   --color-shadow-xs: var(--shadow-xs);
   --color-shadow-base: var(--shadow-base);
 
-  --color-surface: var(--white);
+  --color-bg: var(--bg);
   --color-focus: var(--focus);
-  --color-fg-static: var(--white);
+  --color-hover: var(--hover);
+  --color-disabled: var(--disabled);
+  --color-active: var(--active);
+  --color-fg-static: var(--fg-static);
   --color-fg-main: var(--fg-main);
   --color-fg-secondary: var(--fg-secondary);
   --color-fg-auxiliary: var(--fg-auxiliary);
   --color-fg-disabled: var(--fg-disabled);
   --color-fg-accent: var(--fg-accent);
   --color-max: var(--max-bg);
-  --color-max-border: var(--max-bg);
+  --color-max-border: var(--max-border);
   --color-max-inset-fg-main: var(--max-inset-fg-main);
   --color-max-inset-fg-secondary: var(--max-inset-fg-secondary);
   --color-max-inset-fg-auxiliary: var(--max-inset-fg-auxiliary);
@@ -125,7 +128,7 @@
   --color-max-inset-border-auxiliary: var(--max-inset-border-auxiliary);
   --color-max-inset-border-accent: var(--max-inset-border-accent);
   --color-loud: var(--loud-bg);
-  --color-loud-border: var(--loud-bg);
+  --color-loud-border: var(--loud-border);
   --color-loud-inset-fg-main: var(--loud-inset-fg-main);
   --color-loud-inset-fg-secondary: var(--loud-inset-fg-secondary);
   --color-loud-inset-fg-auxiliary: var(--loud-inset-fg-auxiliary);
@@ -135,7 +138,7 @@
   --color-loud-inset-border-auxiliary: var(--loud-inset-border-auxiliary);
   --color-loud-inset-border-accent: var(--loud-inset-border-accent);
   --color-medium: var(--medium-bg);
-  --color-medium-border: var(--medium-bg);
+  --color-medium-border: var(--medium-border);
   --color-medium-inset-fg-main: var(--medium-inset-fg-main);
   --color-medium-inset-fg-secondary: var(--medium-inset-fg-secondary);
   --color-medium-inset-fg-auxiliary: var(--medium-inset-fg-auxiliary);
@@ -145,7 +148,7 @@
   --color-medium-inset-border-auxiliary: var(--medium-inset-border-auxiliary);
   --color-medium-inset-border-accent: var(--medium-inset-border-accent);
   --color-quiet: var(--quiet-bg);
-  --color-quiet-border: var(--quiet-bg);
+  --color-quiet-border: var(--quiet-border);
   --color-quiet-inset-fg-main: var(--quiet-inset-fg-main);
   --color-quiet-inset-fg-secondary: var(--quiet-inset-fg-secondary);
   --color-quiet-inset-fg-auxiliary: var(--quiet-inset-fg-auxiliary);
@@ -155,7 +158,7 @@
   --color-quiet-inset-border-auxiliary: var(--quiet-inset-border-auxiliary);
   --color-quiet-inset-border-accent: var(--quiet-inset-border-accent);
   --color-muted: var(--muted-bg);
-  --color-muted-border: var(--muted-bg);
+  --color-muted-border: var(--muted-border);
   --color-muted-inset-fg-main: var(--muted-inset-fg-main);
   --color-muted-inset-fg-secondary: var(--muted-inset-fg-secondary);
   --color-muted-inset-fg-auxiliary: var(--muted-inset-fg-auxiliary);
@@ -171,19 +174,21 @@
   --color-dark-backdrop: var(--surface-overlay-moderate);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
-  --color-hover: var(--hover);
-  --color-disabled: var(--disabled);
-  --color-active: var(--active);
 }
 
 /* Remap semantic color tokens at each style scope so nested data-style overrides work */
 [data-style] {
   --color-black: var(--black);
   --color-white: var(--white);
+
   --color-shadow-xs: var(--shadow-xs);
   --color-shadow-base: var(--shadow-base);
-  --color-surface: var(--surface);
+
+  --color-bg: var(--bg);
   --color-focus: var(--focus);
+  --color-hover: var(--hover);
+  --color-disabled: var(--disabled);
+  --color-active: var(--active);
   --color-fg-static: var(--fg-static);
   --color-fg-main: var(--fg-main);
   --color-fg-secondary: var(--fg-secondary);
@@ -191,6 +196,7 @@
   --color-fg-disabled: var(--fg-disabled);
   --color-fg-accent: var(--fg-accent);
   --color-max: var(--max-bg);
+  --color-max-border: var(--max-border);
   --color-max-inset-fg-main: var(--max-inset-fg-main);
   --color-max-inset-fg-secondary: var(--max-inset-fg-secondary);
   --color-max-inset-fg-auxiliary: var(--max-inset-fg-auxiliary);
@@ -200,6 +206,7 @@
   --color-max-inset-border-auxiliary: var(--max-inset-border-auxiliary);
   --color-max-inset-border-accent: var(--max-inset-border-accent);
   --color-loud: var(--loud-bg);
+  --color-loud-border: var(--loud-border);
   --color-loud-inset-fg-main: var(--loud-inset-fg-main);
   --color-loud-inset-fg-secondary: var(--loud-inset-fg-secondary);
   --color-loud-inset-fg-auxiliary: var(--loud-inset-fg-auxiliary);
@@ -209,6 +216,7 @@
   --color-loud-inset-border-auxiliary: var(--loud-inset-border-auxiliary);
   --color-loud-inset-border-accent: var(--loud-inset-border-accent);
   --color-medium: var(--medium-bg);
+  --color-medium-border: var(--medium-border);
   --color-medium-inset-fg-main: var(--medium-inset-fg-main);
   --color-medium-inset-fg-secondary: var(--medium-inset-fg-secondary);
   --color-medium-inset-fg-auxiliary: var(--medium-inset-fg-auxiliary);
@@ -218,6 +226,7 @@
   --color-medium-inset-border-auxiliary: var(--medium-inset-border-auxiliary);
   --color-medium-inset-border-accent: var(--medium-inset-border-accent);
   --color-quiet: var(--quiet-bg);
+  --color-quiet-border: var(--quiet-border);
   --color-quiet-inset-fg-main: var(--quiet-inset-fg-main);
   --color-quiet-inset-fg-secondary: var(--quiet-inset-fg-secondary);
   --color-quiet-inset-fg-auxiliary: var(--quiet-inset-fg-auxiliary);
@@ -227,6 +236,7 @@
   --color-quiet-inset-border-auxiliary: var(--quiet-inset-border-auxiliary);
   --color-quiet-inset-border-accent: var(--quiet-inset-border-accent);
   --color-muted: var(--muted-bg);
+  --color-muted-border: var(--muted-border);
   --color-muted-inset-fg-main: var(--muted-inset-fg-main);
   --color-muted-inset-fg-secondary: var(--muted-inset-fg-secondary);
   --color-muted-inset-fg-auxiliary: var(--muted-inset-fg-auxiliary);
@@ -239,11 +249,9 @@
   --color-surface-overlay-moderate: var(--surface-overlay-moderate);
   --color-surface-overlay-strong: var(--surface-overlay-strong);
   --color-surface-overlay-fades: var(--surface-overlay-fades);
+  --color-dark-backdrop: var(--surface-overlay-moderate);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
-  --color-hover: var(--hover);
-  --color-disabled: var(--disabled);
-  --color-active: var(--active);
 }
 
 /* Buttons */

@@ -1,11 +1,11 @@
 [data-style="blue"], .style-blue {
   --bg: var(--white);
-  --foreground-static: var(--white);
-  --foreground-main: var(--brand-color-neutral-950);
-  --foreground-secondary: var(--brand-color-neutral-600);
-  --foreground-auxiliary: var(--brand-color-neutral-400);
-  --foreground-disabled: var(--brand-color-neutral-200);
-  --foreground-accent: var(--brand-color-blue-500);
+  --fg-static: var(--white);
+  --fg-main: var(--brand-color-neutral-950);
+  --fg-secondary: var(--brand-color-neutral-600);
+  --fg-auxiliary: var(--brand-color-neutral-400);
+  --fg-disabled: var(--brand-color-neutral-200);
+  --fg-accent: var(--brand-color-blue-500);
   --focus: var(--brand-color-primary-500);
   --max-bg: var(--brand-color-blue-900);
   --max-border: var(--max-bg);
@@ -67,16 +67,15 @@
   --hover: var(--opacities-black-50);
   --disabled: var(--opacities-black-100);
   --active: var(--opacities-black-300);
-  --radius: var(--rounded-md);
 }
 
 [data-style="blue"][data-mode="invert"], [data-style="blue"].mode-invert, .style-blue[data-mode="invert"], .style-blue.mode-invert {
   --bg: var(--brand-color-blue-950);
-  --foreground-main: var(--white);
-  --foreground-secondary: var(--opacities-white-800);
-  --foreground-auxiliary: var(--brand-color-neutral-300);
-  --foreground-disabled: var(--brand-color-neutral-500);
-  --foreground-accent: var(--brand-color-blue-100);
+  --fg-main: var(--white);
+  --fg-secondary: var(--opacities-white-800);
+  --fg-auxiliary: var(--brand-color-neutral-300);
+  --fg-disabled: var(--brand-color-neutral-500);
+  --fg-accent: var(--brand-color-blue-100);
   --focus: var(--brand-color-primary-25);
   --max-bg: var(--brand-color-blue-25);
   --max-inset-fg-main: var(--brand-color-blue-950);

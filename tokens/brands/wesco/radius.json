@@ -1,5 +1,9 @@
 {
   "rounded": {
+    "default-radius": {
+      "$value": "{rounded.md}",
+      "$type": "dimension"
+    },
     "none": {
       "$value": "0px",
       "$type": "dimension"

@@ -1,11 +1,11 @@
 [data-style="yellow"], .style-yellow {
   --bg: var(--white);
-  --foreground-static: var(--white);
-  --foreground-main: var(--brand-color-neutral-950);
-  --foreground-secondary: var(--brand-color-neutral-600);
-  --foreground-auxiliary: var(--brand-color-neutral-400);
-  --foreground-disabled: var(--brand-color-neutral-200);
-  --foreground-accent: var(--brand-color-yellow-200);
+  --fg-static: var(--white);
+  --fg-main: var(--brand-color-neutral-950);
+  --fg-secondary: var(--brand-color-neutral-600);
+  --fg-auxiliary: var(--brand-color-neutral-400);
+  --fg-disabled: var(--brand-color-neutral-200);
+  --fg-accent: var(--brand-color-yellow-200);
   --focus: var(--brand-color-primary-500);
   --max-bg: var(--brand-color-yellow-700);
   --max-border: var(--max-bg);
@@ -67,16 +67,15 @@
   --hover: var(--opacities-black-50);
   --disabled: var(--opacities-black-100);
   --active: var(--opacities-black-300);
-  --radius: var(--rounded-md);
 }
 
 [data-style="yellow"][data-mode="invert"], [data-style="yellow"].mode-invert, .style-yellow[data-mode="invert"], .style-yellow.mode-invert {
   --bg: var(--brand-color-yellow-950);
-  --foreground-main: var(--white);
-  --foreground-secondary: var(--opacities-white-800);
-  --foreground-auxiliary: var(--opacities-white-500);
-  --foreground-disabled: var(--brand-color-neutral-500);
-  --foreground-accent: var(--brand-color-yellow-100);
+  --fg-main: var(--white);
+  --fg-secondary: var(--opacities-white-800);
+  --fg-auxiliary: var(--opacities-white-500);
+  --fg-disabled: var(--brand-color-neutral-500);
+  --fg-accent: var(--brand-color-yellow-100);
   --focus: var(--brand-color-primary-25);
   --max-bg: var(--brand-color-yellow-0);
   --max-inset-fg-main: var(--brand-color-yellow-950);
