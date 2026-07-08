@@ -866,6 +866,9 @@
   .ms-auto {
     margin-inline-start: auto;
   }
+  .fl-me-1\.5 {
+    margin-inline-end: var(--fl-space-1\.5);
+  }
   .fl-mt-2\.5 {
     margin-top: var(--fl-space-2\.5);
   }
@@ -1168,6 +1171,9 @@
       color: var(--color-heading) !important;
     }
   }
+  .fl-mb-1 {
+    margin-bottom: var(--fl-space-1);
+  }
   .fl-mb-1\.75 {
     margin-bottom: var(--fl-space-1\.75);
   }
@@ -1314,6 +1320,18 @@
   .fl-size-3 {
     width: var(--fl-space-3);
     height: var(--fl-space-3);
+  }
+  .fl-size-4 {
+    width: var(--fl-space-4);
+    height: var(--fl-space-4);
+  }
+  .fl-size-5 {
+    width: var(--fl-space-5);
+    height: var(--fl-space-5);
+  }
+  .fl-size-8 {
+    width: var(--fl-space-8);
+    height: var(--fl-space-8);
   }
   .fl-size-13 {
     width: var(--fl-space-13);
@@ -1533,6 +1551,9 @@
   .resize {
     resize: both;
   }
+  .appearance-none {
+    appearance: none;
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1717,6 +1738,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
   .dark {
     & .apexcharts-canvas .apexcharts-tooltip {
       background-color: var(--color-neutral-secondary-medium) !important;
@@ -1776,6 +1801,9 @@
   }
   .border-muted-inset-border-auxiliary {
     border-color: var(--color-muted-inset-border-auxiliary);
+  }
+  .border-quiet {
+    border-color: var(--color-quiet);
   }
   .border-quiet-border {
     border-color: var(--color-quiet-border);
@@ -2016,6 +2044,9 @@
   .fl-pt-4 {
     padding-top: var(--fl-space-4);
   }
+  .fl-pt-5 {
+    padding-top: var(--fl-space-5);
+  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
@@ -2046,6 +2077,9 @@
   }
   .fl-pb-4 {
     padding-bottom: var(--fl-space-4);
+  }
+  .fl-pb-6 {
+    padding-bottom: var(--fl-space-6);
   }
   .datatable-empty {
     .datatable-wrapper .datatable-table & {
