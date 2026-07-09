@@ -2468,6 +2468,9 @@
   .text-max-inset-fg-main {
     color: var(--color-max-inset-fg-main);
   }
+  .text-max-inset-fg-secondary {
+    color: var(--color-max-inset-fg-secondary);
+  }
   .text-muted-inset-fg-main {
     color: var(--color-muted-inset-fg-main);
   }
