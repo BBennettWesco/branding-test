@@ -1543,6 +1543,9 @@
   .max-w-md {
     max-width: var(--container-md);
   }
+  .max-w-screen-2xl {
+    max-width: var(--breakpoint-2xl);
+  }
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
   }
@@ -2066,6 +2069,9 @@
   .bg-\[url\(\'https\:\/\/flowbite\.s3\.amazonaws\.com\/docs\/jumbotron\/conference\.jpg\'\)\] {
     background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg');
   }
+  .bg-\[url\(\'https\:\/\/t4\.ftcdn\.net\/jpg\/02\/00\/68\/69\/240_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3\.jpg\'\)\] {
+    background-image: url('https://t4.ftcdn.net/jpg/02/00/68/69/240_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg');
+  }
   .from-surface-gradient-accent-end {
     --tw-gradient-from: var(--color-surface-gradient-accent-end);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -2223,6 +2229,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
@@ -2891,6 +2900,11 @@
   .lg\:px-48 {
     @media (width >= 1024px) {
       padding-inline: calc(var(--spacing) * 48);
+    }
+  }
+  .lg\:py-16 {
+    @media (width >= 1024px) {
+      padding-block: calc(var(--spacing) * 16);
     }
   }
   .lg\:py-56 {
