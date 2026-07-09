@@ -2022,8 +2022,17 @@
   .bg-quiet {
     background-color: var(--color-quiet);
   }
+  .bg-surface-overlay-fades {
+    background-color: var(--color-surface-overlay-fades);
+  }
+  .bg-surface-overlay-moderate {
+    background-color: var(--color-surface-overlay-moderate);
+  }
   .bg-surface-overlay-strong {
     background-color: var(--color-surface-overlay-strong);
+  }
+  .bg-surface-overlay-weak {
+    background-color: var(--color-surface-overlay-weak);
   }
   .bg-transparent {
     background-color: transparent;
