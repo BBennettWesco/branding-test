@@ -172,7 +172,7 @@
   --color-surface-overlay-moderate: var(--surface-overlay-moderate);
   --color-surface-overlay-strong: var(--surface-overlay-strong);
   --color-surface-overlay-fades: var(--surface-overlay-fades);
-  --color-dark-backdrop: var(--surface-overlay-moderate);
+  --color-dark-backdrop: var(--surface-overlay-strong);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
 }
@@ -250,7 +250,7 @@
   --color-surface-overlay-moderate: var(--surface-overlay-moderate);
   --color-surface-overlay-strong: var(--surface-overlay-strong);
   --color-surface-overlay-fades: var(--surface-overlay-fades);
-  --color-dark-backdrop: var(--surface-overlay-moderate);
+  --color-dark-backdrop: var(--surface-overlay-strong);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
 }
