@@ -395,16 +395,101 @@
                 <input id="remember" type="checkbox" value="" class="fl-size-3 border border-quiet-inset-border rounded-sm bg-muted" required />
                 <p class="fl-ms-2 label text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="text-accent hover:underline">terms and conditions</a>.</p>
             </label>
+
+            <label for="toggle" class="inline-flex items-center cursor-pointer fl-mb-4.5">
+                <input id="toggle" type="checkbox" value="" class="sr-only peer" checked>
+                <div class="relative fl-w-9 fl-h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-loud-inset-fg-main after:rounded-full after:fl-h-3 after:fl-w-3 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
+                <div class="label text-xs select-none">
+                    <span class="text-fg-main fl-mb-1">Checked toggle</span>
+                    <span class="text-fg-secondary">Helper text goes here.</span>
+                </div>
+            </label>
+
+            <label for="disabled-toggle" class="inline-flex items-center cursor-pointer fl-mb-4.5">
+                <input id="disabled-toggle" type="checkbox" value="" class="sr-only peer" checked disabled>
+                <div class="relative fl-w-9 fl-h-5 bg-quiet border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:rounded-full after:fl-h-3 after:fl-w-3 after:transition-all after:shadow-xs"></div>
+                <div class="label text-xs select-none">
+                    <span class="text-fg-disabled fl-mb-1">Disabled toggle</span>
+                    <span class="text-fg-disabled">Helper text goes here.</span>
+                </div>
+            </label>
             
             <div class="fl-mb-4.5">
-                <label for="ice-cream-flavor" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite ice cream flavor (select one)</label>                
-                <div class="flex">
+                <label for="ice-cream-flavor" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite ice cream flavor (choose one)</label>                
+                <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
-                        <input id="helper-radio" aria-describedby="helper-radio-text" type="radio" value="" class="fl-size-3 border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
-                        <label for="helper-radio" class="text-fg-main fl-mb-1">Cookie Dough</label>
-                        <p id="helper-radio-text" class="text-fg-secondary">A sweet and creamy flavor with chunks of cookie dough.</p>
+                        <label for="cookie-dough-radio" class="text-fg-main fl-mb-1">Cookie Dough</label>
+                        <p id="cookie-dough-radio-text" class="text-fg-secondary">A sweet and creamy flavor with chunks of cookie dough.</p>
+                    </div>
+                </div>
+                <div class="flex fl-mb-3.5" data-style="red">
+                    <div class="flex items-center fl-size-5">
+                        <input id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    </div>
+                    <div class="label text-xs select-none">
+                        <label for="vanilla-radio" class="text-fg-main fl-mb-1">Vanilla</label>
+                        <p id="vanilla-radio-text" class="text-fg-secondary">A classic and creamy flavor made from real vanilla beans.</p>
+                    </div>
+                </div>
+                <div class="flex fl-mb-3.5" data-style="green">
+                    <div class="flex items-center fl-size-5">
+                        <input id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    </div>
+                    <div class="label text-xs select-none">
+                        <label for="pistachio-radio" class="text-fg-main fl-mb-1">Pistachio</label>
+                        <p id="pistachio-radio-text" class="text-fg-secondary">A nutty and creamy flavor with chunks of real pistachio.</p>
+                    </div>
+                </div>
+                <div class="flex fl-mb-3.5">
+                    <div class="flex items-center fl-size-5">
+                        <input disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="fl-size-3 bg-quiet text-fg-disabled border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    </div>
+                    <div class="label text-xs fg-disabled select-none">
+                        <label for="chocolate-radio" class="text-fg-main fl-mb-1">Chocolate</label>
+                        <p id="chocolate-radio-text" class="text-fg-secondary">A classic and rich flavor made of cocoa beans from Costa Rica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fl-mb-4.5">
+                <label for="pizza-toppings" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite pizza toppings (choose all that apply)</label>                
+                <div class="flex fl-mb-3.5">
+                    <div class="flex items-center fl-size-5">
+                        <input id="mozzarella-checkbox" aria-describedby="mozzarella-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    </div>
+                    <div class="label text-xs select-none">
+                        <label for="mozzarella-checkbox" class="text-fg-main fl-mb-1">Mozzarella</label>
+                        <p id="mozzarella-checkbox-text" class="text-fg-secondary">A classic and stretchy cheese topping for pizza.</p>
+                    </div>
+                </div>
+                <div class="flex fl-mb-3.5" data-style="red">
+                    <div class="flex items-center fl-size-5">
+                        <input id="pepperoni-checkbox" aria-describedby="pepperoni-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    </div>
+                    <div class="label text-xs select-none">
+                        <label for="pepperoni-checkbox" class="text-fg-main fl-mb-1">Pepperoni</label>
+                        <p id="pepperoni-checkbox-text" class="text-fg-secondary">A popular and savory topping made from cured pepperoni slices.</p>
+                    </div>
+                </div>
+                <div class="flex fl-mb-3.5" data-style="green">
+                    <div class="flex items-center fl-size-5">
+                        <input id="garlic-checkbox" aria-describedby="garlic-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    </div>
+                    <div class="label text-xs select-none">
+                        <label for="garlic-checkbox" class="text-fg-main fl-mb-1">Roasted garlic</label>
+                        <p id="garlic-checkbox-text" class="text-fg-secondary">A flavorful and aromatic topping made from roasted garlic cloves.</p>
+                    </div>
+                </div>
+                <div class="flex fl-mb-3.5">
+                    <div class="flex items-center fl-size-5">
+                        <input disabled id="pineapple-checkbox" aria-describedby="pineapple-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-quiet text-fg-disabled border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    </div>
+                    <div class="label text-xs fg-disabled select-none">
+                        <label for="pineapple-checkbox" class="text-fg-main fl-mb-1">Pineapple</label>
+                        <p id="pineapple-checkbox-text" class="text-fg-secondary">A tropical and sweet topping made from fresh pineapple chunks.</p>
                     </div>
                 </div>
             </div>
@@ -412,7 +497,7 @@
             <div class="fl-mb-4.5">
                 <label class="block fl-mb-2.5 label text-xs text-fg-main">Upload file(s)</label>   
                 <div class="flex items-center justify-center w-full">
-                    <div class="flex flex-col items-center justify-center w-full fl-size-13 bg-muted border border-dashed border-quiet rounded-lg">
+                    <div class="flex flex-col items-center justify-center w-full bg-muted border border-dashed border-quiet rounded-lg">
                         <div class="flex flex-col items-center justify-center fl-pt-5 fl-pb-6">
                             <svg class="fl-size-5 fl-mb-4 text-muted-inset-fg-secondary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v9m-5 0H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-2M8 9l4-5 4 5m1 8h.01"/></svg>
                             <p class="fl-mb-2 label text-sm text-muted-inset-fg-main">Click the button below to upload</p>
@@ -429,7 +514,7 @@
                 </div>
             </div> 
  
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Submit</button>
         </form>
 
     </section>

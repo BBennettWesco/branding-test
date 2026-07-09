@@ -20,6 +20,14 @@
 @source "../node_modules/flowbite";
 @source inline("bg-dark-backdrop");
 
+@layer base {
+  [type='checkbox']:checked, [type='radio']:checked {
+    background-color: var(--color-fg-accent);
+    border-color: var(--color-fg-inset-accent);
+    color: var(--color-loud-inset-fg-main);
+  } 
+}
+
 @theme {
   --spacing: .2rem;
 
@@ -252,12 +260,6 @@
   --color-dark-backdrop: var(--surface-overlay-moderate);
   --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
   --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
-}
-
-@layer base {
-  [type='checkbox']:checked, [type='radio']:checked {
-    @apply bg-fg-accent text-loud-inset-fg-main border-fg-inset-accent;
-  } 
 }
 
 /* Buttons */
