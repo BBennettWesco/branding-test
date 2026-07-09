@@ -2534,6 +2534,9 @@
   .bg-blend-hard-light {
     background-blend-mode: hard-light;
   }
+  .bg-blend-soft-light {
+    background-blend-mode: soft-light;
+  }
   .shadow-bottom {
     --tw-shadow: 0 1px 14px 0 var(--tw-shadow-color, var(--color-shadow-base));
     @supports (color: color-mix(in lab, red, red)) {
