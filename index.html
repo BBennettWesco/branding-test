@@ -203,6 +203,22 @@
 
     </section>
 
+    <!-- Overlays -->
+
+    <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-surface-overlay-strong bg-blend-multiply">
+        <div class="fl-px-4 mx-auto max-w-screen-xl text-center fl-py-24 lg:fl-py-56 mode-invert">
+            <h1 class="fl-mb-6 display text-4xl text-fg-main">We invest in the world's potential</h1>
+            <p class="fl-mb-8 heading text-base text-fg-main sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
+                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                    Getting started
+                        <svg class="size-4 fl-ms-1.5 fl--me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <section class="container mx-auto fl-py-9">
 
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">
@@ -401,7 +417,29 @@
             <div class="fl-mb-4.5">
                 <label for="toggle" class="flex items-center cursor-pointer">
                     <input id="toggle" type="checkbox" value="" class="sr-only peer" checked>
-                    <div class="relative w-9 h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.25px] after:start-[1px] after:bg-fg-static after:rounded-full after:size-4 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
+                    <div class="relative w-9 h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-loud-inset-fg-main after:rounded-full after:size-4 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
+                    <div class="label text-xs select-none fl-ms-2">
+                        <p class="text-fg-main fl-mb-1">Checked toggle</p>
+                        <p class="text-fg-secondary">Helper text goes here.</p>
+                    </div>
+                </label>
+            </div>
+
+            <div class="fl-mb-4.5" data-style="green">
+                <label for="toggle" class="flex items-center cursor-pointer">
+                    <input id="toggle" type="checkbox" value="" class="sr-only peer" checked>
+                    <div class="relative w-9 h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-loud-inset-fg-main after:rounded-full after:size-4 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
+                    <div class="label text-xs select-none fl-ms-2">
+                        <p class="text-fg-main fl-mb-1">Checked toggle</p>
+                        <p class="text-fg-secondary">Helper text goes here.</p>
+                    </div>
+                </label>
+            </div>
+
+            <div class="fl-mb-4.5" data-style="red">
+                <label for="toggle" class="flex items-center cursor-pointer">
+                    <input id="toggle" type="checkbox" value="" class="sr-only peer" checked>
+                    <div class="relative w-9 h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-loud-inset-fg-main after:rounded-full after:size-4 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
                     <div class="label text-xs select-none fl-ms-2">
                         <p class="text-fg-main fl-mb-1">Checked toggle</p>
                         <p class="text-fg-secondary">Helper text goes here.</p>
@@ -412,7 +450,7 @@
             <div class="fl-mb-4.5">
                 <label for="disabled-toggle" class="flex items-center cursor-not-allowed">
                     <input id="disabled-toggle" type="checkbox" value="" class="sr-only peer" checked disabled>
-                    <div class="relative w-9 h-5 bg-quiet border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.25px] after:start-[1px] after:bg-quiet-inset-fg-disabled after:rounded-full after:size-4 after:transition-all after:shadow-xs"></div>
+                    <div class="relative w-9 h-5 bg-quiet border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-quiet-inset-fg-disabled after:rounded-full after:size-4 after:transition-all after:shadow-xs"></div>
                     <div class="label text-xs select-none fl-ms-2">
                         <p class="text-fg-disabled fl-mb-1">Disabled toggle</p>
                         <p class="text-fg-disabled">Helper text goes here.</p>
