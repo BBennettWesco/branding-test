@@ -375,7 +375,7 @@
             </div>
             <div class="fl-mb-4.5">
                 <label for="disabled-input" class="block fl-mb-2.5 label text-xs text-fg-disabled">Disabled input</label>
-                <input type="text" id="disabled-input" aria-label="disabled input" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main disabled:text-fg-disabled focus:ring-brand focus:border-brand block w-full" placeholder="Disabled input" disabled>
+                <input type="text" id="disabled-input" aria-label="disabled input" class="cursor-not-allowed input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main disabled:text-fg-disabled focus:ring-brand focus:border-brand block w-full" placeholder="Disabled input" disabled>
             </div>
             <div class="fl-mb-4.5">
                 <label for="password" class="block fl-mb-2.5 label text-xs text-fg-main">Your password</label>
@@ -391,34 +391,40 @@
                 <input type="text" id="danger" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand block w-full" placeholder="Error input" required />
                 <p class="fl-mt-2.5 text-xs text-muted-inset-fg-secondary"><span class="font-medium">Oh, snap!</span> Some error message.</p>
             </div>
-            <label for="remember" class="flex items-center fl-mb-4.5">
-                <input id="remember" type="checkbox" value="" class="fl-size-3 border border-quiet-inset-border rounded-sm bg-muted" required />
-                <p class="fl-ms-2 label text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="text-accent hover:underline">terms and conditions</a>.</p>
-            </label>
+            <div class="fl-mb-4.5">
+                <label for="remember" class="flex items-center">
+                    <input id="remember" type="checkbox" value="" class="text-fg-accent fl-size-3 border border-quiet-inset-border rounded-sm bg-muted" required />
+                    <p class="fl-ms-2 label text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="text-accent hover:underline">terms and conditions</a>.</p>
+                </label>
+            </div>
 
-            <label for="toggle" class="inline-flex items-center cursor-pointer fl-mb-4.5">
-                <input id="toggle" type="checkbox" value="" class="sr-only peer" checked>
-                <div class="relative fl-w-9 fl-h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-loud-inset-fg-main after:rounded-full after:fl-h-3 after:fl-w-3 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
-                <div class="label text-xs select-none fl-ms-2">
-                    <p class="text-fg-main fl-mb-1">Checked toggle</p>
-                    <p class="text-fg-secondary">Helper text goes here.</p>
-                </div>
-            </label>
+            <div class="fl-mb-4.5">
+                <label for="toggle" class="flex items-center cursor-pointer">
+                    <input id="toggle" type="checkbox" value="" class="sr-only peer" checked>
+                    <div class="relative w-9 h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-loud-inset-fg-main after:rounded-full after:size-4 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
+                    <div class="label text-xs select-none fl-ms-2">
+                        <p class="text-fg-main fl-mb-1">Checked toggle</p>
+                        <p class="text-fg-secondary">Helper text goes here.</p>
+                    </div>
+                </label>
+            </div>
 
-            <label for="disabled-toggle" class="inline-flex items-center cursor-pointer fl-mb-4.5">
-                <input id="disabled-toggle" type="checkbox" value="" class="sr-only peer" checked disabled>
-                <div class="relative w-9 h-5 bg-quiet border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-quiet-inset-fg-disabled after:rounded-full after:size-4 after:transition-all after:shadow-xs"></div>
-                <div class="label text-xs select-none fl-ms-2">
-                    <p class="text-fg-disabled fl-mb-1">Disabled toggle</p>
-                    <p class="text-fg-disabled">Helper text goes here.</p>
-                </div>
-            </label>
+            <div class="fl-mb-4.5">
+                <label for="disabled-toggle" class="flex items-center cursor-not-allowed">
+                    <input id="disabled-toggle" type="checkbox" value="" class="sr-only peer" checked disabled>
+                    <div class="relative w-9 h-5 bg-quiet border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-quiet-inset-fg-disabled after:rounded-full after:size-4 after:transition-all after:shadow-xs"></div>
+                    <div class="label text-xs select-none fl-ms-2">
+                        <p class="text-fg-disabled fl-mb-1">Disabled toggle</p>
+                        <p class="text-fg-disabled">Helper text goes here.</p>
+                    </div>
+                </label>
+            </div>
             
             <div class="fl-mb-4.5">
                 <label for="ice-cream-flavor" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite ice cream flavor (choose one)</label>                
                 <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
-                        <input id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="text-fg-accent fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="cookie-dough-radio" class="text-fg-main fl-mb-1">Cookie Dough</label>
@@ -427,7 +433,7 @@
                 </div>
                 <div class="flex fl-mb-3.5" data-style="red">
                     <div class="flex items-center fl-size-5">
-                        <input id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="text-fg-accent fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="vanilla-radio" class="text-fg-main fl-mb-1">Vanilla</label>
@@ -436,16 +442,16 @@
                 </div>
                 <div class="flex fl-mb-3.5" data-style="green">
                     <div class="flex items-center fl-size-5">
-                        <input id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="text-fg-accent fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="pistachio-radio" class="text-fg-main fl-mb-1">Pistachio</label>
                         <p id="pistachio-radio-text" class="text-fg-secondary">A nutty and creamy flavor with chunks of real pistachio.</p>
                     </div>
                 </div>
-                <div class="flex fl-mb-3.5">
+                <div class="flex fl-mb-3.5 cursor-not-allowed">
                     <div class="flex items-center fl-size-5">
-                        <input disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="fl-size-3 bg-quiet text-fg-disabled border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="chocolate-radio" class="text-fg-disabled fl-mb-1">Chocolate</label>
@@ -458,7 +464,7 @@
                 <label for="pizza-toppings" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite pizza toppings (choose all that apply)</label>                
                 <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
-                        <input id="mozzarella-checkbox" aria-describedby="mozzarella-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="mozzarella-checkbox" aria-describedby="mozzarella-checkbox-text" type="checkbox" value="" class="text-fg-accent fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="mozzarella-checkbox" class="text-fg-main fl-mb-1">Mozzarella</label>
@@ -467,7 +473,7 @@
                 </div>
                 <div class="flex fl-mb-3.5" data-style="red">
                     <div class="flex items-center fl-size-5">
-                        <input id="pepperoni-checkbox" aria-describedby="pepperoni-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="pepperoni-checkbox" aria-describedby="pepperoni-checkbox-text" type="checkbox" value="" class="text-fg-accent fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="pepperoni-checkbox" class="text-fg-main fl-mb-1">Pepperoni</label>
@@ -476,16 +482,16 @@
                 </div>
                 <div class="flex fl-mb-3.5" data-style="green">
                     <div class="flex items-center fl-size-5">
-                        <input id="garlic-checkbox" aria-describedby="garlic-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="garlic-checkbox" aria-describedby="garlic-checkbox-text" type="checkbox" value="" class="text-fg-accent fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="garlic-checkbox" class="text-fg-main fl-mb-1">Roasted garlic</label>
                         <p id="garlic-checkbox-text" class="text-fg-secondary">A flavorful and aromatic topping made from roasted garlic cloves.</p>
                     </div>
                 </div>
-                <div class="flex fl-mb-3.5">
+                <div class="flex fl-mb-3.5 cursor-not-allowed">
                     <div class="flex items-center fl-size-5">
-                        <input disabled id="pineapple-checkbox" aria-describedby="pineapple-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-quiet text-fg-disabled border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input disabled id="pineapple-checkbox" aria-describedby="pineapple-checkbox-text" type="checkbox" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="pineapple-checkbox" class="text-fg-disabled fl-mb-1">Pineapple</label>
