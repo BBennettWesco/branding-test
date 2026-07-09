@@ -2066,8 +2066,14 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'https\:\/\/as2\.ftcdn\.net\/v2\/jpg\/05\/93\/86\/77\/1000_F_593867722_l2KPBQOolbUp1qSUGzT0VFTExlwloqJp\.jpg\'\)\] {
+    background-image: url('https://as2.ftcdn.net/v2/jpg/05/93/86/77/1000_F_593867722_l2KPBQOolbUp1qSUGzT0VFTExlwloqJp.jpg');
+  }
   .bg-\[url\(\'https\:\/\/flowbite\.s3\.amazonaws\.com\/docs\/jumbotron\/conference\.jpg\'\)\] {
     background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/t3\.ftcdn\.net\/jpg\/02\/27\/05\/44\/1000_F_227054415_tPcUhVanDLJy4JyLdclBQZJqCdAXs0zc\.jpg\'\)\] {
+    background-image: url('https://t3.ftcdn.net/jpg/02/27/05/44/1000_F_227054415_tPcUhVanDLJy4JyLdclBQZJqCdAXs0zc.jpg');
   }
   .bg-\[url\(\'https\:\/\/t4\.ftcdn\.net\/jpg\/02\/00\/68\/69\/240_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3\.jpg\'\)\] {
     background-image: url('https://t4.ftcdn.net/jpg/02/00/68/69/240_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg');
@@ -2079,6 +2085,9 @@
   .to-surface-gradient-accent-start {
     --tw-gradient-to: var(--color-surface-gradient-accent-start);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-cover {
+    background-size: cover;
   }
   .bg-center {
     background-position: center;
