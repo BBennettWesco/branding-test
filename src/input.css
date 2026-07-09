@@ -739,20 +739,25 @@ label:has(+ input:required):after {
 }
 
 @layer base {
-  input[type='checkbox']:checked,
-  input[type='radio']:checked {
+  input[type='checkbox']:checked {
     color: var(--color-loud-inset-fg-main) !important;
     background-color: var(--color-fg-accent) !important;
     border-color: var(--color-fg-accent) !important;
   }
-
+  input[type='radio']:checked {
+    color: var(--color-quiet-inset-fg-accent) !important;
+    background-color: var(--color-muted) !important;
+    border-color: var(--color-quiet-inset-border-accent) !important;
+  }
   input[type='radio']:checked::before,
   input[type='radio']:disabled:checked::before {
-    background-color: var(--color-fg-accent) !important;
+    background-color: var(--color-muted) !important;
   }
 
   input[type='radio']:checked::after,
   input[type='radio']:disabled:checked::after {
-    background-color: var(--color-loud-inset-fg-main) !important;
+    background-color: var(--color-quiet-inset-fg-accent) !important;
+    width: 0.375rem !important;
+    height: 0.375rem !important;
   }
 }

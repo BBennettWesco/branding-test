@@ -401,7 +401,7 @@
             <div class="fl-mb-4.5">
                 <label for="toggle" class="flex items-center cursor-pointer">
                     <input id="toggle" type="checkbox" value="" class="sr-only peer" checked>
-                    <div class="relative w-9 h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-loud-inset-fg-main after:rounded-full after:size-4 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
+                    <div class="relative w-9 h-5 bg-muted border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.25px] after:start-[1px] after:bg-fg-static after:rounded-full after:size-4 after:transition-all after:shadow-sm peer-checked:bg-fg-accent"></div>
                     <div class="label text-xs select-none fl-ms-2">
                         <p class="text-fg-main fl-mb-1">Checked toggle</p>
                         <p class="text-fg-secondary">Helper text goes here.</p>
@@ -412,7 +412,7 @@
             <div class="fl-mb-4.5">
                 <label for="disabled-toggle" class="flex items-center cursor-not-allowed">
                     <input id="disabled-toggle" type="checkbox" value="" class="sr-only peer" checked disabled>
-                    <div class="relative w-9 h-5 bg-quiet border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.5px] after:start-[1px] after:bg-quiet-inset-fg-disabled after:rounded-full after:size-4 after:transition-all after:shadow-xs"></div>
+                    <div class="relative w-9 h-5 bg-quiet border border-quiet-border peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[1.25px] after:start-[1px] after:bg-quiet-inset-fg-disabled after:rounded-full after:size-4 after:transition-all after:shadow-xs"></div>
                     <div class="label text-xs select-none fl-ms-2">
                         <p class="text-fg-disabled fl-mb-1">Disabled toggle</p>
                         <p class="text-fg-disabled">Helper text goes here.</p>
@@ -424,7 +424,7 @@
                 <label for="ice-cream-flavor" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite ice cream flavor (choose one)</label>                
                 <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
-                        <input id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input name="ice-cream-flavor" id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="cookie-dough-radio" class="text-fg-main fl-mb-1">Cookie Dough</label>
@@ -433,7 +433,7 @@
                 </div>
                 <div class="flex fl-mb-3.5" data-style="red">
                     <div class="flex items-center fl-size-5">
-                        <input id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input name="ice-cream-flavor" id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="vanilla-radio" class="text-fg-main fl-mb-1">Vanilla</label>
@@ -442,7 +442,7 @@
                 </div>
                 <div class="flex fl-mb-3.5" data-style="green">
                     <div class="flex items-center fl-size-5">
-                        <input id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input name="ice-cream-flavor" checked id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="pistachio-radio" class="text-fg-main fl-mb-1">Pistachio</label>
@@ -451,7 +451,7 @@
                 </div>
                 <div class="flex fl-mb-3.5 cursor-not-allowed">
                     <div class="flex items-center fl-size-5">
-                        <input disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input name="ice-cream-flavor" disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label text-xs select-none">
                         <label for="chocolate-radio" class="text-fg-disabled fl-mb-1">Chocolate</label>
