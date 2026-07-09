@@ -197,7 +197,6 @@
     --color-stone-800: oklch(26.8% 0.007 34.298);
     --color-stone-900: oklch(21.6% 0.006 56.043);
     --color-stone-950: oklch(14.7% 0.004 49.25);
-    --color-black: var(--black);
     --color-white: var(--white);
     --spacing: .2rem;
     --breakpoint-md: 800px;
@@ -283,6 +282,10 @@
     }
     --color-shadow-xs: var(--shadow-xs);
     --color-shadow-base: var(--shadow-base);
+    --color-backdrop-tinted-mid: var(--backdrop-opacity-tinted-mid);
+    --color-backdrop-tinted-high: var(--backdrop-opacity-tinted-high);
+    --color-overlay-fade-start: var(--overlay-fade-start);
+    --color-overlay-fade-end: var(--overlay-fade-end);
     --color-bg: var(--bg);
     --color-disabled: var(--disabled);
     --color-fg-main: var(--fg-main);
@@ -309,7 +312,6 @@
     --color-surface-overlay-weak: var(--surface-overlay-weak);
     --color-surface-overlay-moderate: var(--surface-overlay-moderate);
     --color-surface-overlay-strong: var(--surface-overlay-strong);
-    --color-surface-overlay-fades: var(--surface-overlay-fades);
     --color-dark-backdrop: var(--surface-overlay-strong);
     --color-surface-gradient-accent-start: var(--surface-gradient-accent-start);
     --color-surface-gradient-accent-end: var(--surface-gradient-accent-end);
@@ -1897,14 +1899,14 @@
       background-color: var(--color-neutral-secondary-medium);
     }
   }
+  .bg-backdrop-tinted-high {
+    background-color: var(--color-backdrop-tinted-high);
+  }
+  .bg-backdrop-tinted-mid {
+    background-color: var(--color-backdrop-tinted-mid);
+  }
   .bg-bg {
     background-color: var(--color-bg);
-  }
-  .bg-black\/60 {
-    background-color: var(--color-black);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
-    }
   }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
@@ -1939,9 +1941,6 @@
   .bg-quiet {
     background-color: var(--color-quiet);
   }
-  .bg-surface-overlay-fades {
-    background-color: var(--color-surface-overlay-fades);
-  }
   .bg-surface-overlay-moderate {
     background-color: var(--color-surface-overlay-moderate);
   }
@@ -1973,12 +1972,38 @@
       background-color: var(--color-neutral-secondary);
     }
   }
+  .bg-linear-to-l {
+    --tw-gradient-position: to left;
+    @supports (background-image: linear-gradient(in lab, red, red)) {
+      --tw-gradient-position: to left in oklab;
+    }
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-linear-to-r {
+    --tw-gradient-position: to right;
+    @supports (background-image: linear-gradient(in lab, red, red)) {
+      --tw-gradient-position: to right in oklab;
+    }
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
   .bg-linear-to-t {
     --tw-gradient-position: to top;
     @supports (background-image: linear-gradient(in lab, red, red)) {
       --tw-gradient-position: to top in oklab;
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\'https\:\/\/as2\.ftcdn\.net\/v2\/jpg\/01\/73\/82\/45\/1000_F_173824524_4VeEjBTlo5Lqi4tZxV04nJQIOy2pMgCG\.jpg\'\)\] {
+    background-image: url('https://as2.ftcdn.net/v2/jpg/01/73/82/45/1000_F_173824524_4VeEjBTlo5Lqi4tZxV04nJQIOy2pMgCG.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/as2\.ftcdn\.net\/v2\/jpg\/02\/52\/60\/57\/1000_F_252605741_lxKTozEjL7Eef9vzOTOinfEflDjvN3nz\.jpg\'\)\] {
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/52/60/57/1000_F_252605741_lxKTozEjL7Eef9vzOTOinfEflDjvN3nz.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/as2\.ftcdn\.net\/v2\/jpg\/02\/91\/53\/35\/1000_F_291533500_Mt1bYnuFJO4NtCnhtMyEcn9gKTcArup3\.jpg\'\)\] {
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/91/53/35/1000_F_291533500_Mt1bYnuFJO4NtCnhtMyEcn9gKTcArup3.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/as2\.ftcdn\.net\/v2\/jpg\/04\/45\/80\/77\/1000_F_445807713_nH7G5EsMW4oUlNdeb58bCMUshH05guFq\.jpg\'\)\] {
+    background-image: url('https://as2.ftcdn.net/v2/jpg/04/45/80/77/1000_F_445807713_nH7G5EsMW4oUlNdeb58bCMUshH05guFq.jpg');
   }
   .bg-\[url\(\'https\:\/\/as2\.ftcdn\.net\/v2\/jpg\/05\/93\/86\/77\/1000_F_593867722_l2KPBQOolbUp1qSUGzT0VFTExlwloqJp\.jpg\'\)\] {
     background-image: url('https://as2.ftcdn.net/v2/jpg/05/93/86/77/1000_F_593867722_l2KPBQOolbUp1qSUGzT0VFTExlwloqJp.jpg');
@@ -1989,11 +2014,16 @@
   .bg-\[url\(\'https\:\/\/t3\.ftcdn\.net\/jpg\/02\/27\/05\/44\/1000_F_227054415_tPcUhVanDLJy4JyLdclBQZJqCdAXs0zc\.jpg\'\)\] {
     background-image: url('https://t3.ftcdn.net/jpg/02/27/05/44/1000_F_227054415_tPcUhVanDLJy4JyLdclBQZJqCdAXs0zc.jpg');
   }
-  .bg-\[url\(\'https\:\/\/t4\.ftcdn\.net\/jpg\/02\/00\/68\/69\/240_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3\.jpg\'\)\] {
-    background-image: url('https://t4.ftcdn.net/jpg/02/00/68/69/240_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg');
+  .from-overlay-fade-start {
+    --tw-gradient-from: var(--color-overlay-fade-start);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-surface-gradient-accent-end {
     --tw-gradient-from: var(--color-surface-gradient-accent-end);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-overlay-fade-end {
+    --tw-gradient-to: var(--color-overlay-fade-end);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-surface-gradient-accent-start {
@@ -2414,8 +2444,8 @@
   .opacity-100 {
     opacity: 100%;
   }
-  .bg-blend-multiply {
-    background-blend-mode: multiply;
+  .bg-blend-hard-light {
+    background-blend-mode: hard-light;
   }
   .shadow-bottom {
     --tw-shadow: 0 1px 14px 0 var(--tw-shadow-color, var(--color-shadow-base));
@@ -4537,6 +4567,10 @@
   --color-white: var(--white);
   --color-shadow-xs: var(--shadow-xs);
   --color-shadow-base: var(--shadow-base);
+  --color-backdrop-tinted-mid: var(--backdrop-opacity-tinted-mid);
+  --color-backdrop-tinted-high: var(--backdrop-opacity-tinted-high);
+  --color-overlay-fade-start: var(--overlay-fade-start);
+  --color-overlay-fade-end: var(--overlay-fade-end);
   --color-bg: var(--bg);
   --color-focus: var(--focus);
   --color-hover: var(--hover);

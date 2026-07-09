@@ -106,6 +106,12 @@
   --color-shadow-xs: var(--shadow-xs);
   --color-shadow-base: var(--shadow-base);
 
+  --color-backdrop-tinted-mid: var(--backdrop-opacity-tinted-mid);
+  --color-backdrop-tinted-high: var(--backdrop-opacity-tinted-high);
+
+  --color-overlay-fade-start: var(--overlay-fade-start);
+  --color-overlay-fade-end: var(--overlay-fade-end);
+
   --color-bg: var(--bg);
   --color-focus: var(--focus);
   --color-hover: var(--hover);
@@ -184,6 +190,12 @@
 
   --color-shadow-xs: var(--shadow-xs);
   --color-shadow-base: var(--shadow-base);
+
+  --color-backdrop-tinted-mid: var(--backdrop-opacity-tinted-mid);
+  --color-backdrop-tinted-high: var(--backdrop-opacity-tinted-high);
+
+  --color-overlay-fade-start: var(--overlay-fade-start);
+  --color-overlay-fade-end: var(--overlay-fade-end);
 
   --color-bg: var(--bg);
   --color-focus: var(--focus);
