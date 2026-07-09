@@ -20,14 +20,6 @@
 @source "../node_modules/flowbite";
 @source inline("bg-dark-backdrop");
 
-@layer base {
-  [type='checkbox']:checked, [type='radio']:checked {
-    background-color: var(--color-fg-accent) !important;
-    border-color: var(--color-fg-inset-accent) !important;
-    color: var(--color-loud-inset-fg-main) !important;
-  } 
-}
-
 @theme {
   --spacing: .2rem;
 
@@ -744,4 +736,23 @@ label:has(+ input:required):after {
 }
 @utility -fl-scroll-pl-* {
   scroll-padding-left: calc(--value(--fl-space-*) * -1);
+}
+
+@layer base {
+  input[type='checkbox']:checked,
+  input[type='radio']:checked {
+    color: var(--color-loud-inset-fg-main) !important;
+    background-color: var(--color-fg-accent) !important;
+    border-color: var(--color-fg-accent) !important;
+  }
+
+  input[type='radio']:checked::before,
+  input[type='radio']:disabled:checked::before {
+    background-color: var(--color-fg-accent) !important;
+  }
+
+  input[type='radio']:checked::after,
+  input[type='radio']:disabled:checked::after {
+    background-color: var(--color-loud-inset-fg-main) !important;
+  }
 }
