@@ -22,9 +22,9 @@
 
 @layer base {
   [type='checkbox']:checked, [type='radio']:checked {
-    background-color: var(--color-fg-accent);
-    border-color: var(--color-fg-inset-accent);
-    color: var(--color-loud-inset-fg-main);
+    background-color: var(--color-fg-accent) !important;
+    border-color: var(--color-fg-inset-accent) !important;
+    color: var(--color-loud-inset-fg-main) !important;
   } 
 }
 
@@ -160,6 +160,7 @@
   --color-quiet-inset-fg-main: var(--quiet-inset-fg-main);
   --color-quiet-inset-fg-secondary: var(--quiet-inset-fg-secondary);
   --color-quiet-inset-fg-auxiliary: var(--quiet-inset-fg-auxiliary);
+  --color-quiet-inset-fg-disabled: var(--quiet-inset-fg-disabled);
   --color-quiet-inset-fg-accent: var(--quiet-inset-fg-accent);
   --color-quiet-inset-border-main: var(--quiet-inset-border-main);
   --color-quiet-inset-border-secondary: var(--quiet-inset-border-secondary);
