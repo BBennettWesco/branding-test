@@ -322,6 +322,48 @@ label:has(+ input:required):after {
   content: " *";
   color: var(--brand-color-red-500);
 }
+.peer {
+  border-radius: var(--rounded-full);
+  position:relative;
+  background-color: var(--color-bg-muted);
+  border-width: var(--border-default);
+  border-color: var(--color-quiet-border);
+  &:checked {
+  background-color: var(--color-fg-accent);
+  border-color: var(--color-fg-accent);
+    &::after {
+      background-color: var(--color-loud-inset-fg-main);
+    }
+  }
+  &::after {
+    content:"";
+    position:absolute;
+    background-color: var(--color-fg-static);
+    border-radius: var(--rounded-full);
+    transition: all;
+    box-shadow: var(--shadow-sm);
+  }
+}
+.toggle-sm {
+  padding: var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-4);
+  .peer::after {
+    width: var(--space-4);
+    height: var(--space-4);
+  }
+  &:checked {
+    padding: var(--fl-space-\.25) var(--fl-space-4) var(--fl-space-\.25) var(--fl-space-\.25);
+  }
+}
+.toggle-lg {
+  padding: var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-5);
+  .peer::after {
+    width: var(--space-5);
+    height: var(--space-5);
+  }
+  &:checked {
+    padding: var(--fl-space-\.5) var(--fl-space-5) var(--fl-space-\.5) var(--fl-space-\.5);
+  }
+}
 
 /* Fluid Spacing API */
 /* Fluid spacing for: https://tailwindcss.com/docs/padding */
@@ -785,23 +827,23 @@ label:has(+ input:required):after {
       background-color: transparent; 
       transition: background-color 0.3s ease;
     }
-    &:hover {     
+    &:hover { 
+      color: var(--text-loud-inset-fg-main) !important;    
       &::before {
         /* background-color: var(--color-hover); */
         background-color: var(--opacities-black-400);
-        color: var(--text-loud-inset-fg-main);
       }
     }
-    &:active {     
+    &:active { 
+      color: var(--text-loud-inset-fg-main) !important;
       &::before {
         background-color: var(--color-active);
-        color: var(--text-loud-inset-fg-main);
       }
     }
   }
   a:hover {
     text-decoration: underline;
-    color: var(--color-fg-main);
+    color: var(--color-fg-main) !important;
   }
   a:disabled, a.disabled {
     color: var(--color-fg-disabled);

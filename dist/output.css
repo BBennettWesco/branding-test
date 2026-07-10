@@ -280,6 +280,10 @@
     @supports (color: color-mix(in lab, red, red)) {
       --shadow-xs: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-xs), transparent);
     }
+    --shadow-sm: 0 0 2px 0 var(--color-shadow-base), 0 2px 4px 0 var(--color-shadow-base);
+    @supports (color: color-mix(in lab, red, red)) {
+      --shadow-sm: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 2px 4px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
+    }
     --color-shadow-xs: var(--shadow-xs);
     --color-shadow-base: var(--shadow-base);
     --color-backdrop-tinted-mid: var(--backdrop-opacity-tinted-mid);
@@ -290,6 +294,7 @@
     --color-hover: var(--hover);
     --color-disabled: var(--disabled);
     --color-active: var(--active);
+    --color-fg-static: var(--fg-static);
     --color-fg-main: var(--fg-main);
     --color-fg-secondary: var(--fg-secondary);
     --color-fg-disabled: var(--fg-disabled);
@@ -870,14 +875,8 @@
       max-width: 1528px;
     }
   }
-  .fl-mx-1\.5 {
-    margin-inline: var(--fl-space-1\.5);
-  }
   .mx-auto {
     margin-inline: auto;
-  }
-  .fl-my-1\.5 {
-    margin-block: var(--fl-space-1\.5);
   }
   .fl-my-4 {
     margin-block: var(--fl-space-4);
@@ -1355,6 +1354,10 @@
     width: var(--fl-space-3);
     height: var(--fl-space-3);
   }
+  .fl-size-3\.5 {
+    width: var(--fl-space-3\.5);
+    height: var(--fl-space-3\.5);
+  }
   .fl-size-5 {
     width: var(--fl-space-5);
     height: var(--fl-space-5);
@@ -1670,6 +1673,20 @@
   .overflow-y-auto {
     overflow-y: auto;
   }
+  .input-lg {
+    border-radius: var(--radius-xl);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    padding-block: var(--fl-space-3\.5);
+    font-size: var(--text-sm);
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+    --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in srgb, 0 0 2px 0 color-mix(in oklch, var(--color-shadow-xs), transparent), transparent));
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow: 0 0 2px 0 var(--tw-shadow-color, color-mix(in oklch, var(--color-shadow-xs), transparent));
+    }
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .input-md {
     border-radius: var(--radius-lg);
     border-style: var(--tw-border-style);
@@ -1754,9 +1771,6 @@
   }
   .rounded-md {
     border-radius: var(--radius-md);
-  }
-  .rounded-none {
-    border-radius: 0;
   }
   .rounded-sm {
     border-radius: var(--radius-sm);
@@ -4646,6 +4660,48 @@ label:has(+ input:required):after {
   content: " *";
   color: var(--brand-color-red-500);
 }
+.peer {
+  border-radius: var(--rounded-full);
+  position: relative;
+  background-color: var(--color-bg-muted);
+  border-width: var(--border-default);
+  border-color: var(--color-quiet-border);
+  &:checked {
+    background-color: var(--color-fg-accent);
+    border-color: var(--color-fg-accent);
+    &::after {
+      background-color: var(--color-loud-inset-fg-main);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-fg-static);
+    border-radius: var(--rounded-full);
+    transition: all;
+    box-shadow: var(--shadow-sm);
+  }
+}
+.toggle-sm {
+  padding: var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-4);
+  .peer::after {
+    width: var(--space-4);
+    height: var(--space-4);
+  }
+  &:checked {
+    padding: var(--fl-space-\.25) var(--fl-space-4) var(--fl-space-\.25) var(--fl-space-\.25);
+  }
+}
+.toggle-lg {
+  padding: var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-5);
+  .peer::after {
+    width: var(--space-5);
+    height: var(--space-5);
+  }
+  &:checked {
+    padding: var(--fl-space-\.5) var(--fl-space-5) var(--fl-space-\.5) var(--fl-space-\.5);
+  }
+}
 @layer base {
   input[type='checkbox']:checked {
     color: var(--color-loud-inset-fg-main) !important;
@@ -4679,21 +4735,21 @@ label:has(+ input:required):after {
       transition: background-color 0.3s ease;
     }
     &:hover {
+      color: var(--text-loud-inset-fg-main) !important;
       &::before {
         background-color: var(--opacities-black-400);
-        color: var(--text-loud-inset-fg-main);
       }
     }
     &:active {
+      color: var(--text-loud-inset-fg-main) !important;
       &::before {
         background-color: var(--color-active);
-        color: var(--text-loud-inset-fg-main);
       }
     }
   }
   a:hover {
     text-decoration: underline;
-    color: var(--color-fg-main);
+    color: var(--color-fg-main) !important;
   }
   a:disabled, a.disabled {
     color: var(--color-fg-disabled);
