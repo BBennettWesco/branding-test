@@ -347,8 +347,7 @@ label:has(+ input:required):after {
 .toggle-sm {
   padding: var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-4);
   &::after {
-    width: var(--space-4);
-    height: var(--space-4);
+    @apply w-4 h-4;
   }
   &:checked {
     padding: var(--fl-space-\.25) var(--fl-space-4) var(--fl-space-\.25) var(--fl-space-\.25);
@@ -357,8 +356,7 @@ label:has(+ input:required):after {
 .toggle-lg {
   padding: var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-5);
   &::after {
-    width: var(--space-5);
-    height: var(--space-5);
+    @apply w-5 h-5;
   }
   &:checked {
     padding: var(--fl-space-\.5) var(--fl-space-5) var(--fl-space-\.5) var(--fl-space-\.5);
