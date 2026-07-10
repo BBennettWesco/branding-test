@@ -4683,7 +4683,7 @@ label:has(+ input:required):after {
 }
 .toggle-sm {
   padding: var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-4);
-  .peer::after {
+  &::after {
     width: var(--space-4);
     height: var(--space-4);
   }
@@ -4693,7 +4693,7 @@ label:has(+ input:required):after {
 }
 .toggle-lg {
   padding: var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-5);
-  .peer::after {
+  &::after {
     width: var(--space-5);
     height: var(--space-5);
   }
@@ -4753,6 +4753,7 @@ label:has(+ input:required):after {
   a:disabled, a.disabled {
     color: var(--color-fg-disabled) !important;
     text-decoration: none;
+    cursor: not-allowed;
   }
 }
 @layer base {
