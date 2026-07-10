@@ -280,10 +280,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       --shadow-xs: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-xs), transparent);
     }
-    --shadow-lg: 0 0 2px 0 var(--color-shadow-base), 0 10px 15px 0 var(--color-shadow-base);
-    @supports (color: color-mix(in lab, red, red)) {
-      --shadow-lg: 0 0 2px 0 color-mix(in oklch, var(--color-shadow-base), transparent), 0 10px 15px 0 color-mix(in oklch, var(--color-shadow-base), transparent);
-    }
     --color-shadow-xs: var(--shadow-xs);
     --color-shadow-base: var(--shadow-base);
     --color-backdrop-tinted-mid: var(--backdrop-opacity-tinted-mid);
@@ -304,6 +300,7 @@
     --color-loud: var(--loud-bg);
     --color-loud-border: var(--loud-border);
     --color-loud-inset-fg-main: var(--loud-inset-fg-main);
+    --color-medium: var(--medium-bg);
     --color-quiet: var(--quiet-bg);
     --color-quiet-border: var(--quiet-border);
     --color-quiet-inset-fg-secondary: var(--quiet-inset-fg-secondary);
@@ -1342,17 +1339,9 @@
   .table {
     display: table;
   }
-  .size-4 {
-    width: calc(var(--spacing) * 4);
-    height: calc(var(--spacing) * 4);
-  }
   .fl-size-3 {
     width: var(--fl-space-3);
     height: var(--fl-space-3);
-  }
-  .fl-size-4 {
-    width: var(--fl-space-4);
-    height: var(--fl-space-4);
   }
   .fl-size-5 {
     width: var(--fl-space-5);
@@ -1859,11 +1848,11 @@
   .border-loud-border {
     border-color: var(--color-loud-border);
   }
+  .border-medium {
+    border-color: var(--color-medium);
+  }
   .border-muted-inset-border-auxiliary {
     border-color: var(--color-muted-inset-border-auxiliary);
-  }
-  .border-quiet {
-    border-color: var(--color-quiet);
   }
   .border-quiet-border {
     border-color: var(--color-quiet-border);
@@ -2376,6 +2365,9 @@
     .datatable-wrapper .datatable-table thead th& .datatable-sorter {
       color: var(--color-heading);
     }
+  }
+  .text-fg-accent {
+    color: var(--color-fg-accent);
   }
   .text-fg-disabled {
     color: var(--color-fg-disabled);
@@ -4671,19 +4663,17 @@ label:has(+ input:required):after {
       position: absolute;
       inset: 0;
       z-index: -1;
-      background-color: var(--color-hover / 0%);
+      background-color: transparent;
       transition: background-color 0.3s ease;
     }
     &:hover {
-      transform: scale(1.02);
       &::before {
-        background-color: var(--color-hover / 100%);
+        background-color: var(--color-hover);
       }
     }
     &:active {
-      transform: scale(0.98);
       &::before {
-        background-color: var(--color-active / 100%);
+        background-color: var(--color-active);
       }
     }
   }

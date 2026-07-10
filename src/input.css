@@ -782,21 +782,17 @@ label:has(+ input:required):after {
       position: absolute;
       inset: 0;
       z-index: -1;
-      background-color: var(--color-hover / 0%); 
+      background-color: transparent; 
       transition: background-color 0.3s ease;
     }
-    &:hover {
-      transform: scale(1.02);
-      
+    &:hover {     
       &::before {
-        background-color: var(--color-hover / 100%);
+        background-color: var(--color-hover);
       }
     }
-    &:active {
-      transform: scale(0.98);
-      
+    &:active {     
       &::before {
-        background-color: var(--color-active / 100%);
+        background-color: var(--color-active);
       }
     }
   }
