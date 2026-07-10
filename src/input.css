@@ -325,7 +325,7 @@ label:has(+ input:required):after {
 .peer {
   border-radius: var(--rounded-full);
   position:relative;
-  background-color: var(--color-bg-muted);
+  background-color: var(--color-muted);
   border-width: var(--border-default);
   border-color: var(--color-quiet-border);
   &:checked {
@@ -337,7 +337,7 @@ label:has(+ input:required):after {
   }
   &::after {
     content:"";
-    position:absolute;
+    /*position:absolute;*/
     background-color: var(--color-fg-static);
     border-radius: var(--rounded-full);
     transition: all;
