@@ -789,11 +789,13 @@ label:has(+ input:required):after {
       &::before {
         /* background-color: var(--color-hover); */
         background-color: var(--opacities-black-400);
+        color: var(--text-loud-inset-fg-main);
       }
     }
     &:active {     
       &::before {
         background-color: var(--color-active);
+        color: var(--text-loud-inset-fg-main);
       }
     }
   }
@@ -801,7 +803,7 @@ label:has(+ input:required):after {
     text-decoration: underline;
     color: var(--color-fg-main);
   }
-  a:disabled {
+  a:disabled, a.disabled {
     color: var(--color-fg-disabled);
   }
 }

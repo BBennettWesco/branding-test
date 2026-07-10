@@ -152,8 +152,12 @@
             <a href="#" class="action-critical text-sm fl-mr-2.5 fl-mb-2.5 text-fg-accent">Medium Critical Action Link <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></a>
         </p>
         <p>
-            <a href="#" class="action text-xs fl-mr-2.5 fl-mb-2.5 text-fg-accent">Medium Action Link <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></a>
-            <a href="#" class="action-critical text-xs fl-mr-2.5 fl-mb-2.5 text-fg-accent">Medium Critical Action Link <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></a>
+            <a href="#" class="action text-xs fl-mr-2.5 fl-mb-2.5 text-fg-accent">Small Action Link <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></a>
+            <a href="#" class="action-critical text-xs fl-mr-2.5 fl-mb-2.5 text-fg-accent">Small Critical Action Link <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></a>
+        </p>
+        <p>
+            <a href="#" class="action text-xs fl-mr-2.5 fl-mb-2.5 disabled">Disabled Action Link <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></a>
+            <a href="#" class="action-critical text-xs fl-mr-2.5 fl-mb-2.5 disabled">Disabled Critical Action Link <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></a>
         </p>
 
         <h3 class="heading text-xl fl-my-4 text-fg-secondary">Button Sizes</h3>
@@ -339,35 +343,42 @@
 
         <!-- Alert -->
 
-        <div data-style="neutral" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Neutral alert!</h3> 
+        <div data-style="neutral" id="neutral-alert" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
+            <div class="flex items-center justify-between">
+                <span class="sr-only">Neutral</span>
+                <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Neutral alert!</h3> 
+                <button type="button" data-dismiss-target="#neutral-alert" aria-label="Close" class="ms-auto fl-mx-1.5 fl-my-1.5 rounded inline-flex items-center justify-center shrink-0">
+                    <span class="sr-only">Close</span>
+                    <i class="fa-classic fa-regular fa-xmark"></i>
+                </button>    
+            </div>
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="blue" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Info alert!</h3> 
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Info alert!</h3> 
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="red" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Danger alert!</h3> 
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Danger alert!</h3> 
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="green" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Success alert!</h3> 
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Success alert!</h3> 
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="orange" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Warning alert!</h3> 
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Warning alert!</h3> 
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="neutral" data-mode="invert" class="text-sm fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main">Dark alert!</h3> 
+            <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Dark alert!</h3> 
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Learn more</button>
+            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
 
     </section>
