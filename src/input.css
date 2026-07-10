@@ -828,14 +828,14 @@ label:has(+ input:required):after {
       transition: background-color 0.3s ease;
     }
     &:hover { 
-      color: var(--text-loud-inset-fg-main) !important;    
+      color: var(--color-loud-inset-fg-main) !important;    
       &::before {
         /* background-color: var(--color-hover); */
         background-color: var(--opacities-black-400);
       }
     }
     &:active { 
-      color: var(--text-loud-inset-fg-main) !important;
+      color: var(--color-loud-inset-fg-main) !important;
       &::before {
         background-color: var(--color-active);
       }
@@ -846,6 +846,7 @@ label:has(+ input:required):after {
     color: var(--color-fg-main) !important;
   }
   a:disabled, a.disabled {
-    color: var(--color-fg-disabled);
+    color: var(--color-fg-disabled) !important;
+    text-decoration: none;
   }
 }
