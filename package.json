@@ -11,6 +11,7 @@
     "tokens:validate": "node js/validate-tokens.js"
   },
   "dependencies": {
+    "@awesome.me/kit-cd2974640c": "^1.0.9",
     "@tailwindcss/cli": "^4.2.1",
     "culori": "^4.0.2",
     "figma-api": "^2.2.0-beta",
