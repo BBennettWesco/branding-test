@@ -1740,6 +1740,9 @@
       margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .fl-gap-y-5 {
+    row-gap: var(--fl-space-5);
+  }
   .fl-gap-y-6 {
     row-gap: var(--fl-space-6);
   }
@@ -2897,6 +2900,11 @@
   .lg\:grid-cols-4 {
     @media (width >= 1024px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:gap-x-8 {
+    @media (width >= 1024px) {
+      column-gap: calc(var(--spacing) * 8);
     }
   }
   .lg\:px-12 {
