@@ -754,8 +754,12 @@
 
     </section>
 
-<!--Layout -->
-    <h2 class="heading text-4xl fl-mb-4 text-fg-main">Containers</h2>
+    <!--Layout -->
+    <section class="container mx-auto fl-py-9">  
+        <h2 class="heading text-4xl fl-mb-4 text-fg-main">Layouts</h2>
+        <h3 class="heading text-xl fl-my-4 text-fg-main">Containers</h3>
+    </section>
+
     <div class="container mx-auto px-4 lg:px-12 fl-py-9 bg-max">
         <h2 class="heading text-4xl text-max-inset-fg-main">This is an example of a centered container with the padding on the side</h2>
     </div>
@@ -766,134 +770,140 @@
         <h2 class="heading text-4xl text-max-inset-fg-main">This is an example of a fluid container</h2>
     </div>
 
-    <h2 class="heading text-4xl fl-mb-4 text-fg-main">Fluid Container with Columns</h2>
-    <div class="w-full px-4 lg:px-12 fl-py-4 bg-muted">
-        <div class="flex">
-            <div class="w-1/2 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/2</p>
+    <section class="container mx-auto fl-py-9">  
+        <h3 class="heading text-xl fl-my-4 text-fg-main">Fluid Container with Columns</h3>
+    </section>
+    <div class="w-full px-4 lg:px-12 fl-space-y-4 bg-muted text-center">
+        <div class="flex gap-x-3">
+            <div class="w-1/2 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/2</p>
             </div>
-            <div class="w-1/2 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/2</p>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-1/3 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/3</p>
-            </div>
-            <div class="w-2/3 bg-accent">
-                <p class="text-max-inset-fg-main">w-2/3</p>
+            <div class="w-1/2 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-1/2</p>
             </div>
         </div>
-        <div class="flex">
-            <div class="w-1/4 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/4</p>
+        <div class="flex gap-x-3">
+            <div class="w-1/3 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/3</p>
             </div>
-            <div class="w-3/4 bg-accent">
-                <p class="text-max-inset-fg-main">w-3/4</p>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-1/6 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/6</p>
-            </div>
-            <div class="w-5/6 bg-accent">
-                <p class="text-max-inset-fg-main">w-5/6</p>
+            <div class="w-2/3 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-2/3</p>
             </div>
         </div>
-        <div class="flex">
-            <div class="w-1/12 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/12</p>
+        <div class="flex gap-x-3">
+            <div class="w-1/4 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/4</p>
             </div>
-            <div class="w-11/12 bg-accent">
-                <p class="text-max-inset-fg-main">w-11/12</p>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="heading text-4xl fl-mb-4 text-fg-main">Centered Container with Columns (no side padding)</h2>
-    <div class="container mx-auto fl-py-4 bg-muted">
-        <div class="flex">
-            <div class="w-1/2 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/2</p>
-            </div>
-            <div class="w-1/2 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/2</p>
+            <div class="w-3/4 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-3/4</p>
             </div>
         </div>
-        <div class="flex">
-            <div class="w-1/3 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/3</p>
+        <div class="flex gap-x-3">
+            <div class="w-1/6 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/6</p>
             </div>
-            <div class="w-2/3 bg-accent">
-                <p class="text-max-inset-fg-main">w-2/3</p>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-1/4 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/4</p>
-            </div>
-            <div class="w-3/4 bg-accent">
-                <p class="text-max-inset-fg-main">w-3/4</p>
+            <div class="w-5/6 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-5/6</p>
             </div>
         </div>
-        <div class="flex">
-            <div class="w-1/6 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/6</p>
+        <div class="flex gap-x-3">
+            <div class="w-1/12 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/12</p>
             </div>
-            <div class="w-5/6 bg-accent">
-                <p class="text-max-inset-fg-main">w-5/6</p>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-1/12 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/12</p>
-            </div>
-            <div class="w-11/12 bg-accent">
-                <p class="text-max-inset-fg-main">w-11/12</p>
+            <div class="w-11/12 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-11/12</p>
             </div>
         </div>
     </div>
 
-    <h2 class="heading text-4xl fl-mb-4 text-fg-main">Centered Container with Columns &amp; Side Padding</h2>
-    <div class="container mx-auto px-4 lg:px-12 fl-py-4 bg-muted">
-        <div class="flex">
-            <div class="w-1/2 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/2</p>
+    <section class="container mx-auto fl-py-9">  
+        <h3 class="heading text-xl fl-my-4 text-fg-main">Centered Container with Columns (no side padding)</h3>
+    </section>
+    <div class="container mx-auto fl-space-y-4 bg-muted text-center">
+        <div class="flex gap-x-3">
+            <div class="w-1/2 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/2</p>
             </div>
-            <div class="w-1/2 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/2</p>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-1/3 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/3</p>
-            </div>
-            <div class="w-2/3 bg-accent">
-                <p class="text-max-inset-fg-main">w-2/3</p>
+            <div class="w-1/2 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-1/2</p>
             </div>
         </div>
-        <div class="flex">
-            <div class="w-1/4 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/4</p>
+        <div class="flex gap-x-3">
+            <div class="w-1/3 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/3</p>
             </div>
-            <div class="w-3/4 bg-accent">
-                <p class="text-max-inset-fg-main">w-3/4</p>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-1/6 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/6</p>
-            </div>
-            <div class="w-5/6 bg-accent">
-                <p class="text-max-inset-fg-main">w-5/6</p>
+            <div class="w-2/3 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-2/3</p>
             </div>
         </div>
-        <div class="flex">
-            <div class="w-1/12 bg-accent">
-                <p class="text-max-inset-fg-main">w-1/12</p>
+        <div class="flex gap-x-3">
+            <div class="w-1/4 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/4</p>
             </div>
-            <div class="w-11/12 bg-accent">
-                <p class="text-max-inset-fg-main">w-11/12</p>
+            <div class="w-3/4 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-3/4</p>
+            </div>
+        </div>
+        <div class="flex gap-x-3">
+            <div class="w-1/6 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/6</p>
+            </div>
+            <div class="w-5/6 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-5/6</p>
+            </div>
+        </div>
+        <div class="flex gap-x-3">
+            <div class="w-1/12 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/12</p>
+            </div>
+            <div class="w-11/12 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-11/12</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container mx-auto fl-py-9">  
+        <h3 class="heading text-xl fl-my-4 text-fg-main">Centered Container with Columns &amp; Side Padding</h3>
+    </section>
+    <div class="container mx-auto px-4 lg:px-12 fl-space-y-4 bg-muted text-center">
+        <div class="flex gap-x-3">
+            <div class="w-1/2 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/2</p>
+            </div>
+            <div class="w-1/2 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-1/2</p>
+            </div>
+        </div>
+        <div class="flex gap-x-3">
+            <div class="w-1/3 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/3</p>
+            </div>
+            <div class="w-2/3 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-2/3</p>
+            </div>
+        </div>
+        <div class="flex gap-x-3">
+            <div class="w-1/4 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/4</p>
+            </div>
+            <div class="w-3/4 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-3/4</p>
+            </div>
+        </div>
+        <div class="flex gap-x-3">
+            <div class="w-1/6 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/6</p>
+            </div>
+            <div class="w-5/6 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-5/6</p>
+            </div>
+        </div>
+        <div class="flex gap-x-3">
+            <div class="w-1/12 bg-max-inset-fg-accent">
+                <p class="text-fg-main">w-1/12</p>
+            </div>
+            <div class="w-11/12 bg-medium-inset-fg-accent">
+                <p class="text-fg-main">w-11/12</p>
             </div>
         </div>
     </div>
