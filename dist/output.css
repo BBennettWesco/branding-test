@@ -2324,6 +2324,9 @@
   .fl-py-4 {
     padding-block: var(--fl-space-4);
   }
+  .fl-py-5 {
+    padding-block: var(--fl-space-5);
+  }
   .fl-py-8 {
     padding-block: var(--fl-space-8);
   }
