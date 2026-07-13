@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-brand="synergy" data-style="neutral" class="scroll-smooth text-fg-secondary text-base font-sans leading-normal tracking-normal antialiased subpixel-antialiased">
+<html data-brand="synergy" data-style="neutral" data-mode="default" class="scroll-smooth bg-bg text-fg-secondary text-base font-sans leading-normal tracking-normal antialiased subpixel-antialiased">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,13 +11,42 @@
     <nav id="top-nav" data-style="neutral" class="bg-loud w-full px-4 lg:px-12 z-20 top-0 start-0 border border-b border-loud-border shadow-top">
       <div class="flex flex-wrap items-center justify-between fl-py-2">
           <a href="#" class="flex items-center fl-space-x-2.5 rtl:fl-space-x-reverse">
-              <span class="self-center heading text-xl text-loud-inset-fg-main whitespace-nowrap">Multi Brand System</span>
+              <span class="self-center heading text-xl text-loud-inset-fg-main whitespace-nowrap">SDS 2.0 POC</span>
           </a>
           <div class="inline-flex">
-            <select id="brandSwitcher" class="input-sm bg-muted border-quiet-border focus:ring-brand focus:border-brand block w-full">
-                <option value="synergy">Synergy</option>
-                <option value="wesco">Wesco</option>
-            </select>
+            <button type="button" role="button" data-tooltip-target="tooltip-toggle-mode" class="toggle-mode bg-muted text-muted-inset-fg-main border-muted-border btn-md flex flex-items-center justify-center fl-mr-2.5">
+                <i class="fa-classic fa-regular fa-moon"></i>
+                <span class="sr-only">Toggle mode</span>
+            </button>
+            <div id="tooltip-toggle-mode" role="tooltip" class="absolute z-10 inline-block px-3 py-2 text-xs text-max-inset-fg-main transition-opacity duration-300 bg-max rounded-lg shadow-xs tooltip opacity-0 invisible" data-popper-placement="left">
+                Toggle mode
+                <div class="tooltip-arrow" data-popper-arrow=""></div>
+            </div>
+
+            <button type="button" role="button" data-tooltip-target="tooltip-toggle-brand" data-dropdown-toggle="select-brand" class="bg-muted text-muted-inset-fg-main border-muted-border btn-md flex flex-items-center justify-center fl-mr-2.5">
+                <i class="fa-classic fa-regular fa-palette"></i>
+                <span class="sr-only">Select brand</span>
+            </button>
+
+            <div id="tooltip-toggle-brand" role="tooltip" class="absolute z-10 inline-block px-3 py-2 text-xs text-max-inset-fg-main transition-opacity duration-300 bg-max rounded-lg shadow-xs tooltip opacity-0 invisible" data-popper-placement="left">
+                Select brand
+                <div class="tooltip-arrow" data-popper-arrow=""></div>
+            </div>
+
+            <div id="select-brand" class="z-10 bg-bg border border-quiet-border text-quiet-inset-fg-main rounded-lg shadow-lg w-52 hidden" aria-hidden="true" data-popper-placement="bottom">
+                <ul class="p-2" aria-labelledby="select-brand-button">
+                <li>
+                    <button data-css-brand="synergy" class="inline-flex justify-between items-center w-full p-2 hover:bg-hover rounded brand-select-button">
+                        Synergy
+                    </button>
+                </li>
+                <li>
+                    <button data-css-brand="wesco" class="inline-flex justify-between items-center w-full p-2 hover:bg-hover rounded brand-select-button">
+                        Wesco
+                    </button>
+                </li>
+                </ul>
+            </div>
           </div>
       </div>
     </nav>
@@ -162,34 +191,34 @@
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">
         Drop Shadows
         </h2>
-        <div class="flex items-center justify-around fl-gap-4 fl-gap-y-6 bg-white fl-px-8 fl-py-10 max-sm:flex-col">
+        <div class="flex items-center justify-around fl-gap-4 fl-gap-y-6 fl-px-8 fl-py-10 max-sm:flex-col">
             <div class="flex shrink-0 flex-col items-center">
                 <p class="fl-mb-3 text-center text-xs">shadow-xs</p>
-                <div class="fl-size-13 rounded-lg bg-white shadow-xs"></div>
+                <div class="fl-size-13 rounded-lg bg-quiet shadow-xs"></div>
             </div>
             <div class="flex shrink-0 flex-col items-center">
                 <p class="fl-mb-3 text-center text-xs">shadow-sm</p>
-                <div class="fl-size-13 rounded-lg bg-white shadow-sm"></div>
+                <div class="fl-size-13 rounded-lg bg-quiet shadow-sm"></div>
             </div>
             <div class="flex shrink-0 flex-col items-center">
                 <p class="fl-mb-3 text-center text-xs">shadow-md</p>
-                <div class="fl-size-13 rounded-lg bg-white shadow-md"></div>
+                <div class="fl-size-13 rounded-lg bg-quiet shadow-md"></div>
             </div>
             <div class="flex shrink-0 flex-col items-center">
                 <p class="fl-mb-3 text-center text-xs">shadow-lg</p>
-                <div class="fl-size-13 rounded-lg bg-white shadow-lg"></div>
+                <div class="fl-size-13 rounded-lg bg-quiet shadow-lg"></div>
             </div>
             <div class="flex shrink-0 flex-col items-center">
                 <p class="fl-mb-3 text-center text-xs">shadow-xl</p>
-                <div class="fl-size-13 rounded-lg bg-white shadow-xl"></div>
+                <div class="fl-size-13 rounded-lg bg-quiet shadow-xl"></div>
             </div>
             <div class="flex shrink-0 flex-col items-center">
                 <p class="fl-mb-3 text-center text-xs">shadow-top</p>
-                <div class="fl-size-13 rounded-lg bg-white shadow-top"></div>
+                <div class="fl-size-13 rounded-lg bg-quiet shadow-top"></div>
             </div>
             <div class="flex shrink-0 flex-col items-center">
                 <p class="fl-mb-3 text-center text-xs">shadow-bottom</p>
-                <div class="fl-size-13 rounded-lg bg-white shadow-bottom"></div>
+                <div class="fl-size-13 rounded-lg bg-quiet shadow-bottom"></div>
             </div>
         </div>
 
@@ -370,8 +399,8 @@
     </section>
     <section class="bg-center bg-cover bg-no-repeat [--tw-gradient-position:to_left] bg-[linear-gradient(var(--tw-gradient-stops)),url('https://as2.ftcdn.net/v2/jpg/01/33/89/29/1000_F_133892985_mxsbcN15E8Tygksm6MeyKV8OnN9lfYRI.jpg')] from-overlay-fade-start to-overlay-fade-end">
         <div class="fl-px-4 mx-auto max-w-screen-xl text-center fl-py-13">
-            <h1 class="fl-mb-6 display text-4xl text-max-inset-fg-main">This is a backdrop linear overlay to left</h1>
-            <p class="fl-mb-8 heading text-base text-max-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <h1 class="fl-mb-6 display text-4xl text-medium-inset-fg-main">This is a backdrop linear overlay to left</h1>
+            <p class="fl-mb-8 heading text-base text-medium-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
                 <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
                 <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
@@ -383,8 +412,8 @@
     </section>
     <section class="bg-center bg-cover bg-no-repeat [--tw-gradient-position:to_right] bg-[linear-gradient(var(--tw-gradient-stops)),url('https://as2.ftcdn.net/v2/jpg/04/45/80/77/1000_F_445807713_nH7G5EsMW4oUlNdeb58bCMUshH05guFq.jpg')] from-overlay-fade-start to-overlay-fade-end">
         <div class="fl-px-4 mx-auto max-w-screen-xl text-center fl-py-13">
-            <h1 class="fl-mb-6 display text-4xl text-max-inset-fg-main">This is a backdrop linear overlay to right</h1>
-            <p class="fl-mb-8 heading text-base text-max-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <h1 class="fl-mb-6 display text-4xl text-medium-inset-fg-main">This is a backdrop linear overlay to right</h1>
+            <p class="fl-mb-8 heading text-base text-medium-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
                 <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
                 <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
@@ -818,22 +847,9 @@
     <!--Layout -->
     <section id="layouts" class="container mx-auto fl-py-9">
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">Layouts</h2>
-        <h3 class="heading text-xl fl-my-4 text-fg-main">Containers</h3>
-    </section>
-
-    <div class="container mx-auto px-4 lg:px-12 fl-py-9 bg-max">
-        <h2 class="heading text-4xl text-max-inset-fg-main">This is an example of a centered container with the padding on the side</h2>
-    </div>
-    <div class="container mx-auto fl-py-9">
-        <h2 class="heading text-4xl text-fg-main">This is an example of a centered container without the padding on the side</h2>
-    </div>
-    <div class="w-full px-4 lg:px-12 fl-py-9 bg-max">
-        <h2 class="heading text-4xl text-max-inset-fg-main">This is an example of a fluid container</h2>
-    </div>
-
-    <section class="container mx-auto fl-py-9">  
         <h3 class="heading text-xl fl-my-4 text-fg-main">Fluid Container with Columns</h3>
     </section>
+
     <div class="w-full px-4 lg:px-12 fl-py-5 fl-my-4 flex flex-col fl-gap-y-5 bg-muted text-center">
         <div class="flex gap-x-3 lg:gap-x-8">
             <div class="w-1/2 bg-max-inset-fg-accent">

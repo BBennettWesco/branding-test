@@ -1429,6 +1429,10 @@
     width: var(--fl-space-5);
     height: var(--fl-space-5);
   }
+  .fl-size-10 {
+    width: var(--fl-space-10);
+    height: var(--fl-space-10);
+  }
   .fl-size-13 {
     width: var(--fl-space-13);
     height: var(--fl-space-13);
@@ -1585,6 +1589,9 @@
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
+  }
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
@@ -1653,6 +1660,18 @@
     .datatable-wrapper & .datatable-input:focus {
       border-color: var(--color-brand);
     }
+  }
+  .fl-min-w-8 {
+    min-width: var(--fl-space-8);
+  }
+  .fl-min-w-9 {
+    min-width: var(--fl-space-9);
+  }
+  .fl-min-w-10 {
+    min-width: var(--fl-space-10);
+  }
+  .fl-min-w-11 {
+    min-width: var(--fl-space-11);
   }
   .flex-1 {
     flex: 1;
@@ -2014,6 +2033,9 @@
   .border-medium-border {
     border-color: var(--color-medium-border);
   }
+  .border-muted-border {
+    border-color: var(--color-muted-border);
+  }
   .border-muted-inset-border-auxiliary {
     border-color: var(--color-muted-inset-border-auxiliary);
   }
@@ -2309,6 +2331,9 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -2595,6 +2620,9 @@
   .text-medium-inset-fg-main {
     color: var(--color-medium-inset-fg-main);
   }
+  .text-medium-inset-fg-secondary {
+    color: var(--color-medium-inset-fg-secondary);
+  }
   .text-muted-inset-fg-main {
     color: var(--color-muted-inset-fg-main);
   }
@@ -2603,6 +2631,9 @@
   }
   .text-quiet {
     color: var(--color-quiet);
+  }
+  .text-quiet-inset-fg-main {
+    color: var(--color-quiet-inset-fg-main);
   }
   .text-quiet-inset-fg-secondary {
     color: var(--color-quiet-inset-fg-secondary);
@@ -2714,6 +2745,10 @@
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
   }
   .ease-out {
     --tw-ease: var(--ease-out);
@@ -5598,6 +5633,10 @@ label:has(+ input:required):after {
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -5671,6 +5710,7 @@ label:has(+ input:required):after {
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
       --tw-ease: initial;
       --tw-content: "";
     }
