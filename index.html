@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-brand="synergy" data-style="neutral" class="text-fg-secondary text-base font-sans leading-normal tracking-normal antialiased subpixel-antialiased">
+<html data-brand="synergy" data-style="neutral" class="scroll-smooth text-fg-secondary text-base font-sans leading-normal tracking-normal antialiased subpixel-antialiased">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav data-style="neutral" class="bg-loud w-full px-4 lg:px-12 z-20 top-0 start-0 border border-b border-loud-border shadow-top">
+    <nav id="top-nav" data-style="neutral" class="bg-loud w-full px-4 lg:px-12 z-20 top-0 start-0 border border-b border-loud-border shadow-top">
       <div class="flex flex-wrap items-center justify-between fl-py-2">
           <a href="#" class="flex items-center fl-space-x-2.5 rtl:fl-space-x-reverse">
               <span class="self-center heading text-xl text-loud-inset-fg-main whitespace-nowrap">Multi Brand System</span>
@@ -24,6 +24,67 @@
 
 
     <!-- Page -->
+    
+    <!-- Speed Dial -->
+    <div data-dial-init class="fixed bottom-6 right-6 group">
+        <div id="speed-dial-section-jump" class="flex flex-col w-44 justify-end hidden mb-4 space-y-2 bg-medium border border-medium-border rounded-full shadow-xs">
+            <ul class="p-2 text-sm leading-tight text-medium-inset-fg-main">
+                <li>
+                    <a href="#borders" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                        <i class="fa-classic fa-regular fa-border-all fl-me-1.5"></i>
+                        <span>Borders & Radii</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#shadows" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                        <i class="fa-classic fa-regular fa-eclipse fl-me-1.5"></i>
+                        <span>Drop Shadows</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#buttons" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                        <i class="fa-classic fa-regular fa-link fl-me-1.5"></i>
+                        <span>Buttons &amp; Links</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#overlays" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                        <i class="fa-classic fa-regular fa-layer-group fl-me-1.5"></i>
+                        <span>Overlays</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#alerts" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                        <i class="fa-classic fa-regular fa-triangle-exclamation fl-me-1.5"></i>
+                        <span>Alerts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#forms" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                        <i class="fa-classic fa-regular fa-file-lines fl-me-1.5"></i>
+                        <span>Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#layouts" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                        <i class="fa-classic fa-regular fa-table-layout fl-me-1.5"></i>
+                        <span>Layouts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#top-nav" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                        <i class="fa-classic fa-regular fa-arrow-up fl-me-1.5"></i>
+                        <span>Back to top</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" data-dial-toggle="speed-dial-section-jump" aria-controls="speed-dial-section-jump" aria-expanded="false" class="flex items-center justify-center ml-auto text-white bg-brand rounded-full w-14 h-14 hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium focus:outline-none">
+            <i class="fa-classic fa-regular fa-bars-staggered size-5"></i>
+            <span class="sr-only">Open actions menu</span>
+        </button>
+    </div>
+
 
     <section class="container mx-auto fl-py-9 fl-space-y-4">
 
@@ -68,7 +129,7 @@
 
     
     <!-- Borders & Radii -->
-    <section class="container mx-auto fl-py-9">
+    <section id="borders" class="container mx-auto fl-py-9">
 
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">
         Borders & Radii
@@ -96,7 +157,7 @@
 
 
     <!-- Shadows -->
-    <section class="container mx-auto fl-py-9">
+    <section id="shadows" class="container mx-auto fl-py-9">
 
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">
         Drop Shadows
@@ -136,7 +197,7 @@
 
     <!-- Buttons & Links -->
 
-    <section class="container mx-auto fl-py-9">
+    <section id="buttons" class="container mx-auto fl-py-9">
 
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">
         Buttons &amp; Links
@@ -228,7 +289,7 @@
 
     <!-- Overlays -->
 
-    <section class="bg-bg">
+    <section id="overlays" class="bg-bg">
         <div class="fl-py-8 fl-px-4 mx-auto max-w-screen-2xl text-center">
             <h1 class="fl-mb-6 display text-4xl text-fg-main">This is a normal jumbotron. No overlay.</h1>
             <p class="mb-8 heading text-base text-fg-secondary">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
@@ -334,7 +395,7 @@
         </div>
     </section>
 
-    <section class="container mx-auto fl-py-9">
+    <section id="alerts" class="container mx-auto fl-py-9">
 
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">
         Alerts
@@ -528,7 +589,7 @@
 
 
     <!-- Form -->
-    <section class="container mx-auto fl-py-9">
+    <section id="forms" class="container mx-auto fl-py-9">
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">Form</h2>
 
         <h3 class="heading text-xl fl-my-4 text-fg-main">Input Sizes</h3>
@@ -755,7 +816,7 @@
     </section>
 
     <!--Layout -->
-    <section class="container mx-auto fl-py-9">  
+    <section id="layouts" class="container mx-auto fl-py-9">
         <h2 class="heading text-4xl fl-mb-4 text-fg-main">Layouts</h2>
         <h3 class="heading text-xl fl-my-4 text-fg-main">Containers</h3>
     </section>
@@ -773,7 +834,7 @@
     <section class="container mx-auto fl-py-9">  
         <h3 class="heading text-xl fl-my-4 text-fg-main">Fluid Container with Columns</h3>
     </section>
-    <div class="w-full px-4 lg:px-12 fl-py-4 fl-gap-y-5 bg-muted text-center">
+    <div class="w-full px-4 lg:px-12 fl-py-4 fl-my-4 fl-gap-y-5 bg-muted text-center">
         <div class="flex gap-x-3 lg:gap-x-8">
             <div class="w-1/2 bg-max-inset-fg-accent">
                 <p class="text-fg-main">w-1/2</p>
@@ -819,7 +880,7 @@
     <section class="container mx-auto fl-py-9">  
         <h3 class="heading text-xl fl-my-4 text-fg-main">Centered Container with Columns (no side padding)</h3>
     </section>
-    <div class="container mx-auto fl-py-4 fl-gap-y-5 bg-muted text-center">
+    <div class="container mx-auto fl-py-4 fl-my-4 fl-gap-y-5 bg-muted text-center">
         <div class="flex gap-x-3 lg:gap-x-8">
             <div class="w-1/2 bg-max-inset-fg-accent">
                 <p class="text-fg-main">w-1/2</p>
@@ -865,7 +926,7 @@
     <section class="container mx-auto fl-py-9">  
         <h3 class="heading text-xl fl-my-4 text-fg-main">Centered Container with Columns &amp; Side Padding</h3>
     </section>
-    <div class="container mx-auto px-4 lg:px-12 fl-py-4 fl-gap-y-5 bg-muted text-center">
+    <div class="container mx-auto px-4 lg:px-12 fl-py-4 fl-my-4 fl-gap-y-5 bg-muted text-center">
         <div class="flex gap-x-3 lg:gap-x-8">
             <div class="w-1/2 bg-max-inset-fg-accent">
                 <p class="text-fg-main">w-1/2</p>
