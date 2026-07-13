@@ -1413,6 +1413,10 @@
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
   }
+  .size-14 {
+    width: calc(var(--spacing) * 14);
+    height: calc(var(--spacing) * 14);
+  }
   .fl-size-3 {
     width: var(--fl-space-3);
     height: var(--fl-space-3);
