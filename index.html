@@ -10,11 +10,11 @@
     <!-- Navbar -->
     <nav id="top-nav" data-style="neutral" class="bg-loud w-full px-4 lg:px-12 z-20 top-0 start-0 border border-b border-loud-border shadow-top">
       <div class="flex flex-wrap items-center justify-between fl-py-2">
-          <a href="#" class="flex items-center fl-space-x-2.5 rtl:fl-space-x-reverse">
+          <a href="#" class="flex items-center fl-space-x-2.5 rtl:fl-space-x-reverse no-underline">
               <span class="self-center heading text-xl text-loud-inset-fg-main whitespace-nowrap">SDS 2.0 POC</span>
           </a>
           <div class="inline-flex">
-            <button type="button" role="button" data-tooltip-target="tooltip-toggle-mode" class="toggle-mode bg-muted text-muted-inset-fg-main border-muted-border btn-md flex flex-items-center justify-center fl-mr-2.5">
+            <button type="button" role="button" data-tooltip-target="tooltip-toggle-mode" class="toggle-mode btn-secondary btn-md flex flex-items-center justify-center fl-mr-2.5">
                 <i class="fa-classic fa-regular fa-moon"></i>
                 <span class="sr-only">Toggle mode</span>
             </button>
@@ -23,7 +23,7 @@
                 <div class="tooltip-arrow" data-popper-arrow=""></div>
             </div>
 
-            <button type="button" role="button" data-tooltip-target="tooltip-toggle-brand" data-dropdown-toggle="select-brand" class="bg-muted text-muted-inset-fg-main border-muted-border btn-md flex flex-items-center justify-center fl-mr-2.5">
+            <button type="button" role="button" data-tooltip-target="tooltip-toggle-brand" data-dropdown-toggle="select-brand" class="btn-secondary btn-md flex flex-items-center justify-center fl-mr-2.5">
                 <i class="fa-classic fa-regular fa-palette"></i>
                 <span class="sr-only">Select brand</span>
             </button>
@@ -59,56 +59,56 @@
         <div id="speed-dial-section-jump" class="flex flex-col w-44 justify-end hidden mb-4 space-y-2 bg-medium border border-medium-border rounded-lg shadow-xs">
             <ul class="p-2 text-sm leading-tight text-medium-inset-fg-main">
                 <li>
-                    <a href="#borders" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#borders" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-border-all fl-me-1.5"></i>
                         <span>Borders & Radii</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#shadows" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#shadows" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-eclipse fl-me-1.5"></i>
                         <span>Drop Shadows</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#buttons" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#buttons" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-link fl-me-1.5"></i>
                         <span>Buttons &amp; Links</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#overlays" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#overlays" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-layer-group fl-me-1.5"></i>
                         <span>Overlays</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#alerts" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#alerts" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-triangle-exclamation fl-me-1.5"></i>
                         <span>Alerts</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#forms" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#forms" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-file-lines fl-me-1.5"></i>
                         <span>Forms</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#layouts" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#layouts" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-table-layout fl-me-1.5"></i>
                         <span>Layouts</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#top-nav" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#top-nav" class="inline-flex items-center w-full p-2 hover:bg-hover rounded no-underline">
                         <i class="fa-classic fa-regular fa-arrow-up fl-me-1.5"></i>
                         <span>Back to top</span>
                     </a>
                 </li>
             </ul>
         </div>
-        <button type="button" data-dial-toggle="speed-dial-section-jump" aria-controls="speed-dial-section-jump" aria-expanded="false" class="flex items-center justify-center ml-auto text-medium-inset-fg-main bg-medium rounded-full size-14 hover:bg-hover">
+        <button type="button" data-dial-toggle="speed-dial-section-jump" aria-controls="speed-dial-section-jump" aria-expanded="false" class="flex items-center justify-center ml-auto btn-primary rounded-full size-14">
             <i class="fa-classic fa-regular fa-bars-staggered size-5"></i>
             <span class="sr-only">Open actions menu</span>
         </button>
@@ -250,25 +250,27 @@
         </p>
 
         <h3 class="heading text-xl fl-my-4 text-fg-main">Button Sizes</h3>
-        <button type="button" class="bg-loud text-loud-inset-fg-main btn-sm fl-mr-2.5 fl-mb-2.5">Small</button>
-        <button type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Medium</button>
-        <button type="button" class="bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">Large</button>
+        <button type="button" class="btn-primary btn-sm fl-mr-2.5 fl-mb-2.5">Small</button>
+        <button type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Medium</button>
+        <button type="button" class="btn-primary btn-lg fl-mr-2.5 fl-mb-2.5">Large</button>
 
         <h3 class="heading text-xl fl-my-4 text-fg-main">Button Colors</h3>
         <div class="fl-mb-4">
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Primary</button>
+            <button type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Primary</button>
               
-            <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-md fl-mr-2.5 fl-mb-2.5">Secondary</button>
+            <button type="button" class="btn-secondary btn-md fl-mr-2.5 fl-mb-2.5">Secondary</button>
 
-            <button type="button" class="bg-transparent text-quiet-inset-fg-secondary box-border border border-transparent btn-md fl-mr-2.5 fl-mb-2.5">Ghost</button>
-              
-            <button data-style="green" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Success</button>
-              
-            <button data-style="red" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Danger</button>
-              
-            <button data-style="orange" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Warning</button>              
+            <button type="button" class="btn-ghost btn-md fl-mr-2.5 fl-mb-2.5">Ghost</button>
 
-            <button data-style="brand" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Brand</button> 
+            <button type="button" class="btn-ghost btn-md fl-mr-2.5 fl-mb-2.5">Disabled Ghost</button>
+              
+            <button data-style="green" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Success</button>
+              
+            <button data-style="red" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Danger</button>
+              
+            <button data-style="orange" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Warning</button>              
+
+            <button data-style="brand" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Brand</button> 
             
             <button type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Neutral Gradient</button>
 
@@ -276,9 +278,9 @@
 
             <button data-style="neutral" data-mode="invert" type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Invert Neutral Gradient</button>  
 
-            <button disabled type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5 disabled:bg-quiet disabled:border-quiet disabled:text-disabled">Disabled</button>
+            <button disabled type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5 disabled:bg-quiet disabled:border-quiet disabled:text-disabled">Disabled</button>
         
-            <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Toggle Modal</button>
+            <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Toggle Modal</button>
             <!-- Main modal -->
             <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full max-h-full">
                 <div class="relative fl-p-4 w-full max-w-2xl max-h-full">
@@ -289,8 +291,8 @@
                             <h3 class="text-lg heading">
                                 Terms of Service
                             </h3>
-                            <button type="button" class="bg-transparent rounded-base text-sm fl-w-9 fl-h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
-                                <svg class="fl-w-5 fl-h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                            <button type="button" class="btn-ghost text-sm fl-size-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                                <i class="fa-classic fa-regular fa-xmark"></i>
                                 <span class="sr-only">Close modal</span>
                             </button>
                         </div>
@@ -305,8 +307,8 @@
                         </div>
                         <!-- Modal footer -->
                         <div class="flex items-center border-t border-default fl-space-x-4 fl-pt-4">
-                            <button data-modal-hide="default-modal" type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-md fl-mr-2.5 fl-mb-2.5">Decline</button>
-                            <button data-modal-hide="default-modal" type="button" class="bg-loud text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">I accept</button>
+                            <button data-modal-hide="default-modal" type="button" class="btn-secondary btn-md fl-mr-2.5 fl-mb-2.5">Decline</button>
+                            <button data-modal-hide="default-modal" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">I accept</button>
                         </div>
                     </div>
                 </div>
@@ -323,8 +325,8 @@
             <h1 class="fl-mb-6 display text-4xl text-fg-main">This is a normal jumbotron. No overlay.</h1>
             <p class="mb-8 heading text-base text-fg-secondary">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -337,8 +339,8 @@
             <h1 class="fl-mb-6 display text-4xl text-max-inset-fg-main">This is a strong overlay</h1>
             <p class="fl-mb-8 heading text-base text-max-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -350,8 +352,8 @@
             <h1 class="fl-mb-6 display text-4xl text-max-inset-fg-main">This is a moderate overlay</h1>
             <p class="fl-mb-8 heading text-base text-max-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -363,8 +365,8 @@
             <h1 class="fl-mb-6 display text-4xl text-max-inset-fg-main">This is a weak overlay</h1>
             <p class="fl-mb-8 heading text-base text-max-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -376,8 +378,8 @@
             <h1 class="fl-mb-6 display text-4xl text-max-inset-fg-main">This is a backdrop tinted mid overlay</h1>
             <p class="fl-mb-8 heading text-base text-max-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -389,8 +391,8 @@
             <h1 class="fl-mb-6 display text-4xl text-max-inset-fg-main">This is a backdrop tinted high overlay</h1>
             <p class="fl-mb-8 heading text-base text-max-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -402,8 +404,8 @@
             <h1 class="fl-mb-6 display text-4xl text-medium-inset-fg-main">This is a backdrop linear overlay to left</h1>
             <p class="fl-mb-8 heading text-base text-medium-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -415,8 +417,8 @@
             <h1 class="fl-mb-6 display text-4xl text-medium-inset-fg-main">This is a backdrop linear overlay to right</h1>
             <p class="fl-mb-8 heading text-base text-medium-inset-fg-secondary sm:fl-px-16 lg:fl-px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <div class="flex flex-col fl-space-y-4 sm:flex-row sm:justify-center sm:fl-space-y-0 md:fl-space-x-4">
-                <button type="button" class="bg-muted text-muted-inset-fg-main border-quiet-border box-border border btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
-                <button type="button" class="inline-flex items-center justify-center bg-loud text-loud-inset-fg-main btn-lg fl-mr-2.5 fl-mb-2.5">
+                <button type="button" class="btn-secondary btn-lg fl-mr-2.5 fl-mb-2.5">Learn more</button>
+                <button type="button" class="btn-primary inline-flex items-center justify-center btn-lg fl-mr-2.5 fl-mb-2.5">
                     Getting started
                     <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5 fl--me-0.5"></i>
                 </button>
@@ -433,76 +435,76 @@
         <!-- Alert -->
 
         <div data-style="neutral" id="neutral-alert" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <div class="flex items-center justify-between">
+            <div class="flex justify-between">
                 <span class="sr-only">Neutral</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Neutral alert!</h3> 
-                <button type="button" data-dismiss-target="#neutral-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#neutral-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
             </div>
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
+            <button type="button" class="btn-primary btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="blue" id="info-alert" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <div class="flex items-center justify-between">
+            <div class="flex justify-between">
                 <span class="sr-only">Info</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Info alert!</h3> 
-                <button type="button" data-dismiss-target="#info-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#info-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
             </div>
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
+            <button type="button" class="btn-primary btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="red" id="red-alert" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <div class="flex items-center justify-between">
+            <div class="flex justify-between">
                 <span class="sr-only">Danger</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Danger alert!</h3> 
-                <button type="button" data-dismiss-target="#red-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#red-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
             </div>
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
+            <button type="button" class="btn-primary btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="green" id="green-alert" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <div class="flex items-center justify-between">
+            <div class="flex justify-between">
                 <span class="sr-only">Success</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Success alert!</h3> 
-                <button type="button" data-dismiss-target="#green-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#green-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
             </div>
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
+            <button type="button" class="btn-primary btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="orange" id="orange-alert" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <div class="flex items-center justify-between">
+            <div class="flex justify-between">
                 <span class="sr-only">Orange</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Warning alert!</h3> 
-                <button type="button" data-dismiss-target="#orange-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#orange-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
             </div>
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
+            <button type="button" class="btn-primary btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
         <div data-style="neutral" data-mode="invert" id="dark-alert" class="fl-p-3.5 fl-mb-4 rounded-lg bg-muted border border-muted-inset-border-auxiliary" role="alert">
-            <div class="flex items-center justify-between">
+            <div class="flex justify-between">
                 <span class="sr-only">Dark</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Dark alert!</h3> 
-                <button type="button" data-dismiss-target="#dark-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#dark-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
             </div>
             <p class="text-sm fl-mb-3.5 text-muted-inset-fg-main">Change a few things up and try submitting again.</p>
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
+            <button type="button" class="btn-primary btn-md"><i class="fa-classic fa-regular fa-book-open fl-me-1.5"></i> Learn more</button>
         </div>
 
     </section>
@@ -623,22 +625,22 @@
 
         <h3 class="heading text-xl fl-my-4 text-fg-main">Input Sizes</h3>
         <div class="fl-mb-4.5 max-w-sm">
-            <label for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Small Input</label>
+            <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Small Input</label>
             <input type="email" id="email" class="input-sm bg-muted border-quiet-inset-border text-muted-inset-fg-main block w-full" placeholder="small input" />
         </div>
         <div class="fl-mb-4.5  max-w-sm">
-            <label for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Medium Input</label>
+            <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Medium Input</label>
             <input type="email" id="email" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main block w-full" placeholder="medium input" />
         </div>
         <div class="fl-mb-4.5 max-w-sm">
-            <label for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Large input</label>
+            <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Large input</label>
             <input type="email" id="email" class="input-lg bg-muted border-quiet-inset-border text-muted-inset-fg-main block w-full" placeholder="large input" />
         </div>
         <div class="fl-mb-4.5 max-w-sm">
             <label for="small-toggle" class="flex cursor-pointer">
                 <input id="small-toggle" type="checkbox" value="" class="sr-only peer" checked>
                 <div class="toggle-fluid toggle-sm"></div>
-                <div class="label text-xs fl-ms-2 select-none">
+                <div class="label-text text-xs fl-ms-2 select-none">
                     <p class="text-fg-main fl-mb-1">Small toggle</p>
                     <p class="text-fg-secondary">Save my credentials for easier sign-in in the future.</p>
                 </div>
@@ -648,7 +650,7 @@
             <label for="large-toggle" class="flex cursor-pointer">
                 <input id="large-toggle" type="checkbox" value="" class="sr-only peer" checked>
                 <div class="toggle-fluid toggle-lg"></div>
-                <div class="label text-xs fl-ms-2 select-none">
+                <div class="label-text text-xs fl-ms-2 select-none">
                     <p class="text-fg-main fl-mb-1">Large toggle</p>
                     <p class="text-fg-secondary">Save my credentials for easier sign-in in the future.</p>
                 </div>
@@ -658,11 +660,11 @@
 
         <form class="max-w-sm">
             <div class="fl-mb-4.5">
-                <label for="email" class="block fl-mb-2.5 label text-xs text-fg-main">Your email</label>
+                <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your email</label>
                 <input type="email" id="email" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand block w-full" placeholder="name@flowbite.com" required />
             </div>
             <div class="fl-mb-4.5">
-                <label for="countries" class="block fl-mb-2.5 label text-xs text-fg-main">Select an option</label>
+                <label for="countries" class="block fl-mb-2.5 label-text text-xs text-fg-main">Select an option</label>
                 <select id="countries" class="block w-full input-md bg-muted border border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand" required>
                     <option selected>Choose a country</option>
                     <option value="US">United States</option>
@@ -672,27 +674,27 @@
                 </select>
             </div>
             <div class="fl-mb-4.5">
-                <label for="disabled-input" class="block fl-mb-2.5 label text-xs text-fg-disabled">Disabled input</label>
+                <label for="disabled-input" class="block fl-mb-2.5 label-text text-xs text-fg-disabled">Disabled input</label>
                 <input type="text" id="disabled-input" aria-label="disabled input" class="cursor-not-allowed input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main disabled:text-fg-disabled focus:ring-brand focus:border-brand block w-full" placeholder="Disabled input" disabled>
             </div>
             <div class="fl-mb-4.5">
-                <label for="password" class="block fl-mb-2.5 label text-xs text-fg-main">Your password</label>
+                <label for="password" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your password</label>
                 <input type="password" id="password" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-secondary focus:ring-brand focus:border-brand block w-full" placeholder="••••••••" required />
             </div>
             <div data-style="green" class="fl-mb-4.5">
-                <label for="success" class="block fl-mb-2.5 label text-xs text-fg-main">Your name</label>
+                <label for="success" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your name</label>
                 <input type="text" id="success" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand block w-full" placeholder="Success input" required />
                 <p class="fl-mt-2.5 text-xs text-muted-inset-fg-secondary"><span class="font-medium">Well done!</span> Some success message.</p>
             </div>
             <div data-style="red" class="fl-mb-4.5">
-                <label for="danger" class="block fl-mb-2.5 label text-xs text-fg-main">Your phone number</label>
+                <label for="danger" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your phone number</label>
                 <input type="text" id="danger" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand block w-full" placeholder="Error input" required />
                 <p class="fl-mt-2.5 text-xs text-muted-inset-fg-secondary"><span class="font-medium">Oh, snap!</span> Some error message.</p>
             </div>
             <div class="fl-mb-4.5">
                 <label for="remember" class="flex items-center">
                     <input id="remember" type="checkbox" value="" class="fl-size-3 border border-quiet-inset-border rounded-sm bg-muted" required />
-                    <p class="fl-ms-2 label text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="text-accent hover:underline">terms and conditions</a>.</p>
+                    <p class="fl-ms-2 label-text text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="text-accent hover:underline">terms and conditions</a>.</p>
                 </label>
             </div>
 
@@ -700,7 +702,7 @@
                 <label for="green-toggle" class="flex cursor-pointer">
                     <input id="green-toggle" type="checkbox" value="" class="sr-only peer" checked>
                     <div class="toggle-fluid toggle-sm"></div>
-                    <div class="label text-xs fl-ms-2 select-none">
+                    <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Green toggle</p>
                         <p class="text-fg-secondary">Something successful is on.</p>
                     </div>
@@ -711,7 +713,7 @@
                 <label for="red-toggle" class="flex cursor-pointer">
                     <input id="red-toggle" type="checkbox" value="" class="sr-only peer" checked>
                     <div class="toggle-fluid toggle-sm"></div>
-                    <div class="label text-xs fl-ms-2 select-none">
+                    <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Red toggle</p>
                         <p class="text-fg-secondary">Something dangerous is on.</p>
                     </div>
@@ -722,7 +724,7 @@
                 <label for="disabled-toggle" class="flex cursor-pointer">
                     <input id="disabled-toggle" type="checkbox" value="" class="sr-only peer" checked disabled>
                     <div class="toggle-fluid toggle-sm"></div>
-                    <div class="label text-xs fl-ms-2 select-none">
+                    <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Disabled toggle</p>
                         <p class="text-fg-secondary">You can't touch this.</p>
                     </div>
@@ -733,7 +735,7 @@
                 <label for="green-toggle-lg" class="flex cursor-pointer">
                     <input id="green-toggle-lg" type="checkbox" value="" class="sr-only peer">
                     <div class="toggle-fluid toggle-lg"></div>
-                    <div class="label text-xs fl-ms-2 select-none">
+                    <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Green toggle</p>
                         <p class="text-fg-secondary">Something successful is on.</p>
                     </div>
@@ -744,7 +746,7 @@
                 <label for="red-toggle-lg" class="flex cursor-pointer">
                     <input id="red-toggle-lg" type="checkbox" value="" class="sr-only peer">
                     <div class="toggle-fluid toggle-lg"></div>
-                    <div class="label text-xs fl-ms-2 select-none">
+                    <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Red toggle</p>
                         <p class="text-fg-secondary">Something dangerous is on.</p>
                     </div>
@@ -755,7 +757,7 @@
                 <label for="disabled-toggle-lg" class="flex cursor-pointer">
                     <input id="disabled-toggle-lg" type="checkbox" value="" class="sr-only peer" disabled>
                     <div class="toggle-fluid toggle-lg"></div>
-                    <div class="label text-xs fl-ms-2 select-none">
+                    <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Disabled toggle</p>
                         <p class="text-fg-secondary">You can't touch this.</p>
                     </div>
@@ -763,12 +765,12 @@
             </div>
             
             <div class="fl-mb-4.5">
-                <label for="ice-cream-flavor" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite ice cream flavor (choose one)</label>                
+                <label for="ice-cream-flavor" class="block fl-mb-2.5 label-text text-xs text-fg-main">Favorite ice cream flavor (choose one)</label>                
                 <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
                         <input name="ice-cream-flavor" id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="cookie-dough-radio" class="text-fg-main fl-mb-1">Cookie Dough</label>
                         <p id="cookie-dough-radio-text" class="text-fg-secondary">A sweet and creamy flavor with chunks of cookie dough.</p>
                     </div>
@@ -777,7 +779,7 @@
                     <div class="flex items-center fl-size-5">
                         <input name="ice-cream-flavor" id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="vanilla-radio" class="text-fg-main fl-mb-1">Vanilla</label>
                         <p id="vanilla-radio-text" class="text-fg-secondary">A classic and creamy flavor made from real vanilla beans.</p>
                     </div>
@@ -786,7 +788,7 @@
                     <div class="flex items-center fl-size-5">
                         <input name="ice-cream-flavor" checked id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="pistachio-radio" class="text-fg-main fl-mb-1">Pistachio</label>
                         <p id="pistachio-radio-text" class="text-fg-secondary">A nutty and creamy flavor with chunks of real pistachio.</p>
                     </div>
@@ -795,7 +797,7 @@
                     <div class="flex items-center fl-size-5">
                         <input name="ice-cream-flavor" disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="chocolate-radio" class="text-fg-disabled fl-mb-1">Chocolate</label>
                         <p id="chocolate-radio-text" class="text-fg-disabled">A classic and rich flavor made of cocoa beans from Costa Rica.</p>
                     </div>
@@ -803,12 +805,12 @@
             </div>
 
             <div class="fl-mb-4.5">
-                <label for="pizza-toppings" class="block fl-mb-2.5 label text-xs text-fg-main">Favorite pizza toppings (choose all that apply)</label>                
+                <label for="pizza-toppings" class="block fl-mb-2.5 label-text text-xs text-fg-main">Favorite pizza toppings (choose all that apply)</label>                
                 <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
                         <input id="mozzarella-checkbox" aria-describedby="mozzarella-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="mozzarella-checkbox" class="text-fg-main fl-mb-1">Mozzarella</label>
                         <p id="mozzarella-checkbox-text" class="text-fg-secondary">A classic and stretchy cheese topping for pizza.</p>
                     </div>
@@ -817,7 +819,7 @@
                     <div class="flex items-center fl-size-5">
                         <input id="pepperoni-checkbox" aria-describedby="pepperoni-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="pepperoni-checkbox" class="text-fg-main fl-mb-1">Pepperoni</label>
                         <p id="pepperoni-checkbox-text" class="text-fg-secondary">A popular and savory topping made from cured pepperoni slices.</p>
                     </div>
@@ -826,7 +828,7 @@
                     <div class="flex items-center fl-size-5">
                         <input id="garlic-checkbox" aria-describedby="garlic-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="garlic-checkbox" class="text-fg-main fl-mb-1">Roasted garlic</label>
                         <p id="garlic-checkbox-text" class="text-fg-secondary">A flavorful and aromatic topping made from roasted garlic cloves.</p>
                     </div>
@@ -835,7 +837,7 @@
                     <div class="flex items-center fl-size-5">
                         <input disabled id="pineapple-checkbox" aria-describedby="pineapple-checkbox-text" type="checkbox" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
-                    <div class="label text-xs select-none">
+                    <div class="label-text text-xs select-none">
                         <label for="pineapple-checkbox" class="text-fg-disabled fl-mb-1">Pineapple</label>
                         <p id="pineapple-checkbox-text" class="text-fg-disabled">A tropical and sweet topping made from fresh pineapple chunks.</p>
                     </div>
@@ -843,15 +845,15 @@
             </div>
             
             <div class="fl-mb-4.5">
-                <label class="block fl-mb-2.5 label text-xs text-fg-main">Upload file(s)</label>   
+                <label class="block fl-mb-2.5 label-text text-xs text-fg-main">Upload file(s)</label>   
                 <div class="flex items-center justify-center w-full">
                     <div class="flex flex-col items-center justify-center w-full bg-muted border border-dashed border-medium rounded-lg">
                         <div class="flex flex-col items-center justify-center fl-pt-5 fl-pb-6">
                             <i class="fa-classic fa-regular fa-upload fl-mb-4 text-muted-inset-fg-secondary text-lg"></i>
-                            <p class="fl-mb-2 label text-sm text-muted-inset-fg-main">Click to upload or drag and drop</p>
+                            <p class="fl-mb-2 label-text text-sm text-muted-inset-fg-main">Click to upload or drag and drop</p>
                             <p class="text-xs leading-tight fl-mb-4 text-muted-inset-fg-secondary">Max. file size: 30MB</p>
                             <!-- Upload Button -->
-                            <button type="button" onclick="document.getElementById('dropzone-file-2').click()" class="btn-sm inline-flex items-center text-loud-inset-fg-main bg-loud box-border border border-transparent focus:ring-4 focus:ring-brand-medium focus:outline-none">
+                            <button type="button" onclick="document.getElementById('dropzone-file-2').click()" class="btn-primary btn-sm inline-flex items-center">
                                 <i class="fa-classic fa-regular fa-folder-open fl-me-1.5"></i>
                                 Browse file
                             </button>
@@ -862,7 +864,7 @@
                 </div>
             </div> 
  
-            <button type="button" class="bg-loud text-loud-inset-fg-main btn-md">Submit</button>
+            <button type="button" class="btn-primary btn-md">Submit</button>
         </form>
 
     </section>
