@@ -322,45 +322,69 @@ label:has(+ input:required):after {
   content: " *";
   color: var(--brand-color-red-500);
 }
-.peer {
+.toggle-fluid {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
   border-radius: var(--rounded-full);
-  position:relative;
-  background-color: var(--color-muted);
   border-width: var(--border-default);
+  border-style: solid;
   border-color: var(--color-quiet-border);
-  &:checked {
+  background-color: var(--color-muted);
+  block-size: calc(var(--toggle-knob-size) + (var(--toggle-pad-block) * 2));
+  inline-size: calc(var(--toggle-knob-size) + var(--toggle-pad-inline-start) + var(--toggle-pad-inline-end));
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.toggle-fluid::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: var(--toggle-pad-inline-start);
+  inline-size: var(--toggle-knob-size);
+  block-size: var(--toggle-knob-size);
+  border-radius: var(--rounded-full);
+  background-color: var(--color-fg-static);
+  box-shadow: var(--shadow-sm);
+  transform: translate(0, -50%);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.toggle-fluid:hover {
+  background-color: var(--color-fg-accent);
+}
+
+.peer:checked + .toggle-fluid {
   background-color: var(--color-fg-accent);
   border-color: var(--color-fg-accent);
-    &::after {
-      background-color: var(--color-loud-inset-fg-main);
-    }
-  }
-  &::after {
-    content:"";
-    /*position:absolute;*/
-    background-color: var(--color-fg-static);
-    border-radius: var(--rounded-full);
-    transition: all;
-    box-shadow: var(--shadow-sm);
-  }
 }
+
+.peer:checked + .toggle-fluid::after {
+  background-color: var(--color-loud-inset-fg-main);
+  transform: translate(calc(var(--toggle-pad-inline-end) - var(--toggle-pad-inline-start)), -50%);
+}
+
+.peer:disabled + .toggle-fluid {
+  background-color: var(--color-quiet);
+  border-color: var(--color-quiet-border);
+  cursor: not-allowed;
+}
+.peer:disabled + .toggle-fluid::after {
+  background-color: var(--color-quiet-inset-fg-disabled);
+}
+
 .toggle-sm {
-  padding: var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-\.25) var(--fl-space-4);
-  &::after {
-    @apply w-4 h-4;
-  }
-  &:checked {
-    padding: var(--fl-space-\.25) var(--fl-space-4) var(--fl-space-\.25) var(--fl-space-\.25);
-  }
+  --toggle-knob-size: var(--spacing-static-sm);
+  --toggle-pad-block: var(--fl-space-\.25);
+  --toggle-pad-inline-start: var(--fl-space-\.25);
+  --toggle-pad-inline-end: var(--fl-space-4);
 }
+
 .toggle-lg {
-  padding: var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-\.5) var(--fl-space-5);
-  &::after {
-    @apply w-5 h-5;
-  }
-  &:checked {
-    padding: var(--fl-space-\.5) var(--fl-space-5) var(--fl-space-\.5) var(--fl-space-\.5);
-  }
+  --toggle-knob-size: var(--spacing-static-lg);
+  --toggle-pad-block: var(--fl-space-\.5);
+  --toggle-pad-inline-start: var(--fl-space-\.5);
+  --toggle-pad-inline-end: var(--fl-space-5);
 }
 
 /* Fluid Spacing API */
@@ -836,6 +860,14 @@ label:has(+ input:required):after {
       color: var(--color-loud-inset-fg-main) !important;
       &::before {
         background-color: var(--color-active);
+      }
+    }
+    &:disabled {
+      color: var(--color-quiet-inset-fg-disabled) !important;
+      cursor: not-allowed;
+      border-color: var(--color-quiet-border) !important;
+      &::before {
+        background-color: var(--color-quiet);
       }
     }
   }
