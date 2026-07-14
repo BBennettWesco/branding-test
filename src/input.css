@@ -772,11 +772,10 @@
     }
     &:disabled {
       cursor: not-allowed;
+      &::before {
+        background-color: var(--color-transparent);
+      }
     }
-  }
-  a:hover {
-    text-decoration: underline;
-    color: var(--color-fg-main) !important;
   }
   a:disabled, a.disabled {
     color: var(--color-fg-disabled) !important;
@@ -786,6 +785,20 @@
 }
 
 @layer components {
+  .action-link {
+    color: var(--color-fg-accent) !important;
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-fg-main) !important;
+    } 
+    &.disabled {
+      &:hover {
+        text-decoration: none !important;
+        cursor: not-allowed;
+      }
+    }
+  }
+
   /* Buttons */
   .btn-sm {
     @apply fl-px-2.5 fl-py-2 action text-xs rounded-lg shadow-xs;
@@ -802,9 +815,7 @@
       color: var(--color-quiet-inset-fg-disabled) !important;
       cursor: not-allowed;
       border-color: var(--color-quiet-border) !important;
-      &::before {
-        background-color: var(--color-quiet);
-      }
+      background-color: var(--color-quiet);
     }
   }
   .btn-secondary {
@@ -813,9 +824,7 @@
       color: var(--color-quiet-inset-fg-disabled) !important;
       cursor: not-allowed;
       border-color: var(--color-quiet-border) !important;
-      &::before {
-        background-color: var(--color-quiet);
-      }
+      background-color: var(--color-quiet);
     }
   }
   .btn-ghost {
@@ -825,7 +834,6 @@
     }
     &:disabled {
       color: var(--fg-disabled) !important;
-      cursor: not-allowed;
     }
   }
 
@@ -857,7 +865,6 @@
     inline-size: calc(var(--toggle-knob-size) + var(--toggle-pad-inline-start) + var(--toggle-pad-inline-end));
     transition: background-color 0.2s ease, border-color 0.2s ease;
   }
-
   .toggle-fluid::after {
     content: "";
     position: absolute;
@@ -871,41 +878,64 @@
     transform: translate(0, -50%);
     transition: transform 0.2s ease, background-color 0.2s ease;
   }
-
   .toggle-fluid:hover {
-    background-color: var(--color-fg-accent);
+    background-color: color-mix(in oklch, var(--color-muted), var(--color-hover) 20%);
+    
   }
-
   .peer:checked + .toggle-fluid {
     background-color: var(--color-fg-accent);
-    border-color: var(--color-fg-accent);
+    border-color: var(--color-loud-inset-border-accent);
+    &:hover {
+      background-color: color-mix(in oklch, var(--color-fg-accent), var(--color-hover) 20%);
+    }
   }
-
   .peer:checked + .toggle-fluid::after {
     background-color: var(--color-loud-inset-fg-main);
     transform: translate(calc(var(--toggle-pad-inline-end) - var(--toggle-pad-inline-start)), -50%);
   }
-
   .peer:disabled + .toggle-fluid {
     background-color: var(--color-quiet);
     border-color: var(--color-quiet-border);
     cursor: not-allowed;
+    &:hover {
+      background-color: var(--color-quiet);
+    }
   }
   .peer:disabled + .toggle-fluid::after {
     background-color: var(--color-quiet-inset-fg-disabled);
   }
-
   .toggle-sm {
     --toggle-knob-size: var(--spacing-static-sm);
     --toggle-pad-block: var(--fl-space-\.25);
     --toggle-pad-inline-start: var(--fl-space-\.25);
     --toggle-pad-inline-end: var(--fl-space-4);
   }
-
   .toggle-lg {
     --toggle-knob-size: var(--spacing-static-lg);
     --toggle-pad-block: var(--fl-space-\.5);
     --toggle-pad-inline-start: var(--fl-space-\.5);
     --toggle-pad-inline-end: var(--fl-space-5);
+  }
+
+  /* Forms - Multi File Input */
+  .multi-file-input {
+    background-color: var(--color-muted);
+    transition: background-color 0.2s ease-in-out;
+    border-style: dashed;
+    border-width: var(--border-default);
+    border-color: var(--color-medium-border);
+    &:hover {
+      background-color: oklch(from var(--color-muted) calc(l - 0.10) c h);
+    }
+    &:focus-within {
+      background-color: oklch(from var(--color-muted) calc(l - 0.10) c h);
+      border-color: var(--color-fg-accent);
+      border-style: solid;
+    }
+    &:has(:disabled) {
+      color: var(--color-quiet-inset-fg-disabled);
+      border-color: var(--color-quiet-border);
+      cursor: not-allowed;
+    }
   }
 }

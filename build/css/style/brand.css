@@ -64,7 +64,7 @@
   --surface-overlay-fades: var(--black);
   --surface-gradient-accent-start: var(--brand-color-primary-400);
   --surface-gradient-accent-end: var(--brand-color-primary-600);
-  --hover: var(--opacities-black-50);
+  --hover: var(--opacities-black-200);
   --disabled: var(--opacities-black-100);
   --active: var(--opacities-black-300);
 }
@@ -126,5 +126,5 @@
   --surface-overlay-fades: var(--white);
   --surface-gradient-accent-start: var(--brand-color-primary-25);
   --surface-gradient-accent-end: var(--brand-color-primary-25);
-  --hover: var(--opacities-white-50);
+  --hover: var(--opacities-white-200);
 }

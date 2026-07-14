@@ -633,11 +633,11 @@
     }
   },
   ":hover": {
-    "$value": "{opacities.black.50}",
+    "$value": "{opacities.black.200}",
     "$type": "color",
     "$extensions": {
       "modes": {
-        "invert": "{opacities.white.50}"
+        "invert": "{opacities.white.200}"
       }
     }
   },
