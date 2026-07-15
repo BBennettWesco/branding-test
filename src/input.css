@@ -84,6 +84,7 @@
   --tracking-normal: 0em;
   --tracking-tight: -.02em;
 
+  /* Should always match width/viewport/min Figma variables */
 	--breakpoint-xs: 380px;
 	--breakpoint-sm: 668px;
 	--breakpoint-md: 800px;

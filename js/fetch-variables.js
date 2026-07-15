@@ -60,6 +60,15 @@ function shouldKeepVariable(variable) {
     return false;
   }
 
+  // Remove Layout variables
+  if (
+    name.startsWith("width/") ||
+    name.startsWith("grid/") ||
+    name.startsWith("container/")
+  ) {
+    return false;
+  }
+
   return true;
 }
 
