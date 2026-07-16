@@ -36,12 +36,12 @@
             <div id="select-brand" class="z-10 bg-bg border border-quiet-border text-quiet-inset-fg-main rounded-lg shadow-lg w-52 hidden" aria-hidden="true" data-popper-placement="bottom">
                 <ul class="p-2" aria-labelledby="select-brand-button">
                 <li>
-                    <button data-css-brand="synergy" class="inline-flex justify-between items-center w-full p-2 hover:bg-hover rounded brand-select-button">
+                    <button data-css-brand="synergy" class="inline-flex justify-between items-center w-full p-2 btn-ghost rounded brand-select-button">
                         Synergy
                     </button>
                 </li>
                 <li>
-                    <button data-css-brand="wesco" class="inline-flex justify-between items-center w-full p-2 hover:bg-hover rounded brand-select-button">
+                    <button data-css-brand="wesco" class="inline-flex justify-between items-center w-full p-2 btn-ghost rounded brand-select-button">
                         Wesco
                     </button>
                 </li>
@@ -59,49 +59,55 @@
         <div id="speed-dial-section-jump" class="flex flex-col w-44 justify-end hidden mb-4 space-y-2 bg-medium border border-medium-border rounded-lg shadow-xs">
             <ul class="p-2 text-sm leading-tight text-medium-inset-fg-main">
                 <li>
-                    <a href="#borders" class="inline-flex items-center w-full p-2 hover:bg-hover rounded ">
+                    <a href="#borders" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-border-all fl-me-1.5"></i>
                         <span>Borders & Radii</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#shadows" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#shadows" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-eclipse fl-me-1.5"></i>
                         <span>Drop Shadows</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#buttons" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#buttons" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-link fl-me-1.5"></i>
                         <span>Buttons &amp; Links</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#overlays" class="inline-flex items-center w-full p-2 hover:bg-hover rounded ">
+                    <a href="#modals" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
+                        <i class="fa-classic fa-regular fa-link fl-me-1.5"></i>
+                        <span>Modals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#overlays" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded ">
                         <i class="fa-classic fa-regular fa-layer-group fl-me-1.5"></i>
                         <span>Overlays</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#alerts" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#alerts" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-triangle-exclamation fl-me-1.5"></i>
                         <span>Alerts</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#forms" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#forms" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-file-lines fl-me-1.5"></i>
                         <span>Forms</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#layouts" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#layouts" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-table-layout fl-me-1.5"></i>
                         <span>Layouts</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#top-nav" class="inline-flex items-center w-full p-2 hover:bg-hover rounded">
+                    <a href="#top-nav" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-arrow-up fl-me-1.5"></i>
                         <span>Back to top</span>
                     </a>
@@ -275,12 +281,40 @@
             <button data-style="orange" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Warning</button>              
 
             <button data-style="brand" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Brand</button> 
+
+        </div>
+
+        <h3 class="heading text-xl fl-my-4 text-fg-main">Gradient Button Colors</h3>
+        <div class="fl-mb-4">
             
-            <button type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Neutral Gradient</button>
+            <button type="button" class="btn-primary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Primary Gradient</button>
 
-            <button data-style="brand" type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Brand Gradient</button>
+            <!-- Holding off on building out all gradient buttons since they don't have applicable variables because we don't know if we want them -->
+            <!--<button type="button" class="btn-secondary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Secondary Gradient</button>-->
 
-            <button data-style="neutral" data-mode="invert" type="button" class="bg-linear-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main btn-md fl-mr-2.5 fl-mb-2.5">Invert Neutral Gradient</button>  
+            <button type="button" disabled class="btn-primary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Disabled Primary Gradient</button>
+
+            <!--<button type="button" disabled class="btn-secondary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Disabled Secondary Gradient</button>-->
+
+            <button data-style="green" type="button" class="btn-primary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Success Gradient</button>
+
+            <!--<button data-style="red" type="button" class="btn-primary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Danger Gradient</button>
+
+            <button data-style="yellow" type="button" class="btn-primary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Warning Gradient</button>-->
+
+            <button data-style="brand" type="button" class="btn-primary-gradient btn-md fl-mr-2.5 fl-mb-2.5">Brand Gradient</button>
+
+        </div>
+    </section>
+
+    <!-- Modals -->
+
+    <section id="modals" class="lg:container lg:mx-auto lg:px-12 px-4 w-full fl-py-9">
+
+        <h2 class="heading text-4xl fl-mb-4 text-fg-main">
+        Modals
+        </h2>
+        <div class="fl-mb-4">
         
             <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="btn-primary btn-md fl-mr-2.5 fl-mb-2.5">Toggle Modal</button>
             <!-- Main modal -->
@@ -293,7 +327,7 @@
                             <h3 class="text-lg heading">
                                 Terms of Service
                             </h3>
-                            <button type="button" class="btn-ghost text-sm fl-size-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                            <button type="button" class="btn-ghost btn-sm ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
                                 <i class="fa-classic fa-regular fa-xmark"></i>
                                 <span class="sr-only">Close modal</span>
                             </button>
@@ -440,7 +474,7 @@
             <div class="flex justify-between">
                 <span class="sr-only">Neutral</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Neutral alert!</h3> 
-                <button type="button" data-dismiss-target="#neutral-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#neutral-alert" aria-label="Close" class="btn-ghost btn-sm ms-auto inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
@@ -452,7 +486,7 @@
             <div class="flex justify-between">
                 <span class="sr-only">Info</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Info alert!</h3> 
-                <button type="button" data-dismiss-target="#info-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#info-alert" aria-label="Close" class="btn-ghost btn-sm ms-auto inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
@@ -464,7 +498,7 @@
             <div class="flex justify-between">
                 <span class="sr-only">Danger</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Danger alert!</h3> 
-                <button type="button" data-dismiss-target="#red-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#red-alert" aria-label="Close" class="btn-ghost btn-sm ms-auto inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
@@ -476,7 +510,7 @@
             <div class="flex justify-between">
                 <span class="sr-only">Success</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Success alert!</h3> 
-                <button type="button" data-dismiss-target="#green-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#green-alert" aria-label="Close" class="btn-ghost btn-sm ms-auto inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
@@ -488,7 +522,7 @@
             <div class="flex justify-between">
                 <span class="sr-only">Orange</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Warning alert!</h3> 
-                <button type="button" data-dismiss-target="#orange-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#orange-alert" aria-label="Close" class="btn-ghost btn-sm ms-auto inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
@@ -500,7 +534,7 @@
             <div class="flex justify-between">
                 <span class="sr-only">Dark</span>
                 <h3 class="heading fl-mb-1.75 text-muted-inset-fg-main"><i class="fa-classic fa-regular fa-circle-info fl-me-1.75"></i> Dark alert!</h3> 
-                <button type="button" data-dismiss-target="#dark-alert" aria-label="Close" class="text-muted-inset-fg-main ms-auto fl-size-3.5 fl-p-3 rounded inline-flex items-center justify-center shrink-0">
+                <button type="button" data-dismiss-target="#dark-alert" aria-label="Close" class="btn-ghost btn-sm ms-auto inline-flex items-center justify-center shrink-0">
                     <span class="sr-only">Close</span>
                     <i class="fa-classic fa-regular fa-xmark"></i>
                 </button>    
@@ -627,16 +661,16 @@
 
         <h3 class="heading text-xl fl-my-4 text-fg-main">Input Sizes</h3>
         <div class="fl-mb-4.5 max-w-sm">
-            <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Small Input</label>
-            <input type="email" id="email" class="input-sm bg-muted border-quiet-inset-border text-muted-inset-fg-main block w-full" placeholder="small input" />
+            <label for="small-input" class="block fl-mb-2.5 label-text text-xs text-fg-main">Small Input</label>
+            <input type="text" id="small-input" class="input-sm block w-full" placeholder="small input" />
         </div>
         <div class="fl-mb-4.5  max-w-sm">
-            <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Medium Input</label>
-            <input type="email" id="email" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main block w-full" placeholder="medium input" />
+            <label for="medium-input" class="block fl-mb-2.5 label-text text-xs text-fg-main">Medium Input</label>
+            <input type="text" id="medium-input" class="input-md block w-full" placeholder="medium input" />
         </div>
         <div class="fl-mb-4.5 max-w-sm">
-            <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Large input</label>
-            <input type="email" id="email" class="input-lg bg-muted border-quiet-inset-border text-muted-inset-fg-main block w-full" placeholder="large input" />
+            <label for="large-input" class="block fl-mb-2.5 label-text text-xs text-fg-main">Large input</label>
+            <input type="text" id="large-input" class="input-lg block w-full" placeholder="large input" />
         </div>
         <div class="fl-mb-4.5 max-w-sm">
             <label for="small-toggle" class="flex cursor-pointer">
@@ -663,11 +697,15 @@
         <form class="max-w-sm">
             <div class="fl-mb-4.5">
                 <label for="email" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your email</label>
-                <input type="email" id="email" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand block w-full" placeholder="name@flowbite.com" required />
+                <input type="email" id="email" class="input-md block w-full" placeholder="name@flowbite.com" autocomplete="email" required />
+            </div>
+            <div class="fl-mb-4.5">
+                <label for="age" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your age</label>
+                <input readonly type="number" id="age" class="input-md block w-full" placeholder="80" />
             </div>
             <div class="fl-mb-4.5">
                 <label for="countries" class="block fl-mb-2.5 label-text text-xs text-fg-main">Select an option</label>
-                <select id="countries" class="block w-full input-md bg-muted border border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand" required>
+                <select id="countries" class="block w-full input-md" required>
                     <option selected>Choose a country</option>
                     <option value="US">United States</option>
                     <option value="CA">Canada</option>
@@ -677,32 +715,32 @@
             </div>
             <div class="fl-mb-4.5">
                 <label for="disabled-input" class="block fl-mb-2.5 label-text text-xs text-fg-disabled">Disabled input</label>
-                <input type="text" id="disabled-input" aria-label="disabled input" class="cursor-not-allowed input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main disabled:text-fg-disabled focus:ring-brand focus:border-brand block w-full" placeholder="Disabled input" disabled>
+                <input disabled type="text" id="disabled-input" aria-label="disabled input" class="input-md block w-full" placeholder="Disabled input">
             </div>
             <div class="fl-mb-4.5">
                 <label for="password" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your password</label>
-                <input type="password" id="password" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-secondary focus:ring-brand focus:border-brand block w-full" placeholder="••••••••" required />
+                <input type="password" id="password" class="input-md block w-full" placeholder="••••••••" required />
             </div>
             <div class="fl-mb-4.5">
                 <label for="success" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your name</label>
-                <input data-style="green" type="text" id="success" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand block w-full" placeholder="Success input" required />
+                <input data-style="green" type="text" id="success" class="input-md block w-full" placeholder="Success input" required />
                 <p data-style="green" class="fl-mt-2.5 text-xs text-muted-inset-fg-secondary"><span class="font-medium">Well done!</span> Some success message.</p>
             </div>
             <div class="fl-mb-4.5">
                 <label for="danger" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your phone number</label>
-                <input data-style="red" type="text" id="danger" class="input-md bg-muted border-quiet-inset-border text-muted-inset-fg-main focus:ring-brand focus:border-brand block w-full" placeholder="Error input" required />
+                <input data-style="red" type="tel" id="danger" class="input-md block w-full" placeholder="Error input" autocomplete="tel" required />
                 <p data-style="red" class="fl-mt-2.5 text-xs text-muted-inset-fg-secondary"><span class="font-medium">Oh, snap!</span> Some error message.</p>
             </div>
             <div class="fl-mb-4.5">
-                <label for="remember" class="flex items-center">
-                    <input id="remember" type="checkbox" value="" class="fl-size-3 border border-quiet-inset-border rounded-sm bg-muted" required />
-                    <p class="fl-ms-2 label-text text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="text-accent hover:underline">terms and conditions</a>.</p>
+                <label for="terms" class="flex items-center">
+                    <input id="terms" type="checkbox" value="" class="fl-size-3" required />
+                    <p class="fl-ms-2 label-text text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="action-link">terms and conditions</a>.</p>
                 </label>
             </div>
 
             <div class="fl-mb-4.5">
-                <label for="green-toggle" class="flex cursor-pointer">
-                    <input data-style="green" id="green-toggle" type="checkbox" value="" class="sr-only peer" checked>
+                <label data-style="green" for="green-toggle" class="flex cursor-pointer">
+                    <input id="green-toggle" type="checkbox" value="" class="sr-only peer" checked>
                     <div class="toggle-fluid toggle-sm"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Green toggle</p>
@@ -712,8 +750,8 @@
             </div>
 
             <div class="fl-mb-4.5">
-                <label for="red-toggle" class="flex cursor-pointer">
-                    <input data-style="red" id="red-toggle" type="checkbox" value="" class="sr-only peer" checked>
+                <label data-style="red" for="red-toggle" class="flex cursor-pointer">
+                    <input id="red-toggle" type="checkbox" value="" class="sr-only peer" checked>
                     <div class="toggle-fluid toggle-sm"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Red toggle</p>
@@ -734,8 +772,8 @@
             </div>
 
             <div class="fl-mb-4.5">
-                <label for="green-toggle-lg" class="flex cursor-pointer">
-                    <input data-style="green" id="green-toggle-lg" type="checkbox" value="" class="sr-only peer">
+                <label data-style="green" for="green-toggle-lg" class="flex cursor-pointer">
+                    <input id="green-toggle-lg" type="checkbox" value="" class="sr-only peer">
                     <div class="toggle-fluid toggle-lg"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Green toggle</p>
@@ -745,8 +783,8 @@
             </div>
 
             <div class="fl-mb-4.5">
-                <label for="red-toggle-lg" class="flex cursor-pointer">
-                    <input data-style="red" id="red-toggle-lg" type="checkbox" value="" class="sr-only peer">
+                <label data-style="red" for="red-toggle-lg" class="flex cursor-pointer">
+                    <input id="red-toggle-lg" type="checkbox" value="" class="sr-only peer">
                     <div class="toggle-fluid toggle-lg"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Red toggle</p>
@@ -767,7 +805,7 @@
             </div>
             
             <div class="fl-mb-4.5">
-                <label for="ice-cream-flavor" class="block fl-mb-2.5 label-text text-xs text-fg-main">Favorite ice cream flavor (choose one)</label>                
+                <h4 class="fl-mb-2.5 label-text text-xs text-fg-main">Favorite ice cream flavor (choose one)</h4>
                 <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
                         <input name="ice-cream-flavor" id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
@@ -807,7 +845,7 @@
             </div>
 
             <div class="fl-mb-4.5">
-                <label for="pizza-toppings" class="block fl-mb-2.5 label-text text-xs text-fg-main">Favorite pizza toppings (choose all that apply)</label>                
+                <h4 class="fl-mb-2.5 label-text text-xs text-fg-main">Favorite pizza toppings (choose all that apply)</h4>
                 <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
                         <input id="mozzarella-checkbox" aria-describedby="mozzarella-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
@@ -828,61 +866,81 @@
                 </div>
                 <div class="flex fl-mb-3.5" data-style="green">
                     <div class="flex items-center fl-size-5">
-                        <input id="garlic-checkbox" aria-describedby="garlic-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input id="garlic-checkbox" aria-describedby="garlic-checkbox-text" type="checkbox" value="" class="fl-size-3 focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label-text text-xs select-none">
                         <label for="garlic-checkbox" class="text-fg-main fl-mb-1">Roasted garlic</label>
                         <p id="garlic-checkbox-text" class="text-fg-secondary">A flavorful and aromatic topping made from roasted garlic cloves.</p>
                     </div>
                 </div>
-                <div class="flex fl-mb-3.5 cursor-not-allowed">
+                <div class="flex fl-mb-3.5">
                     <div class="flex items-center fl-size-5">
-                        <input disabled id="pineapple-checkbox" aria-describedby="pineapple-checkbox-text" type="checkbox" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                        <input disabled id="pineapple-checkbox" aria-describedby="pineapple-checkbox-text" type="checkbox" value="" class="fl-size-3 focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
                     </div>
                     <div class="label-text text-xs select-none">
                         <label for="pineapple-checkbox" class="text-fg-disabled fl-mb-1">Pineapple</label>
                         <p id="pineapple-checkbox-text" class="text-fg-disabled">A tropical and sweet topping made from fresh pineapple chunks.</p>
                     </div>
                 </div>
+                <div class="flex fl-mb-3.5">
+                    <div class="flex items-center fl-size-5">
+                        <input disabled checked id="parmesan-checkbox" aria-describedby="parmesan-checkbox-text" type="checkbox" value="" class="fl-size-3 focus:ring-2 focus:outline-none focus:ring-focus appearance-none">
+                    </div>
+                    <div class="label-text text-xs select-none">
+                        <label for="parmesan-checkbox" class="text-fg-disabled fl-mb-1">Parmesan</label>
+                        <p id="parmesan-checkbox-text" class="text-fg-disabled">A savory and nutty topping made from grated Parmesan cheese.</p>
+                    </div>
+                </div>
             </div>
             
             <div class="fl-mb-4.5">
-                <label class="block fl-mb-2.5 label-text text-xs text-fg-main">Upload file(s)</label>   
+                <label for="upload-files" class="block fl-mb-2.5 label-text text-xs text-fg-main">Upload file(s)</label>   
                 <div class="flex items-center justify-center w-full">
-                    <div class="multi-file-input flex flex-col items-center justify-center w-full rounded-lg">
+                    <div
+                        class="multi-file-input flex flex-col items-center justify-center w-full rounded-lg"
+                        role="button"
+                        tabindex="0"
+                        data-upload-dropzone
+                        data-upload-input="upload-files"
+                        aria-controls="upload-files"
+                        aria-label="Upload files. Click to upload or drag and drop."
+                    >
                         <div class="flex flex-col items-center justify-center fl-pt-5 fl-pb-6">
-                            <i class="fa-classic fa-regular fa-upload fl-mb-4 text-muted-inset-fg-secondary text-lg"></i>
+                            <i class="fa-classic fa-regular fa-upload fl-mb-4 text-lg text-muted-inset-fg-secondary"></i>
                             <p class="fl-mb-2 label-text text-sm text-muted-inset-fg-main">Click to upload or drag and drop</p>
                             <p class="text-xs leading-tight fl-mb-4 text-muted-inset-fg-secondary">Max. file size: 30MB</p>
                             <!-- Upload Button -->
-                            <button type="button" onclick="document.getElementById('dropzone-file-2').click()" class="btn-primary btn-sm inline-flex items-center">
+                            <button type="button" onclick="document.getElementById('upload-files').click()" class="btn-primary btn-sm inline-flex items-center">
                                 <i class="fa-classic fa-regular fa-folder-open fl-me-1.5"></i>
                                 Browse file
                             </button>
                         </div>
                     </div>
                     <!-- Hidden File Input (Outside Label) -->
-                    <input id="dropzone-file-2" type="file" class="hidden" />
+                    <input id="upload-files" type="file" class="hidden" />
                 </div>
             </div> 
 
             <div class="fl-mb-4.5">
-                <label class="block fl-mb-2.5 label-text text-xs text-fg-main">Upload file(s)</label>   
+                <label for="disabled-upload-files" class="block fl-mb-2.5 label-text text-xs text-fg-disabled">Disabled Upload file(s)</label>
                 <div class="flex items-center justify-center w-full">
-                    <div class="multi-file-input flex flex-col items-center justify-center w-full rounded-lg">
-                        <div class="flex flex-col items-center justify-center fl-pt-5 fl-pb-6">
-                            <i class="fa-classic fa-regular fa-upload fl-mb-4 text-muted-inset-fg-secondary text-lg"></i>
-                            <p class="fl-mb-2 label-text text-sm text-muted-inset-fg-main">Click to upload or drag and drop</p>
-                            <p class="text-xs leading-tight fl-mb-4 text-muted-inset-fg-secondary">Max. file size: 30MB</p>
+                    <div
+                        class="multi-file-input flex flex-col items-center justify-center w-full rounded-lg"
+                        aria-disabled="true"
+                    >
+                        <div class="text-quiet-inset-fg-disabled flex flex-col items-center justify-center fl-pt-5 fl-pb-6">
+                            <i class="fa-classic fa-regular fa-upload fl-mb-4 text-lg"></i>
+                            <p class="fl-mb-2 label-text text-sm">Click to upload or drag and drop</p>
+                            <p class="text-xs leading-tight fl-mb-4">Max. file size: 30MB</p>
                             <!-- Upload Button -->
-                            <button type="button" onclick="document.getElementById('dropzone-file-2').click()" class="btn-primary btn-sm inline-flex items-center">
+                            <button disabled type="button" onclick="document.getElementById('disabled-upload-files').click()" class="btn-primary btn-sm inline-flex items-center">
                                 <i class="fa-classic fa-regular fa-folder-open fl-me-1.5"></i>
                                 Browse file
                             </button>
                         </div>
                     </div>
                     <!-- Hidden File Input (Outside Label) -->
-                    <input disabled id="dropzone-file-2" type="file" class="hidden" />
+                    <input disabled id="disabled-upload-files" type="file" class="hidden" />
                 </div>
             </div> 
  
@@ -1242,6 +1300,7 @@
         </div>
     </div>
 
+    <script src="js/components/file-upload.js"></script>
     <script src="js/theme-loader.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>

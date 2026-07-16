@@ -84,7 +84,7 @@
   --tracking-normal: 0em;
   --tracking-tight: -.02em;
 
-  /* Should always match width/viewport/min Figma variables */
+  /* Should always match width/viewport/min Figma variables. Map to variables later */
 	--breakpoint-xs: 380px;
 	--breakpoint-sm: 668px;
 	--breakpoint-md: 800px;
@@ -726,10 +726,63 @@
 }
 
 @layer base {
-  input[type='checkbox']:checked {
+  [type='text'], [type='email'], [type='url'], [type='password'], [type='number'],
+  [type='date'], [type='datetime-local'], [type='month'], [type='search'], [type='tel'],
+  [type='time'], [type='week'], [multiple], textarea, select{
+    background-color: var(--color-muted) !important;
+    border-color: var(--color-quiet-border) !important;
+    border-radius: var(--rounded-lg);
+    color: var(--color-muted-inset-fg-auxiliary);
+    &:focus {
+      border-color: var(--color-muted-inset-border-accent) !important;
+      color: var(--color-muted-inset-fg-main) !important;
+      @apply placeholder:opacity-0;
+    }
+    &:not(:placeholder-shown) {
+      color: var(--color-muted-inset-fg-main) !important;
+    }
+    &:read-only {
+      color: var(--color-muted-inset-fg-secondary) !important;  
+      &:focus {
+        @apply placeholder:opacity-100;  
+      }
+    }
+    &:disabled {
+      color: var(--fg-disabled) !important;
+      cursor: not-allowed;
+      border-color: var(--color-quiet-border) !important;
+    }
+  }
+  input[type='checkbox'] {
+    background-color: var(--color-muted);
+    border-color: var(--color-quiet-border);
+    border-radius: var(--rounded-sm);
+    color: var(--color-loud-inset-fg-main);
+    &:hover {
+      background-color: oklch(from var(--color-muted) calc(l - 0.20) c h) !important;
+    }
+    &:checked {
     color: var(--color-loud-inset-fg-main) !important;
     background-color: var(--color-fg-accent) !important;
     border-color: var(--color-fg-accent) !important;
+      &:hover {
+        background-color: oklch(from var(--color-fg-accent) calc(l - 0.20) c h) !important;
+        &:disabled {
+          color: var(--color-quiet-inset-fg-disabled) !important;
+          background-color: var(--color-quiet) !important;
+        }
+      }
+      &:disabled {
+        color: var(--color-quiet-inset-fg-disabled) !important;
+        background-color: var(--color-quiet) !important;
+      }
+    }
+    &:disabled {
+      color: var(--color-quiet-inset-fg-disabled) !important;
+      cursor: not-allowed;
+      border-color: var(--color-quiet-border) !important;
+      background-color: var(--color-quiet) !important;
+    }
   }
   input[type='radio']:checked {
     color: var(--color-quiet-inset-fg-accent) !important;
@@ -746,37 +799,6 @@
     background-color: var(--color-quiet-inset-fg-accent) !important;
     width: 0.375rem !important;
     height: 0.375rem !important;
-  }
-  button {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background-color: transparent; 
-      transition: background-color 0.3s ease;
-    }
-    &:hover {
-      &::before {
-        background-color: var(--color-hover);
-        /* background-color: var(--opacities-black-200); */
-      }
-    }
-    &:active {
-      &::before {
-        background-color: var(--color-active);
-      }
-    }
-    &:disabled {
-      cursor: not-allowed;
-      &::before {
-        background-color: var(--color-transparent);
-      }
-    }
   }
   a:disabled, a.disabled {
     color: var(--color-fg-disabled) !important;
@@ -812,6 +834,12 @@
   }
   .btn-primary {
     @apply bg-loud text-loud-inset-fg-main;
+    &:hover {
+      background-color: oklch(from var(--color-loud) calc(l - 0.20) c h);
+    }
+    &:active {
+      background-color: oklch(from var(--color-loud) calc(l - 0.30) c h);
+    }
     &:disabled {
       color: var(--color-quiet-inset-fg-disabled) !important;
       cursor: not-allowed;
@@ -821,6 +849,12 @@
   }
   .btn-secondary {
     @apply bg-muted text-muted-inset-fg-main border-quiet-border box-border border;
+    &:hover {
+      background-color: oklch(from var(--color-muted) calc(l - 0.20) c h);
+    }
+    &:active {
+      background-color: oklch(from var(--color-muted) calc(l - 0.30) c h);
+    }
     &:disabled {
       color: var(--color-quiet-inset-fg-disabled) !important;
       cursor: not-allowed;
@@ -828,15 +862,76 @@
       background-color: var(--color-quiet);
     }
   }
+  [data-mode="invert"] {
+    .btn-secondary {
+      &:hover {
+        background-color: oklch(from var(--color-muted) calc(l + 0.20) c h) !important;  
+      }
+      &:active {
+        background-color: oklch(from var(--color-muted) calc(l + 0.30) c h) !important;  
+      }
+      &:disabled {
+        color: var(--color-quiet-inset-fg-disabled) !important;
+        cursor: not-allowed;
+        border-color: var(--color-quiet-border) !important;
+        background-color: var(--color-quiet);
+      }
+      &:hover:disabled {
+        background-color: var(--color-quiet) !important;
+      }
+    }
+  }
   .btn-ghost {
     @apply bg-transparent text-quiet-inset-fg-secondary box-border border border-transparent;
     &:hover {
       color: var(--color-quiet-inset-fg-main) !important;
+      background-color: var(--color-quiet) !important;
+    }
+    &:active {
+      color: var(--color-medium-inset-fg-main) !important;
+      background-color: oklch(from var(--color-quiet) calc(l - 0.30) c h) !important;
     }
     &:disabled {
       color: var(--fg-disabled) !important;
+      background: var(--color-transparent) !important;
+      cursor: not-allowed;
     }
   }
+  .btn-primary-gradient {
+    @apply bg-gradient-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main;
+    &:hover {
+      --tw-gradient-from: oklch(from var(--color-surface-gradient-accent-end) calc(l - 0.20) c h);
+      --tw-gradient-to: oklch(from var(--color-surface-gradient-accent-start) calc(l - 0.20) c h);
+    }
+    &:active {
+      --tw-gradient-from: oklch(from var(--color-surface-gradient-accent-end) calc(l - 0.30) c h);
+      --tw-gradient-to: oklch(from var(--color-surface-gradient-accent-start) calc(l - 0.30) c h);
+    }
+    &:disabled {
+      color: var(--fg-disabled) !important;
+      cursor: not-allowed;
+      --tw-gradient-from: var(--color-quiet);
+      --tw-gradient-to: var(--color-quiet);
+    }
+  }
+  /* Holding off on building out all gradient buttons since they don't have applicable variables because we don't know if we want them
+  .btn-secondary-gradient {
+    @apply bg-gradient-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main;
+    &:hover {
+      --tw-gradient-from: oklch(from var(--color-surface-gradient-accent-end) calc(l - 0.20) c h);
+      --tw-gradient-to: oklch(from var(--color-surface-gradient-accent-start) calc(l - 0.20) c h);
+    }
+    &:active {
+      --tw-gradient-from: oklch(from var(--color-surface-gradient-accent-end) calc(l - 0.30) c h);
+      --tw-gradient-to: oklch(from var(--color-surface-gradient-accent-start) calc(l - 0.30) c h);
+    }
+    &:disabled {
+      color: var(--fg-disabled) !important;
+      cursor: not-allowed;
+      --tw-gradient-from: var(--color-quiet);
+      --tw-gradient-to: var(--color-quiet);
+    }
+  }*/
 
   /* Forms */
   .input-sm {
@@ -880,14 +975,13 @@
     transition: transform 0.2s ease, background-color 0.2s ease;
   }
   .toggle-fluid:hover {
-    background-color: color-mix(in oklch, var(--color-muted), var(--color-hover) 20%);
-    
+    background-color: oklch(from var(--color-muted) calc(l - 0.20) c h);    
   }
   .peer:checked + .toggle-fluid {
     background-color: var(--color-fg-accent);
     border-color: var(--color-loud-inset-border-accent);
     &:hover {
-      background-color: color-mix(in oklch, var(--color-fg-accent), var(--color-hover) 20%);
+      background-color: oklch(from var(--color-fg-accent) calc(l - 0.20) c h);
     }
   }
   .peer:checked + .toggle-fluid::after {
@@ -921,22 +1015,31 @@
   /* Forms - Multi File Input */
   .multi-file-input {
     background-color: var(--color-muted);
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     border-style: dashed;
     border-width: var(--border-default);
     border-color: var(--color-medium-border);
+    outline: none;
     &:hover {
       background-color: oklch(from var(--color-muted) calc(l - 0.10) c h);
     }
-    &:focus-within {
+    &:focus,
+    &:focus-within,
+    &.is-dragover {
       background-color: oklch(from var(--color-muted) calc(l - 0.10) c h);
       border-color: var(--color-fg-accent);
       border-style: solid;
     }
-    &:has(:disabled) {
-      color: var(--color-quiet-inset-fg-disabled);
+    &:focus-visible {
+      box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-fg-accent), transparent 55%);
+    }
+    &[aria-disabled="true"], &:disabled {
+      color: var(--color-quiet-inset-fg-disabled) !important;
       border-color: var(--color-quiet-border);
       cursor: not-allowed;
+      &:hover {
+        background-color: var(--color-muted);
+      }
     }
   }
 }
