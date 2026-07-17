@@ -4814,7 +4814,7 @@
   }
   .peer:checked + .toggle-fluid::after {
     background-color: var(--color-loud-inset-fg-main);
-    transform: translate(calc(var(--toggle-pad-inline-end) - var(--toggle-pad-inline-start)), -50%);
+    transform: translate(var(--toggle-knob-size), -50%);
   }
   .peer:disabled + .toggle-fluid {
     background-color: var(--color-quiet);
@@ -4829,8 +4829,8 @@
   }
   .toggle-sm {
     --toggle-knob-size: var(--spacing-static-sm);
-    --toggle-pad-block: var(--fl-space-\.25);
-    --toggle-pad-inline-start: var(--fl-space-\.25);
+    --toggle-pad-block: var(--fl-space-\.5);
+    --toggle-pad-inline-start: var(--fl-space-\.5);
     --toggle-pad-inline-end: var(--fl-space-4);
   }
   .toggle-lg {
