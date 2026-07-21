@@ -338,10 +338,16 @@ StyleDictionary.registerFormat({
     if (invertLines.length) {
       const modeClassSelector = options.modeClassSelector;
       const invertSelectors = baseSelectors.flatMap((selector) => {
-        const selectors = [`${selector}[data-mode="invert"]`];
+        const selectors = [
+          `${selector}[data-mode="invert"]`,
+          `[data-mode="invert"] ${selector}`,
+        ];
 
         if (modeClassSelector) {
-          selectors.push(`${selector}${modeClassSelector}`);
+          selectors.push(
+            `${selector}${modeClassSelector}`,
+            `${modeClassSelector} ${selector}`
+          );
         }
 
         return selectors;

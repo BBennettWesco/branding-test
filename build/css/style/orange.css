@@ -69,7 +69,7 @@
   --active: var(--opacities-black-300);
 }
 
-[data-style="orange"][data-mode="invert"], [data-style="orange"].mode-invert, .style-orange[data-mode="invert"], .style-orange.mode-invert {
+[data-style="orange"][data-mode="invert"], [data-mode="invert"] [data-style="orange"], [data-style="orange"].mode-invert, .mode-invert [data-style="orange"], .style-orange[data-mode="invert"], [data-mode="invert"] .style-orange, .style-orange.mode-invert, .mode-invert .style-orange {
   --bg: var(--brand-color-orange-950);
   --fg-main: var(--white);
   --fg-secondary: var(--opacities-white-800);

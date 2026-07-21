@@ -69,7 +69,7 @@
   --active: var(--opacities-black-300);
 }
 
-[data-style="teal"][data-mode="invert"], [data-style="teal"].mode-invert, .style-teal[data-mode="invert"], .style-teal.mode-invert {
+[data-style="teal"][data-mode="invert"], [data-mode="invert"] [data-style="teal"], [data-style="teal"].mode-invert, .mode-invert [data-style="teal"], .style-teal[data-mode="invert"], [data-mode="invert"] .style-teal, .style-teal.mode-invert, .mode-invert .style-teal {
   --bg: var(--brand-color-teal-950);
   --fg-main: var(--white);
   --fg-secondary: var(--opacities-white-800);

@@ -724,17 +724,32 @@
             <div class="fl-mb-4.5">
                 <label for="success" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your name</label>
                 <input data-style="green" type="text" id="success" class="input-md block w-full" placeholder="Success input" required />
-                <p data-style="green" class="fl-mt-2.5 text-xs text-muted-inset-fg-secondary"><span class="font-medium">Well done!</span> Some success message.</p>
+                <p data-style="green" class="fl-mt-2.5 text-xs text-fg-accent"><span class="font-medium">Well done!</span> Some success message.</p>
             </div>
             <div class="fl-mb-4.5">
                 <label for="danger" class="block fl-mb-2.5 label-text text-xs text-fg-main">Your phone number</label>
                 <input data-style="red" type="tel" id="danger" class="input-md block w-full" placeholder="Error input" autocomplete="tel" required />
-                <p data-style="red" class="fl-mt-2.5 text-xs text-muted-inset-fg-secondary"><span class="font-medium">Oh, snap!</span> Some error message.</p>
+                <p data-style="red" class="fl-mt-2.5 text-xs text-fg-accent"><span class="font-medium">Oh, snap!</span> Some error message.</p>
             </div>
-            <div class="fl-mb-4.5">
+            <!--<div class="fl-mb-4.5">
                 <label for="terms" class="flex items-center">
-                    <input id="terms" type="checkbox" value="" class="fl-size-3" required />
+                    <input id="terms" type="checkbox" value="" class="fl-size-3.5" required />
                     <p class="fl-ms-2 label-text text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="action-link">terms and conditions</a>.</p>
+                </label>
+            </div>-->
+
+            <div class="fl-mb-4.5">
+                <label for="terms" class="flex items-center fl-gap-2.5 cursor-pointer select-none">
+                    <!-- Native accessible input hidden visually but fully functional -->
+                    <input id="terms" type="checkbox" class="peer sr-only">
+                    
+                    <!-- Fluid custom box -->
+                    <div class="fluid-checkbox fl-size-3.5 flex items-center justify-center transition-all">
+                        <!-- Font Awesome Symbol (hidden from screen readers as decoration) -->
+                        <i class="fa-classic fa-regular fa-check opacity-0" aria-hidden="true"></i>
+                    </div>
+
+                    <span class="label-text text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="action-link">terms and conditions</a>.</span>
                 </label>
             </div>
 
@@ -806,40 +821,50 @@
             
             <div class="fl-mb-4.5">
                 <h4 class="fl-mb-2.5 label-text text-xs text-fg-main">Favorite ice cream flavor (choose one)</h4>
+                <p data-style="red" class="label-text text-xs text-fg-accent fl-mb-3.5">That flavor is not available.</p>
                 <div class="flex fl-mb-3.5">
-                    <div class="flex items-center fl-size-5">
-                        <input name="ice-cream-flavor" id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    <div class="flex">
+                        <input name="ice-cream-flavor" id="cookie-dough-radio" aria-describedby="cookie-dough-radio-text" type="radio" value="" class="fl-size-3.5 appearance-none">
                     </div>
-                    <div class="label-text text-xs select-none">
+                    <div class="label-text text-xs select-none fl-ms-2">
                         <label for="cookie-dough-radio" class="text-fg-main fl-mb-1">Cookie Dough</label>
                         <p id="cookie-dough-radio-text" class="text-fg-secondary">A sweet and creamy flavor with chunks of cookie dough.</p>
                     </div>
                 </div>
                 <div class="flex fl-mb-3.5" data-style="red">
-                    <div class="flex items-center fl-size-5">
-                        <input name="ice-cream-flavor" id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    <div class="flex">
+                        <input name="ice-cream-flavor" id="vanilla-radio" aria-describedby="vanilla-radio-text" type="radio" value="" class="fl-size-3.5 appearance-none">
                     </div>
-                    <div class="label-text text-xs select-none">
+                    <div class="label-text text-xs select-none fl-ms-2">
                         <label for="vanilla-radio" class="text-fg-main fl-mb-1">Vanilla</label>
                         <p id="vanilla-radio-text" class="text-fg-secondary">A classic and creamy flavor made from real vanilla beans.</p>
                     </div>
                 </div>
                 <div class="flex fl-mb-3.5" data-style="green">
-                    <div class="flex items-center fl-size-5">
-                        <input name="ice-cream-flavor" checked id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                    <div class="flex">
+                        <input name="ice-cream-flavor" checked id="pistachio-radio" aria-describedby="pistachio-radio-text" type="radio" value="" class="fl-size-3.5 appearance-none">
                     </div>
-                    <div class="label-text text-xs select-none">
+                    <div class="label-text text-xs select-none fl-ms-2">
                         <label for="pistachio-radio" class="text-fg-main fl-mb-1">Pistachio</label>
                         <p id="pistachio-radio-text" class="text-fg-secondary">A nutty and creamy flavor with chunks of real pistachio.</p>
                     </div>
                 </div>
-                <div class="flex fl-mb-3.5 cursor-not-allowed">
-                    <div class="flex items-center fl-size-5">
-                        <input name="ice-cream-flavor" disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="text-quiet fl-size-3 border border-quiet-inset-border rounded-full focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
+                <div class="flex fl-mb-3.5">
+                    <div class="flex">
+                        <input name="ice-cream-flavor" disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="fl-size-3.5 appearance-none">
                     </div>
-                    <div class="label-text text-xs select-none">
+                    <div class="label-text text-xs select-none fl-ms-2">
                         <label for="chocolate-radio" class="text-fg-disabled fl-mb-1">Chocolate</label>
                         <p id="chocolate-radio-text" class="text-fg-disabled">A classic and rich flavor made of cocoa beans from Costa Rica.</p>
+                    </div>
+                </div>
+                <div class="flex fl-mb-3.5">
+                    <div class="flex">
+                        <input name="ice-cream-flavor" disabled checked id="strawberry-radio" aria-describedby="strawberry-radio-text" type="radio" value="" class="fl-size-3.5 appearance-none">
+                    </div>
+                    <div class="label-text text-xs select-none fl-ms-2">
+                        <label for="strawberry-radio" class="text-fg-disabled fl-mb-1">Strawberry</label>
+                        <p id="strawberry-radio-text" class="text-fg-disabled">A sweet and fruity flavor made with fresh strawberries.</p>
                     </div>
                 </div>
             </div>
@@ -847,49 +872,90 @@
             <div class="fl-mb-4.5">
                 <h4 class="fl-mb-2.5 label-text text-xs text-fg-main">Favorite pizza toppings (choose all that apply)</h4>
                 <div class="flex fl-mb-3.5">
-                    <div class="flex items-center fl-size-5">
-                        <input id="mozzarella-checkbox" aria-describedby="mozzarella-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
-                    </div>
-                    <div class="label-text text-xs select-none">
-                        <label for="mozzarella-checkbox" class="text-fg-main fl-mb-1">Mozzarella</label>
-                        <p id="mozzarella-checkbox-text" class="text-fg-secondary">A classic and stretchy cheese topping for pizza.</p>
-                    </div>
+                    <label for="mozzarella-checkbox" class="flex fl-gap-2.5 cursor-pointer select-none">
+                        <!-- Native accessible input hidden visually but fully functional -->
+                        <input id="mozzarella-checkbox" type="checkbox" class="peer sr-only">
+                        
+                        <!-- Fluid custom box -->
+                        <div class="fluid-checkbox fl-size-3.5 flex items-center justify-center transition-all">
+                            <!-- Font Awesome Symbol (hidden from screen readers as decoration) -->
+                            <i class="fa-classic fa-regular fa-check opacity-0" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="label-text text-xs select-none">
+                            <p class="text-fg-main fl-mb-1">Mozzarella</p>
+                            <span class="text-fg-secondary">A classic and creamy topping made from fresh mozzarella cheese.</span>
+                        </div>
+                    </label>
                 </div>
+
                 <div class="flex fl-mb-3.5" data-style="red">
-                    <div class="flex items-center fl-size-5">
-                        <input id="pepperoni-checkbox" aria-describedby="pepperoni-checkbox-text" type="checkbox" value="" class="fl-size-3 bg-muted border border-quiet-inset-border rounded-sm focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
-                    </div>
-                    <div class="label-text text-xs select-none">
-                        <label for="pepperoni-checkbox" class="text-fg-main fl-mb-1">Pepperoni</label>
-                        <p id="pepperoni-checkbox-text" class="text-fg-secondary">A popular and savory topping made from cured pepperoni slices.</p>
-                    </div>
+                    <label for="pepperoni-checkbox" class="flex fl-gap-2.5 cursor-pointer select-none">
+                        <!-- Native accessible input hidden visually but fully functional -->
+                        <input id="pepperoni-checkbox" type="checkbox" class="peer sr-only">
+                        
+                        <!-- Fluid custom box -->
+                        <div class="fluid-checkbox fl-size-3.5 flex items-center justify-center transition-all">
+                            <!-- Font Awesome Symbol (hidden from screen readers as decoration) -->
+                            <i class="fa-classic fa-regular fa-check opacity-0" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="label-text text-xs select-none">
+                            <p class="text-fg-main fl-mb-1">Pepperoni</p>
+                            <span class="text-fg-secondary">A popular and savory topping made from cured pepperoni slices.</span>
+                        </div>
+                    </label>
                 </div>
                 <div class="flex fl-mb-3.5" data-style="green">
-                    <div class="flex items-center fl-size-5">
-                        <input id="garlic-checkbox" aria-describedby="garlic-checkbox-text" type="checkbox" value="" class="fl-size-3 focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
-                    </div>
-                    <div class="label-text text-xs select-none">
-                        <label for="garlic-checkbox" class="text-fg-main fl-mb-1">Roasted garlic</label>
-                        <p id="garlic-checkbox-text" class="text-fg-secondary">A flavorful and aromatic topping made from roasted garlic cloves.</p>
-                    </div>
+                    <label for="garlic-checkbox" class="flex fl-gap-2.5 cursor-pointer select-none">
+                        <!-- Native accessible input hidden visually but fully functional -->
+                        <input id="garlic-checkbox" type="checkbox" class="peer sr-only">
+                        
+                        <!-- Fluid custom box -->
+                        <div class="fluid-checkbox fl-size-3.5 flex items-center justify-center transition-all">
+                            <!-- Font Awesome Symbol (hidden from screen readers as decoration) -->
+                            <i class="fa-classic fa-regular fa-check opacity-0" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="label-text text-xs select-none">
+                            <p class="text-fg-main fl-mb-1">Roasted garlic</p>
+                            <span class="text-fg-secondary">A flavorful and aromatic topping made from roasted garlic cloves.</span>
+                        </div>
+                    </label>
                 </div>
                 <div class="flex fl-mb-3.5">
-                    <div class="flex items-center fl-size-5">
-                        <input disabled id="pineapple-checkbox" aria-describedby="pineapple-checkbox-text" type="checkbox" value="" class="fl-size-3 focus:ring-2 focus:outline-none focus:ring-brand-subtle appearance-none">
-                    </div>
-                    <div class="label-text text-xs select-none">
-                        <label for="pineapple-checkbox" class="text-fg-disabled fl-mb-1">Pineapple</label>
-                        <p id="pineapple-checkbox-text" class="text-fg-disabled">A tropical and sweet topping made from fresh pineapple chunks.</p>
-                    </div>
+                    <label for="pineapple-checkbox" class="flex fl-gap-2.5 cursor-pointer select-none">
+                        <!-- Native accessible input hidden visually but fully functional -->
+                        <input disabled id="pineapple-checkbox" type="checkbox" class="peer sr-only">
+                        
+                        <!-- Fluid custom box -->
+                        <div class="fluid-checkbox fl-size-3.5 flex items-center justify-center transition-all">
+                            <!-- Font Awesome Symbol (hidden from screen readers as decoration) -->
+                            <i class="fa-classic fa-regular fa-check opacity-0" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="label-text text-xs select-none">
+                            <p class="text-fg-main fl-mb-1">Pineapple</p>
+                            <span class="text-fg-secondary">A tropical and sweet topping made from fresh pineapple chunks.</span>
+                        </div>
+                    </label>
                 </div>
                 <div class="flex fl-mb-3.5">
-                    <div class="flex items-center fl-size-5">
-                        <input disabled checked id="parmesan-checkbox" aria-describedby="parmesan-checkbox-text" type="checkbox" value="" class="fl-size-3 focus:ring-2 focus:outline-none focus:ring-focus appearance-none">
-                    </div>
-                    <div class="label-text text-xs select-none">
-                        <label for="parmesan-checkbox" class="text-fg-disabled fl-mb-1">Parmesan</label>
-                        <p id="parmesan-checkbox-text" class="text-fg-disabled">A savory and nutty topping made from grated Parmesan cheese.</p>
-                    </div>
+                    <label for="parmesan-checkbox" class="flex fl-gap-2.5 cursor-pointer select-none">
+                        <!-- Native accessible input hidden visually but fully functional -->
+                        <input disabled checked id="parmesan-checkbox" type="checkbox" class="peer sr-only">
+                        
+                        <!-- Fluid custom box -->
+                        <div class="fluid-checkbox fl-size-3.5 flex items-center justify-center transition-all">
+                            <!-- Font Awesome Symbol (hidden from screen readers as decoration) -->
+                            <i class="fa-classic fa-regular fa-check opacity-0" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="label-text text-xs select-none">
+                            <p class="text-fg-main fl-mb-1">Parmesan</p>
+                            <span class="text-fg-secondary">A savory and nutty topping made from grated Parmesan cheese.</span>
+                        </div>
+                    </label>
                 </div>
             </div>
             

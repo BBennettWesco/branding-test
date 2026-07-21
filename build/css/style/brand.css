@@ -69,7 +69,7 @@
   --active: var(--opacities-black-300);
 }
 
-[data-style="brand"][data-mode="invert"], [data-style="brand"].mode-invert, .style-brand[data-mode="invert"], .style-brand.mode-invert {
+[data-style="brand"][data-mode="invert"], [data-mode="invert"] [data-style="brand"], [data-style="brand"].mode-invert, .mode-invert [data-style="brand"], .style-brand[data-mode="invert"], [data-mode="invert"] .style-brand, .style-brand.mode-invert, .mode-invert .style-brand {
   --bg: var(--brand-color-primary-950);
   --fg-main: var(--white);
   --fg-secondary: var(--brand-color-primary-50);

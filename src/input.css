@@ -753,52 +753,108 @@
       border-color: var(--color-quiet-border) !important;
     }
   }
-  input[type='checkbox'] {
+  input[type='checkbox'], .fluid-checkbox {
     background-color: var(--color-muted);
     border-color: var(--color-quiet-border);
     border-radius: var(--rounded-sm);
     color: var(--color-loud-inset-fg-main);
+    border-width: var(--border-default);
+    flex-shrink: 0;
     &:hover {
       background-color: oklch(from var(--color-muted) calc(l - 0.20) c h) !important;
     }
-    &:checked {
-    color: var(--color-loud-inset-fg-main) !important;
-    background-color: var(--color-fg-accent) !important;
-    border-color: var(--color-fg-accent) !important;
-      &:hover {
-        background-color: oklch(from var(--color-fg-accent) calc(l - 0.20) c h) !important;
-        &:disabled {
+    &:checked, &:checked + .fluid-checkbox {
+      color: var(--color-loud-inset-fg-main) !important;
+      background-color: var(--color-fg-accent) !important;
+      border-color: var(--color-fg-accent) !important;
+        &:hover, &:hover + .fluid-checkbox {
+          background-color: oklch(from var(--color-fg-accent) calc(l - 0.20) c h) !important;
+          &:disabled, &:disabled + .fluid-checkbox {
+            color: var(--color-quiet-inset-fg-disabled) !important;
+            background-color: var(--color-quiet) !important;
+          }
+          &:disabled + .fluid-checkbox i {
+            color: var(--color-quiet-inset-fg-disabled) !important;
+          }
+        }
+        &:disabled, &:disabled + .fluid-checkbox {
           color: var(--color-quiet-inset-fg-disabled) !important;
           background-color: var(--color-quiet) !important;
+          background-image:none !important;
         }
-      }
-      &:disabled {
-        color: var(--color-quiet-inset-fg-disabled) !important;
-        background-color: var(--color-quiet) !important;
-      }
+        &:disabled + .fluid-checkbox i {
+          color: var(--color-quiet-inset-fg-disabled) !important;
+        }
     }
-    &:disabled {
+    &:checked + .fluid-checkbox i {
+      color: var(--color-loud-inset-fg-main) !important;
+      opacity: 100 !important;
+      font-size: .5rem;
+    }
+    &:focus-visible, &:focus-visible + .fluid-checkbox {
+      outline: .1rem solid var(--color-fg-accent);
+    }
+    &:focus:not(:focus-visible), &:focus:not(:focus-visible) + .fluid-checkbox {
+      outline: none;
+    }
+    &:disabled, &:disabled + .fluid-checkbox {
       color: var(--color-quiet-inset-fg-disabled) !important;
       cursor: not-allowed;
       border-color: var(--color-quiet-border) !important;
       background-color: var(--color-quiet) !important;
     }
   }
-  input[type='radio']:checked {
-    color: var(--color-quiet-inset-fg-accent) !important;
-    background-color: var(--color-muted) !important;
-    border-color: var(--color-quiet-inset-border-accent) !important;
-  }
-  input[type='radio']:checked::before,
-  input[type='radio']:disabled:checked::before {
-    background-color: var(--color-muted) !important;
-  }
-
-  input[type='radio']:checked::after,
-  input[type='radio']:disabled:checked::after {
-    background-color: var(--color-quiet-inset-fg-accent) !important;
-    width: 0.375rem !important;
-    height: 0.375rem !important;
+  input[type='radio'] {
+    background-color: var(--color-muted);
+    border-color: var(--color-quiet-border);
+    border-width: var(--border-default);
+    border-radius: var(--rounded-full);
+    color: var(--color-loud-inset-fg-main);
+    &:hover {
+      background-color: oklch(from var(--color-muted) calc(l - 0.20) c h) !important;
+    }
+    &:checked {
+      color: var(--color-quiet-inset-fg-accent) !important;
+      background-color: var(--color-muted) !important;
+      border-color: var(--color-quiet-inset-border-accent) !important;
+      border-width: var(--border-default);
+      &:hover {
+        background-color: oklch(from var(--color-muted) calc(l - 0.20) c h) !important;
+      }
+    }
+    &:focus-visible {
+      outline: .1rem solid var(--color-fg-accent);
+    }
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      border-color: var(--color-quiet-border) !important;
+      background-color: var(--color-quiet) !important;
+      &::after {
+        font-family: 'Font Awesome 7 Pro' !important;
+        content: "\f715" !important;
+        color: var(--color-quiet-inset-fg-disabled) !important;
+        font-size: .5rem;
+        position: absolute;
+        inset-block-start: .125rem;
+        inset-inline-start: .125rem;
+        display: block;
+        line-height: 1;
+      }
+      &:checked::after {
+        background-color: var(--color-quiet-inset-fg-disabled) !important;
+        content: "" !important;
+        width: 0.375rem !important;
+        height: 0.375rem !important;
+      }
+    }
+    &:checked::after {
+      background-color: var(--color-quiet-inset-fg-accent) !important;
+      width: 0.375rem !important;
+      height: 0.375rem !important;
+    }
   }
   a:disabled, a.disabled {
     color: var(--color-fg-disabled) !important;
@@ -846,6 +902,12 @@
       border-color: var(--color-quiet-border) !important;
       background-color: var(--color-quiet);
     }
+    &:focus-visible {
+      outline: .1rem solid var(--color-fg-accent) !important;
+    }
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
   }
   .btn-secondary {
     @apply bg-muted text-muted-inset-fg-main border-quiet-border box-border border;
@@ -860,6 +922,12 @@
       cursor: not-allowed;
       border-color: var(--color-quiet-border) !important;
       background-color: var(--color-quiet);
+    }
+    &:focus-visible {
+      outline: .1rem solid var(--color-fg-accent) !important;
+    }
+    &:focus:not(:focus-visible) {
+      outline: none;
     }
   }
   [data-mode="invert"] {
@@ -896,6 +964,12 @@
       background: var(--color-transparent) !important;
       cursor: not-allowed;
     }
+    &:focus-visible {
+      outline: .1rem solid var(--color-fg-accent) !important;
+    }
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
   }
   .btn-primary-gradient {
     @apply bg-gradient-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main;
@@ -912,6 +986,12 @@
       cursor: not-allowed;
       --tw-gradient-from: var(--color-quiet);
       --tw-gradient-to: var(--color-quiet);
+    }
+    &:focus-visible {
+      outline: .1rem solid var(--color-fg-accent) !important;
+    }
+    &:focus:not(:focus-visible) {
+      outline: none;
     }
   }
   /* Holding off on building out all gradient buttons since they don't have applicable variables because we don't know if we want them
@@ -983,6 +1063,9 @@
     &:hover {
       background-color: oklch(from var(--color-fg-accent) calc(l - 0.20) c h);
     }
+  }
+  .peer:focus-visible + .toggle-fluid {
+    outline: .1rem solid var(--color-fg-accent);
   }
   .peer:checked + .toggle-fluid::after {
     background-color: var(--color-loud-inset-fg-main);
