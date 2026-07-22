@@ -4900,7 +4900,7 @@
   }
   .peer:checked + .toggle-fluid::after {
     background-color: var(--color-loud-inset-fg-main);
-    transform: translate(calc(var(--toggle-pad-inline-end) - (var(--toggle-pad-inline-start)*2) + 1px), -50%);
+    transform: translate(calc(var(--toggle-pad-inline-end) - (var(--toggle-pad-inline-start)*2) + .05rem), -50%);
   }
   .peer:disabled + .toggle-fluid {
     background-color: var(--color-quiet);
