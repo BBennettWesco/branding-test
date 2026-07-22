@@ -865,8 +865,14 @@
   .end {
     inset-inline-end: var(--spacing);
   }
+  .end-2 {
+    inset-inline-end: calc(var(--spacing) * 2);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -964,8 +970,14 @@
   .fl-mt-4 {
     margin-top: var(--fl-space-4);
   }
+  .fl-mt-4\.5 {
+    margin-top: var(--fl-space-4\.5);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .apexcharts-canvas {
     & .apexcharts-tooltip {
@@ -1438,6 +1450,9 @@
     width: var(--fl-space-13);
     height: var(--fl-space-13);
   }
+  .fl-h-13 {
+    height: var(--fl-space-13);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -1447,8 +1462,14 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
   .h-\[calc\(100\%-1rem\)\] {
     height: calc(100% - 1rem);
+  }
+  .h-full {
+    height: 100%;
   }
   .max-h-full {
     max-height: 100%;
@@ -1517,6 +1538,9 @@
     .datatable-wrapper & .datatable-empty {
       text-align: center;
     }
+  }
+  .fl-w-13 {
+    width: var(--fl-space-13);
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -1739,6 +1763,9 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .place-content-center {
+    place-content: center;
+  }
   .items-center {
     align-items: center;
   }
@@ -1760,6 +1787,9 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .fl-gap-1 {
+    gap: var(--fl-space-1);
+  }
   .fl-gap-2 {
     gap: var(--fl-space-2);
   }
@@ -1769,8 +1799,11 @@
   .fl-gap-4 {
     gap: var(--fl-space-4);
   }
-  .fl-gap-10 {
-    gap: var(--fl-space-10);
+  .fl-gap-4\.5 {
+    gap: var(--fl-space-4\.5);
+  }
+  .fl-gap-5 {
+    gap: var(--fl-space-5);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -2178,6 +2211,9 @@
       stroke: var(--color-default) !important;
     }
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .apexcharts-legend {
     .apexcharts-canvas & {
       padding: 0 !important;
@@ -2188,6 +2224,9 @@
       padding: 0 !important;
     }
   }
+  .fl-p-2 {
+    padding: var(--fl-space-2);
+  }
   .fl-p-3 {
     padding: var(--fl-space-3);
   }
@@ -2196,6 +2235,12 @@
   }
   .fl-p-4 {
     padding: var(--fl-space-4);
+  }
+  .fl-p-4\.5 {
+    padding: var(--fl-space-4\.5);
+  }
+  .fl-p-5 {
+    padding: var(--fl-space-5);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -2215,11 +2260,14 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .fl-px-1 {
+    padding-inline: var(--fl-space-1);
+  }
+  .fl-px-1\.5 {
+    padding-inline: var(--fl-space-1\.5);
+  }
   .fl-px-2 {
     padding-inline: var(--fl-space-2);
-  }
-  .fl-px-2\.5 {
-    padding-inline: var(--fl-space-2\.5);
   }
   .fl-px-4 {
     padding-inline: var(--fl-space-4);
@@ -2271,6 +2319,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .fl-pt-1 {
+    padding-top: var(--fl-space-1);
   }
   .fl-pt-4 {
     padding-top: var(--fl-space-4);
@@ -2443,6 +2494,10 @@
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
   }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -2534,6 +2589,9 @@
   .text-quiet-inset-fg-main {
     color: var(--color-quiet-inset-fg-main);
   }
+  .text-quiet-inset-fg-secondary {
+    color: var(--color-quiet-inset-fg-secondary);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -2542,9 +2600,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .underline-offset-4 {
-    text-underline-offset: 4px;
   }
   .antialiased {
     -webkit-font-smoothing: antialiased;
@@ -2701,13 +2756,6 @@
       }
     }
   }
-  .hover\:no-underline {
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-line: none;
-      }
-    }
-  }
   .focus\:z-10 {
     &:focus {
       z-index: 10;
@@ -2741,11 +2789,6 @@
       background-color: var(--color-active);
     }
   }
-  .sm\:grid-cols-2 {
-    @media (width >= 668px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .sm\:flex-row {
     @media (width >= 668px) {
       flex-direction: row;
@@ -2759,6 +2802,46 @@
   .md\:inset-0 {
     @media (width >= 800px) {
       inset: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:h-auto {
+    @media (width >= 800px) {
+      height: auto;
+    }
+  }
+  .md\:w-48 {
+    @media (width >= 800px) {
+      width: calc(var(--spacing) * 48);
+    }
+  }
+  .md\:max-w-3xs {
+    @media (width >= 800px) {
+      max-width: var(--container-3xs);
+    }
+  }
+  .md\:max-w-lg {
+    @media (width >= 800px) {
+      max-width: var(--container-lg);
+    }
+  }
+  .md\:shrink-0 {
+    @media (width >= 800px) {
+      flex-shrink: 0;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 800px) {
+      flex-direction: row;
+    }
+  }
+  .md\:items-stretch {
+    @media (width >= 800px) {
+      align-items: stretch;
+    }
+  }
+  .md\:self-stretch {
+    @media (width >= 800px) {
+      align-self: stretch;
     }
   }
   .lg\:container {
@@ -2787,11 +2870,6 @@
   .lg\:mx-auto {
     @media (width >= 1024px) {
       margin-inline: auto;
-    }
-  }
-  .lg\:grid-cols-4 {
-    @media (width >= 1024px) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .lg\:gap-x-8 {

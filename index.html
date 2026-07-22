@@ -95,6 +95,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#cards" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
+                        <i class="fa-classic fa-regular fa-cards-blank fl-me-1.5"></i>
+                        <span>Cards</span>
+                    </a>
+                </li>
+                <li>
                     <a href="#forms" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-file-lines fl-me-1.5"></i>
                         <span>Forms</span>
@@ -546,113 +552,120 @@
     </section>
 
 
-    <!-- Card -->
+    <!-- Cards -->
+    <section id="cards" class="w-full px-4 lg:px-12 fl-py-9">
+        <h2 class="heading text-4xl fl-mb-4 text-fg-main">Cards</h2>
+        
+        <div class="flex flex-col md:flex-row items-start fl-gap-5 fl-my-9">
+           <a href="#" class="bg-bg block max-w-xs fl-p-5 border border-quiet-border rounded-lg shadow-xs hover:bg-hover">
+                <h5 class="fl-mb-2.5 heading text-lg text-fg-main">Noteworthy technology acquisitions 2021</h5>
+                <p class="text-fg-secondary text-sm">Here are the biggest technology acquisitions of 2025 so far, in reverse chronological order.</p>
+                <button type="button" class="btn-primary btn-md fl-mt-4.5">Read more <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></button>
+            </a>
 
-    <aside aria-label="Related articles" class="fl-py-8 fl-px-2.5 lg:container lg:mx-auto lg:px-12 px-4 w-full">
-        <h2 class="fl-mb-8 heading text-4xl text-fg-main">Related articles</h2>
-        <div class="grid fl-gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" class="fl-mb-4.5 rounded-lg" alt="Image 1">
-                    <h2 class="fl-mb-2 heading text-xl">Our first office</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-accent hover:no-underline">
-                        Read in 2 minutes
+            <div class="bg-bg block max-w-sm fl-p-4.5 border border-quiet-border rounded-lg shadow-sm">
+                <a href="#">
+                    <img class="rounded-lg" src="https://as2.ftcdn.net/v2/jpg/04/81/24/49/1000_F_481244965_7SdrEb0Ubva6ULroACbg7VCwZRW9SzJs.jpg" alt="electricity" title="electricity" />
+                </a>
+                <a href="#">
+                    <h5 class="fl-mt-4.5 fl-mb-2.5 heading text-lg text-fg-main">Streamlining your design process today.</h5>
+                </a>
+                <p class="text-fg-secondary text-sm">In today's fast-paced digital landscape, fostering seamless collaboration among Developers and IT Operations.</p>
+                <button type="button" class="btn-secondary btn-md fl-mt-4.5">Read more <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></button>
+            </div>
+
+            <div class="bg-bg block max-w-sm border border-quiet-border rounded-lg shadow-xs">
+                <a href="#">
+                    <img class="rounded-lg" src="https://as2.ftcdn.net/v2/jpg/03/37/06/73/1000_F_337067354_5RNKEWSNHQM2tcY07MyiM1gNtuwPCnz7.jpg" alt="light bulb" title="light bulb" />
+                </a>
+                <div class="fl-p-4.5 text-center">
+                    <span data-style="orange" class="place-content-center fl-gap-1 inline-flex items-center bg-muted border border-quiet-border text-muted-inset-fg-main label text-xs fl-px-2 rounded-full">
+                        <i class="fa-regular fa-classic fa-star"></i>
+                        Trending
                     </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" class="fl-mb-4.5 rounded-lg" alt="Image 2">
-                    <h2 class="fl-mb-2 heading text-xl">Enterprise design tips</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 12 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" class="fl-mb-4.5 rounded-lg" alt="Image 3">
-                    <h2 class="fl-mb-2 heading text-xl">We partnered with Google</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 8 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" class="fl-mb-4.5 rounded-lg" alt="Image 4">
-                    <h2 class="fl-mb-2 heading text-xl">Our first project with React</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 4 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" class="fl-mb-4.5 rounded-lg" alt="Image 3">
-                    <h2 class="fl-mb-2 heading text-xl">We partnered with Google</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 8 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" class="fl-mb-4.5 rounded-lg" alt="Image 4">
-                    <h2 class="fl-mb-2 heading text-xl">Our first project with React</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 4 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" class="fl-mb-4.5 rounded-lg" alt="Image 3">
-                    <h2 class="fl-mb-2 heading text-xl">We partnered with Google</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 8 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" class="fl-mb-4.5 rounded-lg" alt="Image 4">
-                    <h2 class="fl-mb-2 heading text-xl">Our first project with React</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 4 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" class="fl-mb-4.5 rounded-lg" alt="Image 3">
-                    <h2 class="fl-mb-2 heading text-xl">We partnered with Google</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 8 minutes
-                    </span>
-                </article>
-            </a>
-            <a href="#">
-                <article class="max-w-xs">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" class="fl-mb-4.5 rounded-lg" alt="Image 4">
-                    <h2 class="fl-mb-2 heading text-xl">Our first project with React</h2>
-                    <p class="fl-mb-4">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <span class="inline-flex items-center underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 4 minutes
-                    </span>
-                </article>
+                    <a href="#">
+                        <h5 class="fl-mt-4.5 fl-mb-2.5 heading text-lg text-fg-main">Streamlining your design process today.</h5>
+                    </a>
+                    <button type="button" class="btn-primary btn-md fl-mt-4.5">Read more <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></button>
+                </div>
+            </div>
+
+            <a href="#" class="fl-gap-4.5 flex flex-col items-center bg-bg fl-p-4.5 border border-quiet-border rounded-lg shadow-xs md:flex-row md:max-w-lg md:items-stretch">
+                <div class="w-full h-48 md:w-48 md:h-auto md:self-stretch md:shrink-0 overflow-hidden rounded-lg">
+                    <img class="object-cover w-full h-full" src="https://as1.ftcdn.net/v2/jpg/20/14/12/38/1000_F_2014123863_Qy0GLQfAeWpGuu7eNPPdzE5NVCqClM7P.jpg" alt="Earth lights at night" title="Earth lights at night" />
+                </div>
+                <div class="flex flex-col justify-between">
+                    <h5 class="heading text-lg text-fg-main fl-mb-2.5">Streamlining your design process today.</h5>
+                    <p class="text-fg-secondary text-sm fl-mb-4.5">In today's fast-paced digital landscape, fostering seamless collaboration among Developers and IT Operations.</p>
+                    <div>
+                        <button type="button" class="btn-secondary btn-md">Read more <i class="fa-classic fa-regular fa-arrow-right fl-ms-1.5"></i></button>
+                    </div>
+                </div>
             </a>
         </div>
-    </aside>
+
+        <div class="flex flex-col md:flex-row items-start fl-gap-5 fl-my-9">
+            
+            <div class="relative bg-bg md:max-w-3xs w-full fl-p-4.5 border border-quiet-border rounded-lg shadow-xs">
+                <button id="dropdownButton" data-dropdown-toggle="dropdown" class="absolute top-2 end-2 btn-ghost btn-md" type="button">
+                    <span class="sr-only">Open dropdown</span>
+                    <i class="fa-classic fa-regular fa-ellipsis"></i>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown" class="z-10 bg-bg border border-quiet-border rounded-lg shadow-lg fl-w-36 block hidden">
+                    <ul class="fl-p-2 text-sm text-quiet-inset-fg-secondary" aria-labelledby="dropdownButton">
+                        <li>
+                            <a href="#" class="inline-flex items-center w-full fl-p-2 hover:bg-hover rounded-md">Edit</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-flex items-center w-full fl-p-2 hover:bg-hover rounded-md">Export Data</a>
+                        </li>
+                        <li data-style="red">
+                            <a href="#" class="text-quiet-inset-fg-secondary inline-flex items-center w-full fl-p-2 hover:bg-hover rounded-md">Delete</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="object-cover fl-w-13 fl-h-13 rounded-full" src="https://as2.ftcdn.net/v2/jpg/03/83/25/83/1000_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg" alt="Bonnie image"/>
+                    <div class="flex items-center fl-mt-4.5">
+                        <h5 class="heading text-base text-fg-main">Bonnie Green</h5>
+                        <span data-style="blue" class="fl-ms-2 place-content-center fl-gap-1 inline-flex items-center bg-muted border border-quiet-border text-muted-inset-fg-main label text-xs fl-px-2 rounded-full">Pro</span>
+                    </div>
+                    <span class="text-sm text-fg-secondary">Visual Designer</span>
+                    <div class="flex fl-mt-4.5 fl-gap-2.5">
+                        <button type="button" class="btn-secondary btn-md">Message</button>
+                        <button type="button" class="btn-primary btn-md"><i class="fa-classic fa-regular fa-user-plus fl-me-1.5"></i> Follow me</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-xs bg-bg fl-p-4.5 border border-quiet-border rounded-lg shadow-xs">
+                <a href="#">
+                    <img class="rounded-lg fl-mb-4.5" src="https://flowbite.com/docs/images/products/apple-watch.png" alt="product image" title="product image" />
+                </a>
+                <div>
+                    <div class="flex items-center fl-space-x-3 fl-mb-4.5">
+                        <div data-style="yellow" class="fl-pt-1 flex items-center fl-space-x-1 rtl:fl-space-x-reverse text-sm text-fg-accent">
+                            <i class="fa-classic fa-solid fa-star"></i>
+                            <i class="fa-classic fa-solid fa-star"></i>
+                            <i class="fa-classic fa-solid fa-star"></i>
+                            <i class="fa-classic fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-classic fa-regular fa-star"></i>                     
+                        </div>
+                        <span data-style="blue" class="fl-ms-2 place-content-center fl-gap-1 inline-flex items-center bg-muted border border-quiet-border text-muted-inset-fg-main label text-xs fl-px-2 rounded-full">3.5 out of 5</span>
+                    </div>
+                    <a href="#">
+                        <h5 class="heading text-base text-fg-main">Apple Watch Series 7 GPS, Aluminium Case, Starlight</h5>
+                    </a>
+                    <div class="flex items-center justify-between fl-mt-4.5">
+                        <span class="text-xl font-extrabold text-fg-main">$599</span>
+                        <button type="button" class="btn-primary btn-md">Add to cart <i class="fa-classic fa-regular fa-cart-shopping fl-ms-1.5"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <!-- Form -->
