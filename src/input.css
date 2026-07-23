@@ -815,6 +815,7 @@
     border-radius: var(--rounded-full);
     color: var(--color-loud-inset-fg-main);
     flex-shrink: 0;
+    cursor: pointer;
     &:hover {
       background-color: oklch(from var(--color-muted) calc(l - 0.20) c h) !important;
     }
@@ -871,6 +872,7 @@
 @layer components {
   .action-link {
     color: var(--color-fg-accent) !important;
+    cursor: pointer;
     &:hover {
       text-decoration: underline;
       color: var(--color-fg-main) !important;
@@ -885,13 +887,13 @@
 
   /* Buttons */
   .btn-sm {
-    @apply fl-px-2.5 fl-py-2 action text-xs rounded-lg shadow-xs;
+    @apply fl-px-2.5 fl-py-2 action text-xs rounded-lg shadow-xs cursor-pointer;
   }
   .btn-md {
-    @apply fl-px-3.5 fl-py-3 action text-xs rounded-lg shadow-xs;
+    @apply fl-px-3.5 fl-py-3 action text-xs rounded-lg shadow-xs cursor-pointer;
   }
   .btn-lg {
-    @apply fl-px-4 fl-py-3.5 action text-sm rounded-xl shadow-xs;
+    @apply fl-px-4 fl-py-3.5 action text-sm rounded-xl shadow-xs cursor-pointer;
   }
   .btn-primary {
     @apply bg-loud text-loud-inset-fg-main;
