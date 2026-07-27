@@ -688,7 +688,7 @@
         <div class="fl-mb-4.5 max-w-sm">
             <label for="small-toggle" class="flex cursor-pointer">
                 <input id="small-toggle" type="checkbox" value="" class="sr-only peer" checked>
-                <div class="toggle-fluid toggle-sm"></div>
+                <div class="fluid-toggle toggle-sm"></div>
                 <div class="label-text text-xs fl-ms-2 select-none">
                     <p class="text-fg-main fl-mb-1">Small toggle</p>
                     <p class="text-fg-secondary">Save my credentials for easier sign-in in the future.</p>
@@ -698,7 +698,7 @@
         <div class="fl-mb-4.5 max-w-sm">
             <label for="large-toggle" class="flex cursor-pointer">
                 <input id="large-toggle" type="checkbox" value="" class="sr-only peer" checked>
-                <div class="toggle-fluid toggle-lg"></div>
+                <div class="fluid-toggle toggle-lg"></div>
                 <div class="label-text text-xs fl-ms-2 select-none">
                     <p class="text-fg-main fl-mb-1">Large toggle</p>
                     <p class="text-fg-secondary">Save my credentials for easier sign-in in the future.</p>
@@ -744,12 +744,6 @@
                 <input data-style="red" type="tel" id="danger" class="input-md block w-full" placeholder="Error input" autocomplete="tel" required />
                 <p data-style="red" class="fl-mt-2.5 text-xs text-fg-accent"><span class="font-medium">Oh, snap!</span> Some error message.</p>
             </div>
-            <!--<div class="fl-mb-4.5">
-                <label for="terms" class="flex items-center">
-                    <input id="terms" type="checkbox" value="" class="fl-size-3.5" required />
-                    <p class="fl-ms-2 label-text text-xs select-none text-muted-inset-fg-main">I agree with the <a href="#" class="action-link">terms and conditions</a>.</p>
-                </label>
-            </div>-->
 
             <div class="fl-mb-4.5">
                 <label for="terms" class="flex items-center fl-gap-2.5 cursor-pointer select-none">
@@ -769,7 +763,7 @@
             <div class="fl-mb-4.5">
                 <label data-style="green" for="green-toggle" class="flex cursor-pointer">
                     <input id="green-toggle" type="checkbox" value="" class="sr-only peer" checked>
-                    <div class="toggle-fluid toggle-sm"></div>
+                    <div class="fluid-toggle toggle-sm"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Green toggle</p>
                         <p class="text-fg-secondary">Something successful is on.</p>
@@ -780,7 +774,7 @@
             <div class="fl-mb-4.5">
                 <label data-style="red" for="red-toggle" class="flex cursor-pointer">
                     <input id="red-toggle" type="checkbox" value="" class="sr-only peer" checked>
-                    <div class="toggle-fluid toggle-sm"></div>
+                    <div class="fluid-toggle toggle-sm"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Red toggle</p>
                         <p class="text-fg-secondary">Something dangerous is on.</p>
@@ -791,7 +785,7 @@
             <div class="fl-mb-4.5">
                 <label for="disabled-toggle" class="flex cursor-pointer">
                     <input id="disabled-toggle" type="checkbox" value="" class="sr-only peer" checked disabled>
-                    <div class="toggle-fluid toggle-sm"></div>
+                    <div class="fluid-toggle toggle-sm"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Disabled toggle</p>
                         <p class="text-fg-secondary">You can't touch this.</p>
@@ -802,7 +796,7 @@
             <div class="fl-mb-4.5">
                 <label data-style="green" for="green-toggle-lg" class="flex cursor-pointer">
                     <input id="green-toggle-lg" type="checkbox" value="" class="sr-only peer">
-                    <div class="toggle-fluid toggle-lg"></div>
+                    <div class="fluid-toggle toggle-lg"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Green toggle</p>
                         <p class="text-fg-secondary">Something successful is on.</p>
@@ -813,7 +807,7 @@
             <div class="fl-mb-4.5">
                 <label data-style="red" for="red-toggle-lg" class="flex cursor-pointer">
                     <input id="red-toggle-lg" type="checkbox" value="" class="sr-only peer">
-                    <div class="toggle-fluid toggle-lg"></div>
+                    <div class="fluid-toggle toggle-lg"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Red toggle</p>
                         <p class="text-fg-secondary">Something dangerous is on.</p>
@@ -824,7 +818,7 @@
             <div class="fl-mb-4.5">
                 <label for="disabled-toggle-lg" class="flex cursor-pointer">
                     <input id="disabled-toggle-lg" type="checkbox" value="" class="sr-only peer" disabled>
-                    <div class="toggle-fluid toggle-lg"></div>
+                    <div class="fluid-toggle toggle-lg"></div>
                     <div class="label-text text-xs fl-ms-2 select-none">
                         <p class="text-fg-main fl-mb-1">Disabled toggle</p>
                         <p class="text-fg-secondary">You can't touch this.</p>
@@ -867,8 +861,8 @@
                         <input name="ice-cream-flavor" disabled id="chocolate-radio" aria-describedby="chocolate-radio-text" type="radio" value="" class="fl-size-3.5 appearance-none">
                     </div>
                     <div class="label-text text-xs select-none fl-ms-2">
-                        <label for="chocolate-radio" class="text-fg-disabled fl-mb-1">Chocolate</label>
-                        <p id="chocolate-radio-text" class="text-fg-disabled">A classic and rich flavor made of cocoa beans from Costa Rica.</p>
+                        <label for="chocolate-radio" class="text-fg-main fl-mb-1">Chocolate</label>
+                        <p id="chocolate-radio-text" class="text-fg-secondary">A classic and rich flavor made of cocoa beans from Costa Rica.</p>
                     </div>
                 </div>
                 <div class="flex fl-mb-3.5">
@@ -876,8 +870,8 @@
                         <input name="ice-cream-flavor" disabled checked id="strawberry-radio" aria-describedby="strawberry-radio-text" type="radio" value="" class="fl-size-3.5 appearance-none">
                     </div>
                     <div class="label-text text-xs select-none fl-ms-2">
-                        <label for="strawberry-radio" class="text-fg-disabled fl-mb-1">Strawberry</label>
-                        <p id="strawberry-radio-text" class="text-fg-disabled">A sweet and fruity flavor made with fresh strawberries.</p>
+                        <label for="strawberry-radio" class="text-fg-main fl-mb-1">Strawberry</label>
+                        <p id="strawberry-radio-text" class="text-fg-secondary">A sweet and fruity flavor made with fresh strawberries.</p>
                     </div>
                 </div>
             </div>
@@ -944,7 +938,7 @@
                         <!-- Fluid custom box -->
                         <div class="fluid-checkbox fl-size-3.5 flex items-center justify-center transition-all">
                             <!-- Font Awesome Symbol (hidden from screen readers as decoration) -->
-                            <i class="fa-classic fa-regular fa-slash opacity-0" aria-hidden="true"></i>
+                            <i class="fa-classic fa-regular fa-check opacity-0" aria-hidden="true"></i>
                         </div>
 
                         <div class="label-text text-xs select-none">
@@ -973,10 +967,10 @@
             </div>
             
             <div class="fl-mb-4.5">
-                <label for="upload-files" class="block fl-mb-2.5 label-text text-xs text-fg-main">Upload file(s)</label>   
+                <label for="upload-files" class="block fl-mb-2.5 label-text text-xs">Upload file(s)</label>   
                 <div class="flex items-center justify-center w-full">
                     <div
-                        class="multi-file-input flex flex-col items-center justify-center w-full rounded-lg"
+                        class="multi-file-input flex flex-col items-center justify-center w-full"
                         role="button"
                         tabindex="0"
                         data-upload-dropzone
@@ -985,7 +979,7 @@
                         aria-label="Upload files. Click to upload or drag and drop."
                     >
                         <div class="flex flex-col items-center justify-center fl-pt-5 fl-pb-6">
-                            <i class="fa-classic fa-regular fa-upload fl-mb-4 text-lg text-muted-inset-fg-secondary"></i>
+                            <i class="fa-classic fa-regular fa-upload fl-mb-4 text-lg"></i>
                             <p class="fl-mb-2 label-text text-sm text-muted-inset-fg-main">Click to upload or drag and drop</p>
                             <p class="text-xs leading-tight fl-mb-4 text-muted-inset-fg-secondary">Max. file size: 30MB</p>
                             <!-- Upload Button -->
@@ -1001,16 +995,16 @@
             </div> 
 
             <div class="fl-mb-4.5">
-                <label for="disabled-upload-files" class="block fl-mb-2.5 label-text text-xs text-fg-disabled">Disabled Upload file(s)</label>
+                <label for="disabled-upload-files" class="block fl-mb-2.5 label-text text-xs">Disabled Upload file(s)</label>
                 <div class="flex items-center justify-center w-full">
                     <div
-                        class="multi-file-input flex flex-col items-center justify-center w-full rounded-lg"
+                        class="multi-file-input flex flex-col items-center justify-center w-full"
                         aria-disabled="true"
                     >
                         <div class="text-quiet-inset-fg-disabled flex flex-col items-center justify-center fl-pt-5 fl-pb-6">
                             <i class="fa-classic fa-regular fa-upload fl-mb-4 text-lg"></i>
-                            <p class="fl-mb-2 label-text text-sm">Click to upload or drag and drop</p>
-                            <p class="text-xs leading-tight fl-mb-4">Max. file size: 30MB</p>
+                            <p class="fl-mb-2 label-text text-sm text-muted-inset-fg-main">Click to upload or drag and drop</p>
+                            <p class="text-xs leading-tight fl-mb-4 text-muted-inset-fg-secondary">Max. file size: 30MB</p>
                             <!-- Upload Button -->
                             <button disabled type="button" onclick="document.getElementById('disabled-upload-files').click()" class="btn-primary btn-sm inline-flex items-center">
                                 <i class="fa-classic fa-regular fa-folder-open fl-me-1.5"></i>
@@ -1447,7 +1441,8 @@
         </div>
     </div>
 
-    <script src="js/components/file-upload.js"></script>
+        <script src="js/components/input.js"></script>
+        <script src="js/components/file-upload.js"></script>
     <script src="js/theme-loader.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>

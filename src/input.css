@@ -733,19 +733,19 @@
     border-color: var(--color-quiet-border) !important;
     border-radius: var(--rounded-lg);
     color: var(--color-muted-inset-fg-auxiliary);
-    &:focus {
+    /*&:focus {
       border-color: var(--color-muted-inset-border-accent) !important;
       color: var(--color-muted-inset-fg-main) !important;
       @apply placeholder:opacity-0;
-    }
+    }*/
     &:not(:placeholder-shown) {
       color: var(--color-muted-inset-fg-main) !important;
     }
     &:read-only {
       color: var(--color-muted-inset-fg-secondary) !important;  
-      &:focus {
+      /*&:focus {
         @apply placeholder:opacity-100;  
-      }
+      }*/
     }
     &:disabled {
       color: var(--fg-disabled) !important;
@@ -760,7 +760,7 @@
     color: var(--color-loud-inset-fg-main);
     border-width: var(--border-default);
     flex-shrink: 0;
-    &:hover {
+    &:not(:disabled):hover {
       background-color: oklch(from var(--color-muted) calc(l - 0.20) c h) !important;
     }
     &:checked, &:checked + .fluid-checkbox {
@@ -791,17 +791,21 @@
       opacity: 100 !important;
       font-size: .6rem;
     }
-    &:focus-visible, &:focus-visible + .fluid-checkbox {
+    /*&:focus-visible, &:focus-visible + .fluid-checkbox {
       outline: .1rem solid var(--color-fg-accent);
     }
     &:focus:not(:focus-visible), &:focus:not(:focus-visible) + .fluid-checkbox {
       outline: none;
-    }
+    }*/
     &:disabled, &:disabled + .fluid-checkbox {
       color: var(--color-quiet-inset-fg-disabled) !important;
       cursor: not-allowed;
       border-color: var(--color-quiet-border) !important;
       background-color: var(--color-quiet) !important;
+    }
+    &:disabled ~ .label-text,
+    &:disabled ~ .label-text * {
+      color: var(--color-fg-disabled) !important;
     }
     &:disabled:not(:checked) i, &:disabled:not(:checked) + .fluid-checkbox i {
       font-size: .6rem !important;
@@ -824,16 +828,16 @@
       background-color: var(--color-muted) !important;
       border-color: var(--color-quiet-inset-border-accent) !important;
       border-width: var(--border-default);
-      &:hover {
+      &:not(:disabled):hover {
         background-color: oklch(from var(--color-muted) calc(l - 0.20) c h) !important;
       }
     }
-    &:focus-visible {
+    /*&:focus-visible {
       outline: .1rem solid var(--color-fg-accent);
     }
     &:focus:not(:focus-visible) {
       outline: none;
-    }
+    }*/
     &:disabled {
       cursor: not-allowed;
       border-color: var(--color-quiet-border) !important;
@@ -861,6 +865,10 @@
       width: 0.375rem !important;
       height: 0.375rem !important;
     }
+  }
+  div:has(> input[type='radio']:disabled) + .label-text,
+  div:has(> input[type='radio']:disabled) + .label-text * {
+    color: var(--color-fg-disabled) !important;
   }
   a:disabled, a.disabled {
     color: var(--color-fg-disabled) !important;
@@ -909,12 +917,12 @@
       border-color: var(--color-quiet-border) !important;
       background-color: var(--color-quiet);
     }
-    &:focus-visible {
+    /*&:focus-visible {
       outline: .1rem solid var(--color-fg-accent) !important;
     }
     &:focus:not(:focus-visible) {
       outline: none;
-    }
+    }*/
   }
   .btn-secondary {
     @apply bg-muted text-muted-inset-fg-main border-quiet-border box-border border;
@@ -930,12 +938,12 @@
       border-color: var(--color-quiet-border) !important;
       background-color: var(--color-quiet);
     }
-    &:focus-visible {
+    /*&:focus-visible {
       outline: .1rem solid var(--color-fg-accent) !important;
     }
     &:focus:not(:focus-visible) {
       outline: none;
-    }
+    }*/
   }
   [data-mode="invert"] {
     .btn-secondary {
@@ -971,12 +979,12 @@
       background: var(--color-transparent) !important;
       cursor: not-allowed;
     }
-    &:focus-visible {
+    /*&:focus-visible {
       outline: .1rem solid var(--color-fg-accent) !important;
     }
     &:focus:not(:focus-visible) {
       outline: none;
-    }
+    }*/
   }
   .btn-primary-gradient {
     @apply bg-gradient-to-t from-surface-gradient-accent-end to-surface-gradient-accent-start text-loud-inset-fg-main;
@@ -994,12 +1002,12 @@
       --tw-gradient-from: var(--color-quiet);
       --tw-gradient-to: var(--color-quiet);
     }
-    &:focus-visible {
+    /*&:focus-visible {
       outline: .1rem solid var(--color-fg-accent) !important;
     }
     &:focus:not(:focus-visible) {
       outline: none;
-    }
+    }*/
   }
   /* Holding off on building out all gradient buttons since they don't have applicable variables because we don't know if we want them
   .btn-secondary-gradient {
@@ -1035,7 +1043,7 @@
     color: var(--brand-color-red-500);
   }
   /* Forms - Toggle Switch */
-  .toggle-fluid {
+  .fluid-toggle {
     position: relative;
     display: inline-block;
     flex-shrink: 0;
@@ -1048,7 +1056,7 @@
     inline-size: calc(var(--toggle-knob-size) + var(--toggle-pad-inline-start) + var(--toggle-pad-inline-end));
     transition: background-color 0.2s ease, border-color 0.2s ease;
   }
-  .toggle-fluid::after {
+  .fluid-toggle::after {
     content: "";
     position: absolute;
     inset-block-start: 50%;
@@ -1061,25 +1069,25 @@
     transform: translate(0, -50%);
     transition: transform 0.2s ease, background-color 0.2s ease;
   }
-  .toggle-fluid:hover {
+  .fluid-toggle:hover {
     background-color: oklch(from var(--color-muted) calc(l - 0.20) c h);    
   }
-  .peer:checked + .toggle-fluid {
+  .peer:checked + .fluid-toggle {
     background-color: var(--color-fg-accent);
     border-color: var(--color-loud-inset-border-accent);
     &:hover {
       background-color: oklch(from var(--color-fg-accent) calc(l - 0.20) c h);
     }
   }
-  .peer:focus-visible + .toggle-fluid {
+  /*.peer:focus-visible + .fluid-toggle {
     outline: .1rem solid var(--color-fg-accent);
-  }
-  .peer:checked + .toggle-fluid::after {
+  }*/
+  .peer:checked + .fluid-toggle::after {
     background-color: var(--color-loud-inset-fg-main);
     /* transform: translate(var(--toggle-knob-size), -50%); */
     transform: translate(calc(var(--toggle-pad-inline-end) - (var(--toggle-pad-inline-start)*2) + .05rem), -50%);
   }
-  .peer:disabled + .toggle-fluid {
+  .peer:disabled + .fluid-toggle {
     background-color: var(--color-quiet);
     border-color: var(--color-quiet-border);
     cursor: not-allowed;
@@ -1087,7 +1095,7 @@
       background-color: var(--color-quiet);
     }
   }
-  .peer:disabled + .toggle-fluid::after {
+  .peer:disabled + .fluid-toggle::after {
     background-color: var(--color-quiet-inset-fg-disabled);
   }
   .toggle-sm {
@@ -1111,19 +1119,20 @@
     border-width: var(--border-default);
     border-color: var(--color-medium-border);
     outline: none;
+    border-radius: var(--rounded-lg);
     &:hover {
       background-color: oklch(from var(--color-muted) calc(l - 0.10) c h);
     }
-    &:focus,
-    &:focus-within,
+    /*&:focus,
+    &:focus-within,*/
     &.is-dragover {
       background-color: oklch(from var(--color-muted) calc(l - 0.10) c h);
       border-color: var(--color-fg-accent);
       border-style: solid;
     }
-    &:focus-visible {
+    /*&:focus-visible {
       box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-fg-accent), transparent 55%);
-    }
+    }*/
     &[aria-disabled="true"], &:disabled {
       color: var(--color-quiet-inset-fg-disabled) !important;
       border-color: var(--color-quiet-border);
@@ -1131,6 +1140,24 @@
       &:hover {
         background-color: var(--color-muted);
       }
+      .text-muted-inset-fg-main, .text-muted-inset-fg-secondary {
+        color: var(--color-quiet-inset-fg-disabled) !important;
+      }
+      label {
+        color: var(--color-fg-disabled) !important;
+      }
     }
+  }
+  .multi-file-input :not(button) > i{
+    color: var(--color-muted-inset-fg-secondary);
+  }
+  .multi-file-input[aria-disabled="true"] :not(button) > i {
+    color: var(--color-quiet-inset-fg-disabled) !important;
+  }
+  label:has(~ div .multi-file-input){
+    color: var(--color-fg-main);
+  }
+  label:has(~ div .multi-file-input[aria-disabled="true"]){
+    color: var(--color-quiet-inset-fg-disabled) !important;
   }
 }
