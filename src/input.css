@@ -789,7 +789,7 @@
     &:checked + .fluid-checkbox i {
       color: var(--color-loud-inset-fg-main) !important;
       opacity: 100 !important;
-      font-size: .6rem;
+      font-size: .6em !important;
     }
     /*&:focus-visible, &:focus-visible + .fluid-checkbox {
       outline: .1rem solid var(--color-fg-accent);
@@ -808,7 +808,7 @@
       color: var(--color-fg-disabled) !important;
     }
     &:disabled:not(:checked) i, &:disabled:not(:checked) + .fluid-checkbox i {
-      font-size: .6rem !important;
+      font-size: .6em !important;
       opacity: 100 !important;
     }
   }
@@ -878,6 +878,7 @@
 }
 
 @layer components {
+  [class^="fa-"] {font-size: .9em;}
   .action-link {
     color: var(--color-fg-accent) !important;
     cursor: pointer;
