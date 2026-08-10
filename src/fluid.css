@@ -21,15 +21,25 @@
   --fl-space-12: clamp(2.886rem, 2.134rem + 3.96vw, 5.16rem);
   --fl-space-13: clamp(3.247rem, 2.273rem + 5.13vw, 6.192rem);
 
-  /* Primitive font size scale */
-  --text-xs: clamp(0.8681rem, 1.0272rem + -0.1667vw, 0.9877rem);
-  --text-sm: clamp(1.0417rem, 1.1341rem + -0.0968vw, 1.1111rem);
-  --text-base: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
-  --text-lg: clamp(1.4063rem, 1.3752rem + 0.1307vw, 1.5rem);
-  --text-xl: clamp(1.582rem, 1.5099rem + 0.3038vw, 1.8rem);
-  --text-2xl: clamp(1.7798rem, 1.6539rem + 0.5299vw, 2.16rem);
-  --text-3xl: clamp(2.0023rem, 1.807rem + 0.8219vw, 2.592rem);
-  --text-4xl: clamp(2.2525rem, 1.9686rem + 1.1956vw, 3.1104rem);
-  --text-5xl: clamp(2.5341rem, 2.1374rem + 1.6702vw, 3.7325rem);
-  --text-6xl: clamp(2.8509rem, 2.312rem + 2.2691vw, 4.479rem);
+  /* Primitive fluid text scale (1:1 aligned with spacing steps .25-13) */
+  --text-\.25: clamp(0.6866rem, 0.7177rem + -0.1643vw, 0.6058rem);
+  --text-\.5: clamp(0.7724rem, 0.8107rem + -0.2017vw, 0.6813rem);
+  --text-1: clamp(0.8681rem, 0.9162rem + -0.2529vw, 0.7671rem);
+  --text-1\.5: clamp(0.9749rem, 1.0368rem + -0.3248vw, 0.8646rem);
+  --text-1\.75: clamp(1.0945rem, 1.1739rem + -0.4173vw, 0.9754rem);
+  --text-2: clamp(1.2285rem, 1.3301rem + -0.5339vw, 1.1012rem);
+  --text-2\.5: clamp(1.3786rem, 1.5082rem + -0.6786vw, 1.2439rem);
+  --text-3: clamp(1.5469rem, 1.7116rem + -0.8560vw, 1.4057rem);
+  --text-3\.5: clamp(1.7353rem, 1.9438rem + -1.0713vw, 1.5887rem);
+  --text-4: clamp(1.9463rem, 2.2096rem + -1.3308vw, 1.7951rem);
+  --text-4\.5: clamp(2.1827rem, 2.5146rem + -1.6424vw, 2.0276rem);
+  --text-5: clamp(2.4479rem, 2.8652rem + -2.0156vw, 2.2894rem);
+  --text-6: clamp(2.7466rem, 3.2692rem + -2.4620vw, 2.5846rem);
+  --text-7: clamp(3.0831rem, 3.7355rem + -3.0007vw, 2.9180rem);
+  --text-8: clamp(3.4623rem, 4.2747rem + -3.6553vw, 3.2957rem);
+  --text-9: clamp(3.8899rem, 4.8996rem + -4.4426vw, 3.7245rem);
+  --text-10: clamp(4.3719rem, 5.6255rem + -5.3842vw, 4.2118rem);
+  --text-11: clamp(4.9154rem, 6.4699rem + -6.5081vw, 4.7662rem);
+  --text-12: clamp(5.5282rem, 7.4521rem + -7.8463vw, 5.3977rem);
+  --text-13: clamp(6.2191rem, 8.5938rem + -9.4343vw, 6.1173rem);
 }
