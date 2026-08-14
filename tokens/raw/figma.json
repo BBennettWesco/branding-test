@@ -3224,8 +3224,8 @@
           "VariableID:21918:558",
           "VariableID:21918:559",
           "VariableID:21918:571",
-          "VariableID:21918:572",
           "VariableID:21918:560",
+          "VariableID:21918:572",
           "VariableID:21918:573",
           "VariableID:21918:561",
           "VariableID:21918:574",
@@ -4848,9 +4848,9 @@
           "VariableID:21918:553",
           "VariableID:21918:554",
           "VariableID:21918:555",
-          "VariableID:22356:9264",
-          "VariableID:21918:556",
           "VariableID:22356:8832",
+          "VariableID:21918:556",
+          "VariableID:22356:9264",
           "VariableID:21918:557",
           "VariableID:21918:569",
           "VariableID:21918:558",
@@ -4861,18 +4861,18 @@
           "VariableID:21918:572",
           "VariableID:21918:573",
           "VariableID:21918:561",
-          "VariableID:21918:574",
           "VariableID:21918:562",
-          "VariableID:21918:575",
+          "VariableID:21918:574",
           "VariableID:21918:563",
-          "VariableID:21918:576",
+          "VariableID:21918:575",
           "VariableID:21918:564",
+          "VariableID:21918:576",
           "VariableID:21918:577",
           "VariableID:21918:565",
-          "VariableID:21918:578",
           "VariableID:21918:566",
-          "VariableID:21918:579",
+          "VariableID:21918:578",
           "VariableID:21918:567",
+          "VariableID:21918:579",
           "VariableID:21918:568",
           "VariableID:21918:580",
           "VariableID:25994:111",
@@ -4892,11 +4892,11 @@
           "VariableID:21918:591",
           "VariableID:21918:592",
           "VariableID:21918:593",
-          "VariableID:22775:4270",
           "VariableID:21918:594",
+          "VariableID:22775:4270",
           "VariableID:21918:595",
-          "VariableID:22775:4271",
           "VariableID:21918:596",
+          "VariableID:22775:4271",
           "VariableID:21918:597",
           "VariableID:21918:598",
           "VariableID:21918:599",
@@ -18204,56 +18204,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:572": {
-        "name": "opacities/black/300",
-        "id": "VariableID:21918:572",
-        "remote": false,
-        "key": "9f9f2d1b63c4402aff6690599ddeb51c25ff692b",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.30000001192092896
-          },
-          "21918:1": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.30000001192092896
-          },
-          "21918:2": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.30000001192092896
-          },
-          "21918:3": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.30000001192092896
-          },
-          "21918:4": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.30000001192092896
-          },
-          "21918:5": {
-            "r": 0,
-            "g": 0,
-            "b": 0,
-            "a": 0.30000001192092896
-          }
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:21918:560": {
         "name": "opacities/white/300",
         "id": "VariableID:21918:560",
@@ -18298,6 +18248,56 @@
             "r": 1,
             "g": 1,
             "b": 1,
+            "a": 0.30000001192092896
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "VariableID:21918:572": {
+        "name": "opacities/black/300",
+        "id": "VariableID:21918:572",
+        "remote": false,
+        "key": "9f9f2d1b63c4402aff6690599ddeb51c25ff692b",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.30000001192092896
+          },
+          "21918:1": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.30000001192092896
+          },
+          "21918:2": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.30000001192092896
+          },
+          "21918:3": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.30000001192092896
+          },
+          "21918:4": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.30000001192092896
+          },
+          "21918:5": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
             "a": 0.30000001192092896
           }
         },
