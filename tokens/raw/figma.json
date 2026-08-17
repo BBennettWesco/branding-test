@@ -3247,8 +3247,8 @@
           "VariableID:25994:21007",
           "VariableID:21918:581",
           "VariableID:21918:582",
-          "VariableID:21918:583",
           "VariableID:26016:7254",
+          "VariableID:21918:583",
           "VariableID:21918:584",
           "VariableID:21918:585",
           "VariableID:21918:586",
@@ -4869,8 +4869,8 @@
           "VariableID:21918:564",
           "VariableID:21918:565",
           "VariableID:21918:577",
-          "VariableID:21918:566",
           "VariableID:21918:578",
+          "VariableID:21918:566",
           "VariableID:21918:579",
           "VariableID:21918:567",
           "VariableID:21918:568",
@@ -4880,8 +4880,8 @@
           "VariableID:25994:21007",
           "VariableID:21918:581",
           "VariableID:21918:582",
-          "VariableID:21918:583",
           "VariableID:26016:7254",
+          "VariableID:21918:583",
           "VariableID:21918:584",
           "VariableID:21918:585",
           "VariableID:21918:586",
@@ -19267,26 +19267,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:583": {
-        "name": "border-width/400",
-        "id": "VariableID:21918:583",
-        "remote": false,
-        "key": "b35807182f2e09ccd485458a0ef6f8cca9526513",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "FLOAT",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": 4,
-          "21918:1": 4,
-          "21918:2": 4,
-          "21918:3": 4,
-          "21918:4": 4,
-          "21918:5": 4
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:26016:7254": {
         "name": "rounded/default-radius",
         "id": "VariableID:26016:7254",
@@ -19325,6 +19305,26 @@
         "scopes": [
           "ALL_SCOPES"
         ],
+        "codeSyntax": {}
+      },
+      "VariableID:21918:583": {
+        "name": "border-width/400",
+        "id": "VariableID:21918:583",
+        "remote": false,
+        "key": "b35807182f2e09ccd485458a0ef6f8cca9526513",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "FLOAT",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": 4,
+          "21918:1": 4,
+          "21918:2": 4,
+          "21918:3": 4,
+          "21918:4": 4,
+          "21918:5": 4
+        },
+        "scopes": [],
         "codeSyntax": {}
       },
       "VariableID:21918:584": {
