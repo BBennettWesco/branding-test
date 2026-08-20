@@ -3215,8 +3215,8 @@
           "VariableID:21918:553",
           "VariableID:21918:554",
           "VariableID:21918:555",
-          "VariableID:21918:556",
           "VariableID:22356:8832",
+          "VariableID:21918:556",
           "VariableID:22356:9264",
           "VariableID:21918:557",
           "VariableID:21918:569",
@@ -4853,22 +4853,22 @@
           "VariableID:21918:556",
           "VariableID:21918:569",
           "VariableID:21918:557",
-          "VariableID:21918:570",
           "VariableID:21918:558",
-          "VariableID:21918:559",
+          "VariableID:21918:570",
           "VariableID:21918:571",
+          "VariableID:21918:559",
           "VariableID:21918:572",
           "VariableID:21918:560",
-          "VariableID:21918:573",
           "VariableID:21918:561",
-          "VariableID:21918:574",
+          "VariableID:21918:573",
           "VariableID:21918:562",
+          "VariableID:21918:574",
           "VariableID:21918:563",
           "VariableID:21918:575",
-          "VariableID:21918:576",
           "VariableID:21918:564",
-          "VariableID:21918:565",
+          "VariableID:21918:576",
           "VariableID:21918:577",
+          "VariableID:21918:565",
           "VariableID:21918:578",
           "VariableID:21918:566",
           "VariableID:21918:567",
@@ -4880,8 +4880,8 @@
           "VariableID:25994:21007",
           "VariableID:21918:581",
           "VariableID:21918:582",
-          "VariableID:21918:583",
           "VariableID:26016:7254",
+          "VariableID:21918:583",
           "VariableID:21918:584",
           "VariableID:21918:585",
           "VariableID:21918:586",
@@ -4895,8 +4895,8 @@
           "VariableID:21918:594",
           "VariableID:22775:4270",
           "VariableID:21918:595",
-          "VariableID:22775:4271",
           "VariableID:21918:596",
+          "VariableID:22775:4271",
           "VariableID:21918:597",
           "VariableID:21918:598",
           "VariableID:21918:599",
@@ -17754,56 +17754,6 @@
         "scopes": [],
         "codeSyntax": {}
       },
-      "VariableID:21918:556": {
-        "name": "Color/Ⓜ️ Bright Sky/950",
-        "id": "VariableID:21918:556",
-        "remote": false,
-        "key": "2f1178fb765cd4dc1572d3afe1c55ca80b047473",
-        "variableCollectionId": "VariableCollectionId:21918:113",
-        "resolvedType": "COLOR",
-        "description": "",
-        "hiddenFromPublishing": false,
-        "valuesByMode": {
-          "21918:0": {
-            "r": 0.0470588244497776,
-            "g": 0.11764705926179886,
-            "b": 0.19607843458652496,
-            "a": 1
-          },
-          "21918:1": {
-            "r": 0.0470588244497776,
-            "g": 0.11764705926179886,
-            "b": 0.19607843458652496,
-            "a": 1
-          },
-          "21918:2": {
-            "r": 0.0470588244497776,
-            "g": 0.11764705926179886,
-            "b": 0.19607843458652496,
-            "a": 1
-          },
-          "21918:3": {
-            "r": 0.0470588244497776,
-            "g": 0.11764705926179886,
-            "b": 0.19607843458652496,
-            "a": 1
-          },
-          "21918:4": {
-            "r": 0.0470588244497776,
-            "g": 0.11764705926179886,
-            "b": 0.19607843458652496,
-            "a": 1
-          },
-          "21918:5": {
-            "r": 0.0470588244497776,
-            "g": 0.11764705926179886,
-            "b": 0.19607843458652496,
-            "a": 1
-          }
-        },
-        "scopes": [],
-        "codeSyntax": {}
-      },
       "VariableID:22356:8832": {
         "name": "opacities/white/0",
         "id": "VariableID:22356:8832",
@@ -17849,6 +17799,56 @@
             "g": 1,
             "b": 1,
             "a": 0.05000000074505806
+          }
+        },
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "VariableID:21918:556": {
+        "name": "Color/Ⓜ️ Bright Sky/950",
+        "id": "VariableID:21918:556",
+        "remote": false,
+        "key": "2f1178fb765cd4dc1572d3afe1c55ca80b047473",
+        "variableCollectionId": "VariableCollectionId:21918:113",
+        "resolvedType": "COLOR",
+        "description": "",
+        "hiddenFromPublishing": false,
+        "valuesByMode": {
+          "21918:0": {
+            "r": 0.0470588244497776,
+            "g": 0.11764705926179886,
+            "b": 0.19607843458652496,
+            "a": 1
+          },
+          "21918:1": {
+            "r": 0.0470588244497776,
+            "g": 0.11764705926179886,
+            "b": 0.19607843458652496,
+            "a": 1
+          },
+          "21918:2": {
+            "r": 0.0470588244497776,
+            "g": 0.11764705926179886,
+            "b": 0.19607843458652496,
+            "a": 1
+          },
+          "21918:3": {
+            "r": 0.0470588244497776,
+            "g": 0.11764705926179886,
+            "b": 0.19607843458652496,
+            "a": 1
+          },
+          "21918:4": {
+            "r": 0.0470588244497776,
+            "g": 0.11764705926179886,
+            "b": 0.19607843458652496,
+            "a": 1
+          },
+          "21918:5": {
+            "r": 0.0470588244497776,
+            "g": 0.11764705926179886,
+            "b": 0.19607843458652496,
+            "a": 1
           }
         },
         "scopes": [],
