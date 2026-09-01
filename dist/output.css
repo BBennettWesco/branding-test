@@ -2695,6 +2695,11 @@
       background-color: var(--color-active);
     }
   }
+  .sm\:fl-mr-2\.5 {
+    @media (width >= 668px) {
+      margin-right: var(--fl-space-2\.5);
+    }
+  }
   .sm\:flex-row {
     @media (width >= 668px) {
       flex-direction: row;
