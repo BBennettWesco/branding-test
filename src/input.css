@@ -7,6 +7,10 @@
 @import "./fluid.css";
 @import "../build/css/brands/synergy.css";
 @import "../build/css/brands/wesco.css";
+@import "../build/css/brands/accu-tech.css";
+@import "../build/css/brands/eecol.css";
+@import "../build/css/brands/tvc.css";
+@import "../build/css/brands/xpressconnect.css";
 @import "../build/css/style/brand.css";
 @import "../build/css/style/blue.css";
 @import "../build/css/style/green.css";
@@ -15,6 +19,8 @@
 @import "../build/css/style/yellow.css";
 @import "../build/css/style/red.css";
 @import "../build/css/style/neutral.css";
+@import "../build/css/style/pink.css";
+@import "../build/css/style/purple.css";
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
@@ -58,9 +64,9 @@
   --text-5xl: var(--text-5xl);
   --text-6xl: var(--text-6xl);
 
-	--font-sans: var(--text-ff-main);
-  --font-alt: var(--text-ff-alternate);
-  --font-mono: var(--text-ff-auxiliary);
+	--font-sans: var(--text-properties-font-main);
+  --font-alt: var(--text-properties-font-alternate);
+  --font-mono: var(--text-properties-font-auxiliary);
 
   /* Change these to map to variables instead? */
   --font-weight-thin: 100;
@@ -113,8 +119,12 @@
   --color-overlay-fade-start: var(--overlay-fade-start);
   --color-overlay-fade-end: var(--overlay-fade-end);
 
+  --color-logo-strong: var(--logo-strong);
+  --color-logo-stronger: var(--logo-stronger);
+  --color-logo-strongest: var(--logo-strongest);
+  --color-logo-mono: var(--logo-mono);
+
   --color-bg: var(--bg);
-  --color-focus: var(--focus);
   --color-hover: var(--hover);
   --color-disabled: var(--disabled);
   --color-active: var(--active);
@@ -198,8 +208,12 @@
   --color-overlay-fade-start: var(--overlay-fade-start);
   --color-overlay-fade-end: var(--overlay-fade-end);
 
+  --color-logo-strong: var(--logo-strong);
+  --color-logo-stronger: var(--logo-stronger);
+  --color-logo-strongest: var(--logo-strongest);
+  --color-logo-mono: var(--logo-mono);
+
   --color-bg: var(--bg);
-  --color-focus: var(--focus);
   --color-hover: var(--hover);
   --color-disabled: var(--disabled);
   --color-active: var(--active);

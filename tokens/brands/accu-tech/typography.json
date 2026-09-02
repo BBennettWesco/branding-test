@@ -1,0 +1,112 @@
+{
+  "text": {
+    "properties": {
+      "font": {
+        "main": {
+          "$value": "Open Sans",
+          "$type": "fontFamily"
+        },
+        "alternate": {
+          "$value": "{text.properties.font.main}",
+          "$type": "fontFamily"
+        },
+        "auxiliary": {
+          "$value": "Roboto Mono",
+          "$type": "fontFamily"
+        }
+      }
+    },
+    "styles": {
+      "display": {
+        "ff": {
+          "$value": "{text.properties.font.alternate}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": 700,
+          "$type": "dimension"
+        }
+      },
+      "heading": {
+        "ff": {
+          "$value": "{text.properties.font.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": 700,
+          "$type": "dimension"
+        },
+        "fw-alt": {
+          "$value": 700,
+          "$type": "dimension"
+        }
+      },
+      "body": {
+        "ff": {
+          "$value": "{text.properties.font.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "optical-sm": {
+            "$value": 400,
+            "$type": "dimension"
+          },
+          "optical-md": {
+            "$value": 400,
+            "$type": "dimension"
+          },
+          "optical-lg": {
+            "$value": 400,
+            "$type": "dimension"
+          }
+        }
+      },
+      "label": {
+        "ff": {
+          "$value": "{text.properties.font.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": 500,
+          "$type": "dimension"
+        },
+        "upper": {
+          "ff": {
+            "$value": "{text.properties.font.alternate}",
+            "$type": "fontFamily"
+          },
+          "fw": {
+            "$value": 700,
+            "$type": "dimension"
+          }
+        }
+      },
+      "technical": {
+        "ff": {
+          "$value": "{text.properties.font.auxiliary}",
+          "$type": "fontFamily"
+        }
+      },
+      "action": {
+        "ff": {
+          "$value": "{text.properties.font.main}",
+          "$type": "fontFamily"
+        },
+        "fw": {
+          "$value": 500,
+          "$type": "dimension"
+        },
+        "critical": {
+          "ff": {
+            "$value": "{text.properties.font.main}",
+            "$type": "fontFamily"
+          },
+          "fw": {
+            "$value": 600,
+            "$type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}

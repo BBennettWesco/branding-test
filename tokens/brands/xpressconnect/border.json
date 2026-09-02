@@ -1,0 +1,30 @@
+{
+  "border": {
+    "default": {
+      "$value": "{border-width.100}",
+      "$type": "dimension"
+    },
+    "emphasis": {
+      "$value": "{border-width.200}",
+      "$type": "dimension"
+    },
+    "accent": {
+      "$value": "{border-width.400}",
+      "$type": "dimension"
+    }
+  },
+  "border-width": {
+    "100": {
+      "$value": "1px",
+      "$type": "dimension"
+    },
+    "200": {
+      "$value": "2px",
+      "$type": "dimension"
+    },
+    "400": {
+      "$value": "4px",
+      "$type": "dimension"
+    }
+  }
+}

@@ -4,7 +4,7 @@
     "$type": "color",
     "$extensions": {
       "modes": {
-        "invert": "{brand.color.red.950}"
+        "invert": "{color.red.950}"
       }
     }
   },
@@ -19,7 +19,7 @@
       }
     },
     "main": {
-      "$value": "{brand.color.neutral.950}",
+      "$value": "{color.brand.neutral.950}",
       "$type": "color",
       "$extensions": {
         "modes": {
@@ -28,7 +28,7 @@
       }
     },
     "secondary": {
-      "$value": "{brand.color.neutral.600}",
+      "$value": "{color.brand.neutral.600}",
       "$type": "color",
       "$extensions": {
         "modes": {
@@ -37,7 +37,7 @@
       }
     },
     "auxiliary": {
-      "$value": "{brand.color.neutral.400}",
+      "$value": "{color.brand.neutral.400}",
       "$type": "color",
       "$extensions": {
         "modes": {
@@ -46,40 +46,31 @@
       }
     },
     "disabled": {
-      "$value": "{brand.color.neutral.200}",
+      "$value": "{color.brand.neutral.200}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.neutral.500}"
+          "invert": "{color.brand.neutral.500}"
         }
       }
     },
     "accent": {
-      "$value": "{brand.color.red.500}",
+      "$value": "{color.red.500}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.100}"
+          "invert": "{color.red.100}"
         }
-      }
-    }
-  },
-  "focus": {
-    "$value": "{brand.color.primary.500}",
-    "$type": "color",
-    "$extensions": {
-      "modes": {
-        "invert": "{brand.color.primary.25}"
       }
     }
   },
   "max": {
     "bg": {
-      "$value": "{brand.color.red.900}",
+      "$value": "{color.red.900}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.25}"
+          "invert": "{color.red.25}"
         }
       }
     },
@@ -99,68 +90,68 @@
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.950}"
+              "invert": "{color.red.950}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.100}",
+          "$value": "{color.red.100}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.700}"
+              "invert": "{color.red.700}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.500}",
+          "$value": "{color.red.500}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.400}"
+              "invert": "{color.red.400}"
             }
           }
         },
         "accent": {
-          "$value": "{brand.color.red.200}",
+          "$value": "{color.red.200}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.600}"
+              "invert": "{color.red.600}"
             }
           }
         }
       },
       "border": {
         "main": {
-          "$value": "{brand.color.red.25}",
+          "$value": "{color.red.25}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.800}"
+              "invert": "{color.red.800}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.300}",
+          "$value": "{color.red.300}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.400}"
+              "invert": "{color.red.400}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.700}",
+          "$value": "{color.red.700}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.100}"
+              "invert": "{color.red.100}"
             }
           }
         },
         "accent": {
-          "$value": "{brand.color.red.300}",
+          "$value": "{color.red.300}",
           "$type": "color",
           "$extensions": {
             "modes": {
@@ -173,16 +164,16 @@
   },
   "loud": {
     "bg": {
-      "$value": "{brand.color.red.700}",
+      "$value": "{color.red.700}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.100}"
+          "invert": "{color.red.100}"
         }
       }
     },
     "border": {
-      "$value": "{brand.color.red.600}",
+      "$value": "{color.red.600}",
       "$type": "color",
       "$extensions": {
         "modes": {
@@ -197,68 +188,68 @@
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.950}"
+              "invert": "{color.red.950}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.100}",
+          "$value": "{color.red.100}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.700}"
+              "invert": "{color.red.700}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.300}",
+          "$value": "{color.red.300}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.500}"
+              "invert": "{color.red.500}"
             }
           }
         },
         "accent": {
-          "$value": "{brand.color.red.25}",
+          "$value": "{color.red.25}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.600}"
+              "invert": "{color.red.600}"
             }
           }
         }
       },
       "border": {
         "main": {
-          "$value": "{brand.color.red.50}",
+          "$value": "{color.red.50}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.800}"
+              "invert": "{color.red.800}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.300}",
+          "$value": "{color.red.300}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.500}"
+              "invert": "{color.red.500}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.500}",
+          "$value": "{color.red.500}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.300}"
+              "invert": "{color.red.300}"
             }
           }
         },
         "accent": {
-          "$value": "{brand.color.red.100}",
+          "$value": "{color.red.100}",
           "$type": "color",
           "$extensions": {
             "modes": {
@@ -271,11 +262,11 @@
   },
   "medium": {
     "bg": {
-      "$value": "{brand.color.red.400}",
+      "$value": "{color.red.400}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.500}"
+          "invert": "{color.red.500}"
         }
       }
     },
@@ -318,40 +309,40 @@
           }
         },
         "accent": {
-          "$value": "{brand.color.red.900}",
+          "$value": "{color.red.900}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.950}"
+              "invert": "{color.red.950}"
             }
           }
         }
       },
       "border": {
         "main": {
-          "$value": "{brand.color.red.0}",
+          "$value": "{color.red.0}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.25}"
+              "invert": "{color.red.25}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.100}",
+          "$value": "{color.red.100}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.200}"
+              "invert": "{color.red.200}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.300}",
+          "$value": "{color.red.300}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.400}"
+              "invert": "{color.red.400}"
             }
           }
         },
@@ -369,27 +360,27 @@
   },
   "quiet": {
     "bg": {
-      "$value": "{brand.color.red.25}",
+      "$value": "{color.red.25}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.800}"
+          "invert": "{color.red.800}"
         }
       }
     },
     "border": {
-      "$value": "{brand.color.red.50}",
+      "$value": "{color.red.50}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.700}"
+          "invert": "{color.red.700}"
         }
       }
     },
     "inset": {
       "fg": {
         "main": {
-          "$value": "{brand.color.red.900}",
+          "$value": "{color.red.900}",
           "$type": "color",
           "$extensions": {
             "modes": {
@@ -398,16 +389,16 @@
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.800}",
+          "$value": "{color.red.800}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.50}"
+              "invert": "{color.red.50}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.300}",
+          "$value": "{color.red.300}",
           "$type": "color",
           "$extensions": {
             "modes": {
@@ -416,7 +407,7 @@
           }
         },
         ":disabled": {
-          "$value": "{brand.color.neutral.300}",
+          "$value": "{color.red.200}",
           "$type": "color",
           "$extensions": {
             "modes": {
@@ -425,49 +416,49 @@
           }
         },
         "accent": {
-          "$value": "{brand.color.red.600}",
+          "$value": "{color.red.600}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.100}"
+              "invert": "{color.red.100}"
             }
           }
         }
       },
       "border": {
         "main": {
-          "$value": "{brand.color.red.800}",
+          "$value": "{color.red.800}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.25}"
+              "invert": "{color.red.25}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.600}",
+          "$value": "{color.red.600}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.200}"
+              "invert": "{color.red.200}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.100}",
+          "$value": "{color.red.100}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.600}"
+              "invert": "{color.red.600}"
             }
           }
         },
         "accent": {
-          "$value": "{brand.color.red.400}",
+          "$value": "{color.red.400}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.400}"
+              "invert": "{color.red.400}"
             }
           }
         }
@@ -476,96 +467,96 @@
   },
   "muted": {
     "bg": {
-      "$value": "{brand.color.red.0}",
+      "$value": "{color.red.0}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.900}"
+          "invert": "{color.red.900}"
         }
       }
     },
     "border": {
-      "$value": "{brand.color.red.25}",
+      "$value": "{color.red.25}",
       "$type": "color",
       "$extensions": {
         "modes": {
-          "invert": "{brand.color.red.800}"
+          "invert": "{color.red.800}"
         }
       }
     },
     "inset": {
       "fg": {
         "main": {
-          "$value": "{brand.color.red.900}",
+          "$value": "{color.red.900}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.0}"
+              "invert": "{color.red.0}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.700}",
+          "$value": "{color.red.700}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.100}"
+              "invert": "{color.red.100}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.300}",
+          "$value": "{color.red.300}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.400}"
+              "invert": "{color.red.400}"
             }
           }
         },
         "accent": {
-          "$value": "{brand.color.red.600}",
+          "$value": "{color.red.600}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.300}"
+              "invert": "{color.red.300}"
             }
           }
         }
       },
       "border": {
         "main": {
-          "$value": "{brand.color.red.800}",
+          "$value": "{color.red.800}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.50}"
+              "invert": "{color.red.50}"
             }
           }
         },
         "secondary": {
-          "$value": "{brand.color.red.600}",
+          "$value": "{color.red.600}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.200}"
+              "invert": "{color.red.200}"
             }
           }
         },
         "auxiliary": {
-          "$value": "{brand.color.red.100}",
+          "$value": "{color.red.100}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.700}"
+              "invert": "{color.red.700}"
             }
           }
         },
         "accent": {
-          "$value": "{brand.color.red.400}",
+          "$value": "{color.red.400}",
           "$type": "color",
           "$extensions": {
             "modes": {
-              "invert": "{brand.color.red.400}"
+              "invert": "{color.red.400}"
             }
           }
         }
@@ -575,58 +566,58 @@
   "surface": {
     "overlay": {
       "weak": {
-        "$value": "{backdrop-opacity.neutral.dark.low}",
+        "$value": "{backdrop-opacity.neutral.light.low}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "invert": "{backdrop-opacity.neutral.light.low}"
+            "invert": "{backdrop-opacity.neutral.dark.low}"
           }
         }
       },
       "moderate": {
-        "$value": "{backdrop-opacity.neutral.dark.mid}",
+        "$value": "{backdrop-opacity.neutral.light.mid}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "invert": "{backdrop-opacity.neutral.light.mid}"
+            "invert": "{backdrop-opacity.neutral.dark.mid}"
           }
         }
       },
       "strong": {
-        "$value": "{backdrop-opacity.neutral.dark.high}",
+        "$value": "{backdrop-opacity.neutral.light.high}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "invert": "{backdrop-opacity.neutral.light.high}"
+            "invert": "{backdrop-opacity.neutral.dark.high}"
           }
         }
       },
       "fades": {
-        "$value": "{black}",
+        "$value": "{white}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "invert": "{white}"
+            "invert": "{black}"
           }
         }
       }
     },
     "gradient-accent": {
       "start": {
-        "$value": "{brand.color.neutral.600}",
+        "$value": "{color.brand.neutral.600}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "invert": "{brand.color.neutral.0}"
+            "invert": "{color.brand.neutral.0}"
           }
         }
       },
       "end": {
-        "$value": "{brand.color.neutral.700}",
+        "$value": "{color.brand.neutral.700}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "invert": "{brand.color.neutral.25}"
+            "invert": "{color.brand.neutral.25}"
           }
         }
       }
@@ -656,6 +647,4698 @@
     "$extensions": {
       "modes": {
         "invert": "{opacities.black.300}"
+      }
+    }
+  },
+  "logo": {
+    "strong": {
+      "$value": "{color.brand.primary.accent.1}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{color.brand.primary.300}"
+        }
+      }
+    },
+    "stronger": {
+      "$value": "{color.brand.primary.accent.2}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{color.brand.primary.100}"
+        }
+      }
+    },
+    "strongest": {
+      "$value": "{color.brand.primary.accent.3}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{white}"
+        }
+      }
+    },
+    "mono": {
+      "$value": "{black}",
+      "$type": "color",
+      "$extensions": {
+        "modes": {
+          "invert": "{white}"
+        }
+      }
+    },
+    "color": {
+      "gradient-1": {
+        "stop-1": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.09000000357627869
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.09000000357627869
+              }
+            }
+          }
+        },
+        "stop-2": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.03889999911189079
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.03889999911189079
+              }
+            }
+          }
+        },
+        "stop-3": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.1444000005722046
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.1444000005722046
+              }
+            }
+          }
+        },
+        "stop-4": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.3165000081062317
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.3165000081062317
+              }
+            }
+          }
+        },
+        "stop-5": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.5552999973297119
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.5552999973297119
+              }
+            }
+          }
+        },
+        "stop-6": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8565999865531921
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8565999865531921
+              }
+            }
+          }
+        },
+        "stop-7": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-8": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8205000162124634
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8205000162124634
+              }
+            }
+          }
+        },
+        "stop-9": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6151999831199646
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6151999831199646
+              }
+            }
+          }
+        },
+        "stop-10": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6000000238418579
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6000000238418579
+              }
+            }
+          }
+        },
+        "stop-11": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.49070000648498535
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.49070000648498535
+              }
+            }
+          }
+        },
+        "stop-12": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.22709999978542328
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.22709999978542328
+              }
+            }
+          }
+        },
+        "stop-13": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.06260000169277191
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.06260000169277191
+              }
+            }
+          }
+        },
+        "stop-14": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        },
+        "stop-15": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.0357000008225441
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.0357000008225441
+              }
+            }
+          }
+        },
+        "stop-16": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.13349999487400055
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.13349999487400055
+              }
+            }
+          }
+        },
+        "stop-17": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.2930000126361847
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.2930000126361847
+              }
+            }
+          }
+        },
+        "stop-18": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.512499988079071
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.512499988079071
+              }
+            }
+          }
+        },
+        "stop-19": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6000000238418579
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6000000238418579
+              }
+            }
+          }
+        },
+        "stop-20": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6261000037193298
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6261000037193298
+              }
+            }
+          }
+        },
+        "stop-21": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.7750999927520752
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.7750999927520752
+              }
+            }
+          }
+        },
+        "stop-22": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8666999936103821
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8666999936103821
+              }
+            }
+          }
+        },
+        "stop-23": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-24": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.7124999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.7124999761581421
+              }
+            }
+          }
+        },
+        "stop-25": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.460999995470047
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.460999995470047
+              }
+            }
+          }
+        },
+        "stop-26": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.2619999945163727
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.2619999945163727
+              }
+            }
+          }
+        },
+        "stop-27": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.11890000104904175
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.11890000104904175
+              }
+            }
+          }
+        },
+        "stop-28": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.031599998474121094
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.031599998474121094
+              }
+            }
+          }
+        },
+        "stop-29": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        }
+      },
+      "gradient-2": {
+        "stop-1": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        },
+        "stop-2": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.03889999911189079
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.03889999911189079
+              }
+            }
+          }
+        },
+        "stop-3": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.1444000005722046
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.1444000005722046
+              }
+            }
+          }
+        },
+        "stop-4": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.3165000081062317
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.3165000081062317
+              }
+            }
+          }
+        },
+        "stop-5": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.5552999973297119
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.5552999973297119
+              }
+            }
+          }
+        },
+        "stop-6": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8565999865531921
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8565999865531921
+              }
+            }
+          }
+        },
+        "stop-7": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-8": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8205000162124634
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8205000162124634
+              }
+            }
+          }
+        },
+        "stop-9": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6151999831199646
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6151999831199646
+              }
+            }
+          }
+        },
+        "stop-10": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6000000238418579
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6000000238418579
+              }
+            }
+          }
+        },
+        "stop-11": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.49070000648498535
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.49070000648498535
+              }
+            }
+          }
+        },
+        "stop-12": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.22709999978542328
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.22709999978542328
+              }
+            }
+          }
+        },
+        "stop-13": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.06260000169277191
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.06260000169277191
+              }
+            }
+          }
+        },
+        "stop-14": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        },
+        "stop-15": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.021700000390410423
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.021700000390410423
+              }
+            }
+          }
+        },
+        "stop-16": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.08449999988079071
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.08449999988079071
+              }
+            }
+          }
+        },
+        "stop-17": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.18860000371932983
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.18860000371932983
+              }
+            }
+          }
+        },
+        "stop-18": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.33379998803138733
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.33379998803138733
+              }
+            }
+          }
+        },
+        "stop-19": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.5184999704360962
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.5184999704360962
+              }
+            }
+          }
+        },
+        "stop-20": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6000000238418579
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6000000238418579
+              }
+            }
+          }
+        },
+        "stop-21": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6261000037193298
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6261000037193298
+              }
+            }
+          }
+        },
+        "stop-22": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.7750999927520752
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.7750999927520752
+              }
+            }
+          }
+        },
+        "stop-23": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8666999936103821
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8666999936103821
+              }
+            }
+          }
+        },
+        "stop-24": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-25": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8622000217437744
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8622000217437744
+              }
+            }
+          }
+        },
+        "stop-26": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6615999937057495
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6615999937057495
+              }
+            }
+          }
+        },
+        "stop-27": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.4839000105857849
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.4839000105857849
+              }
+            }
+          }
+        },
+        "stop-28": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.33410000801086426
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.33410000801086426
+              }
+            }
+          }
+        },
+        "stop-29": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.21220000088214874
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.21220000088214874
+              }
+            }
+          }
+        },
+        "stop-30": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.11810000240802765
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.11810000240802765
+              }
+            }
+          }
+        },
+        "stop-31": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.05139999836683273
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.05139999836683273
+              }
+            }
+          }
+        },
+        "stop-32": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.012199999764561653
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.012199999764561653
+              }
+            }
+          }
+        },
+        "stop-33": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        }
+      },
+      "gradient-3": {
+        "stop-1": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        },
+        "stop-2": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.03889999911189079
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.03889999911189079
+              }
+            }
+          }
+        },
+        "stop-3": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.1444000005722046
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.1444000005722046
+              }
+            }
+          }
+        },
+        "stop-4": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.3165000081062317
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.3165000081062317
+              }
+            }
+          }
+        },
+        "stop-5": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.5552999973297119
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.5552999973297119
+              }
+            }
+          }
+        },
+        "stop-6": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8565999865531921
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8565999865531921
+              }
+            }
+          }
+        },
+        "stop-7": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-8": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8205000162124634
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8205000162124634
+              }
+            }
+          }
+        },
+        "stop-9": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6151999831199646
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6151999831199646
+              }
+            }
+          }
+        },
+        "stop-10": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6000000238418579
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6000000238418579
+              }
+            }
+          }
+        },
+        "stop-11": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.49070000648498535
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.49070000648498535
+              }
+            }
+          }
+        },
+        "stop-12": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.22709999978542328
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.22709999978542328
+              }
+            }
+          }
+        },
+        "stop-13": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.06260000169277191
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.06260000169277191
+              }
+            }
+          }
+        },
+        "stop-14": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        },
+        "stop-15": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6000000238418579
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6000000238418579
+              }
+            }
+          }
+        },
+        "stop-16": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6261000037193298
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6261000037193298
+              }
+            }
+          }
+        },
+        "stop-17": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.7750999927520752
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.7750999927520752
+              }
+            }
+          }
+        },
+        "stop-18": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8666999936103821
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8666999936103821
+              }
+            }
+          }
+        },
+        "stop-19": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-20": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8622000217437744
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8622000217437744
+              }
+            }
+          }
+        },
+        "stop-21": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6615999937057495
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6615999937057495
+              }
+            }
+          }
+        },
+        "stop-22": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.4839000105857849
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.4839000105857849
+              }
+            }
+          }
+        },
+        "stop-23": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.33410000801086426
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.33410000801086426
+              }
+            }
+          }
+        },
+        "stop-24": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.21220000088214874
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.21220000088214874
+              }
+            }
+          }
+        },
+        "stop-25": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.11810000240802765
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.11810000240802765
+              }
+            }
+          }
+        },
+        "stop-26": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.05139999836683273
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.05139999836683273
+              }
+            }
+          }
+        },
+        "stop-27": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.012199999764561653
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.012199999764561653
+              }
+            }
+          }
+        },
+        "stop-28": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        }
+      },
+      "gradient-4": {
+        "stop-1": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        },
+        "stop-2": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.03889999911189079
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.03889999911189079
+              }
+            }
+          }
+        },
+        "stop-3": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.1444000005722046
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.1444000005722046
+              }
+            }
+          }
+        },
+        "stop-4": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.3165000081062317
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.3165000081062317
+              }
+            }
+          }
+        },
+        "stop-5": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.5552999973297119
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.5552999973297119
+              }
+            }
+          }
+        },
+        "stop-6": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8565999865531921
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8565999865531921
+              }
+            }
+          }
+        },
+        "stop-7": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-8": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8205000162124634
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8205000162124634
+              }
+            }
+          }
+        },
+        "stop-9": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6151999831199646
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6151999831199646
+              }
+            }
+          }
+        },
+        "stop-10": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6000000238418579
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6000000238418579
+              }
+            }
+          }
+        },
+        "stop-11": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.5103999972343445
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.5103999972343445
+              }
+            }
+          }
+        },
+        "stop-12": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.3544999957084656
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.3544999957084656
+              }
+            }
+          }
+        },
+        "stop-13": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.225600004196167
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.225600004196167
+              }
+            }
+          }
+        },
+        "stop-14": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.125900000333786
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.125900000333786
+              }
+            }
+          }
+        },
+        "stop-15": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.05510000139474869
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.05510000139474869
+              }
+            }
+          }
+        },
+        "stop-16": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.013199999928474426
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.013199999928474426
+              }
+            }
+          }
+        },
+        "stop-17": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        },
+        "stop-18": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.058800000697374344
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.058800000697374344
+              }
+            }
+          }
+        },
+        "stop-19": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.21389999985694885
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.21389999985694885
+              }
+            }
+          }
+        },
+        "stop-20": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.4648999869823456
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.4648999869823456
+              }
+            }
+          }
+        },
+        "stop-21": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.800000011920929
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.800000011920929
+              }
+            }
+          }
+        },
+        "stop-22": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8666999936103821
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8666999936103821
+              }
+            }
+          }
+        },
+        "stop-23": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8999999761581421
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8999999761581421
+              }
+            }
+          }
+        },
+        "stop-24": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.8622000217437744
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.8622000217437744
+              }
+            }
+          }
+        },
+        "stop-25": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.6615999937057495
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.6615999937057495
+              }
+            }
+          }
+        },
+        "stop-26": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.4839000105857849
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.4839000105857849
+              }
+            }
+          }
+        },
+        "stop-27": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.33410000801086426
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.33410000801086426
+              }
+            }
+          }
+        },
+        "stop-28": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.21220000088214874
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.21220000088214874
+              }
+            }
+          }
+        },
+        "stop-29": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.11810000240802765
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.11810000240802765
+              }
+            }
+          }
+        },
+        "stop-30": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.05139999836683273
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.05139999836683273
+              }
+            }
+          }
+        },
+        "stop-31": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0.012199999764561653
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0.012199999764561653
+              }
+            }
+          }
+        },
+        "stop-32": {
+          "$value": {
+            "r": 0.9098039269447327,
+            "g": 0.4941176474094391,
+            "b": 0.125490203499794,
+            "a": 0
+          },
+          "$type": "color",
+          "$extensions": {
+            "modes": {
+              "invert": {
+                "r": 0.9098039269447327,
+                "g": 0.4941176474094391,
+                "b": 0.125490203499794,
+                "a": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "mono-gradient-1": {
+      "stop-1": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.09000000357627869
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.09000000357627869
+            }
+          }
+        }
+      },
+      "stop-2": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.03889999911189079
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.03889999911189079
+            }
+          }
+        }
+      },
+      "stop-3": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.1444000005722046
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.1444000005722046
+            }
+          }
+        }
+      },
+      "stop-4": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.3165000081062317
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.3165000081062317
+            }
+          }
+        }
+      },
+      "stop-5": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.5552999973297119
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.5552999973297119
+            }
+          }
+        }
+      },
+      "stop-6": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8565999865531921
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8565999865531921
+            }
+          }
+        }
+      },
+      "stop-7": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-8": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8205000162124634
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8205000162124634
+            }
+          }
+        }
+      },
+      "stop-9": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6151999831199646
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6151999831199646
+            }
+          }
+        }
+      },
+      "stop-10": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6000000238418579
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6000000238418579
+            }
+          }
+        }
+      },
+      "stop-11": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.49070000648498535
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.49070000648498535
+            }
+          }
+        }
+      },
+      "stop-12": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.22709999978542328
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.22709999978542328
+            }
+          }
+        }
+      },
+      "stop-13": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.06260000169277191
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.06260000169277191
+            }
+          }
+        }
+      },
+      "stop-14": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      },
+      "stop-15": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.0357000008225441
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.0357000008225441
+            }
+          }
+        }
+      },
+      "stop-16": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.13349999487400055
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.13349999487400055
+            }
+          }
+        }
+      },
+      "stop-17": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2930000126361847
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.2930000126361847
+            }
+          }
+        }
+      },
+      "stop-18": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.512499988079071
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.512499988079071
+            }
+          }
+        }
+      },
+      "stop-19": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6000000238418579
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6000000238418579
+            }
+          }
+        }
+      },
+      "stop-20": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6261000037193298
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6261000037193298
+            }
+          }
+        }
+      },
+      "stop-21": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.7750999927520752
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.7750999927520752
+            }
+          }
+        }
+      },
+      "stop-22": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8666999936103821
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8666999936103821
+            }
+          }
+        }
+      },
+      "stop-23": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-24": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.7124999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.7124999761581421
+            }
+          }
+        }
+      },
+      "stop-25": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.460999995470047
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.460999995470047
+            }
+          }
+        }
+      },
+      "stop-26": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2619999945163727
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.2619999945163727
+            }
+          }
+        }
+      },
+      "stop-27": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.11890000104904175
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.11890000104904175
+            }
+          }
+        }
+      },
+      "stop-28": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.031599998474121094
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.031599998474121094
+            }
+          }
+        }
+      },
+      "stop-29": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      }
+    },
+    "mono-gradient-2": {
+      "stop-1": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      },
+      "stop-2": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.03889999911189079
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.03889999911189079
+            }
+          }
+        }
+      },
+      "stop-3": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.1444000005722046
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.1444000005722046
+            }
+          }
+        }
+      },
+      "stop-4": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.3165000081062317
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.3165000081062317
+            }
+          }
+        }
+      },
+      "stop-5": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.5552999973297119
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.5552999973297119
+            }
+          }
+        }
+      },
+      "stop-6": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8565999865531921
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8565999865531921
+            }
+          }
+        }
+      },
+      "stop-7": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-8": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8205000162124634
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8205000162124634
+            }
+          }
+        }
+      },
+      "stop-9": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6151999831199646
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6151999831199646
+            }
+          }
+        }
+      },
+      "stop-10": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6000000238418579
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6000000238418579
+            }
+          }
+        }
+      },
+      "stop-11": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.49070000648498535
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.49070000648498535
+            }
+          }
+        }
+      },
+      "stop-12": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.22709999978542328
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.22709999978542328
+            }
+          }
+        }
+      },
+      "stop-13": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.06260000169277191
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.06260000169277191
+            }
+          }
+        }
+      },
+      "stop-14": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      },
+      "stop-15": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.021700000390410423
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.021700000390410423
+            }
+          }
+        }
+      },
+      "stop-16": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.08449999988079071
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.08449999988079071
+            }
+          }
+        }
+      },
+      "stop-17": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.18860000371932983
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.18860000371932983
+            }
+          }
+        }
+      },
+      "stop-18": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.33379998803138733
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.33379998803138733
+            }
+          }
+        }
+      },
+      "stop-19": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.5184999704360962
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.5184999704360962
+            }
+          }
+        }
+      },
+      "stop-20": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6000000238418579
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6000000238418579
+            }
+          }
+        }
+      },
+      "stop-21": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6261000037193298
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6261000037193298
+            }
+          }
+        }
+      },
+      "stop-22": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.7750999927520752
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.7750999927520752
+            }
+          }
+        }
+      },
+      "stop-23": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8666999936103821
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8666999936103821
+            }
+          }
+        }
+      },
+      "stop-24": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-25": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8622000217437744
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8622000217437744
+            }
+          }
+        }
+      },
+      "stop-26": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6615999937057495
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6615999937057495
+            }
+          }
+        }
+      },
+      "stop-27": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.4839000105857849
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.4839000105857849
+            }
+          }
+        }
+      },
+      "stop-28": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.33410000801086426
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.33410000801086426
+            }
+          }
+        }
+      },
+      "stop-29": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.21220000088214874
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.21220000088214874
+            }
+          }
+        }
+      },
+      "stop-30": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.11810000240802765
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.11810000240802765
+            }
+          }
+        }
+      },
+      "stop-31": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.05139999836683273
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.05139999836683273
+            }
+          }
+        }
+      },
+      "stop-32": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.012199999764561653
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.012199999764561653
+            }
+          }
+        }
+      },
+      "stop-33": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      }
+    },
+    "mono-gradient-3": {
+      "stop-1": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      },
+      "stop-2": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.03889999911189079
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.03889999911189079
+            }
+          }
+        }
+      },
+      "stop-3": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.1444000005722046
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.1444000005722046
+            }
+          }
+        }
+      },
+      "stop-4": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.3165000081062317
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.3165000081062317
+            }
+          }
+        }
+      },
+      "stop-5": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.5552999973297119
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.5552999973297119
+            }
+          }
+        }
+      },
+      "stop-6": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8565999865531921
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8565999865531921
+            }
+          }
+        }
+      },
+      "stop-7": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-8": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8205000162124634
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8205000162124634
+            }
+          }
+        }
+      },
+      "stop-9": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6151999831199646
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6151999831199646
+            }
+          }
+        }
+      },
+      "stop-10": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6000000238418579
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6000000238418579
+            }
+          }
+        }
+      },
+      "stop-11": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.49070000648498535
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.49070000648498535
+            }
+          }
+        }
+      },
+      "stop-12": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.22709999978542328
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.22709999978542328
+            }
+          }
+        }
+      },
+      "stop-13": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.06260000169277191
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.06260000169277191
+            }
+          }
+        }
+      },
+      "stop-14": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      },
+      "stop-15": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6000000238418579
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6000000238418579
+            }
+          }
+        }
+      },
+      "stop-16": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6261000037193298
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6261000037193298
+            }
+          }
+        }
+      },
+      "stop-17": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.7750999927520752
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.7750999927520752
+            }
+          }
+        }
+      },
+      "stop-18": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8666999936103821
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8666999936103821
+            }
+          }
+        }
+      },
+      "stop-19": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-20": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8622000217437744
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8622000217437744
+            }
+          }
+        }
+      },
+      "stop-21": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6615999937057495
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6615999937057495
+            }
+          }
+        }
+      },
+      "stop-22": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.4839000105857849
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.4839000105857849
+            }
+          }
+        }
+      },
+      "stop-23": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.33410000801086426
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.33410000801086426
+            }
+          }
+        }
+      },
+      "stop-24": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.21220000088214874
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.21220000088214874
+            }
+          }
+        }
+      },
+      "stop-25": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.11810000240802765
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.11810000240802765
+            }
+          }
+        }
+      },
+      "stop-26": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.05139999836683273
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.05139999836683273
+            }
+          }
+        }
+      },
+      "stop-27": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.012199999764561653
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.012199999764561653
+            }
+          }
+        }
+      },
+      "stop-28": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      }
+    },
+    "mono-gradient-4": {
+      "stop-1": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      },
+      "stop-2": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.03889999911189079
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.03889999911189079
+            }
+          }
+        }
+      },
+      "stop-3": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.1444000005722046
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.1444000005722046
+            }
+          }
+        }
+      },
+      "stop-4": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.3165000081062317
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.3165000081062317
+            }
+          }
+        }
+      },
+      "stop-5": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.5552999973297119
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.5552999973297119
+            }
+          }
+        }
+      },
+      "stop-6": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8565999865531921
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8565999865531921
+            }
+          }
+        }
+      },
+      "stop-7": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-8": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8205000162124634
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8205000162124634
+            }
+          }
+        }
+      },
+      "stop-9": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6151999831199646
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6151999831199646
+            }
+          }
+        }
+      },
+      "stop-10": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6000000238418579
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6000000238418579
+            }
+          }
+        }
+      },
+      "stop-11": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.5103999972343445
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.5103999972343445
+            }
+          }
+        }
+      },
+      "stop-12": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.3544999957084656
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.3544999957084656
+            }
+          }
+        }
+      },
+      "stop-13": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.225600004196167
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.225600004196167
+            }
+          }
+        }
+      },
+      "stop-14": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.125900000333786
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.125900000333786
+            }
+          }
+        }
+      },
+      "stop-15": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.05510000139474869
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.05510000139474869
+            }
+          }
+        }
+      },
+      "stop-16": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.013199999928474426
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.013199999928474426
+            }
+          }
+        }
+      },
+      "stop-17": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
+      },
+      "stop-18": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.058800000697374344
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.058800000697374344
+            }
+          }
+        }
+      },
+      "stop-19": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.21389999985694885
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.21389999985694885
+            }
+          }
+        }
+      },
+      "stop-20": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.4648999869823456
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.4648999869823456
+            }
+          }
+        }
+      },
+      "stop-21": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.800000011920929
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.800000011920929
+            }
+          }
+        }
+      },
+      "stop-22": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8666999936103821
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8666999936103821
+            }
+          }
+        }
+      },
+      "stop-23": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8999999761581421
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8999999761581421
+            }
+          }
+        }
+      },
+      "stop-24": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8622000217437744
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.8622000217437744
+            }
+          }
+        }
+      },
+      "stop-25": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6615999937057495
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.6615999937057495
+            }
+          }
+        }
+      },
+      "stop-26": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.4839000105857849
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.4839000105857849
+            }
+          }
+        }
+      },
+      "stop-27": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.33410000801086426
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.33410000801086426
+            }
+          }
+        }
+      },
+      "stop-28": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.21220000088214874
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.21220000088214874
+            }
+          }
+        }
+      },
+      "stop-29": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.11810000240802765
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.11810000240802765
+            }
+          }
+        }
+      },
+      "stop-30": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.05139999836683273
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.05139999836683273
+            }
+          }
+        }
+      },
+      "stop-31": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.012199999764561653
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0.012199999764561653
+            }
+          }
+        }
+      },
+      "stop-32": {
+        "$value": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "$type": "color",
+        "$extensions": {
+          "modes": {
+            "invert": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 0
+            }
+          }
+        }
       }
     }
   }

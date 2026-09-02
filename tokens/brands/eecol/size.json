@@ -1,0 +1,18 @@
+{
+  "logo": {
+    "size": {
+      "sm": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "md": {
+        "$value": "40px",
+        "$type": "dimension"
+      },
+      "lg": {
+        "$value": "72px",
+        "$type": "dimension"
+      }
+    }
+  }
+}

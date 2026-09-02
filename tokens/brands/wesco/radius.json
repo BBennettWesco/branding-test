@@ -1,38 +1,38 @@
 {
   "rounded": {
     "default-radius": {
-      "$value": "{rounded.md}",
+      "$value": "{rounded.lg}",
       "$type": "dimension"
     },
     "none": {
       "$value": "0px",
       "$type": "dimension"
     },
-    "2xs": {
+    "xs": {
       "$value": "2px",
       "$type": "dimension"
     },
-    "xs": {
+    "sm": {
       "$value": "4px",
       "$type": "dimension"
     },
-    "sm": {
+    "md": {
       "$value": "6px",
       "$type": "dimension"
     },
-    "md": {
+    "lg": {
       "$value": "8px",
       "$type": "dimension"
     },
-    "lg": {
+    "xl": {
       "$value": "12px",
       "$type": "dimension"
     },
-    "xl": {
+    "2xl": {
       "$value": "16px",
       "$type": "dimension"
     },
-    "2xl": {
+    "3xl": {
       "$value": "24px",
       "$type": "dimension"
     },
