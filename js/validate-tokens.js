@@ -68,13 +68,15 @@ function getCategory(variable) {
     return "radius";
   }
 
-  if (name.includes("border-width") || (name.includes("stroke") && variable.resolvedType !== "COLOR")) {
+  if (name.includes("border") || (name.includes("stroke") && variable.resolvedType !== "COLOR")) {
     return "border";
   }
 
   if (name.includes("shadow")) return "shadow";
 
-  if (name.includes("grid") || name.includes("container") || name.startsWith("width/") || name.includes("viewport")) {
+  if (name.includes("logo/size")) return "size";
+
+  if (name.includes("grid") || name.includes("container") || name.startsWith("width/")) {
     return "layout";
   }
 

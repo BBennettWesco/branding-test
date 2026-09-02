@@ -1,9 +1,7 @@
 import fs from "node:fs";
 
 const FIGMA_ACCESS_TOKEN = process.env.FIGMA_ACCESS_TOKEN;
-const FILE_KEY =
-  process.env.FIGMA_FILE_KEY ||
-  process.env.FIGMA_TEST_FILE_KEY;
+const FILE_KEY = process.env.FIGMA_FILE_KEY;
 
 if (!FIGMA_ACCESS_TOKEN) {
   throw new Error("FIGMA_ACCESS_TOKEN is missing");
@@ -36,10 +34,10 @@ function shouldKeepVariable(variable) {
 
   // Remove Text/fs, Text/lh, Text/ls
   if (
-    name.startsWith("text/fs/") ||
-    name.startsWith("text/lh/") ||
-    name.startsWith("text/ls/") ||
-    name.startsWith("text/ps/")
+    name.startsWith("text/properties/size/") ||
+    name.startsWith("text/properties/leading/") ||
+    name.startsWith("text/properties/tracking/") ||
+    name.startsWith("text/properties/paragraph-spacing/")
   ) {
     return false;
   }

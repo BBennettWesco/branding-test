@@ -517,11 +517,16 @@ function getCategory(variable) {
     return "shadow";
   }
 
+  if (
+    name.includes("logo/size")
+  ) {
+    return "size";
+  }
+
 if (
     name.includes("grid") ||
     name.includes("container") ||
-    name.startsWith("width/") ||
-    name.includes("viewport")
+    name.startsWith("width/")
   ) {
     return "layout";
   }
