@@ -127,6 +127,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#tables" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
+                        <i class="fa-classic fa-regular fa-table fl-me-1.5"></i>
+                        <span>Tables</span>
+                    </a>
+                </li>
+                <li>
                     <a href="#layouts" class="inline-flex items-center w-full p-2 hover:bg-hover active:bg-active rounded">
                         <i class="fa-classic fa-regular fa-table-layout fl-me-1.5"></i>
                         <span>Layouts</span>
@@ -1100,6 +1106,125 @@
             <button type="button" class="btn-primary btn-md">Submit</button>
         </form>
 
+    </section>
+
+    <!-- Tables -->
+    <section id="tables" class="lg:container lg:mx-auto lg:px-12 px-4 w-full fl-py-9">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between fl-gap-4 fl-mb-4">
+            <div>
+                <h2 class="heading text-4xl text-fg-main">Tables</h2>
+                <p class="fl-mt-2 text-sm text-fg-secondary">A responsive product inventory table based on the Flowbite table pattern.</p>
+            </div>
+            <button type="button" class="btn-primary btn-md inline-flex items-center justify-center">
+                <i class="fa-classic fa-regular fa-plus fl-me-1.5"></i>
+                Add product
+            </button>
+        </div>
+
+        <div class="relative overflow-x-auto border border-quiet-border rounded-lg shadow-xs">
+            <table class="w-full text-sm text-left rtl:text-right text-fg-secondary">
+                <caption class="sr-only">Product inventory, status, price, and available stock</caption>
+                <thead class="text-xs label uppercase bg-muted text-muted-inset-fg-secondary border-b border-quiet-border">
+                    <tr>
+                        <th scope="col" class="fl-px-4 fl-py-3">Product</th>
+                        <th scope="col" class="fl-px-4 fl-py-3">Category</th>
+                        <th scope="col" class="fl-px-4 fl-py-3">Status</th>
+                        <th scope="col" class="fl-px-4 fl-py-3 text-right">Price</th>
+                        <th scope="col" class="fl-px-4 fl-py-3 text-right">Stock</th>
+                        <th scope="col" class="fl-px-4 fl-py-3">
+                            <span class="sr-only">Actions</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-quiet-border bg-bg">
+                    <tr class="hover:bg-quiet">
+                        <th scope="row" class="fl-px-4 fl-py-3 font-semibold text-fg-main whitespace-nowrap">
+                            Industrial Ethernet Cable
+                            <span class="block font-normal text-xs text-fg-secondary">SKU: CAB-CAT6-100</span>
+                        </th>
+                        <td class="fl-px-4 fl-py-3 whitespace-nowrap">Data communications</td>
+                        <td class="fl-px-4 fl-py-3">
+                            <span data-style="green" class="inline-flex items-center bg-muted border border-muted-border text-muted-inset-fg-main label text-xs fl-px-2 fl-py-1 rounded-full">
+                                <span class="fl-size-1.5 rounded-full bg-fg-accent fl-me-1.5"></span>
+                                In stock
+                            </span>
+                        </td>
+                        <td class="fl-px-4 fl-py-3 text-right font-medium text-fg-main whitespace-nowrap">$189.00</td>
+                        <td class="fl-px-4 fl-py-3 text-right">248</td>
+                        <td class="fl-px-4 fl-py-3 text-right">
+                            <a href="#" class="action action-link text-xs text-fg-accent">Edit<span class="sr-only"> Industrial Ethernet Cable</span></a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-quiet">
+                        <th scope="row" class="fl-px-4 fl-py-3 font-semibold text-fg-main whitespace-nowrap">
+                            NEMA Enclosure
+                            <span class="block font-normal text-xs text-fg-secondary">SKU: ENC-N4X-2424</span>
+                        </th>
+                        <td class="fl-px-4 fl-py-3 whitespace-nowrap">Electrical enclosures</td>
+                        <td class="fl-px-4 fl-py-3">
+                            <span data-style="orange" class="inline-flex items-center bg-muted border border-muted-border text-muted-inset-fg-main label text-xs fl-px-2 fl-py-1 rounded-full">
+                                <span class="fl-size-1.5 rounded-full bg-fg-accent fl-me-1.5"></span>
+                                Low stock
+                            </span>
+                        </td>
+                        <td class="fl-px-4 fl-py-3 text-right font-medium text-fg-main whitespace-nowrap">$426.50</td>
+                        <td class="fl-px-4 fl-py-3 text-right">12</td>
+                        <td class="fl-px-4 fl-py-3 text-right">
+                            <a href="#" class="action action-link text-xs text-fg-accent">Edit<span class="sr-only"> NEMA Enclosure</span></a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-quiet">
+                        <th scope="row" class="fl-px-4 fl-py-3 font-semibold text-fg-main whitespace-nowrap">
+                            LED High Bay Fixture
+                            <span class="block font-normal text-xs text-fg-secondary">SKU: LGT-HB-150W</span>
+                        </th>
+                        <td class="fl-px-4 fl-py-3 whitespace-nowrap">Lighting</td>
+                        <td class="fl-px-4 fl-py-3">
+                            <span data-style="red" class="inline-flex items-center bg-muted border border-muted-border text-muted-inset-fg-main label text-xs fl-px-2 fl-py-1 rounded-full">
+                                <span class="fl-size-1.5 rounded-full bg-fg-accent fl-me-1.5"></span>
+                                Out of stock
+                            </span>
+                        </td>
+                        <td class="fl-px-4 fl-py-3 text-right font-medium text-fg-main whitespace-nowrap">$214.75</td>
+                        <td class="fl-px-4 fl-py-3 text-right">0</td>
+                        <td class="fl-px-4 fl-py-3 text-right">
+                            <a href="#" class="action action-link text-xs text-fg-accent">Edit<span class="sr-only"> LED High Bay Fixture</span></a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-quiet">
+                        <th scope="row" class="fl-px-4 fl-py-3 font-semibold text-fg-main whitespace-nowrap">
+                            Variable Frequency Drive
+                            <span class="block font-normal text-xs text-fg-secondary">SKU: VFD-10HP-460</span>
+                        </th>
+                        <td class="fl-px-4 fl-py-3 whitespace-nowrap">Motor controls</td>
+                        <td class="fl-px-4 fl-py-3">
+                            <span data-style="green" class="inline-flex items-center bg-muted border border-muted-border text-muted-inset-fg-main label text-xs fl-px-2 fl-py-1 rounded-full">
+                                <span class="fl-size-1.5 rounded-full bg-fg-accent fl-me-1.5"></span>
+                                In stock
+                            </span>
+                        </td>
+                        <td class="fl-px-4 fl-py-3 text-right font-medium text-fg-main whitespace-nowrap">$1,295.00</td>
+                        <td class="fl-px-4 fl-py-3 text-right">36</td>
+                        <td class="fl-px-4 fl-py-3 text-right">
+                            <a href="#" class="action action-link text-xs text-fg-accent">Edit<span class="sr-only"> Variable Frequency Drive</span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between fl-gap-3 fl-mt-4 text-xs text-fg-secondary">
+            <p>Showing <span class="font-semibold text-fg-main">1–4</span> of <span class="font-semibold text-fg-main">24</span> products</p>
+            <nav aria-label="Product table pagination" class="inline-flex fl-gap-2">
+                <button type="button" class="btn-secondary btn-sm" disabled>
+                    <i class="fa-classic fa-regular fa-chevron-left fl-me-1.5"></i>
+                    Previous
+                </button>
+                <button type="button" class="btn-secondary btn-sm">
+                    Next
+                    <i class="fa-classic fa-regular fa-chevron-right fl-ms-1.5"></i>
+                </button>
+            </nav>
+        </div>
     </section>
 
     <!--Layout -->
