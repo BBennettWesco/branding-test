@@ -825,6 +825,114 @@
                 <p data-style="red" class="fl-mt-2.5 text-xs text-fg-accent"><span class="font-medium">Oh, snap!</span> Some error message.</p>
             </div>
 
+            <fieldset class="fl-mb-4.5">
+                <legend class="heading text-xl fl-mb-4 text-fg-main">Range sliders</legend>
+
+                <div class="range-control fl-mb-5" style="--range-progress: 40%">
+                    <label for="default-range" class="label text-xs block fl-mb-2.5 text-fg-main">Default</label>
+                    <div class="flex items-center fl-gap-3.5 fl-mb-3">
+                        <span class="range-bound label text-xs" aria-hidden="true">0%</span>
+                        <div class="range-rail flex-1">
+                            <output for="default-range" id="default-range-value" class="range-tooltip label text-xs">40%</output>
+                            <input
+                                type="range"
+                                id="default-range"
+                                class="fluid-range rounded-full"
+                                min="0"
+                                max="100"
+                                value="40"
+                                aria-valuetext="40%"
+                                oninput="const control = this.closest('.range-control'); const percent = ((this.value - this.min) / (this.max - this.min)) * 100; control.style.setProperty('--range-progress', `${percent}%`); this.setAttribute('aria-valuetext', `${this.value}%`); document.getElementById('default-range-value').value = `${this.value}%`"
+                            />
+                        </div>
+                        <span class="range-bound label text-xs" aria-hidden="true">100%</span>
+                    </div>
+                    <div class="range-scale label text-xs" aria-hidden="true">
+                        <span>0%</span>
+                        <span>25%</span>
+                        <span>50%</span>
+                        <span>75%</span>
+                        <span>100%</span>
+                    </div>
+                </div>
+
+                <div class="range-control fl-mb-5" style="--range-progress: 60%">
+                    <label for="icon-range" class="label text-xs block fl-mb-2.5 text-fg-main">With icons</label>
+                    <div class="flex items-center fl-gap-3.5 fl-mb-3">
+                        <i class="range-icon fa-classic fa-regular fa-volume-low" aria-hidden="true"></i>
+                        <span class="range-bound label text-xs" aria-hidden="true">0%</span>
+                        <div class="range-rail flex-1">
+                            <output for="icon-range" id="icon-range-value" class="range-tooltip label text-xs">60%</output>
+                            <input
+                                type="range"
+                                id="icon-range"
+                                class="fluid-range rounded-full"
+                                min="0"
+                                max="100"
+                                value="60"
+                                aria-label="Volume"
+                                aria-valuetext="60%"
+                                oninput="const control = this.closest('.range-control'); const percent = ((this.value - this.min) / (this.max - this.min)) * 100; control.style.setProperty('--range-progress', `${percent}%`); this.setAttribute('aria-valuetext', `${this.value}%`); document.getElementById('icon-range-value').value = `${this.value}%`"
+                            />
+                        </div>
+                        <span class="range-bound label text-xs" aria-hidden="true">100%</span>
+                        <i class="range-icon fa-classic fa-regular fa-volume-high" aria-hidden="true"></i>
+                    </div>
+                    <div class="range-scale label text-xs" aria-hidden="true">
+                        <span>0%</span>
+                        <span>25%</span>
+                        <span>50%</span>
+                        <span>75%</span>
+                        <span>100%</span>
+                    </div>
+                </div>
+
+                <div class="range-control" style="--range-start: 25%; --range-end: 75%">
+                    <span id="range-label" class="label text-xs block fl-mb-2.5 text-fg-main">Range</span>
+                    <div class="flex items-center fl-gap-3.5 fl-mb-3">
+                        <span class="range-bound label text-xs" aria-hidden="true">0%</span>
+                        <div class="range-rail flex-1">
+                            <output for="range-start" id="range-start-value" class="range-tooltip label text-xs" style="inset-inline-start: var(--range-start)">25%</output>
+                            <output for="range-end" id="range-end-value" class="range-tooltip label text-xs" style="inset-inline-start: var(--range-end)">75%</output>
+                            <div class="range-dual">
+                                <input
+                                    type="range"
+                                    id="range-end"
+                                    class="fluid-range range-end rounded-full"
+                                    min="0"
+                                    max="100"
+                                    value="75"
+                                    aria-labelledby="range-label"
+                                    aria-label="Maximum value"
+                                    aria-valuetext="75%"
+                                    oninput="const start = document.getElementById('range-start'); if (+this.value <= +start.value) this.value = +start.value + 1; const control = this.closest('.range-control'); control.style.setProperty('--range-end', `${this.value}%`); this.setAttribute('aria-valuetext', `${this.value}%`); document.getElementById('range-end-value').value = `${this.value}%`"
+                                />
+                                <input
+                                    type="range"
+                                    id="range-start"
+                                    class="fluid-range range-start rounded-full"
+                                    min="0"
+                                    max="100"
+                                    value="25"
+                                    aria-labelledby="range-label"
+                                    aria-label="Minimum value"
+                                    aria-valuetext="25%"
+                                    oninput="const end = document.getElementById('range-end'); if (+this.value >= +end.value) this.value = +end.value - 1; const control = this.closest('.range-control'); control.style.setProperty('--range-start', `${this.value}%`); this.setAttribute('aria-valuetext', `${this.value}%`); document.getElementById('range-start-value').value = `${this.value}%`"
+                                />
+                            </div>
+                        </div>
+                        <span class="range-bound label text-xs" aria-hidden="true">100%</span>
+                    </div>
+                    <div class="range-scale label text-xs" aria-hidden="true">
+                        <span>0%</span>
+                        <span>25%</span>
+                        <span>50%</span>
+                        <span>75%</span>
+                        <span>100%</span>
+                    </div>
+                </div>
+            </fieldset>
+
             <div class="fl-mb-4.5">
                 <label for="terms" class="flex items-center fl-gap-2.5 cursor-pointer select-none">
                     <!-- Native accessible input hidden visually but fully functional -->

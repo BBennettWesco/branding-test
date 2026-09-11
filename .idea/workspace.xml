@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36b15fd2-2099-4401-8df6-5c6394fa0836" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/dist/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.6601146760641443" />
+      <entry key="MS500" value="3.2000262488485163" />
+      <entry key="S2" value="6.481909798817103" />
+      <entry key="S5" value="9.70802170831967" />
+      <entry key="S10" value="15.101807900887604" />
+      <entry key="S30" value="30.75042659670037" />
+      <entry key="S60" value="47.782586087144466" />
+      <entry key="M2" value="87.37862228957283" />
+      <entry key="M5" value="216.58665471262952" />
+      <entry key="M10" value="373.69248252558634" />
+      <entry key="M15" value="473.2539600568098" />
+      <entry key="M30" value="624.6047115017453" />
+      <entry key="H1" value="731.7956612872657" />
+      <entry key="H2" value="796.6920269201727" />
+      <entry key="H4" value="832.5657978178999" />
+      <entry key="D1" value="864.406826662714" />
+      <entry key="W1" value="870.0533946220368" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="3.654641662273863E-138" />
+      <entry key="S10" value="1.936852205402388E-69" />
+      <entry key="S30" value="1.5346634774158784E-23" />
+      <entry key="S60" value="5.236345721941151E-12" />
+      <entry key="M2" value="3.1859282649799264E-6" />
+      <entry key="M5" value="0.00955508285451075" />
+      <entry key="M10" value="0.13814992001056686" />
+      <entry key="M15" value="0.33665193546320554" />
+      <entry key="M30" value="0.8204917637617826" />
+      <entry key="H1" value="1.2809856873903198" />
+      <entry key="H2" value="1.6006087182193962" />
+      <entry key="H4" value="1.789192616394896" />
+      <entry key="D1" value="1.9632146125720613" />
+      <entry key="W1" value="1.9947030356637279" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.5944442760918802" />
+      <entry key="MS500" value="3.1768597932685423" />
+      <entry key="S2" value="6.47024145842711" />
+      <entry key="S5" value="9.701022586488214" />
+      <entry key="S10" value="15.09638211138245" />
+      <entry key="S30" value="30.746758435131746" />
+      <entry key="S60" value="47.77977118013101" />
+      <entry key="M2" value="87.37608270515604" />
+      <entry key="M5" value="216.59355012836411" />
+      <entry key="M10" value="373.8276146420952" />
+      <entry key="M15" value="473.58744549007355" />
+      <entry key="M30" value="625.4224007735115" />
+      <entry key="H1" value="733.0747034827737" />
+      <entry key="H2" value="798.2914805929385" />
+      <entry key="H4" value="834.354359455782" />
+      <entry key="D1" value="866.3699279447046" />
+      <entry key="W1" value="872.0480812571922" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3IpSVDmIk2k4p16j2P9D4fcT0gS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.mcp"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36b15fd2-2099-4401-8df6-5c6394fa0836" name="Changes" comment="" />
+      <created>1788460043825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788460043825</updated>
+      <workItem from="1788460047509" duration="1280000" />
+      <workItem from="1789151799545" duration="5076000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
